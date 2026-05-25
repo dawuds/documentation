@@ -6,7 +6,7 @@
 | **Layer** | Register |
 | **Owner** | CISO |
 | **Cadence** | Continuous — entry created on every confirmed incident |
-| **Implements** | ISO/IEC 27002:2022 controls 5.25, 5.26, 5.27; BNM RMiT §10 |
+| **Implements** | ISO/IEC 27002:2022 controls 5.25, 5.26, 5.27; BNM RMiT (28 Nov 2025) §11.12–11.20 (Cyber Response, Recovery, Reporting); §11.13 (Cyber Incident Response Plan); §11.18 (Cyber Incident Notification to BNM) |
 | **Source procedure** | [SOP-08-01 Incident Triage SOP](../03-procedures/incident-triage-sop.md); [PLN-08-01 Incident Response Plan](../04-plans/incident-response-plan.md) |
 
 ---

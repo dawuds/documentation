@@ -29,7 +29,7 @@ General Bank operates a standard three-line model for information security and t
 | **Plan** (IRP / BCP / DRP) | CISO / COO | Chief Risk Officer | **Risk Management Committee** | Annual + post-event |
 | **Register** | Process owner | n/a (operational record) | Process owner | Continuous |
 
-For Malaysian licensed banks, BNM RMiT §6.6 requires the **Board** to approve the Technology Risk Management Framework, and the **Board Risk Committee** to oversee technology risk on an ongoing basis. The master Information Security Policy in this repo is positioned as a board-approved document accordingly.
+For Malaysian licensed banks, BNM RMiT (28 Nov 2025) §8.1 requires the **Board** to approve the technology risk appetite, §8.2 establishes Board oversight responsibilities for technology and cyber risk, and §8.3 requires a Board-level technology committee. The master Information Security Policy in this repo is positioned as a board-approved document accordingly. The Technology Risk Management Framework itself is established under §9 (with designated CISO requirements at §9.4–9.5).
 
 ---
 

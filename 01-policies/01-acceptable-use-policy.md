@@ -11,7 +11,7 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 |
 | **ISO/IEC 27002:2022 controls** | 5.10 (Acceptable use of information and other associated assets), 8.1 (User endpoint devices) |
-| **BNM RMiT** | Appendix 6 (Access Control), §12 (Internal Awareness and Training) |
+| **BNM RMiT (28 Nov 2025)** | §10.53–10.57 (Access Control); §15 (Security Awareness and Education) |
 
 > Skeleton policy. First-pass content suitable as a starting point. Requires extension before production use — in particular the detailed channel-by-channel rules (email, messaging, removable media, social media, AI tools) should be expanded based on the bank's environment.
 
@@ -83,7 +83,7 @@ Non-compliance may result in disciplinary action and, where applicable, civil or
 
 ## 8. References
 
-ISO/IEC 27002:2022 — controls 5.10, 8.1. BNM RMiT App. 6, §12.
+ISO/IEC 27002:2022 — controls 5.10, 8.1. BNM RMiT (28 Nov 2025) §10.53–10.57; §15. [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
 
 ## 9. Document control
 

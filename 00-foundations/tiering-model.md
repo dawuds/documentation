@@ -24,7 +24,7 @@ This page maps maturity to active tiers and gives the recommended operating mode
 **M3 is the lowest maturity at which an ISMS is sustainably audit-defensible.**
 
 - ISO/IEC 27001:2022 requires documented information for the management system (Clauses 4–10) and a Statement of Applicability for Annex A controls (Clause 6.1.3 d). At M2 you can produce this paperwork; at M3 you can defend it under audit because every policy statement is operationalised in a standard and every standard is implemented in a procedure, with registers as evidence.
-- BNM RMiT is structured the same way — it issues principle-level requirements (e.g., §10.36 on incident management) and detailed appendix-level requirements (e.g., Appendix 6 on access control, Appendix 11 on cyber risk management). M3 lets you trace each RMiT requirement into your own documents in a way an inspector can follow.
+- BNM RMiT (28 Nov 2025) is structured the same way — it issues principle-level requirements (e.g., §11.13 on the Cyber Incident Response Plan; §10.54 on access control principles) and supporting detail (e.g., the nine mandatory CRF elements at §11.3, the cybersecurity control measures at §11.5 implementing Appendix 5). M3 lets you trace each RMiT requirement into your own documents in a way an inspector can follow. See [`regulatory-mapping-reference.md`](regulatory-mapping-reference.md) for the canonical mapping.
 - Adding M4 layers before M3 is fully in place is a classic over-engineering trap. Guidelines without working standards do not get used. Baselines without working procedures do not get applied. Charters without working policies are decorative.
 
 ---

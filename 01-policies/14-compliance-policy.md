@@ -11,7 +11,7 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 |
 | **ISO/IEC 27002:2022 controls** | 5.31 (Legal, statutory, regulatory and contractual requirements), 5.32 (Intellectual property rights), 5.33 (Protection of records), 5.34 (Privacy and protection of PII), 5.35 (Independent review of information security), 5.36 (Compliance with policies, rules and standards for information security) |
-| **BNM RMiT** | §11 (Technology Audit) |
+| **BNM RMiT (28 Nov 2025)** | §13 (Technology Audits); §11.4 (NCII Compliance Requirements under Cyber Security Act 2024); §18 (Assessment and Gap Analysis) |
 
 > Skeleton policy.
 
@@ -46,7 +46,7 @@ All laws, regulations, contractual obligations, and internal policies, standards
 
 ### 3.5 Independent review
 
-- **3.5.1** The information security function and the ISMS shall be subject to **independent review** at planned intervals. Internal Audit conducts the recurring independent review at a frequency set by the audit plan; external assurance (certification audit, regulator-led review, independent assurance reviews) supplements internal audit. *(Implements ISO/IEC 27002:2022 control 5.35; BNM RMiT §11.)*
+- **3.5.1** The information security function and the ISMS shall be subject to **independent review** at planned intervals. Internal Audit conducts the recurring independent review at a frequency set by the audit plan, per BNM RMiT §13 (Technology Audits); external assurance (certification audit, regulator-led review, independent assurance reviews per RMiT §14 External Party Assurance) supplements internal audit. The bank shall conduct periodic **assessment and gap analysis** against RMiT requirements per §18. *(Implements ISO/IEC 27002:2022 control 5.35; BNM RMiT §13 (Technology Audits); §14 (External Party Assurance); §18 (Assessment and Gap Analysis).)*
 
 ### 3.6 Compliance assessment
 
@@ -54,7 +54,8 @@ All laws, regulations, contractual obligations, and internal policies, standards
 
 ### 3.7 Regulator engagement
 
-- **3.7.1** The Chief Compliance Officer shall be the primary point of contact with Bank Negara Malaysia for technology and information security regulatory matters, coordinating closely with the CISO. Notifications under [POL-08 Incident Management Policy](08-incident-management-policy.md) §4.4.3 are made on this channel.
+- **3.7.1** The Chief Compliance Officer shall be the primary point of contact with Bank Negara Malaysia for technology and information security regulatory matters, coordinating closely with the CISO. Notifications under [POL-08 Incident Management Policy](08-incident-management-policy.md) §4.4.3 (per BNM RMiT §11.18) are made on this channel.
+- **3.7.2** Where the bank is designated as a **National Critical Information Infrastructure (NCII)** entity under the **Cyber Security Act 2024**, the Chief Compliance Officer (jointly with the CISO) is responsible for ensuring compliance with all NACSA directives applicable to NCII entities, including any reporting obligations distinct from BNM reporting. *(BNM RMiT §11.4.)*
 
 ## 4. Roles and responsibilities
 
@@ -80,7 +81,7 @@ Per [POL-00](00-information-security-policy.md). Wilful non-compliance with regu
 
 ## 8. References
 
-ISO/IEC 27002:2022 — controls 5.31–5.36. BNM RMiT §11. Personal Data Protection Act 2010 (Malaysia). Financial Services Act 2013 (Malaysia).
+ISO/IEC 27002:2022 — controls 5.31–5.36. BNM RMiT (28 Nov 2025) §13 (Technology Audits); §14 (External Party Assurance); §18 (Assessment and Gap Analysis); §11.4 (NCII Compliance). Cyber Security Act 2024 (Malaysia). Personal Data Protection Act 2010 (Malaysia). Financial Services Act 2013 (Malaysia). [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
 
 ## 9. Document control
 

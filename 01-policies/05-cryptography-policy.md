@@ -11,7 +11,7 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 |
 | **ISO/IEC 27002:2022 controls** | 8.24 (Use of cryptography) |
-| **BNM RMiT** | §10 (Cybersecurity Management) |
+| **BNM RMiT (28 Nov 2025)** | §10.20 (Cryptography Policy and Standards); §10.21 (Cryptographic Controls Due Diligence); §10.22 (Cryptographic Protocol Implementation); §10.23 (Public Key Certificate Management) |
 
 > Skeleton policy. Requires a supporting **Cryptographic Standard** specifying approved algorithms, key lengths, key management procedures, and migration plans for post-quantum readiness.
 
@@ -72,7 +72,7 @@ Per [POL-00](00-information-security-policy.md).
 
 ## 8. References
 
-ISO/IEC 27002:2022 — control 8.24. NIST SP 800-57 (Key Management). NIST FIPS 140-3. BNM RMiT §10.
+ISO/IEC 27002:2022 — control 8.24. NIST SP 800-57 (Key Management). NIST FIPS 140-3. BNM RMiT (28 Nov 2025) §10.20–10.23 (Cryptography). [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
 
 ## 9. Document control
 

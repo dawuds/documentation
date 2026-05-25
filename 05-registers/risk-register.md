@@ -6,7 +6,7 @@
 | **Layer** | Register |
 | **Owner** | Chief Risk Officer (CRO); CISO for information-security risk subset |
 | **Cadence** | Continuous — risks added, treated, monitored, and closed as identified |
-| **Implements** | ISO/IEC 27001:2022 Clause 6.1.2 (risk assessment) and 6.1.3 (risk treatment); BNM RMiT §8 (Technology Risk Management Framework) |
+| **Implements** | ISO/IEC 27001:2022 Clause 6.1.2 (risk assessment) and 6.1.3 (risk treatment); BNM RMiT (28 Nov 2025) §9 (Technology Risk Management), particularly §9.1 (TRMF Integration), §9.2 (TRMF Minimum Requirements), §9.3 (Independent Technology Risk Management Function) |
 
 ---
 

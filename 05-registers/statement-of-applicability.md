@@ -60,7 +60,7 @@ Annex A organises controls into four themes: **Organisational (37)**, **People (
 | 5.17 | Authentication information | Y | Mandatory. | [POL-02 §4.3](../01-policies/02-access-control-policy.md); [STD-02-01](../02-standards/password-and-authentication-standard.md) | CISO |
 | 5.18 | Access rights | Y | Mandatory. | [POL-02 §4.4](../01-policies/02-access-control-policy.md); [REG-PAR](privileged-access-review-register.md) | Head of IAM |
 | 5.19 | Information security in supplier relationships | Y | Material outsourcing dependencies. | [POL-07 §3.1](../01-policies/07-supplier-security-policy.md) | CISO |
-| 5.20 | Addressing information security within supplier agreements | Y | BNM RMiT §13. | [POL-07 §3.2](../01-policies/07-supplier-security-policy.md) | CISO |
+| 5.20 | Addressing information security within supplier agreements | Y | BNM RMiT §10.46–10.49. | [POL-07 §3.2](../01-policies/07-supplier-security-policy.md) | CISO |
 | 5.21 | Managing information security in the ICT supply chain | Y | Material risk. | [POL-07 §3.4](../01-policies/07-supplier-security-policy.md) | CISO |
 | 5.22 | Monitoring, review and change management of supplier services | Y | Material risk. | [POL-07 §3.5](../01-policies/07-supplier-security-policy.md) | CISO |
 | 5.23 | Information security for use of cloud services | Y | Multi-cloud operating model. | [POL-07 §3.3](../01-policies/07-supplier-security-policy.md); cloud security baseline | CISO |
@@ -70,12 +70,12 @@ Annex A organises controls into four themes: **Organisational (37)**, **People (
 | 5.27 | Learning from information security incidents | Y | Mandatory. | [POL-08 §4.7](../01-policies/08-incident-management-policy.md) | CISO |
 | 5.28 | Collection of evidence | Y | Required for regulatory / legal proceedings. | [POL-08 §4.5](../01-policies/08-incident-management-policy.md); IRP Appendix B | CISO |
 | 5.29 | Information security during disruption | Y | Required for resilience. | [POL-09 §3.2](../01-policies/09-business-continuity-policy.md) | COO |
-| 5.30 | ICT readiness for business continuity | Y | BNM RMiT App. 3. | [POL-09 §3.3](../01-policies/09-business-continuity-policy.md) | COO + Head of IT Ops |
+| 5.30 | ICT readiness for business continuity | Y | BNM RMiT §10.24–10.28; §10.32; §10.44–10.45. | [POL-09 §3.3](../01-policies/09-business-continuity-policy.md) | COO + Head of IT Ops |
 | 5.31 | Legal, statutory, regulatory and contractual requirements | Y | Mandatory. | [POL-14 §3.1](../01-policies/14-compliance-policy.md) | CCO |
 | 5.32 | Intellectual property rights | Y | Required. | [POL-14 §3.4](../01-policies/14-compliance-policy.md) | CCO |
 | 5.33 | Protection of records | Y | Records retention obligations. | [POL-14 §3.2](../01-policies/14-compliance-policy.md); records retention schedule | CCO |
 | 5.34 | Privacy and protection of PII | Y | PDPA 2010. | [POL-14 §3.3](../01-policies/14-compliance-policy.md); records of processing activity | DPO |
-| 5.35 | Independent review of information security | Y | Required by ISO 27001 and BNM RMiT §11. | [POL-14 §3.5](../01-policies/14-compliance-policy.md); internal audit plan | Internal Audit |
+| 5.35 | Independent review of information security | Y | Required by ISO 27001 and BNM RMiT §13 (Technology Audits); §14 (External Party Assurance); §18 (Assessment and Gap Analysis). | [POL-14 §3.5](../01-policies/14-compliance-policy.md); internal audit plan | Internal Audit |
 | 5.36 | Compliance with policies, rules and standards for information security | Y | Required. | [POL-14 §3.6](../01-policies/14-compliance-policy.md) | CCO + CISO |
 | 5.37 | Documented operating procedures | Y | Required. | All Tier 3 SOPs; document control in [06-document-control](../06-document-control/) | Process owners |
 
@@ -106,7 +106,7 @@ Annex A organises controls into four themes: **Organisational (37)**, **People (
 | 7.8 | Equipment siting and protection | Y | Required. | [POL-10 §3.3](../01-policies/10-physical-security-policy.md) | Head of Facilities + Head of IT Ops |
 | 7.9 | Security of assets off-premises | Y | Hybrid workforce; mobile estate. | [POL-10 §3.8](../01-policies/10-physical-security-policy.md); mobile device standard | CISO |
 | 7.10 | Storage media | Y | Required. | Media handling standard; [POL-10 §3.7](../01-policies/10-physical-security-policy.md) | CISO |
-| 7.11 | Supporting utilities | Y | Required for data centres. | [POL-10 §3.6](../01-policies/10-physical-security-policy.md); BNM RMiT App. 3 | Head of Facilities |
+| 7.11 | Supporting utilities | Y | Required for data centres (BNM RMiT §10.24–10.28). | [POL-10 §3.6](../01-policies/10-physical-security-policy.md); BNM RMiT §10.25 (DC Redundancy) | Head of Facilities |
 | 7.12 | Cabling security | Y | Required. | [POL-10 §3.3](../01-policies/10-physical-security-policy.md) | Head of Facilities |
 | 7.13 | Equipment maintenance | Y | Required. | IT operations standard | Head of IT Ops |
 | 7.14 | Secure disposal or re-use of equipment | Y | Required. | [POL-10 §3.7](../01-policies/10-physical-security-policy.md); NIST SP 800-88 baseline | Head of IT Ops |
@@ -126,15 +126,15 @@ Annex A organises controls into four themes: **Organisational (37)**, **People (
 | 8.9 | Configuration management | Y | Required. | Configuration management standard | Head of IT Ops |
 | 8.10 | Information deletion | Y | Required for data lifecycle. | [POL-04 §4.5](../01-policies/04-data-classification-policy.md); records retention schedule | CISO + DPO |
 | 8.11 | Data masking | Y | Required for non-production environments. | [POL-12 §3.6](../01-policies/12-secure-development-policy.md); data masking standard | Head of Engineering |
-| 8.12 | Data leakage prevention | Y | BNM RMiT App. 9. | [POL-04](../01-policies/04-data-classification-policy.md); DLP standard | CISO |
-| 8.13 | Information backup | Y | BNM RMiT App. 3. | [POL-11 §3.4](../01-policies/11-operations-security-policy.md) | Head of IT Ops |
-| 8.14 | Redundancy of information processing facilities | Y | BNM RMiT App. 3. | [POL-09 §3.3](../01-policies/09-business-continuity-policy.md) | Head of IT Ops |
+| 8.12 | Data leakage prevention | Y | BNM RMiT §10.44(d) + Appendix 1 (sensitive media); §12 (Digital Services). | [POL-04](../01-policies/04-data-classification-policy.md); DLP standard | CISO |
+| 8.13 | Information backup | Y | BNM RMiT §10.44 (Backup); §10.45 (Tamper-Proof Backup). | [POL-11 §3.4](../01-policies/11-operations-security-policy.md) | Head of IT Ops |
+| 8.14 | Redundancy of information processing facilities | Y | BNM RMiT §10.24–10.28 (DC Resilience); §10.32 (HA Requirements). | [POL-09 §3.3](../01-policies/09-business-continuity-policy.md) | Head of IT Ops |
 | 8.15 | Logging | Y | Required. | [POL-11 §3.5](../01-policies/11-operations-security-policy.md); logging standard | Head of SOC |
-| 8.16 | Monitoring activities | Y | BNM RMiT App. 10. | [POL-11 §3.6](../01-policies/11-operations-security-policy.md) | Head of SOC |
+| 8.16 | Monitoring activities | Y | BNM RMiT §11.9 (SOC); §11.10 (Threat Intel); §11.11 (Anomalous Activity). | [POL-11 §3.6](../01-policies/11-operations-security-policy.md) | Head of SOC |
 | 8.17 | Clock synchronization | Y | Required for forensics. | [POL-11 §3.7](../01-policies/11-operations-security-policy.md) | Head of IT Ops |
 | 8.18 | Use of privileged utility programs | Y | Required. | [POL-02 §4.4](../01-policies/02-access-control-policy.md); endpoint standard | CISO |
 | 8.19 | Installation of software on operational systems | Y | Required. | [POL-01 §3.3](../01-policies/01-acceptable-use-policy.md); change management standard | Head of IT Ops |
-| 8.20 | Networks security | Y | Required. | BNM RMiT App. 2; network security baseline | Head of IT Ops |
+| 8.20 | Networks security | Y | Required. | BNM RMiT §10.36–10.43 (Network Resilience); network security baseline | Head of IT Ops |
 | 8.21 | Security of network services | Y | Required. | Network security baseline | Head of IT Ops |
 | 8.22 | Segregation of networks | Y | Required. | Network segmentation standard | Head of IT Ops |
 | 8.23 | Web filtering | Y | Required. | Endpoint and network standard | CISO |

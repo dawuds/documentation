@@ -11,7 +11,7 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 (annual, or sooner on material incident or regulatory change) |
 | **ISO/IEC 27002:2022 controls** | 5.24 (Incident management planning & preparation), 5.25 (Assessment & decision on events), 5.26 (Response to incidents), 5.27 (Learning from incidents), 5.28 (Collection of evidence) |
-| **BNM RMiT** | §10.36–10.43 (Cybersecurity incident management) |
+| **BNM RMiT (28 Nov 2025)** | §11.1–11.7 (Cyber Risk Management, including the **Cyber Resilience Framework** at §11.2 and the **nine mandatory CRF elements** at §11.3); §11.8–11.11 (Cybersecurity Operations); §11.12–11.17 (Cyber Response and Recovery); §11.18–11.20 (Cyber Reporting and Threat Information Sharing) |
 
 > This is the **second fully drafted policy** in this repo. It is the parent of the Incident Management worked cascade — see the related documents in §9.
 
@@ -21,7 +21,9 @@
 
 To define how General Bank prepares for, detects, classifies, responds to, recovers from, and learns from information security and technology incidents. The policy ensures that incidents are handled in a way that limits operational and reputational impact, preserves evidence, satisfies regulatory notification obligations, and drives improvement.
 
-In a Malaysian licensed bank, incident response is a regulated discipline — Bank Negara Malaysia's *Risk Management in Technology (RMiT)* requires the Board to oversee cyber resilience and requires institutions to notify the regulator of material technology incidents on a defined timeline. The policy therefore covers both the operational mechanics of response and the governance and notification obligations that accompany them.
+In a Malaysian licensed bank, incident response is a regulated discipline — Bank Negara Malaysia's *Risk Management in Technology (RMiT)* (28 November 2025 issuance) requires a **Cyber Resilience Framework (CRF)** with nine mandatory elements (RMiT §11.2, §11.3), an operational SOC (§11.9), continuous threat intelligence (§11.10), a Cyber Crisis Management capability (§11.12), a Cyber Incident Response Plan (§11.13), an annual cyber drill (§11.16), and notification of material cyber incidents to the Bank (§11.18). Where the institution is designated as a National Critical Information Infrastructure (NCII) entity under the **Cyber Security Act 2024**, NACSA directives also apply (RMiT §11.4).
+
+The policy therefore covers both the operational mechanics of response and the governance, framework, and notification obligations that accompany them. Section 4.1 sets out the CRF and its nine mandatory elements as the structural spine; subsequent sections operationalise each.
 
 ## 2. Scope
 
@@ -53,24 +55,28 @@ Cross-over events involving both fraud and a technology component are dual-track
 
 ## 4. Policy statements
 
-### 4.1 Preparation
+### 4.1 Preparation — the Cyber Resilience Framework (CRF)
 
-- **4.1.1** The bank shall maintain a documented [Incident Response Plan](../04-plans/incident-response-plan.md), reviewed at least annually and after every SEV-1 or SEV-2 incident. *(Implements ISO/IEC 27002:2022 control 5.24; BNM RMiT §10.36.)*
-- **4.1.2** Incident response capability shall be staffed 24×7 either internally or through a contracted managed service, with documented escalation paths and on-call rotations.
-- **4.1.3** The Incident Response Plan shall be **exercised** at least twice per year through tabletop exercises, with at least one annual functional exercise involving the executive team. *(Implements ISO/IEC 27002:2022 control 5.24; BNM RMiT §10.37.)*
-- **4.1.4** Detection capability shall be maintained through a Security Operations Centre (SOC) function aligned with BNM RMiT Appendix 10 (Cybersecurity Operations Centre).
+- **4.1.1** The bank shall maintain a Board-approved **Cyber Resilience Framework (CRF)** containing the nine mandatory elements specified in BNM RMiT §11.3: (a) institutional understanding of cyber risk context; (b) identification, classification, and prioritisation of critical systems, information, and interconnectivity; (c) identification of threats, vulnerabilities, and countermeasures; (d) layered cyber defences referencing zero-trust, defence-in-depth, and security-by-design; (e) timely detection through continuous surveillance and monitoring; (f) detailed incident handling procedures and a crisis response playbook; (g) policies for secure information sharing with other FIs and financial market infrastructure participants; (h) centralised automated technology asset inventory; (i) dedicated cyber risk management function for threat analysis and escalation. *(Implements ISO/IEC 27002:2022 control 5.24; BNM RMiT §11.2 (CRF Development); §11.3 (CRF Minimum Elements).)*
+- **4.1.2** The bank shall maintain a documented [Incident Response Plan](../04-plans/incident-response-plan.md), reviewed at least annually and after every SEV-1 or SEV-2 incident. The plan implements RMiT §11.13. *(Implements ISO/IEC 27002:2022 control 5.24; BNM RMiT §11.13 (Cyber Incident Response Plan).)*
+- **4.1.3** Incident response capability shall be staffed 24×7 either internally or through a contracted managed service, with documented escalation paths and on-call rotations. CERT-member readiness shall be maintained per RMiT §11.14. *(BNM RMiT §11.14.)*
+- **4.1.4** The CRF shall be **exercised** through: (i) tabletop exercises at least quarterly, (ii) at least one annual functional exercise involving the executive team, and (iii) the **mandatory annual cyber drill** specified in RMiT §11.16. *(Implements ISO/IEC 27002:2022 control 5.24; BNM RMiT §11.16 (Annual Cyber Drill Exercise).)*
+- **4.1.5** **Out-of-band communication infrastructure** shall be maintained and tested to enable response coordination when primary systems are compromised. *(BNM RMiT §11.15 (Out-of-Band Communication Infrastructure).)*
+- **4.1.6** Cyber risk transfer through **cyber insurance** shall be evaluated and, where appropriate, maintained, with the loss provision regularly reviewed. *(BNM RMiT §11.17 (Cyber Insurance and Loss Provision).)*
+- **4.1.7** Detection capability shall be maintained through a Security Operations Centre (SOC) staffed with competent resources and equipped with the necessary tooling, covering all critical systems and supporting infrastructure. *(Implements ISO/IEC 27002:2022 control 8.16; BNM RMiT §11.9 (Continuous Security Monitoring and SOC).)*
+- **4.1.8** **Red team simulation attacks** shall be conducted on the frequency specified by the CISO and not less than the cadence required by RMiT §11.6. **Coordinated vulnerability disclosure** with security researchers shall be supported per RMiT §11.7. *(BNM RMiT §11.6, §11.7.)*
 
 ### 4.2 Detection, classification, and assessment
 
 - **4.2.1** Every security event shall be triaged using the [Incident Triage SOP](../03-procedures/incident-triage-sop.md). *(Implements ISO/IEC 27002:2022 control 5.25.)*
 - **4.2.2** Incidents shall be classified by severity using [STD-08-01 Incident Classification & Severity Standard](../02-standards/incident-classification-and-severity-standard.md). Severity drives notification, escalation, and response cadence.
 - **4.2.3** All personnel shall be trained and obligated to report observed security events without delay through the channels published in the Acceptable Use Policy and the Incident Triage SOP. Reporting in good faith shall not result in adverse consequences for the reporter, even where the event proves to be benign or self-caused.
-- **4.2.4** Detection sources shall include but not be limited to: SIEM, endpoint detection and response (EDR), network detection, DLP, fraud monitoring, regulator and threat-intelligence feeds, external researcher reports, and customer reports.
+- **4.2.4** Detection sources shall include but not be limited to: SIEM, endpoint detection and response (EDR), network detection, DLP, fraud monitoring, **cyber threat intelligence per RMiT §11.10**, external researcher reports per the coordinated disclosure programme (RMiT §11.7), and customer reports. **Anomalous activity response shall be operationalised per RMiT §11.11.**
 
 ### 4.3 Response
 
-- **4.3.1** Every confirmed incident shall be assigned an **Incident Commander** with clear authority to coordinate the response, request resources, and make containment decisions within the bounds defined in the Incident Response Plan. *(Implements ISO/IEC 27002:2022 control 5.26.)*
-- **4.3.2** Response shall follow the structured phases of the Incident Response Plan: **Preparation → Detection & Analysis → Containment → Eradication → Recovery → Post-Incident**, adapted from NIST SP 800-61 Rev. 2.
+- **4.3.1** Every confirmed incident shall be assigned an **Incident Commander** with clear authority to coordinate the response, request resources, and make containment decisions within the bounds defined in the Incident Response Plan. Cyber crisis-tier governance applies at SEV-1 per RMiT §11.12. *(Implements ISO/IEC 27002:2022 control 5.26; BNM RMiT §11.12 (Cyber Crisis Management).)*
+- **4.3.2** Response shall follow the structured phases of the Incident Response Plan: **Preparation → Detection & Analysis → Containment → Eradication → Recovery → Post-Incident**, adapted from NIST SP 800-61 Rev. 2 and aligned with the CRF IPDRR lifecycle (Identify, Protect, Detect, Respond, Recover) at RMiT §11.2.
 - **4.3.3** Containment decisions shall balance evidence preservation, business continuity, and risk of further compromise. Containment that significantly impacts customer-facing services requires CEO or designated delegate approval, except where a defined "act now" pre-authorisation applies (specified in the Incident Response Plan).
 - **4.3.4** All response actions shall be logged in the [Incident Register](../05-registers/incident-register.md) and timestamped, to support post-incident review and any subsequent forensic, legal, or regulatory examination.
 
@@ -78,7 +84,9 @@ Cross-over events involving both fraud and a technology component are dual-track
 
 - **4.4.1** Internal communication during an incident shall follow the communication plan defined in the Incident Response Plan: clear designation of who briefs the Board, the executive team, employees, and other internal audiences.
 - **4.4.2** **Customer notification** shall be made in accordance with applicable law (including the Personal Data Protection Act 2010 where personal data is affected) and on a basis approved by the CRO and the Chief Compliance Officer. Customer notifications shall be drafted in plain language and avoid unnecessary technical jargon.
-- **4.4.3** **Regulator notification** — material technology incidents shall be notified to Bank Negara Malaysia in accordance with the notification timelines and form specified in **BNM RMiT §10** and any superseding circular. *(⚠ The specific notification windows under current RMiT — including any "without delay" / hour-based clock — must be verified against the live RMiT issuance and any subsequent BNM circulars. This policy intentionally does not embed a numerical clock here, to avoid reliance on a number that may have changed. The CISO and Chief Compliance Officer shall maintain the current notification timelines in an internal procedural reference.)*
+- **4.4.3** **Regulator notification** — material cyber incidents shall be notified to Bank Negara Malaysia in accordance with **BNM RMiT §11.18 (Cyber Incident Notification to BNM)**. RMiT §11.18 itself defers to upstream BNM policy: the *Operational Risk Reporting* policy document Part C, the *Business Continuity Management* policy document Part C, and (for merchant-acquiring incidents) the *Merchant Acquiring Services* policy paragraphs 19.25–19.26. **The bank's operating expectation is notification to BNM within four (4) hours of detection of a material cyber incident.** *(⚠ The 4-hour figure is derived from BNM operational reporting practice for licensed financial institutions and surfaces in the institution's GRC structured-data artefact text tagged to RMiT clause 11.4. It is not stated numerically in RMiT §11.18 verbatim, which defers to the upstream policies above. The Chief Compliance Officer shall maintain the authoritative clock by reference to the current Operational Risk Reporting Part C and BCM Part C policy documents, and refresh this policy on any change.)*
+- **4.4.3.1** Threat-intelligence sharing with sector peers and Bank Negara Malaysia shall be conducted per **RMiT §11.19 (Cyber Threat Intelligence Sharing)**. Stakeholder collaboration on cyber threats shall be conducted per **RMiT §11.20 (Stakeholder Collaboration on Cyber Threats)**.
+- **4.4.3.2** Where the bank is designated as an NCII entity under the **Cyber Security Act 2024**, NACSA notification obligations shall be discharged in addition to BNM notification, per **RMiT §11.4** and the NACSA sector-lead directions for the financial services sector.
 - **4.4.4** **Public communication** (media, social channels, press) shall be coordinated by Corporate Communications under the direction of the CEO, with security input from the CISO and legal input from General Counsel. No member of the incident response team shall make public statements without authorisation.
 
 ### 4.5 Evidence
@@ -158,8 +166,12 @@ Failure to report a security event, interference with an incident investigation,
 - ISO/IEC 27035-1:2023 — Information security incident management — Part 1: Principles and process.
 - ISO/IEC 27037:2012 — Guidelines for identification, collection, acquisition and preservation of digital evidence.
 - NIST SP 800-61 Rev. 2 — Computer Security Incident Handling Guide.
-- Bank Negara Malaysia, *Risk Management in Technology (RMiT)*, §10 (Cybersecurity Management); §10.36–10.43 (incident management); Appendix 10 (Cybersecurity Operations Centre).
+- Bank Negara Malaysia, *Risk Management in Technology (RMiT)*, **28 November 2025 issuance** — §11 (Cybersecurity Management) in entirety; particularly §11.2–11.3 (CRF), §11.4 (NCII), §11.5–11.7 (Cyber Controls / Red Team / Coordinated Disclosure), §11.8–11.11 (Cybersecurity Operations / SOC / Threat Intelligence / Anomalous Activity), §11.12–11.17 (Cyber Response and Recovery), §11.18–11.20 (Notification, Information Sharing, Stakeholder Collaboration).
+- Bank Negara Malaysia, *Operational Risk Reporting* policy document, Part C — authoritative source for cyber incident notification clock.
+- Bank Negara Malaysia, *Business Continuity Management* policy document, Part C.
+- Cyber Security Act 2024 (Malaysia) — NCII designation regime; NACSA directives.
 - Personal Data Protection Act 2010 (Malaysia) — notification of personal data breaches.
+- [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md) — repo-internal canonical mapping.
 
 ## 10. Document control
 

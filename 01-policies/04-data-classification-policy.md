@@ -11,7 +11,7 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 |
 | **ISO/IEC 27002:2022 controls** | 5.12 (Classification of information), 5.13 (Labelling of information) |
-| **BNM RMiT** | Appendix 9 (Data Loss Prevention) |
+| **BNM RMiT (28 Nov 2025)** | §9.2(d) (asset classification within TRMF); §10.44(d) and Appendix 1 (sensitive data in removable media); §12 (Digital Services — minimum controls for customer information confidentiality and integrity per Appendices 2 and 3) |
 
 > Skeleton policy. Requires extension to detail handling rules per classification × media combination, and to define the data discovery and DLP technical implementation.
 
@@ -48,7 +48,7 @@ All information processed by General Bank, in any form, owned by the bank or ent
 ### 4.3 Handling
 
 - **4.3.1** Handling controls shall be applied in proportion to classification, covering: storage, transmission, processing, sharing, retention, and destruction. A consolidated handling matrix shall be maintained by the CISO and referenced by all supporting standards and SOPs.
-- **4.3.2** **Highly Restricted** information shall be encrypted in transit and at rest using approved algorithms per [POL-05 Cryptography Policy](05-cryptography-policy.md), and shall be subject to data loss prevention controls per BNM RMiT Appendix 9.
+- **4.3.2** **Highly Restricted** information shall be encrypted in transit and at rest using approved algorithms per [POL-05 Cryptography Policy](05-cryptography-policy.md). Removable-media handling shall meet the minimum controls in BNM RMiT §10.44(d) and Appendix 1. Digital service delivery shall meet the minimum security controls in BNM RMiT §12 and Appendices 2 and 3.
 
 ### 4.4 Personal data
 
@@ -81,7 +81,7 @@ Per [POL-00](00-information-security-policy.md). Mishandling of Highly Restricte
 
 ## 9. References
 
-ISO/IEC 27002:2022 — controls 5.12, 5.13. BNM RMiT Appendix 9. Personal Data Protection Act 2010.
+ISO/IEC 27002:2022 — controls 5.12, 5.13. BNM RMiT (28 Nov 2025) §9.2(d); §10.44(d) + Appendix 1; §12 + Appendices 2 and 3. Personal Data Protection Act 2010 (Malaysia). [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
 
 ## 10. Document control
 

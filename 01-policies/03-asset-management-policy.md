@@ -11,7 +11,7 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 |
 | **ISO/IEC 27002:2022 controls** | 5.9 (Inventory of information and other associated assets), 5.10 (Acceptable use), 5.11 (Return of assets) |
-| **BNM RMiT** | §9 (Technology Operations Management) |
+| **BNM RMiT (28 Nov 2025)** | §9.2 (TRMF Minimum Requirements — asset identification, classification); §11.3(h) (CRF — centralised automated technology asset inventory) |
 
 > Skeleton policy. Requires extension to address asset-class–specific handling, particularly for cloud-resident assets and software (SBOM) inventory.
 
@@ -29,7 +29,7 @@ Applies to all information assets: hardware (servers, endpoints, network devices
 
 ### 3.1 Inventory
 
-- **3.1.1** An authoritative inventory of all information assets shall be maintained, with each asset attributed to a named owner. *(Implements ISO/IEC 27002:2022 control 5.9; BNM RMiT §9.)*
+- **3.1.1** An authoritative inventory of all information assets shall be maintained, with each asset attributed to a named owner. *(Implements ISO/IEC 27002:2022 control 5.9; BNM RMiT §9.2(d) (asset classification within the TRMF); §11.3(h) (centralised automated technology asset inventory as a mandatory CRF element).)*
 - **3.1.2** Inventory completeness shall be assessed through automated discovery (network, endpoint, cloud) reconciled with the configuration management database. Material discrepancies shall be investigated and resolved.
 
 ### 3.2 Ownership
@@ -72,7 +72,7 @@ Per [POL-00](00-information-security-policy.md).
 
 ## 8. References
 
-ISO/IEC 27002:2022 — controls 5.9–5.11. BNM RMiT §9.
+ISO/IEC 27002:2022 — controls 5.9–5.11. BNM RMiT (28 Nov 2025) §9.2; §11.3(h). [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
 
 ## 9. Document control
 

@@ -11,7 +11,7 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 |
 | **ISO/IEC 27002:2022 controls** | 8.25 (Secure development lifecycle), 8.26 (Application security requirements), 8.27 (Secure system architecture and engineering principles), 8.28 (Secure coding), 8.29 (Security testing in development and acceptance), 8.30 (Outsourced development), 8.31 (Separation of development, test and production environments) |
-| **BNM RMiT** | Appendix 8 (Security of Digital Services) |
+| **BNM RMiT (28 Nov 2025)** | §10.4–10.16 (System Development and Acquisition, incl. §10.5 SDLC, §10.6 Rapid Development, §10.10 Source Code Review for Critical Systems, §10.11 Independent Review of System Changes, §10.14 Automated Development and Security Tools, §10.15 Third Party Software Supply Chain Risk, §10.16 Shadow IT); §12 (Digital Services) with Appendices 2 and 3 |
 
 > Skeleton policy.
 
@@ -33,7 +33,7 @@ All software development and engineering activity producing or modifying systems
 
 ### 3.2 Application security requirements
 
-- **3.2.1** Security requirements shall be defined for every application, derived from data classification, threat modelling, and applicable regulatory requirements. *(Implements ISO/IEC 27002:2022 control 8.26; BNM RMiT App. 8.)*
+- **3.2.1** Security requirements shall be defined for every application, derived from data classification, threat modelling, and applicable regulatory requirements. *(Implements ISO/IEC 27002:2022 control 8.26; BNM RMiT §10.5 (SDLC Methodology); §12 (Digital Services minimum controls per Appendices 2 and 3).)*
 
 ### 3.3 Threat modelling and secure design
 
@@ -88,7 +88,7 @@ Per [POL-00](00-information-security-policy.md).
 
 ## 8. References
 
-ISO/IEC 27002:2022 — controls 8.25–8.31. OWASP ASVS (Application Security Verification Standard). NIST SP 800-218 (Secure Software Development Framework). BNM RMiT Appendix 8.
+ISO/IEC 27002:2022 — controls 8.25–8.31. OWASP ASVS (Application Security Verification Standard). NIST SP 800-218 (Secure Software Development Framework). BNM RMiT (28 Nov 2025) §10.4–10.16; §12 + Appendices 2 and 3. [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
 
 ## 9. Document control
 

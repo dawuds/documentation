@@ -6,7 +6,7 @@
 | **Layer** | Register |
 | **Owner** | Head of Identity & Access Management |
 | **Cadence** | **Quarterly** — full review of all privileged accounts |
-| **Implements** | ISO/IEC 27002:2022 control 5.18 (Access rights); BNM RMiT Appendix 6 |
+| **Implements** | ISO/IEC 27002:2022 control 5.18 (Access rights); BNM RMiT (28 Nov 2025) §10.53–10.57 (Access Control), particularly §10.56 (User Access Matrix) and §10.57 (Access Monitoring and Logging) |
 | **Source procedure** | [POL-02 §4.4.5](../01-policies/02-access-control-policy.md); [STD-02-01 §3.5](../02-standards/password-and-authentication-standard.md); [SOP-02-01](../03-procedures/joiner-mover-leaver-sop.md) |
 
 ---

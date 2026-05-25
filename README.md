@@ -19,10 +19,10 @@ This repo demonstrates *what good looks like* — the structure, the layering, t
 
 ## The two worked cascades
 
-| Cascade | Policy | Standard | Procedure | Plan | Register | ISO 27002:2022 | BNM RMiT |
+| Cascade | Policy | Standard | Procedure | Plan | Register | ISO 27002:2022 | BNM RMiT (28 Nov 2025) |
 |---|---|---|---|---|---|---|---|
-| **Access Control** | [02](01-policies/02-access-control-policy.md) | [Password & Auth](02-standards/password-and-authentication-standard.md) | [JML SOP](03-procedures/joiner-mover-leaver-sop.md) | — | [Priv. Access Review](05-registers/privileged-access-review-register.md) | 5.15–5.18, 8.2–8.5 | Appendix 6 |
-| **Incident Management** | [08](01-policies/08-incident-management-policy.md) | [Classification & Severity](02-standards/incident-classification-and-severity-standard.md) | [Triage SOP](03-procedures/incident-triage-sop.md) | [IR Plan](04-plans/incident-response-plan.md) | [Incident Register](05-registers/incident-register.md) | 5.24–5.28 | §10.36–10.43 |
+| **Access Control** | [02](01-policies/02-access-control-policy.md) | [Password & Auth](02-standards/password-and-authentication-standard.md) | [JML SOP](03-procedures/joiner-mover-leaver-sop.md) | — | [Priv. Access Review](05-registers/privileged-access-review-register.md) | 5.15–5.18, 8.2–8.5 | §10.53–10.57 |
+| **Incident Management** | [08](01-policies/08-incident-management-policy.md) | [Classification & Severity](02-standards/incident-classification-and-severity-standard.md) | [Triage SOP](03-procedures/incident-triage-sop.md) | [IR Plan](04-plans/incident-response-plan.md) | [Incident Register](05-registers/incident-register.md) | 5.24–5.28 | §11.12–11.20 (CRF §11.2–11.3) |
 
 ---
 
@@ -57,8 +57,11 @@ Document control — version history, approvals, supersession, archive — is co
 
 - **ISO/IEC 27001:2022** — Information security management systems — Requirements.
 - **ISO/IEC 27002:2022** — Information security controls (93 controls in 4 themes).
-- **Bank Negara Malaysia, *Risk Management in Technology (RMiT)*** — policy document (issued 19 June 2020, applicable to licensed financial institutions).
+- **Bank Negara Malaysia, *Risk Management in Technology (RMiT)*** — policy document **issued 28 November 2025** (BNM/RH/PD 028-100); applicable to licensed financial institutions. Supersedes the June 2020 issuance.
+- **Cyber Security Act 2024 (Malaysia)** — National Critical Information Infrastructure (NCII) designation regime; NACSA directives.
 - **ISO/IEC 27005:2022** — Information security risk management guidance.
 - **NIST SP 800-61 Rev. 2** — Computer Security Incident Handling Guide.
+
+See [`00-foundations/regulatory-mapping-reference.md`](00-foundations/regulatory-mapping-reference.md) for the canonical mapping used by every document in this repo when citing BNM RMiT, ISO, and adjacent Malaysian regulation.
 
 Every document in this repo cites the specific clause(s) it implements. Treat every cited clause as a starting point for the authoritative source — read the standard, do not rely on this repo as the authority.

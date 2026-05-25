@@ -11,7 +11,7 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 |
 | **ISO/IEC 27002:2022 controls** | 8.6 (Capacity management), 8.7 (Protection against malware), 8.13 (Information backup), 8.15 (Logging), 8.16 (Monitoring activities), 8.32 (Change management) |
-| **BNM RMiT** | §9 (Technology Operations Management); Appendix 10 (CSOC) |
+| **BNM RMiT (28 Nov 2025)** | §10 (Technology Operations Management) — across change, backup, network resilience; §11.9 (Continuous Security Monitoring and SOC); §11.10 (Cyber Threat Intelligence); §11.11 (Anomalous Activity Response) |
 
 > Skeleton policy. Aggregates several operational domains that often each have their own policy in larger organisations. Suitable for a mid-sized bank; split per-domain as scale and audit pressure demand.
 
@@ -37,12 +37,12 @@ All production information systems and services, including those operated by thi
 
 ### 3.3 Malware protection
 
-- **3.3.1** Endpoint and server systems shall run approved endpoint protection (EDR / anti-malware) with current definitions, centrally managed and monitored. *(Implements ISO/IEC 27002:2022 control 8.7.)*
+- **3.3.1** Endpoint and server systems shall run approved endpoint protection (EDR / anti-malware) with current definitions, centrally managed and monitored. *(Implements ISO/IEC 27002:2022 control 8.7; BNM RMiT §11.5 (Cybersecurity Control Measures, implementing Appendix 5).)*
 
 ### 3.4 Backup
 
-- **3.4.1** Information critical to business operation shall be backed up at frequencies aligned with the RPO defined per service, stored in geographically separate locations, encrypted, and tested for restorability at least annually. *(Implements ISO/IEC 27002:2022 control 8.13.)*
-- **3.4.2** A subset of backups shall be held in **immutable** form to provide recovery capability in the event of ransomware affecting primary and secondary storage.
+- **3.4.1** Information critical to business operation shall be backed up at frequencies aligned with the RPO defined per service, stored in geographically separate locations, encrypted, and tested for restorability at least annually. *(Implements ISO/IEC 27002:2022 control 8.13; BNM RMiT §10.44 (Backup Strategy and Procedures).)*
+- **3.4.2** A subset of backups shall be held in **immutable / tamper-proof** form with an isolated recovery capability, to provide recovery in the event of ransomware affecting primary and secondary storage. *(BNM RMiT §10.45 (Tamper-Proof Backup and Isolated Recovery).)*
 
 ### 3.5 Logging
 
@@ -50,7 +50,7 @@ All production information systems and services, including those operated by thi
 
 ### 3.6 Monitoring
 
-- **3.6.1** Centralised security monitoring shall operate 24×7, aligned with the Cybersecurity Operations Centre expectations of BNM RMiT Appendix 10. Detection use cases shall be maintained, tuned, and tested. *(Implements ISO/IEC 27002:2022 control 8.16.)*
+- **3.6.1** Centralised security monitoring shall operate 24×7 through a **Security Operations Centre (SOC)** as required by BNM RMiT §11.9 (Continuous Security Monitoring and SOC). The SOC shall be supported by competent resources and necessary tooling, its monitoring scope shall cover all critical systems and supporting infrastructure, and it shall conduct regular vulnerability assessment and penetration testing in line with Appendix 5. **Cyber threat intelligence** shall be operated per §11.10. **Anomalous activity response** shall be operationalised per §11.11. Detection use cases shall be maintained, tuned, and tested. *(Implements ISO/IEC 27002:2022 control 8.16; BNM RMiT §11.9; §11.10; §11.11.)*
 
 ### 3.7 Time synchronisation
 
@@ -80,7 +80,7 @@ Per [POL-00](00-information-security-policy.md).
 
 ## 8. References
 
-ISO/IEC 27002:2022 — controls 8.6, 8.7, 8.13, 8.15, 8.16, 8.32. BNM RMiT §9; Appendix 10.
+ISO/IEC 27002:2022 — controls 8.6, 8.7, 8.13, 8.15, 8.16, 8.32. BNM RMiT (28 Nov 2025) §10 (Technology Operations Management); §11.5; §11.9–11.11. [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
 
 ## 9. Document control
 
