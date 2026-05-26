@@ -1,118 +1,64 @@
-# General Bank — IT Governance Documentation
+# General Bank — Information Security Management System
 
-A worked example of a best-practice IT governance documentation framework for a Malaysian licensed bank, anchored on **ISO/IEC 27001:2022** and **ISO/IEC 27002:2022**, with mapping to **Bank Negara Malaysia's Risk Management in Technology (RMiT)** policy document.
+The body of policies, standards, procedures, plans, and registers by which **General Bank** protects information assets entrusted to it by customers, employees, partners, and regulators. The ISMS is established by the Board, governed by the Risk Management Committee, and operated by the Chief Information Security Officer.
 
-This repo demonstrates *what good looks like* — the structure, the layering, the cascade from principle to operational evidence. It is a teaching artefact, not a certified ISMS.
+The master policy is [**POL-00 Information Security Policy**](01-policies/00-information-security-policy.md), Board-approved 15 January 2026, satisfying ISO/IEC 27001:2022 Clause 5.2.
 
-> **Disclaimer.** This documentation is illustrative. It is not legal, regulatory, or audit advice. Any organisation adopting it must validate every control against its own risk profile, regulatory obligations, and operating environment.
-
----
-
-## How to use this repo
-
-Every folder has a `README.md` that orients you to its contents. Start at [`00-foundations/`](00-foundations/), then pick a learning path below.
-
-1. **Start at [`00-foundations/`](00-foundations/)** — document hierarchy, maturity tiers, governance model, document lifecycle, and the regulatory mapping reference (the canonical citation source).
-2. **Then [`01-policies/`](01-policies/)** — the policy suite. Two policies fully drafted (Access Control, Incident Management); 12 supporting policies as first-pass skeletons.
-3. **Follow the two cascades** — drop from policy → standard → procedure → plan → register to see how a single principle becomes auditable evidence.
-4. **Use [`_templates/`](_templates/)** when authoring new documents.
-
-## Learning paths
-
-Pick the path matching your reason for reading. Each path lists the documents in suggested order, with rough time-to-read.
-
-### Path A — "I'm new to ISMS and want to understand the structure" (~60 min)
-
-1. [`00-foundations/README.md`](00-foundations/README.md) — orientation (2 min)
-2. [`00-foundations/document-hierarchy.md`](00-foundations/document-hierarchy.md) — the 9-layer pyramid (10 min)
-3. [`00-foundations/tiering-model.md`](00-foundations/tiering-model.md) — M1→M4, why M3 is the target (8 min)
-4. [`00-foundations/governance-model.md`](00-foundations/governance-model.md) — three-line model, approval authority (10 min)
-5. [`00-foundations/document-lifecycle.md`](00-foundations/document-lifecycle.md) — states and gates (8 min)
-6. [`01-policies/00-information-security-policy.md`](01-policies/00-information-security-policy.md) — see the structure in action (15 min)
-7. [`05-registers/statement-of-applicability.md`](05-registers/statement-of-applicability.md) — see how ISO 27002 controls map (skim, 7 min)
-
-### Path B — "I'm an auditor / inspector preparing to review this ISMS" (~50 min)
-
-1. [`06-document-control/README.md`](06-document-control/README.md) — how this ISMS proves what it operates (5 min)
-2. [`06-document-control/master-document-register.md`](06-document-control/master-document-register.md) — current state, all documents (10 min)
-3. [`06-document-control/approval-register.md`](06-document-control/approval-register.md) — evidence of board/RMC/CISO approvals (5 min)
-4. [`05-registers/statement-of-applicability.md`](05-registers/statement-of-applicability.md) — all 93 Annex A controls mapped (15 min)
-5. [`01-policies/00-information-security-policy.md`](01-policies/00-information-security-policy.md) — the master (15 min)
-6. Spot-check any individual policy/standard/SOP from the cascades.
-
-### Path C — "I'm a CISO setting up my own org's ISMS, using this as a template" (~90 min, plus adaptation)
-
-1. [`00-foundations/`](00-foundations/) — all five documents (45 min)
-2. [`01-policies/00-information-security-policy.md`](01-policies/00-information-security-policy.md) — adapt to your governance (15 min)
-3. **The Access Control cascade** end-to-end — POL-02 → STD-02-01 → SOP-02-01 → REG-PAR (15 min) — this is the cascade pattern your other policies should follow
-4. [`_templates/`](_templates/) — the skeletons for authoring your own (5 min)
-5. [`06-document-control/`](06-document-control/) — set up your version-control discipline from day one (10 min)
-
-### Path D — "I'm learning Malaysian FS / BNM RMiT compliance via ISO 27001" (~75 min)
-
-1. [`00-foundations/regulatory-mapping-reference.md`](00-foundations/regulatory-mapping-reference.md) — the canonical mapping (15 min)
-2. [`01-policies/08-incident-management-policy.md`](01-policies/08-incident-management-policy.md) — Cyber Resilience Framework anchored on RMiT §11 (15 min)
-3. [`02-standards/incident-classification-and-severity-standard.md`](02-standards/incident-classification-and-severity-standard.md) — including the 4-hour BNM notification citation chain (10 min)
-4. [`04-plans/incident-response-plan.md`](04-plans/incident-response-plan.md) — IRP implementing RMiT §11.13 with §11.12 crisis management overlay (15 min)
-5. [`05-registers/statement-of-applicability.md`](05-registers/statement-of-applicability.md) — ISO 27002 / RMiT cross-mapping per control (20 min)
-
-### Path E — "I'm building the cascade pattern for a different control domain" (~30 min)
-
-1. [`00-foundations/document-hierarchy.md`](00-foundations/document-hierarchy.md) §"The cascade" (5 min)
-2. **Access Control cascade** in full:
-   - [POL-02](01-policies/02-access-control-policy.md) (10 min)
-   - [STD-02-01](02-standards/password-and-authentication-standard.md) (5 min)
-   - [SOP-02-01](03-procedures/joiner-mover-leaver-sop.md) (5 min)
-   - [REG-PAR](05-registers/privileged-access-review-register.md) (3 min)
-3. Build your own cascade using the same shape — one policy, one or more standards, one or more SOPs, one register.
+> **Disclaimer.** This documentation is illustrative — a worked example of best-practice ISMS documentation structure for a Malaysian licensed bank. It is not legal, regulatory, or audit advice. Any organisation adopting it must validate every control against its own risk profile, regulatory obligations, and operating environment. Personnel, systems, and dates are fictional; the regulatory anchors are real.
 
 ---
 
-## The two worked cascades
+## Scope
 
-| Cascade | Policy | Standard | Procedure | Plan | Register | ISO 27002:2022 | BNM RMiT (28 Nov 2025) |
-|---|---|---|---|---|---|---|---|
-| **Access Control** | [02](01-policies/02-access-control-policy.md) | [Password & Auth](02-standards/password-and-authentication-standard.md) | [JML SOP](03-procedures/joiner-mover-leaver-sop.md) | — | [Priv. Access Review](05-registers/privileged-access-review-register.md) | 5.15–5.18, 8.2–8.5 | §10.53–10.57 |
-| **Incident Management** | [08](01-policies/08-incident-management-policy.md) | [Classification & Severity](02-standards/incident-classification-and-severity-standard.md) | [Triage SOP](03-procedures/incident-triage-sop.md) | [IR Plan](04-plans/incident-response-plan.md) | [Incident Register](05-registers/incident-register.md) | 5.24–5.28 | §11.12–11.20 (CRF §11.2–11.3) |
+This ISMS applies to all information assets owned, processed, transmitted, or stored by General Bank, regardless of location, infrastructure ownership, or processing party; to all personnel (employees, contractors, secondees, third parties); to all systems and services (owned, leased, cloud-hosted, outsourced); and to all locations from which General Bank information is accessed. The Statement of Applicability at [`05-registers/statement-of-applicability.md`](05-registers/statement-of-applicability.md) records the applicability of every ISO/IEC 27002:2022 Annex A control.
 
----
+## Compliance anchors
 
-## Repo map
+| Authority | Status in this ISMS |
+|---|---|
+| **ISO/IEC 27001:2022** — ISMS requirements | Aligned (certifiable structure) |
+| **ISO/IEC 27002:2022** — 93 controls in 4 themes | All 93 applicable per SoA |
+| **Bank Negara Malaysia, *Risk Management in Technology (RMiT)*** — 28 November 2025 issuance | Aligned across §8–§18 |
+| **Cyber Security Act 2024 (Malaysia)** — NCII regime | Compliance per RMiT §11.4 + NACSA directives |
+| Financial Services Act 2013; Personal Data Protection Act 2010; Computer Crimes Act 1997 | Applicable; tracked in Compliance Register |
 
-```
-documentation/
-├── 00-foundations/        Reference: hierarchy, tiering, governance, lifecycle
-├── 01-policies/           Tier 1 — WHAT & WHY (board/exec approved)
-├── 02-standards/          Tier 2 — WHAT SPECIFICALLY (CISO approved)
-├── 03-procedures/         Tier 3 — HOW (process owner approved)
-├── 04-plans/              Time-bound action sets (IRP, BCP, DRP)
-├── 05-registers/          Evidence (SoA, risk register, review logs)
-├── 06-document-control/   Master register, change log, approvals, archive
-├── 99-optional-layers/    When to add Charter / Guideline / Baseline / Manual
-└── _templates/            Reusable templates for every document type
-```
+The canonical citation mapping used by every document in this suite is at [`00-foundations/regulatory-mapping-reference.md`](00-foundations/regulatory-mapping-reference.md).
 
 ---
 
-## The maturity-tier recommendation
+## The suite
 
-Most banks should operate at **Maturity 3** — three active tiers (Policy / Standard / Procedure) plus Plans and Registers as evidence. See [`00-foundations/tiering-model.md`](00-foundations/tiering-model.md) for when to expand to Maturity 4.
-
-## Where to find "who approved what, when"
-
-Document control — version history, approvals, supersession, archive — is consolidated in [`06-document-control/`](06-document-control/). Start with the [master document register](06-document-control/master-document-register.md) for current state, the [change log](06-document-control/change-log.md) for history, and the [approval register](06-document-control/approval-register.md) for audit evidence.
+| Layer | Folder | What it contains |
+|---|---|---|
+| **Foundations** | [`00-foundations/`](00-foundations/) | Document hierarchy, tiering model, governance model, lifecycle, regulatory mapping reference |
+| **Tier 1 — Policies** | [`01-policies/`](01-policies/) | Master Information Security Policy + 14 supporting policies |
+| **Tier 2 — Standards** | [`02-standards/`](02-standards/) | Mandatory, measurable requirements implementing the policies |
+| **Tier 3 — Procedures** | [`03-procedures/`](03-procedures/) | Step-by-step operational SOPs |
+| **Plans** | [`04-plans/`](04-plans/) | Time-bound, scenario-driven response plans (IRP) |
+| **Registers** | [`05-registers/`](05-registers/) | Evidence — SoA, Risk Register, Privileged Access Review Register, Incident Register |
+| **Document control** | [`06-document-control/`](06-document-control/) | Master register, change log, approval register, archive |
+| **Optional layers** | [`99-optional-layers/`](99-optional-layers/) | Guidance on Charter / Guideline / Baseline / Manual layers (M4) |
+| **Templates** | [`_templates/`](_templates/) | Skeletons for authoring new documents |
 
 ---
 
-## References
+## Two worked cascades
 
-- **ISO/IEC 27001:2022** — Information security management systems — Requirements.
-- **ISO/IEC 27002:2022** — Information security controls (93 controls in 4 themes).
-- **Bank Negara Malaysia, *Risk Management in Technology (RMiT)*** — policy document **issued 28 November 2025** (BNM/RH/PD 028-100); applicable to licensed financial institutions. Supersedes the June 2020 issuance.
-- **Cyber Security Act 2024 (Malaysia)** — National Critical Information Infrastructure (NCII) designation regime; NACSA directives.
-- **ISO/IEC 27005:2022** — Information security risk management guidance.
-- **NIST SP 800-61 Rev. 2** — Computer Security Incident Handling Guide.
+The cascade — principle → standard → procedure → plan → evidence — is the structural pattern by which every domain in the suite is built. Two cascades are fully drafted as worked examples:
 
-See [`00-foundations/regulatory-mapping-reference.md`](00-foundations/regulatory-mapping-reference.md) for the canonical mapping used by every document in this repo when citing BNM RMiT, ISO, and adjacent Malaysian regulation.
+| Cascade | Policy | Standard | Procedure | Plan | Register |
+|---|---|---|---|---|---|
+| **Access Control** | [POL-02](01-policies/02-access-control-policy.md) | [Password & Auth](02-standards/password-and-authentication-standard.md) | [JML SOP](03-procedures/joiner-mover-leaver-sop.md) | — | [Privileged Access Review](05-registers/privileged-access-review-register.md) |
+| **Incident Management** | [POL-08](01-policies/08-incident-management-policy.md) | [Classification & Severity](02-standards/incident-classification-and-severity-standard.md) | [Triage SOP](03-procedures/incident-triage-sop.md) | [Incident Response Plan](04-plans/incident-response-plan.md) | [Incident Register](05-registers/incident-register.md) |
 
-Every document in this repo cites the specific clause(s) it implements. Treat every cited clause as a starting point for the authoritative source — read the standard, do not rely on this repo as the authority.
+---
+
+## Document control
+
+Current state of every document, change history, approval evidence, and archived superseded versions are consolidated in [`06-document-control/`](06-document-control/). The ISMS is subject to internal audit, external certification audit (annual surveillance, triennial recertification), and BNM regulatory examination.
+
+---
+
+## For practitioners learning from this repo
+
+A separate `_learning/` overlay holds reading paths by audience and the extension roadmap (what a complete M3 ISMS would add beyond this worked example). See [`_learning/`](_learning/). The `_learning/` content is **not** part of the ISMS itself.

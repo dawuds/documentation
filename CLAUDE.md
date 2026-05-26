@@ -25,6 +25,7 @@ Two audiences. Keep both in mind:
 | Document control | `06-document-control/` | meta — register/log/approval/archive | ISMS Manager |
 | Optional | `99-optional-layers/` | Explanatory | — |
 | Template | `_templates/` | skeleton | — |
+| Learning overlay | `_learning/` | **Not part of the ISMS.** Reading paths and extension roadmap for practitioners/clients learning from the suite. | — |
 
 ## Citation discipline
 
@@ -55,6 +56,7 @@ This is a public repo. No real client data, no real personnel names, no real IP 
 - Do not create documents outside the established templates without explicit reason.
 - Every new policy added to `01-policies/` must be referenced from the master Information Security Policy.
 - Every new document **also** requires: a row added to `06-document-control/master-document-register.md`, a row in `06-document-control/change-log.md`, and a row in `06-document-control/approval-register.md` once approved. This is the rule that prevents document-control drift.
+- **Voice discipline.** The ISMS proper (folders 00 through 99 and `_templates`) reads as authoritative current state — no audience matrices, time estimates, or reading orders. Teaching content (paths, extension wish-lists, audience-tailored navigation) goes in `_learning/`, not in folder READMEs. Folder READMEs are short, factual, and structural: purpose, document list, anatomy, cross-links.
 
 ## Common pitfalls (things the assistant has tripped on before)
 
