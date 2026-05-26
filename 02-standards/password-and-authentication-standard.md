@@ -12,7 +12,7 @@
 | **Next review** | 2027-02-01 (annual or on material technology change) |
 | **Implements policy** | [POL-02 Access Control Policy](../01-policies/02-access-control-policy.md) |
 | **ISO/IEC 27002:2022 controls** | 5.17 (Authentication information), 8.2 (Privileged access rights), 8.5 (Secure authentication) |
-| **BNM RMiT (28 Nov 2025)** | §10.53 (Access Control Policy); §10.54 (Access Control Principles); §10.55 (Multi-Factor Authentication); §10.56 (User Access Matrix); §10.57 (Access Monitoring and Logging) |
+| **BNM RMiT (28 Nov 2025)** | Section 10.53 (Access Control Policy); Section 10.54 (Access Control Principles); Section 10.55 (Multi-Factor Authentication); Section 10.56 (User Access Matrix); Section 10.57 (Access Monitoring and Logging) |
 
 ---
 
@@ -27,7 +27,7 @@ All authentication to General Bank information systems, applications, and servic
 - Workforce access (employees, contractors, third parties) via SSO, application, VPN, and direct logon.
 - Privileged access via interactive logon, PAM brokered sessions, jump hosts, and emergency break-glass.
 - Non-human / service / machine identities.
-- Customer authentication is governed by separate standards aligned with BNM RMiT §12 (Digital Services) and Appendices 2 and 3 (minimum security controls for delivery channels and for authentication/authorisation); requirements below apply where customer-facing systems have administrative interfaces accessed by workforce.
+- Customer authentication is governed by separate standards aligned with BNM RMiT Section 12 (Digital Services) and Appendices 2 and 3 (minimum security controls for delivery channels and for authentication/authorisation); requirements below apply where customer-facing systems have administrative interfaces accessed by workforce.
 
 ## 3. Requirements
 
@@ -114,7 +114,7 @@ Exceptions to this standard shall be approved by the CISO, logged in the Excepti
 - ISO/IEC 27002:2022 — controls 5.17, 8.2, 8.5.
 - NIST SP 800-63B — Digital Identity Guidelines (informative reference for authentication assurance levels and password guidance).
 - FIDO Alliance — FIDO2/WebAuthn specifications.
-- Bank Negara Malaysia, *Risk Management in Technology (RMiT)*, **28 November 2025 issuance**, §10.53–10.57 (Access Control), particularly §10.55 (Multi-Factor Authentication).
+- Bank Negara Malaysia, *Risk Management in Technology (RMiT)*, **28 November 2025 issuance**, Section 10.53–10.57 (Access Control), particularly Section 10.55 (Multi-Factor Authentication).
 - [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
 
 ## 7. Document control

@@ -11,17 +11,17 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 (annual; immediately following any SEV-1 incident) |
 | **Implements policy** | [POL-08 Incident Management Policy](../01-policies/08-incident-management-policy.md) |
-| **Aligned with** | NIST SP 800-61 Rev. 2 (Computer Security Incident Handling Guide); ISO/IEC 27035-1:2023; BNM RMiT (28 Nov 2025) §11 — particularly the Cyber Resilience Framework at §11.2/§11.3 (IPDRR), §11.12 (Cyber Crisis Management), §11.13 (Cyber Incident Response Plan), §11.14 (CERT Member Readiness), §11.15 (Out-of-Band Communication Infrastructure), §11.16 (Annual Cyber Drill Exercise), §11.17 (Cyber Insurance and Loss Provision), §11.18 (Cyber Incident Notification to BNM) |
+| **Aligned with** | NIST SP 800-61 Rev. 2 (Computer Security Incident Handling Guide); ISO/IEC 27035-1:2023; BNM RMiT (28 Nov 2025) Section 11 — particularly the Cyber Resilience Framework at Section 11.2/Section 11.3 (IPDRR), Section 11.12 (Cyber Crisis Management), Section 11.13 (Cyber Incident Response Plan), Section 11.14 (CERT Member Readiness), Section 11.15 (Out-of-Band Communication Infrastructure), Section 11.16 (Annual Cyber Drill Exercise), Section 11.17 (Cyber Insurance and Loss Provision), Section 11.18 (Cyber Incident Notification to BNM) |
 
-> **Distribution.** This plan is *Internal — restricted*. The on-call card extracted from §4 and §5 is distributed to the response team via the secure on-call platform. Full plan distribution is to: CISO, CEO, CRO, CCO, General Counsel, COO, Head of SOC, Head of IT Ops, Corporate Communications, RMC members. Quarterly review confirms distribution list currency.
+> **Distribution.** This plan is *Internal — restricted*. The on-call card extracted from Section 4 and Section 5 is distributed to the response team via the secure on-call platform. Full plan distribution is to: CISO, CEO, CRO, CCO, General Counsel, COO, Head of SOC, Head of IT Ops, Corporate Communications, RMC members. Quarterly review confirms distribution list currency.
 
 ---
 
 ## 1. Purpose
 
-To define how General Bank responds to confirmed security incidents — specifically SEV-1 and SEV-2 incidents under [STD-08-01](../02-standards/incident-classification-and-severity-standard.md) — from declaration through post-incident review. The Plan operationalises [POL-08 §4.3](../01-policies/08-incident-management-policy.md) and picks up where the [Incident Triage SOP](../03-procedures/incident-triage-sop.md) hands off.
+To define how General Bank responds to confirmed security incidents — specifically SEV-1 and SEV-2 incidents under [STD-08-01](../02-standards/incident-classification-and-severity-standard.md) — from declaration through post-incident review. The Plan operationalises [POL-08 Section 4.3](../01-policies/08-incident-management-policy.md) and picks up where the [Incident Triage SOP](../03-procedures/incident-triage-sop.md) hands off.
 
-This Plan **is** the bank's Cyber Incident Response Plan for the purpose of **BNM RMiT §11.13** and implements the incident handling and crisis response playbook required by the **Cyber Resilience Framework** mandatory elements (RMiT §11.3(f)). The crisis-tier governance overlay is the **Cyber Crisis Management** capability required by **RMiT §11.12**.
+This Plan **is** the bank's Cyber Incident Response Plan for the purpose of **BNM RMiT Section 11.13** and implements the incident handling and crisis response playbook required by the **Cyber Resilience Framework** mandatory elements (RMiT Section 11.3(f)). The crisis-tier governance overlay is the **Cyber Crisis Management** capability required by **RMiT Section 11.12**.
 
 ## 2. Scope
 
@@ -61,7 +61,7 @@ Activation creates: (a) an Incident Register entry, (b) an incident bridge, (c) 
 | **Executive Sponsor — SEV-1** | CEO | CRO if CEO unavailable | Mobile + secure channel |
 | **Board contact** | Board Chair | Chair of Board Risk Committee | Mobile via Company Secretary |
 
-Out-of-band contacts are tested as part of the quarterly tabletop. Out-of-band channels are documented on physical on-call cards held by named individuals — not stored solely in systems that may be impacted by an incident. *(Implements **BNM RMiT §11.15 (Out-of-Band Communication Infrastructure)**.)*
+Out-of-band contacts are tested as part of the quarterly tabletop. Out-of-band channels are documented on physical on-call cards held by named individuals — not stored solely in systems that may be impacted by an incident. *(Implements **BNM RMiT Section 11.15 (Out-of-Band Communication Infrastructure)**.)*
 
 ## 5. Response phases (NIST SP 800-61 Rev. 2 aligned)
 
@@ -69,13 +69,13 @@ Out-of-band contacts are tested as part of the quarterly tabletop. Out-of-band c
 
 (Continuous, not per-incident.)
 
-- IRP reviewed annually and after every SEV-1 *(per RMiT §11.13)*.
-- Tabletop exercise quarterly; functional / simulation exercise annually with executive engagement; **mandatory annual cyber drill exercise per BNM RMiT §11.16**.
-- On-call rotation maintained and tested monthly (call-out drills); CERT-member readiness maintained per **BNM RMiT §11.14**.
+- IRP reviewed annually and after every SEV-1 *(per RMiT Section 11.13)*.
+- Tabletop exercise quarterly; functional / simulation exercise annually with executive engagement; **mandatory annual cyber drill exercise per BNM RMiT Section 11.16**.
+- On-call rotation maintained and tested monthly (call-out drills); CERT-member readiness maintained per **BNM RMiT Section 11.14**.
 - Response tooling (SOAR, EDR, forensic kit, conferencing, out-of-band channels) tested quarterly.
-- Threat-intelligence feeds operated per **BNM RMiT §11.10**; sharing channels with peer FIs and BNM operated per **§11.19** and **§11.20**.
-- Regulator contacts, supplier escalation paths, and NACSA contacts (where NCII per **§11.4**) maintained current.
-- Cyber insurance and loss provision maintained per **BNM RMiT §11.17**.
+- Threat-intelligence feeds operated per **BNM RMiT Section 11.10**; sharing channels with peer FIs and BNM operated per **Section 11.19** and **Section 11.20**.
+- Regulator contacts, supplier escalation paths, and NACSA contacts (where NCII per **Section 11.4**) maintained current.
+- Cyber insurance and loss provision maintained per **BNM RMiT Section 11.17**.
 
 ### 5.2 Detection and Analysis
 
@@ -88,7 +88,7 @@ Inherited from [SOP-08-01](../03-procedures/incident-triage-sop.md). On activati
 - Establishes timeline cadence (typically 30-min status checks for SEV-1, 60-min for SEV-2).
 - Decides on engagement of external forensic / IR retainer (if applicable).
 
-**Decision gate:** **Is the incident in scope of regulator notification?** If yes, Compliance Lead initiates notification process in parallel (see §6).
+**Decision gate:** **Is the incident in scope of regulator notification?** If yes, Compliance Lead initiates notification process in parallel (see Section 6).
 
 ### 5.3 Containment
 
@@ -100,7 +100,7 @@ The IC selects a containment strategy:
 | **Long-term — sustainable containment while preparing eradication** | When eradication requires significant planning (e.g., re-imaging large estate). |
 | **Permit-and-observe** | Rare; only with CISO + General Counsel agreement, typically for active adversary characterisation under law-enforcement guidance. |
 
-Containment actions exceeding the pre-authorisations in [SOP-08-01 §5.4](../03-procedures/incident-triage-sop.md) require IC approval (logged), or CEO/designate approval for customer-impacting actions.
+Containment actions exceeding the pre-authorisations in [SOP-08-01 Section 5.4](../03-procedures/incident-triage-sop.md) require IC approval (logged), or CEO/designate approval for customer-impacting actions.
 
 **Decision gate:** **Has containment been validated?** Evidence: targeted detection rules show no further indicators of compromise activity; affected assets isolated or removed.
 
@@ -124,7 +124,7 @@ Containment actions exceeding the pre-authorisations in [SOP-08-01 §5.4](../03-
 
 ### 5.6 Post-Incident
 
-- Post-Incident Review (PIR) scheduled per [POL-08 §4.7](../01-policies/08-incident-management-policy.md) — within 15 working days of incident closure for SEV-1 and SEV-2.
+- Post-Incident Review (PIR) scheduled per [POL-08 Section 4.7](../01-policies/08-incident-management-policy.md) — within 15 working days of incident closure for SEV-1 and SEV-2.
 - Lessons learned recorded; corrective and preventive actions assigned with named owners and due dates.
 - IRP updated if response gaps identified.
 - Detection and prevention controls updated if applicable.
@@ -139,9 +139,9 @@ Containment actions exceeding the pre-authorisations in [SOP-08-01 §5.4](../03-
 | Internal — Board Chair | SEV-1: immediate notification of activation | Via Company Secretary | CEO | Immediate on activation. |
 | Internal — Risk Management Committee | SEV-1: within 4 hours of activation; SEV-2: within 24 hours | Email brief + offer of bridge | CISO | Per timing. |
 | Internal — All staff | If staff action required (e.g., do-not-click, password change), or to provide context for visible disruption | Internal communication channels | Communications Lead, with CISO security input | As warranted; avoid speculation. |
-| External — Regulator (Bank Negara Malaysia) | Material cyber incident per **BNM RMiT §11.18** | Per BNM's prescribed channels; upstream policy chain is *Operational Risk Reporting* Part C and *Business Continuity Management* Part C | Chief Compliance Officer | **Within 4 hours of detection** of a material cyber incident *(⚠ The 4-hour clock is the bank's operating expectation derived from BNM operational reporting practice and surfaces in the GRC structured-data artefact tagged to RMiT §11.4. It is not stated numerically in RMiT §11.18 verbatim. CCO maintains the authoritative clock by reference to Operational Risk Reporting Part C.)* |
-| External — Regulator (NACSA, if NCII) | NCII-designated incident per **BNM RMiT §11.4** and Cyber Security Act 2024 | Per NACSA prescribed channels | Chief Compliance Officer + CISO | Per current NACSA directives for the financial sector |
-| External — Sector peers (Threat Intelligence Sharing) | As warranted per **BNM RMiT §11.19** | Established sector-CERT and FI peer channels | CISO | Per CISO discretion |
+| External — Regulator (Bank Negara Malaysia) | Material cyber incident per **BNM RMiT Section 11.18** | Per BNM's prescribed channels; upstream policy chain is *Operational Risk Reporting* Part C and *Business Continuity Management* Part C | Chief Compliance Officer | **Within 4 hours of detection** of a material cyber incident *(⚠ The 4-hour clock is the bank's operating expectation derived from BNM operational reporting practice and surfaces in the GRC structured-data artefact tagged to RMiT Section 11.4. It is not stated numerically in RMiT Section 11.18 verbatim. CCO maintains the authoritative clock by reference to Operational Risk Reporting Part C.)* |
+| External — Regulator (NACSA, if NCII) | NCII-designated incident per **BNM RMiT Section 11.4** and Cyber Security Act 2024 | Per NACSA prescribed channels | Chief Compliance Officer + CISO | Per current NACSA directives for the financial sector |
+| External — Sector peers (Threat Intelligence Sharing) | As warranted per **BNM RMiT Section 11.19** | Established sector-CERT and FI peer channels | CISO | Per CISO discretion |
 | External — Affected customers (where personal data affected) | Per Personal Data Protection Act 2010 assessment | Direct customer channel (email, SMS, secure message in app) | Communications Lead, with Legal sign-off | Without undue delay following assessment. |
 | External — Media / public | Decision made jointly by CEO, CISO, Communications Lead, GC | Press statement, social channels | Communications Lead under CEO direction | As decided. |
 | External — Law enforcement | If criminal activity suspected; CISO + GC decision | Per established law-enforcement liaison contact | CISO + General Counsel | As decided. |
@@ -155,8 +155,8 @@ A single Communications Lead is responsible for ensuring that all external commu
 |---|---|---|---|
 | **Monthly** | On-call rotation call-out drill | Head of SOC | Internal |
 | **Quarterly** | Tabletop exercise — scenario rotates across categories (ransomware, insider, supplier compromise, data exfiltration, payment-system compromise) | CISO | Internal |
-| **Annually** | **Cyber Drill Exercise** — mandatory under **BNM RMiT §11.16**; scope includes executive team and (selectively) Board observation; lessons feed corrective actions | CISO + CEO | RMiT §11.16 |
-| **Annually (overlap with BCP)** | Joint IRP/BCP/DRP exercise | CISO + COO | Internal + RMiT §10.29–10.35 |
+| **Annually** | **Cyber Drill Exercise** — mandatory under **BNM RMiT Section 11.16**; scope includes executive team and (selectively) Board observation; lessons feed corrective actions | CISO + CEO | RMiT Section 11.16 |
+| **Annually (overlap with BCP)** | Joint IRP/BCP/DRP exercise | CISO + COO | Internal + RMiT Section 10.29–10.35 |
 
 Exercise outcomes are documented, gaps tracked to remediation, and material findings reported to the Risk Management Committee.
 

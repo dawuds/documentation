@@ -112,7 +112,7 @@ follow-up)?
 
 | # | Actor | Action | Tool | Output | SLA |
 |---|---|---|---|---|---|
-| T5 | SOC analyst (per assignment) | Pivot from initial event: query SIEM/EDR/network for related activity, affected user(s) recent activity, lateral movement indicators, persistence indicators, data movement indicators. | SIEM, EDR, network detection, DNS, proxy, DLP, threat intel | Triage narrative; updated severity if facts change. | Per MTTA target in STD-08-01 §3.3. |
+| T5 | SOC analyst (per assignment) | Pivot from initial event: query SIEM/EDR/network for related activity, affected user(s) recent activity, lateral movement indicators, persistence indicators, data movement indicators. | SIEM, EDR, network detection, DNS, proxy, DLP, threat intel | Triage narrative; updated severity if facts change. | Per MTTA target in STD-08-01 Section 3.3. |
 | T6 | SOC analyst | Determine whether containment action is needed in the triage window (e.g., disable user account, isolate endpoint, block IoC at perimeter). | SOAR + EDR + IDP + firewall | Containment actions taken; logged. | As warranted; do **not** delay containment for documentation. |
 
 ### 5.4 Containment decision in triage
@@ -122,7 +122,7 @@ follow-up)?
 | Action | Conditions |
 |---|---|
 | Isolate single endpoint via EDR | Confirmed IoC on endpoint |
-| Disable single user account | Confirmed credential compromise; align with [POL-02 §4.8](../01-policies/02-access-control-policy.md) |
+| Disable single user account | Confirmed credential compromise; align with [POL-02 Section 4.8](../01-policies/02-access-control-policy.md) |
 | Block single IoC (file hash, IP, domain) at perimeter | Confirmed malicious IoC |
 | Quarantine single email at gateway | Confirmed phishing |
 
@@ -149,14 +149,14 @@ follow-up)?
 | # | Actor | Action | Tool | Output | SLA |
 |---|---|---|---|---|---|
 | C1 | SOC Tier 1/2 | Complete remediation per standard handling (block IoCs, follow up with affected user, etc.). | SOAR | Actions completed. | Per SOC standard handling. |
-| C2 | SOC Tier 1/2 | Close SOAR ticket with closure category from STD-08-01 §3.6, brief narrative, and lessons-learned tag if applicable. | SOAR | Ticket closed. | Same step. |
+| C2 | SOC Tier 1/2 | Close SOAR ticket with closure category from STD-08-01 Section 3.6, brief narrative, and lessons-learned tag if applicable. | SOAR | Ticket closed. | Same step. |
 | C3 | SOC Shift Lead | Sample-review closed SEV-4 tickets (target 10% per shift) for classification accuracy. | SOAR | Sample review note. | Per shift. |
 
 ### 5.7 SEV-3 closure (within SOC authority unless materiality criteria met)
 
 | # | Actor | Action | Tool | Output | SLA |
 |---|---|---|---|---|---|
-| C4 | SOC Tier 2 (designated IC for SEV-3) | Confirm containment, recovery, root cause; assess against materiality criteria (STD-08-01 §3.2); if material, escalate to SEV-2 retrospectively and notify CISO. | SOAR + Incident Register | Closure narrative; materiality assessment. | Per MTTC target. |
+| C4 | SOC Tier 2 (designated IC for SEV-3) | Confirm containment, recovery, root cause; assess against materiality criteria (STD-08-01 Section 3.2); if material, escalate to SEV-2 retrospectively and notify CISO. | SOAR + Incident Register | Closure narrative; materiality assessment. | Per MTTC target. |
 | C5 | SOC Shift Lead | Approve closure; ensure Incident Register entry complete; flag for Q-PIR sample if pattern noted. | Incident Register | Approved closure. | Same shift. |
 
 ## 6. Exception handling

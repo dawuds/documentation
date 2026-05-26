@@ -14,7 +14,7 @@ One row per approval event. The audit-grade evidence trail of *who approved what
 
 The master document register shows the *current* approver per document. The change log shows *what changed*. The approval register answers a distinct question: **"For audit, show me every approval decision made across the ISMS, with the authority under which it was made."**
 
-External auditors and regulators (BNM under RMiT §6.6 expects evidence of Board / Board Risk Committee oversight) often ask this question directly. A consolidated register answers it without needing to traverse 30+ individual documents.
+External auditors and regulators (BNM under RMiT Section 6.6 expects evidence of Board / Board Risk Committee oversight) often ask this question directly. A consolidated register answers it without needing to traverse 30+ individual documents.
 
 ---
 

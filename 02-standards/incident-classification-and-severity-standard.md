@@ -12,7 +12,7 @@
 | **Next review** | 2027-02-01 (annual or post-material-incident) |
 | **Implements policy** | [POL-08 Incident Management Policy](../01-policies/08-incident-management-policy.md) |
 | **ISO/IEC 27002:2022 controls** | 5.25 (Assessment and decision on information security events), 5.26 (Response to information security incidents) |
-| **BNM RMiT (28 Nov 2025)** | §11.12 (Cyber Crisis Management); §11.13 (Cyber Incident Response Plan); §11.18 (Cyber Incident Notification to BNM); §11.19 (Cyber Threat Intelligence Sharing); §11.20 (Stakeholder Collaboration on Cyber Threats) |
+| **BNM RMiT (28 Nov 2025)** | Section 11.12 (Cyber Crisis Management); Section 11.13 (Cyber Incident Response Plan); Section 11.18 (Cyber Incident Notification to BNM); Section 11.19 (Cyber Threat Intelligence Sharing); Section 11.20 (Stakeholder Collaboration on Cyber Threats) |
 
 ---
 
@@ -50,7 +50,7 @@ An incident is **material** (regardless of severity tier above) where **any one*
 | Regulator notification is required under BNM RMiT, PDPA, or other applicable obligation | Notification trigger derived from law/regulation, not from internal severity. |
 | Material reputational risk (media, social, customer complaint volume) is realised or imminent | Judgement of CRO + Corporate Communications. |
 
-Material incidents trigger executive engagement and regulator notification per [POL-08 §4.4](../01-policies/08-incident-management-policy.md). SEV-1 incidents are **always** material. SEV-2 and SEV-3 incidents may be material based on the criteria above.
+Material incidents trigger executive engagement and regulator notification per [POL-08 Section 4.4](../01-policies/08-incident-management-policy.md). SEV-1 incidents are **always** material. SEV-2 and SEV-3 incidents may be material based on the criteria above.
 
 ### 3.3 Detection and response thresholds
 
@@ -74,9 +74,9 @@ These are targets, not guarantees. Variance is tracked and reported quarterly to
 
 ### 3.5 Regulator notification
 
-- **3.5.1** Material cyber incidents shall be notified to Bank Negara Malaysia in accordance with **BNM RMiT §11.18 (Cyber Incident Notification to BNM)**, which itself defers to BNM's *Operational Risk Reporting* policy document Part C, the *Business Continuity Management* policy document Part C, and (for merchant-acquiring incidents) the *Merchant Acquiring Services* policy paragraphs 19.25–19.26. **Operating expectation: notification within four (4) hours of detection of a material cyber incident.** *(⚠ The 4-hour figure is derived from BNM operational reporting practice for licensed FIs and surfaces in the institution's GRC structured-data artefact text tagged to RMiT clause 11.4; it is not stated numerically in RMiT §11.18 verbatim, which defers to the upstream policies above. The Chief Compliance Officer maintains the authoritative clock by reference to the current Operational Risk Reporting Part C and BCM Part C policy documents, and refreshes this standard on any change.)*
-- **3.5.2** Where the bank is designated as a **National Critical Information Infrastructure (NCII)** entity under the **Cyber Security Act 2024**, NACSA notification obligations apply additionally per **BNM RMiT §11.4**, with timelines and form per current NACSA directives for the financial sector.
-- **3.5.3** Cyber threat intelligence sharing with sector peers shall be conducted per **BNM RMiT §11.19**. Stakeholder collaboration on cyber threats shall be conducted per **BNM RMiT §11.20**.
+- **3.5.1** Material cyber incidents shall be notified to Bank Negara Malaysia in accordance with **BNM RMiT Section 11.18 (Cyber Incident Notification to BNM)**, which itself defers to BNM's *Operational Risk Reporting* policy document Part C, the *Business Continuity Management* policy document Part C, and (for merchant-acquiring incidents) the *Merchant Acquiring Services* policy paragraphs 19.25–19.26. **Operating expectation: notification within four (4) hours of detection of a material cyber incident.** *(⚠ The 4-hour figure is derived from BNM operational reporting practice for licensed FIs and surfaces in the institution's GRC structured-data artefact text tagged to RMiT clause 11.4; it is not stated numerically in RMiT Section 11.18 verbatim, which defers to the upstream policies above. The Chief Compliance Officer maintains the authoritative clock by reference to the current Operational Risk Reporting Part C and BCM Part C policy documents, and refreshes this standard on any change.)*
+- **3.5.2** Where the bank is designated as a **National Critical Information Infrastructure (NCII)** entity under the **Cyber Security Act 2024**, NACSA notification obligations apply additionally per **BNM RMiT Section 11.4**, with timelines and form per current NACSA directives for the financial sector.
+- **3.5.3** Cyber threat intelligence sharing with sector peers shall be conducted per **BNM RMiT Section 11.19**. Stakeholder collaboration on cyber threats shall be conducted per **BNM RMiT Section 11.20**.
 - **3.5.4** Personal data breaches shall be assessed against the requirements of the **Personal Data Protection Act 2010** and any applicable foreign data protection law.
 
 ### 3.6 Categorisation
@@ -104,7 +104,7 @@ An incident may be closed when:
 - **Recovery** is complete to a state validated free of indicators of compromise.
 - Required **notifications** have been made.
 - **Corrective and preventive actions** have been assigned to named owners with due dates.
-- For SEV-1 and SEV-2 incidents — the **Post-Incident Review** has been scheduled (PIR completed within 15 working days of closure per POL-08 §4.7.1).
+- For SEV-1 and SEV-2 incidents — the **Post-Incident Review** has been scheduled (PIR completed within 15 working days of closure per POL-08 Section 4.7.1).
 
 ## 4. Exceptions
 
@@ -122,7 +122,7 @@ Severity downgrades require the Incident Commander's documented approval; severi
 - ISO/IEC 27002:2022 — controls 5.25, 5.26.
 - ISO/IEC 27035-1:2023 — Incident management — Principles and process.
 - NIST SP 800-61 Rev. 2 — Computer Security Incident Handling Guide.
-- Bank Negara Malaysia, *Risk Management in Technology (RMiT)*, **28 November 2025 issuance** — §11.12–11.20 (Cyber Response, Recovery, Reporting, Sharing).
+- Bank Negara Malaysia, *Risk Management in Technology (RMiT)*, **28 November 2025 issuance** — Section 11.12–11.20 (Cyber Response, Recovery, Reporting, Sharing).
 - Bank Negara Malaysia, *Operational Risk Reporting* policy document, Part C — authoritative source for cyber incident notification timing.
 - Bank Negara Malaysia, *Business Continuity Management* policy document, Part C.
 - Cyber Security Act 2024 (Malaysia) — NCII designation regime and NACSA directives.

@@ -12,12 +12,12 @@ What a complete M3 ISMS would add beyond this worked example. The repo intention
 |---|---|---|
 | Cryptographic Standard (algorithms, key lengths, deprecation schedule, post-quantum migration) | [POL-05](../01-policies/05-cryptography-policy.md) | Concrete algorithm and key-length choices need a single source of truth |
 | Logging Standard (what events to log, format, retention, time-sync) | [POL-11](../01-policies/11-operations-security-policy.md) | Auditors and forensics depend on consistent logging |
-| Network Security Standard (segmentation tiers, firewall rules baseline, perimeter) | [POL-11](../01-policies/11-operations-security-policy.md) | RMiT §10.36–10.43 Network Resilience requires explicit network controls |
-| Cloud Security Standard (per provider — AWS / Azure / GCP — landing zone, IAM, encryption defaults) | [POL-07](../01-policies/07-supplier-security-policy.md) | Operational specificity for RMiT §10.50–10.52 + App. 10 |
+| Network Security Standard (segmentation tiers, firewall rules baseline, perimeter) | [POL-11](../01-policies/11-operations-security-policy.md) | RMiT Section 10.36–10.43 Network Resilience requires explicit network controls |
+| Cloud Security Standard (per provider — AWS / Azure / GCP — landing zone, IAM, encryption defaults) | [POL-07](../01-policies/07-supplier-security-policy.md) | Operational specificity for RMiT Section 10.50–10.52 + App. 10 |
 | Endpoint Standard (managed device baseline, EDR config, MDM rules) | [POL-11](../01-policies/11-operations-security-policy.md) / [POL-01](../01-policies/01-acceptable-use-policy.md) | Workforce endpoint security |
 | Data Handling Standard (per classification × media combination) | [POL-04](../01-policies/04-data-classification-policy.md) | Operationalises Public / Internal / Confidential / Highly Restricted |
 | Secure Coding Standard (per language, per framework) | [POL-12](../01-policies/12-secure-development-policy.md) | Developer-actionable detail |
-| Vulnerability Triage Standard (CVSS thresholds, EPSS factors, KEV handling) | [POL-13](../01-policies/13-vulnerability-management-policy.md) | Quantifies POL-13 §3.2 prioritisation |
+| Vulnerability Triage Standard (CVSS thresholds, EPSS factors, KEV handling) | [POL-13](../01-policies/13-vulnerability-management-policy.md) | Quantifies POL-13 Section 3.2 prioritisation |
 
 ## Procedures / SOPs (Tier 3) to add
 
@@ -30,30 +30,30 @@ What a complete M3 ISMS would add beyond this worked example. The repo intention
 | Patch Deployment SOP | IT Ops | Change-management overlay for patching |
 | Backup Operation SOP | IT Ops | Daily / weekly running and restorability testing |
 | SOC Detection Tuning SOP | SOC | False-positive management, detection-engineering backlog |
-| Cyber Drill Exercise SOP | SOC + CISO | The annual cyber drill required by RMiT §11.16 |
+| Cyber Drill Exercise SOP | SOC + CISO | The annual cyber drill required by RMiT Section 11.16 |
 | Forensic Evidence Handling SOP | SOC | Chain-of-custody operations for incident evidence |
 
 ## Plans to add
 
 | Plan | Parent policy | Owner | Why |
 |---|---|---|---|
-| Business Continuity Plan (BCP) | [POL-09](../01-policies/09-business-continuity-policy.md) | COO | Per RMiT §10.24–10.35 service availability; BCM policy alignment |
+| Business Continuity Plan (BCP) | [POL-09](../01-policies/09-business-continuity-policy.md) | COO | Per RMiT Section 10.24–10.35 service availability; BCM policy alignment |
 | Disaster Recovery Plan (DRP) — per critical system | [POL-09](../01-policies/09-business-continuity-policy.md) + [POL-11](../01-policies/11-operations-security-policy.md) | Head of IT Ops | RTO / RPO-aligned technical recovery procedures per service |
 | Crisis Communications Plan | [POL-08](../01-policies/08-incident-management-policy.md) + Corp Comms policy | Head of Corp Comms | Coordinates internal, customer, regulator, media during crises |
 | Pandemic / Workforce Disruption Plan | [POL-09](../01-policies/09-business-continuity-policy.md) | COO + CHRO | Workforce-availability scenarios |
-| Cyber Crisis Playbook (subordinate to IRP) | [POL-08](../01-policies/08-incident-management-policy.md) | CISO | Per-scenario playbooks (ransomware, insider, supplier compromise) — operationalises RMiT §11.12 |
+| Cyber Crisis Playbook (subordinate to IRP) | [POL-08](../01-policies/08-incident-management-policy.md) | CISO | Per-scenario playbooks (ransomware, insider, supplier compromise) — operationalises RMiT Section 11.12 |
 
 ## Registers to add
 
 | Register | Owner | Cadence | Why |
 |---|---|---|---|
-| Asset Register | Head of IT Ops | Continuous | RMiT §11.3(h) requires a centralised automated tracking system |
+| Asset Register | Head of IT Ops | Continuous | RMiT Section 11.3(h) requires a centralised automated tracking system |
 | Exception Register | ISMS Manager | Continuous | Every documented deviation from policy / standard |
 | Training Register | CHRO + CISO | Continuous | ISO 27001 Clause 7.2 evidence of competence |
 | Supplier Register | Procurement + CISO | Continuous | Per POL-07 — supplier criticality, attestation status, contract dates |
 | Vulnerability Register | CISO | Continuous | Per POL-13 — beyond the scanner; SLA tracking, exceptions |
-| Cloud Inventory Register | Head of Cloud Eng + CISO | Continuous | Per RMiT §10.50–10.52 |
-| Records of Processing Activity (ROPA) | DPO | Continuous | Per PDPA 2010 and POL-14 §3.3 |
+| Cloud Inventory Register | Head of Cloud Eng + CISO | Continuous | Per RMiT Section 10.50–10.52 |
+| Records of Processing Activity (ROPA) | DPO | Continuous | Per PDPA 2010 and POL-14 Section 3.3 |
 
 ## 12 supporting policies — drafting completion
 

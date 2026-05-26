@@ -19,7 +19,7 @@ Guidance on Charter / Guideline / Baseline / Manual layers. General Bank does no
 
 | Layer | Used? | Reason |
 |---|---|---|
-| Charter | No | ISMS establishment held within [POL-00 §4](../01-policies/00-information-security-policy.md) |
+| Charter | No | ISMS establishment held within [POL-00 Section 4](../01-policies/00-information-security-policy.md) |
 | Guidelines (standalone) | No | Advisory content captured in SOP intros |
 | Baselines | Yes (selectively) | Server OS, container, cloud landing zone — live in engineering repos |
 | Manuals | Yes (selectively) | Security Operations Manual once SOC SOPs exceed ~15 |

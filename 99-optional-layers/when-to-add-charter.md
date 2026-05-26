@@ -2,7 +2,7 @@
 
 A Charter (or Mandate, or Terms of Reference) is a board-level document that **establishes a function** — its purpose, scope, authority, governance, and dissolution conditions.
 
-General Bank in this worked example does **not** maintain a separate Charter. The ISMS Charter content is held within [POL-00 §4](../01-policies/00-information-security-policy.md) — "ISMS establishment". This is appropriate for a Maturity-3 bank where the master policy is itself board-approved.
+General Bank in this worked example does **not** maintain a separate Charter. The ISMS Charter content is held within [POL-00 Section 4](../01-policies/00-information-security-policy.md) — "ISMS establishment". This is appropriate for a Maturity-3 bank where the master policy is itself board-approved.
 
 ---
 

@@ -10,25 +10,25 @@ Time-bound, scenario-driven response artefacts. Plans sit between standards and 
 
 | ID | Document | Parent policy | Activation authority | Exercise cadence |
 |---|---|---|---|---|
-| PLN-08-01 | [Incident Response Plan](incident-response-plan.md) | [POL-08](../01-policies/08-incident-management-policy.md) | CISO (SEV-1); Head of SOC (SEV-2) | Quarterly tabletop + annual cyber drill (RMiT §11.16) |
+| PLN-08-01 | [Incident Response Plan](incident-response-plan.md) | [POL-08](../01-policies/08-incident-management-policy.md) | CISO (SEV-1); Head of SOC (SEV-2) | Quarterly tabletop + annual cyber drill (RMiT Section 11.16) |
 
 Additional plans a complete M3 ISMS would maintain (BCP, DRP, Crisis Communications, Cyber Crisis Playbooks): see [`../_learning/extension-roadmap.md`](../_learning/extension-roadmap.md).
 
-## IRP — RMiT §11 mapping
+## IRP — RMiT Section 11 mapping
 
 The Incident Response Plan in this folder explicitly implements the BNM RMiT (28 Nov 2025) Cyber Resilience Framework:
 
 | RMiT clause | IRP section |
 |---|---|
-| §11.2 / §11.3 — CRF and nine mandatory elements | §1 purpose (IRP positioned as the CRF playbook) |
-| §11.12 — Cyber Crisis Management | §3 activation; §5.3 containment authority |
-| §11.13 — Cyber Incident Response Plan | The IRP **is** that plan |
-| §11.14 — CERT Member Readiness | §5.1 preparation |
-| §11.15 — Out-of-Band Communication Infrastructure | §4 roles & contacts (out-of-band column) |
-| §11.16 — Annual Cyber Drill Exercise | §7 testing and exercise |
-| §11.17 — Cyber Insurance and Loss Provision | §5.1 preparation |
-| §11.18 — Cyber Incident Notification to BNM | §6 communication (4-hour clock with source-chain caveat) |
-| §11.19 / §11.20 — TI sharing / stakeholder collaboration | §6 communication |
+| Section 11.2 / Section 11.3 — CRF and nine mandatory elements | Section 1 purpose (IRP positioned as the CRF playbook) |
+| Section 11.12 — Cyber Crisis Management | Section 3 activation; Section 5.3 containment authority |
+| Section 11.13 — Cyber Incident Response Plan | The IRP **is** that plan |
+| Section 11.14 — CERT Member Readiness | Section 5.1 preparation |
+| Section 11.15 — Out-of-Band Communication Infrastructure | Section 4 roles & contacts (out-of-band column) |
+| Section 11.16 — Annual Cyber Drill Exercise | Section 7 testing and exercise |
+| Section 11.17 — Cyber Insurance and Loss Provision | Section 5.1 preparation |
+| Section 11.18 — Cyber Incident Notification to BNM | Section 6 communication (4-hour clock with source-chain caveat) |
+| Section 11.19 / Section 11.20 — TI sharing / stakeholder collaboration | Section 6 communication |
 
 ## Anatomy
 

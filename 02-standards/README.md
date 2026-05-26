@@ -16,8 +16,8 @@ Without a standards layer, every SOP author has to make their own security decis
 
 | ID | Document | Parent policy | ISO 27002:2022 | BNM RMiT (28 Nov 2025) |
 |---|---|---|---|---|
-| STD-02-01 | [Password & Authentication Standard](password-and-authentication-standard.md) | [POL-02](../01-policies/02-access-control-policy.md) | 5.17, 8.2, 8.5 | §10.53–10.57 (esp. §10.55 MFA) |
-| STD-08-01 | [Incident Classification & Severity Standard](incident-classification-and-severity-standard.md) | [POL-08](../01-policies/08-incident-management-policy.md) | 5.25, 5.26 | §11.12; §11.13; §11.18 (with 4-hour BNM notification) |
+| STD-02-01 | [Password & Authentication Standard](password-and-authentication-standard.md) | [POL-02](../01-policies/02-access-control-policy.md) | 5.17, 8.2, 8.5 | Section 10.53–10.57 (esp. Section 10.55 MFA) |
+| STD-08-01 | [Incident Classification & Severity Standard](incident-classification-and-severity-standard.md) | [POL-08](../01-policies/08-incident-management-policy.md) | 5.25, 5.26 | Section 11.12; Section 11.13; Section 11.18 (with 4-hour BNM notification) |
 
 Additional standards a complete M3 ISMS would maintain: see [`../_learning/extension-roadmap.md`](../_learning/extension-roadmap.md).
 

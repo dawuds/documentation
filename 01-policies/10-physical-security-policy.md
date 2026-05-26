@@ -11,7 +11,7 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 |
 | **ISO/IEC 27002:2022 controls** | 7.1–7.14 (physical and environmental controls) |
-| **BNM RMiT (28 Nov 2025)** | §10.26 (Production Data Centre Physical Security); §10.24–10.28 (Data Centre Resilience more broadly) |
+| **BNM RMiT (28 Nov 2025)** | Section 10.26 (Production Data Centre Physical Security); Section 10.24–10.28 (Data Centre Resilience more broadly) |
 
 > Skeleton policy.
 
@@ -50,7 +50,7 @@ All General Bank premises and any third-party premises hosting General Bank info
 
 ### 3.6 Environmental and utilities
 
-- **3.6.1** Critical premises shall have monitored protection against fire, flood, environmental excursion, and power failure, with redundant utilities and tested failover. *(Implements ISO/IEC 27002:2022 controls 7.5, 7.11; BNM RMiT §10.24 (DC Resilience Objectives); §10.25 (DC Redundancy); §10.26 (DC Physical Security).)*
+- **3.6.1** Critical premises shall have monitored protection against fire, flood, environmental excursion, and power failure, with redundant utilities and tested failover. *(Implements ISO/IEC 27002:2022 controls 7.5, 7.11; BNM RMiT Section 10.24 (DC Resilience Objectives); Section 10.25 (DC Redundancy); Section 10.26 (DC Physical Security).)*
 
 ### 3.7 Secure disposal and re-use
 
@@ -83,7 +83,7 @@ Per [POL-00](00-information-security-policy.md).
 
 ## 8. References
 
-ISO/IEC 27002:2022 — controls 7.1–7.14. NIST SP 800-88 Rev. 1 (Media Sanitization). BNM RMiT (28 Nov 2025) §10.24–10.28 (Data Centre Resilience). [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
+ISO/IEC 27002:2022 — controls 7.1–7.14. NIST SP 800-88 Rev. 1 (Media Sanitization). BNM RMiT (28 Nov 2025) Section 10.24–10.28 (Data Centre Resilience). [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
 
 ## 9. Document control
 

@@ -14,7 +14,7 @@ A standard says *what specifically* is required (e.g., "identity disablement on 
 
 | ID | Document | Parent standard | Parent policy | Owner |
 |---|---|---|---|---|
-| SOP-02-01 | [Joiner / Mover / Leaver SOP](joiner-mover-leaver-sop.md) | [STD-02-01 §3.5](../02-standards/password-and-authentication-standard.md) | [POL-02](../01-policies/02-access-control-policy.md) | Head of IAM |
+| SOP-02-01 | [Joiner / Mover / Leaver SOP](joiner-mover-leaver-sop.md) | [STD-02-01 Section 3.5](../02-standards/password-and-authentication-standard.md) | [POL-02](../01-policies/02-access-control-policy.md) | Head of IAM |
 | SOP-08-01 | [Incident Triage SOP](incident-triage-sop.md) | [STD-08-01](../02-standards/incident-classification-and-severity-standard.md) | [POL-08](../01-policies/08-incident-management-policy.md) | Head of SOC |
 
 Additional SOPs a complete M3 ISMS would maintain: see [`../_learning/extension-roadmap.md`](../_learning/extension-roadmap.md).

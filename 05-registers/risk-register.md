@@ -6,7 +6,7 @@
 | **Layer** | Register |
 | **Owner** | Chief Risk Officer (CRO); CISO for information-security risk subset |
 | **Cadence** | Continuous — risks added, treated, monitored, and closed as identified |
-| **Implements** | ISO/IEC 27001:2022 Clause 6.1.2 (risk assessment) and 6.1.3 (risk treatment); BNM RMiT (28 Nov 2025) §9 (Technology Risk Management), particularly §9.1 (TRMF Integration), §9.2 (TRMF Minimum Requirements), §9.3 (Independent Technology Risk Management Function) |
+| **Implements** | ISO/IEC 27001:2022 Clause 6.1.2 (risk assessment) and 6.1.3 (risk treatment); BNM RMiT (28 Nov 2025) Section 9 (Technology Risk Management), particularly Section 9.1 (TRMF Integration), Section 9.2 (TRMF Minimum Requirements), Section 9.3 (Independent Technology Risk Management Function) |
 
 ---
 
@@ -91,7 +91,7 @@ The Register is an **operational register** — it is updated continuously, not 
 
 ## Related documents
 
-- **Parent policy:** [POL-00 Information Security Policy](../01-policies/00-information-security-policy.md) §8
+- **Parent policy:** [POL-00 Information Security Policy](../01-policies/00-information-security-policy.md) Section 8
 - **SoA:** [REG-SOA](statement-of-applicability.md)
 - **Incident Register:** [REG-INC](incident-register.md) (lessons feed Risk Register)
 - **Document control:** [06-document-control](../06-document-control/)

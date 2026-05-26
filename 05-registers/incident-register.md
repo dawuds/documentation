@@ -6,7 +6,7 @@
 | **Layer** | Register |
 | **Owner** | CISO |
 | **Cadence** | Continuous — entry created on every confirmed incident |
-| **Implements** | ISO/IEC 27002:2022 controls 5.25, 5.26, 5.27; BNM RMiT (28 Nov 2025) §11.12–11.20 (Cyber Response, Recovery, Reporting); §11.13 (Cyber Incident Response Plan); §11.18 (Cyber Incident Notification to BNM) |
+| **Implements** | ISO/IEC 27002:2022 controls 5.25, 5.26, 5.27; BNM RMiT (28 Nov 2025) Section 11.12–11.20 (Cyber Response, Recovery, Reporting); Section 11.13 (Cyber Incident Response Plan); Section 11.18 (Cyber Incident Notification to BNM) |
 | **Source procedure** | [SOP-08-01 Incident Triage SOP](../03-procedures/incident-triage-sop.md); [PLN-08-01 Incident Response Plan](../04-plans/incident-response-plan.md) |
 
 ---
@@ -21,9 +21,9 @@ The authoritative record of all confirmed security incidents at General Bank. Ca
 |---|---|---|
 | `incident_id` | string | `INC-YYYY-NNN` |
 | `title` | string | Short title (≤ 120 chars) |
-| `category` | enum (one or more) | Per [STD-08-01 §3.6](../02-standards/incident-classification-and-severity-standard.md) |
+| `category` | enum (one or more) | Per [STD-08-01 Section 3.6](../02-standards/incident-classification-and-severity-standard.md) |
 | `severity` | enum | SEV-1 / SEV-2 / SEV-3 / SEV-4 |
-| `material` | bool | Per [STD-08-01 §3.2](../02-standards/incident-classification-and-severity-standard.md) |
+| `material` | bool | Per [STD-08-01 Section 3.2](../02-standards/incident-classification-and-severity-standard.md) |
 | `detection_source` | enum | SIEM / EDR / DLP / User report / External / Other |
 | `detected_at` | timestamp | First detection (vs. first acknowledgement) |
 | `acknowledged_at` | timestamp | First responder accepted ownership |

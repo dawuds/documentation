@@ -6,14 +6,14 @@
 | **Layer** | Register |
 | **Owner** | Head of Identity & Access Management |
 | **Cadence** | **Quarterly** — full review of all privileged accounts |
-| **Implements** | ISO/IEC 27002:2022 control 5.18 (Access rights); BNM RMiT (28 Nov 2025) §10.53–10.57 (Access Control), particularly §10.56 (User Access Matrix) and §10.57 (Access Monitoring and Logging) |
-| **Source procedure** | [POL-02 §4.4.5](../01-policies/02-access-control-policy.md); [STD-02-01 §3.5](../02-standards/password-and-authentication-standard.md); [SOP-02-01](../03-procedures/joiner-mover-leaver-sop.md) |
+| **Implements** | ISO/IEC 27002:2022 control 5.18 (Access rights); BNM RMiT (28 Nov 2025) Section 10.53–10.57 (Access Control), particularly Section 10.56 (User Access Matrix) and Section 10.57 (Access Monitoring and Logging) |
+| **Source procedure** | [POL-02 Section 4.4.5](../01-policies/02-access-control-policy.md); [STD-02-01 Section 3.5](../02-standards/password-and-authentication-standard.md); [SOP-02-01](../03-procedures/joiner-mover-leaver-sop.md) |
 
 ---
 
 ## Purpose
 
-To provide the auditable evidence record that General Bank conducts the quarterly privileged access reviews required by [POL-02 §4.4.5](../01-policies/02-access-control-policy.md). This is the register an internal or external auditor will request to verify the control is operating, not theoretical.
+To provide the auditable evidence record that General Bank conducts the quarterly privileged access reviews required by [POL-02 Section 4.4.5](../01-policies/02-access-control-policy.md). This is the register an internal or external auditor will request to verify the control is operating, not theoretical.
 
 ## Schema
 
@@ -64,7 +64,7 @@ To provide the auditable evidence record that General Bank conducts the quarterl
 ### Notes from PAR-2026-Q1
 
 - The single revocation in Active Directory Domain Admins traced back to a leaver event with delayed disablement. Root cause: SOP-02-01 step L3 (automation) succeeded but a manual back-out by a separate workflow re-enabled the account. Process fix applied; verification scheduled into PAR-2026-Q2.
-- Treasury / payments revocation related to a role change where the prior privileged role was not removed at the Mover step. Strengthened the [SOP-02-01 §5.2](../03-procedures/joiner-mover-leaver-sop.md) explicit removal language in the v1.1 minor update.
+- Treasury / payments revocation related to a role change where the prior privileged role was not removed at the Mover step. Strengthened the [SOP-02-01 Section 5.2](../03-procedures/joiner-mover-leaver-sop.md) explicit removal language in the v1.1 minor update.
 - Coverage 100% maintained; no overdue reviews.
 - No escalations to RMC required this quarter.
 - Trend (vs PAR-2025-Q4): 7 revocations (down from 11); reflects the JML mover-step strengthening introduced after PAR-2025-Q3.

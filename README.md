@@ -18,8 +18,8 @@ This ISMS applies to all information assets owned, processed, transmitted, or st
 |---|---|
 | **ISO/IEC 27001:2022** — ISMS requirements | Aligned (certifiable structure) |
 | **ISO/IEC 27002:2022** — 93 controls in 4 themes | All 93 applicable per SoA |
-| **Bank Negara Malaysia, *Risk Management in Technology (RMiT)*** — 28 November 2025 issuance | Aligned across §8–§18 |
-| **Cyber Security Act 2024 (Malaysia)** — NCII regime | Compliance per RMiT §11.4 + NACSA directives |
+| **Bank Negara Malaysia, *Risk Management in Technology (RMiT)*** — 28 November 2025 issuance | Aligned across Section 8–Section 18 |
+| **Cyber Security Act 2024 (Malaysia)** — NCII regime | Compliance per RMiT Section 11.4 + NACSA directives |
 | Financial Services Act 2013; Personal Data Protection Act 2010; Computer Crimes Act 1997 | Applicable; tracked in Compliance Register |
 
 The canonical citation mapping used by every document in this suite is at [`00-foundations/regulatory-mapping-reference.md`](00-foundations/regulatory-mapping-reference.md).

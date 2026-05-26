@@ -10,14 +10,14 @@
 | **Version** | 1.1 |
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 (annual; immediate on toolchain change) |
-| **Implements standard** | [STD-02-01 Password & Authentication Standard](../02-standards/password-and-authentication-standard.md) §3.5 |
-| **Implements policy** | [POL-02 Access Control Policy](../01-policies/02-access-control-policy.md) §4.1, §4.4 |
+| **Implements standard** | [STD-02-01 Password & Authentication Standard](../02-standards/password-and-authentication-standard.md) Section 3.5 |
+| **Implements policy** | [POL-02 Access Control Policy](../01-policies/02-access-control-policy.md) Section 4.1, Section 4.4 |
 
 ---
 
 ## 1. Purpose
 
-To operationalise identity creation, modification, and revocation across the lifecycle of every workforce member (employee, contractor, secondee, third party). This SOP is the **operational delivery** of the Joiner/Mover/Leaver requirements in [POL-02 §4.1](../01-policies/02-access-control-policy.md) and the **timing thresholds** in [STD-02-01 §3.5](../02-standards/password-and-authentication-standard.md).
+To operationalise identity creation, modification, and revocation across the lifecycle of every workforce member (employee, contractor, secondee, third party). This SOP is the **operational delivery** of the Joiner/Mover/Leaver requirements in [POL-02 Section 4.1](../01-policies/02-access-control-policy.md) and the **timing thresholds** in [STD-02-01 Section 3.5](../02-standards/password-and-authentication-standard.md).
 
 ## 2. Scope
 
@@ -81,8 +81,8 @@ The Workday and Supplier Portal events are the **only** authoritative triggers. 
 |---|---|---|---|---|---|
 | L1 | HR Business Partner | Records termination in Workday with end date. | Workday | Event fires to IGA. | Same day as confirmation. |
 | L2 | Line manager | Recovers business-critical knowledge (handover); arranges hardware return. | n/a | Handover completed. | Before end date. |
-| L3 | IGA (automation) | On end date at `17:01` (or as set per local cutover time), **disables** all identity accounts (IDP, AD, federated apps where supported); revokes all active sessions. | IGA / IDP | Identity disabled; all sessions revoked. | Within **2 hours** of HR-triggered end-of-day (per STD-02-01 §3.5.3). |
-| L4 | Asset Operations | Recovers hardware; sanitises and re-provisions or disposes per [POL-10 §3.7](../01-policies/10-physical-security-policy.md). | Asset Mgmt | Hardware recovered or written off. | Within 5 business days. |
+| L3 | IGA (automation) | On end date at `17:01` (or as set per local cutover time), **disables** all identity accounts (IDP, AD, federated apps where supported); revokes all active sessions. | IGA / IDP | Identity disabled; all sessions revoked. | Within **2 hours** of HR-triggered end-of-day (per STD-02-01 Section 3.5.3). |
+| L4 | Asset Operations | Recovers hardware; sanitises and re-provisions or disposes per [POL-10 Section 3.7](../01-policies/10-physical-security-policy.md). | Asset Mgmt | Hardware recovered or written off. | Within 5 business days. |
 | L5 | IGA | After 30 days, **deletes** identity from active directories; retains audit record per records retention. | IGA | Identity removed from active stores. | 30 days from disablement. |
 
 ### 5.4 Leaver — urgent (immediate dismissal / for-cause / regulatory)
@@ -90,7 +90,7 @@ The Workday and Supplier Portal events are the **only** authoritative triggers. 
 | # | Actor | Action | Tool | Output | SLA |
 |---|---|---|---|---|---|
 | U1 | HR Business Partner (or designated authority) | Sets `urgent-leaver=true` flag in Workday. Notifies CISO of urgent leaver event. | Workday + secure channel | Event fires with urgent flag. | Immediate. |
-| U2 | IGA (automation) | On `urgent-leaver=true` event, **immediately** disables identity, revokes sessions, and notifies SOC. | IGA / IDP / SIEM | Identity disabled; SOC alerted. | Within **30 minutes** of trigger (per STD-02-01 §3.5.3). |
+| U2 | IGA (automation) | On `urgent-leaver=true` event, **immediately** disables identity, revokes sessions, and notifies SOC. | IGA / IDP / SIEM | Identity disabled; SOC alerted. | Within **30 minutes** of trigger (per STD-02-01 Section 3.5.3). |
 | U3 | SOC | Reviews recent activity of the disabled identity for indicators of malicious action; opens SEV-3 ticket pending findings (escalates to SEV-2 if anomalies found). | SIEM / SOAR | Triage record. | Within 4 hours. |
 | U4 | Asset Operations | Recovers hardware on site or arranges immediate remote recovery. | Asset Mgmt | Hardware recovered or logged as outstanding. | Within 24 hours. |
 | U5 | CISO | Reviews case; determines whether further investigation (forensic, fraud, law-enforcement liaison) is required. | n/a | Case decision logged. | Within 24 hours. |

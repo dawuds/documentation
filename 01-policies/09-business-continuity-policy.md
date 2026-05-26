@@ -11,7 +11,7 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 |
 | **ISO/IEC 27002:2022 controls** | 5.29 (Information security during disruption), 5.30 (ICT readiness for business continuity) |
-| **BNM RMiT (28 Nov 2025)** | §10.24–10.28 (Data Centre Resilience); §10.29–10.35 (Service Availability, incl. §10.32 Critical System High Availability Requirements); §10.44–10.45 (System backup and restoration, incl. §10.45 Tamper-Proof Backup and Isolated Recovery) |
+| **BNM RMiT (28 Nov 2025)** | Section 10.24–10.28 (Data Centre Resilience); Section 10.29–10.35 (Service Availability, incl. Section 10.32 Critical System High Availability Requirements); Section 10.44–10.45 (System backup and restoration, incl. Section 10.45 Tamper-Proof Backup and Isolated Recovery) |
 
 > Skeleton policy. The Business Continuity Plan, Disaster Recovery Plan, and Business Impact Analysis methodology sit beneath this policy and are not included here.
 
@@ -37,9 +37,9 @@ All business services, supporting systems, suppliers, personnel, and locations r
 
 ### 3.3 ICT readiness
 
-- **3.3.1** ICT services supporting critical business services shall be designed to meet the RTO and RPO defined for each, with documented architecture, data replication, and failover procedures. *(Implements ISO/IEC 27002:2022 control 5.30; BNM RMiT §10.24 (DC Resilience Objectives); §10.32 (Critical System High Availability Requirements).)*
-- **3.3.2** Data centres shall meet the resilience expectations of BNM RMiT §10.24–10.28, with documented redundancy in power, cooling, network, and physical access (§10.25 Redundancy; §10.26 Physical Security; §10.27 Operations Control Procedures; §10.28 Activity Segregation).
-- **3.3.3** Backups shall include tamper-proof and isolated recovery capability sufficient to recover from ransomware affecting primary and secondary storage. *(BNM RMiT §10.45 (Tamper-Proof Backup and Isolated Recovery).)*
+- **3.3.1** ICT services supporting critical business services shall be designed to meet the RTO and RPO defined for each, with documented architecture, data replication, and failover procedures. *(Implements ISO/IEC 27002:2022 control 5.30; BNM RMiT Section 10.24 (DC Resilience Objectives); Section 10.32 (Critical System High Availability Requirements).)*
+- **3.3.2** Data centres shall meet the resilience expectations of BNM RMiT Section 10.24–10.28, with documented redundancy in power, cooling, network, and physical access (Section 10.25 Redundancy; Section 10.26 Physical Security; Section 10.27 Operations Control Procedures; Section 10.28 Activity Segregation).
+- **3.3.3** Backups shall include tamper-proof and isolated recovery capability sufficient to recover from ransomware affecting primary and secondary storage. *(BNM RMiT Section 10.45 (Tamper-Proof Backup and Isolated Recovery).)*
 
 ### 3.4 Testing
 
@@ -78,7 +78,7 @@ Per [POL-00](00-information-security-policy.md).
 
 ## 8. References
 
-ISO/IEC 27002:2022 — controls 5.29, 5.30. ISO 22301:2019 (Business Continuity Management Systems). BNM RMiT (28 Nov 2025) §10.24–10.28; §10.29–10.35; §10.44–10.45. BNM *Business Continuity Management* policy document, Part C. [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
+ISO/IEC 27002:2022 — controls 5.29, 5.30. ISO 22301:2019 (Business Continuity Management Systems). BNM RMiT (28 Nov 2025) Section 10.24–10.28; Section 10.29–10.35; Section 10.44–10.45. BNM *Business Continuity Management* policy document, Part C. [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
 
 ## 9. Document control
 

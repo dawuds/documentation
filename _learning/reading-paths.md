@@ -36,14 +36,14 @@ Five suggested reading orders, by audience. Pick the path that matches your reas
 ## Path D — "I'm learning Malaysian FS / BNM RMiT compliance via ISO 27001" (~75 min)
 
 1. [`00-foundations/regulatory-mapping-reference.md`](../00-foundations/regulatory-mapping-reference.md) — the canonical mapping (15 min)
-2. [`01-policies/08-incident-management-policy.md`](../01-policies/08-incident-management-policy.md) — Cyber Resilience Framework anchored on RMiT §11 (15 min)
+2. [`01-policies/08-incident-management-policy.md`](../01-policies/08-incident-management-policy.md) — Cyber Resilience Framework anchored on RMiT Section 11 (15 min)
 3. [`02-standards/incident-classification-and-severity-standard.md`](../02-standards/incident-classification-and-severity-standard.md) — including the 4-hour BNM notification citation chain (10 min)
-4. [`04-plans/incident-response-plan.md`](../04-plans/incident-response-plan.md) — IRP implementing RMiT §11.13 with §11.12 crisis management overlay (15 min)
+4. [`04-plans/incident-response-plan.md`](../04-plans/incident-response-plan.md) — IRP implementing RMiT Section 11.13 with Section 11.12 crisis management overlay (15 min)
 5. [`05-registers/statement-of-applicability.md`](../05-registers/statement-of-applicability.md) — ISO 27002 / RMiT cross-mapping per control (20 min)
 
 ## Path E — "I'm building the cascade pattern for a different control domain" (~30 min)
 
-1. [`00-foundations/document-hierarchy.md`](../00-foundations/document-hierarchy.md) §"The cascade" (5 min)
+1. [`00-foundations/document-hierarchy.md`](../00-foundations/document-hierarchy.md) Section "The cascade" (5 min)
 2. **Access Control cascade** in full:
    - [POL-02](../01-policies/02-access-control-policy.md) (10 min)
    - [STD-02-01](../02-standards/password-and-authentication-standard.md) (5 min)

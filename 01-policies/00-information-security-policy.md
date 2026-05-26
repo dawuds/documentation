@@ -12,7 +12,7 @@
 | **Next review** | 2027-02-01 (annual, or sooner on material change) |
 | **ISO/IEC 27001:2022** | Clause 5.2 (mandatory) |
 | **ISO/IEC 27002:2022** | Control 5.1 (Policies for information security) |
-| **BNM RMiT (28 Nov 2025)** | §8 (Governance) — particularly §8.1, §8.2 (Board); §9 (Technology Risk Management Framework) — incl. §9.4–9.5 (Designated CISO); §11 (Cybersecurity Management) |
+| **BNM RMiT (28 Nov 2025)** | Section 8 (Governance) — particularly Section 8.1, Section 8.2 (Board); Section 9 (Technology Risk Management Framework) — incl. Section 9.4–9.5 (Designated CISO); Section 11 (Cybersecurity Management) |
 
 > **Notice.** This document is the master policy of the General Bank Information Security Management System (ISMS). It is approved by the Board of Directors and supersedes all prior information security policies. It is mandatory and applies to every employee, contractor, third party, and system within the ISMS scope. Non-compliance is grounds for disciplinary action and, where applicable, civil or criminal proceedings.
 
@@ -75,11 +75,11 @@ In accordance with ISO/IEC 27001:2022 Clause 6.2, General Bank establishes the f
 
 ## 6. Principles
 
-The following principles are mandatory across the organisation. Each is operationalised in one or more supporting policies (§9).
+The following principles are mandatory across the organisation. Each is operationalised in one or more supporting policies (Section 9).
 
 ### 6.1 Governance and accountability
 
-- **6.1.1** Information security shall be governed by the Board through the Risk Management Committee. *(Implements ISO/IEC 27001:2022 Clause 5.1; BNM RMiT §8.1 (Board approval of technology risk appetite); §8.2 (Board oversight responsibilities); §8.3 (Board-level technology committee).)*
+- **6.1.1** Information security shall be governed by the Board through the Risk Management Committee. *(Implements ISO/IEC 27001:2022 Clause 5.1; BNM RMiT Section 8.1 (Board approval of technology risk appetite); Section 8.2 (Board oversight responsibilities); Section 8.3 (Board-level technology committee).)*
 - **6.1.2** Every information asset shall have a named owner accountable for its protection. *(Implements ISO/IEC 27002:2022 control 5.9.)*
 - **6.1.3** Every supporting policy, standard, procedure, plan, and register in the ISMS shall have a named owner and an approval authority. *(Implements ISO/IEC 27001:2022 Clause 5.3.)*
 
@@ -91,7 +91,7 @@ The following principles are mandatory across the organisation. Each is operatio
 
 ### 6.3 Least privilege and segregation of duties
 
-- **6.3.1** Access to information assets shall be granted on a least-privilege, role-based basis, and reviewed at intervals defined by [POL-02 Access Control Policy](02-access-control-policy.md). *(Implements ISO/IEC 27002:2022 controls 5.15, 5.18; BNM RMiT §10.53–10.57 (Access Control), particularly §10.54 (principles) and §10.55 (MFA).)*
+- **6.3.1** Access to information assets shall be granted on a least-privilege, role-based basis, and reviewed at intervals defined by [POL-02 Access Control Policy](02-access-control-policy.md). *(Implements ISO/IEC 27002:2022 controls 5.15, 5.18; BNM RMiT Section 10.53–10.57 (Access Control), particularly Section 10.54 (principles) and Section 10.55 (MFA).)*
 - **6.3.2** Duties that present a risk of error, fraud, or unauthorised activity if combined shall be segregated. *(Implements ISO/IEC 27002:2022 control 5.3.)*
 
 ### 6.4 Defence in depth
@@ -101,13 +101,13 @@ The following principles are mandatory across the organisation. Each is operatio
 
 ### 6.5 Secure by design
 
-- **6.5.1** Information security requirements shall be defined, designed, and tested across the lifecycle of every system, application, and service. *(Implements ISO/IEC 27002:2022 controls 8.25–8.31; BNM RMiT §10.4–10.16 (System Development and Acquisition) and §12 (Digital Services) with Appendices 2 and 3 for delivery-channel and authentication minimum controls.)*
-- **6.5.2** Vulnerabilities shall be identified, prioritised, and remediated within timelines defined by [POL-13 Vulnerability Management Policy](13-vulnerability-management-policy.md). *(Implements ISO/IEC 27002:2022 control 8.8; BNM RMiT §10.17–10.19 (Patch and End-of-Life System Management).)*
+- **6.5.1** Information security requirements shall be defined, designed, and tested across the lifecycle of every system, application, and service. *(Implements ISO/IEC 27002:2022 controls 8.25–8.31; BNM RMiT Section 10.4–10.16 (System Development and Acquisition) and Section 12 (Digital Services) with Appendices 2 and 3 for delivery-channel and authentication minimum controls.)*
+- **6.5.2** Vulnerabilities shall be identified, prioritised, and remediated within timelines defined by [POL-13 Vulnerability Management Policy](13-vulnerability-management-policy.md). *(Implements ISO/IEC 27002:2022 control 8.8; BNM RMiT Section 10.17–10.19 (Patch and End-of-Life System Management).)*
 
 ### 6.6 Resilience
 
-- **6.6.1** Critical business services shall have documented recovery objectives (RTO, RPO, MTPD), tested at least annually. *(Implements ISO/IEC 27002:2022 controls 5.29, 5.30; BNM RMiT §10.24–10.28 (Data Centre Resilience); §10.29–10.35 (Service Availability); §10.44–10.45 (Backup, including tamper-proof backup at §10.45).)*
-- **6.6.2** Incidents shall be detected, classified, contained, and learned from, with material technology incidents escalated to the regulator in accordance with [POL-08 Incident Management Policy](08-incident-management-policy.md). *(Implements ISO/IEC 27002:2022 controls 5.24–5.28; BNM RMiT §11.12–11.17 (Cyber Response and Recovery); §11.18 (Cyber Incident Notification to BNM).)*
+- **6.6.1** Critical business services shall have documented recovery objectives (RTO, RPO, MTPD), tested at least annually. *(Implements ISO/IEC 27002:2022 controls 5.29, 5.30; BNM RMiT Section 10.24–10.28 (Data Centre Resilience); Section 10.29–10.35 (Service Availability); Section 10.44–10.45 (Backup, including tamper-proof backup at Section 10.45).)*
+- **6.6.2** Incidents shall be detected, classified, contained, and learned from, with material technology incidents escalated to the regulator in accordance with [POL-08 Incident Management Policy](08-incident-management-policy.md). *(Implements ISO/IEC 27002:2022 controls 5.24–5.28; BNM RMiT Section 11.12–11.17 (Cyber Response and Recovery); Section 11.18 (Cyber Incident Notification to BNM).)*
 
 ### 6.7 Information classification
 
@@ -115,12 +115,12 @@ The following principles are mandatory across the organisation. Each is operatio
 
 ### 6.8 Third-party assurance
 
-- **6.8.1** Information security risks introduced by suppliers and third parties shall be identified, assessed, contractually addressed, and continuously monitored, in accordance with [POL-07 Supplier & Third-Party Security Policy](07-supplier-security-policy.md). *(Implements ISO/IEC 27002:2022 controls 5.19–5.23; BNM RMiT §10.46–10.49 (Third Party Service Provider Management); §14 (External Party Assurance); §10.50–10.52 and Appendix 10 for cloud services.)*
+- **6.8.1** Information security risks introduced by suppliers and third parties shall be identified, assessed, contractually addressed, and continuously monitored, in accordance with [POL-07 Supplier & Third-Party Security Policy](07-supplier-security-policy.md). *(Implements ISO/IEC 27002:2022 controls 5.19–5.23; BNM RMiT Section 10.46–10.49 (Third Party Service Provider Management); Section 14 (External Party Assurance); Section 10.50–10.52 and Appendix 10 for cloud services.)*
 
 ### 6.9 People
 
 - **6.9.1** All personnel shall be subject to screening proportionate to the sensitivity of their role, contractually bound to confidentiality, and trained on information security responsibilities. *(Implements ISO/IEC 27002:2022 controls 6.1–6.3.)*
-- **6.9.2** Security awareness shall be continuous, not annual-only, and reinforced through targeted training for high-risk roles. *(Implements ISO/IEC 27002:2022 control 6.3; BNM RMiT §15 (Security Awareness and Education).)*
+- **6.9.2** Security awareness shall be continuous, not annual-only, and reinforced through targeted training for high-risk roles. *(Implements ISO/IEC 27002:2022 control 6.3; BNM RMiT Section 15 (Security Awareness and Education).)*
 
 ### 6.10 Continual improvement
 
@@ -154,20 +154,20 @@ This master policy is implemented through the following supporting policies. Eac
 
 | ID | Policy | Primary ISO/IEC 27002:2022 controls | Primary BNM RMiT (Nov 2025) |
 |---|---|---|---|
-| [POL-01](01-acceptable-use-policy.md) | Acceptable Use Policy | 5.10, 8.1 | §10.53–10.57 (Access Control); §15 (Awareness) |
-| [POL-02](02-access-control-policy.md) | Access Control Policy | 5.15–5.18, 8.2–8.5 | §10.53–10.57 |
-| [POL-03](03-asset-management-policy.md) | Asset Management Policy | 5.9–5.11 | §9.2 (TRMF asset identification); §11.3(h) (centralised asset inventory) |
-| [POL-04](04-data-classification-policy.md) | Data Classification & Handling Policy | 5.12, 5.13 | §9.2(d) (asset classification); §10.44(d) + App. 1 (sensitive media); §12 (Digital Services) |
-| [POL-05](05-cryptography-policy.md) | Cryptography Policy | 8.24 | §10.20–10.23 (Cryptography) |
-| [POL-06](06-hr-security-policy.md) | HR Security Policy | 6.1–6.6 | §15 (Security Awareness and Education) |
-| [POL-07](07-supplier-security-policy.md) | Supplier & Third-Party Security Policy | 5.19–5.23 | §10.46–10.49 (TPSP); §14 (External Party Assurance); §10.50–10.52 + App. 10 (Cloud) |
-| [POL-08](08-incident-management-policy.md) | Incident Management Policy | 5.24–5.28 | §11.1–11.7 (CRF); §11.12–11.17 (Cyber Response and Recovery); §11.18 (BNM Notification) |
-| [POL-09](09-business-continuity-policy.md) | Business Continuity Policy | 5.29, 5.30 | §10.24–10.28 (DC Resilience); §10.29–10.35 (Service Availability); §10.44–10.45 (Backup) |
-| [POL-10](10-physical-security-policy.md) | Physical & Environmental Security Policy | 7.1–7.14 | §10.26 (DC Physical Security) |
-| [POL-11](11-operations-security-policy.md) | Operations Security Policy | 8.6, 8.7, 8.13, 8.15, 8.16, 8.32 | §10 (Tech Operations); §11.9 (SOC); §11.10 (Threat Intel) |
-| [POL-12](12-secure-development-policy.md) | Secure Development Policy | 8.25–8.31 | §10.4–10.16 (SDLC); §12 (Digital Services) + App. 2/3 |
-| [POL-13](13-vulnerability-management-policy.md) | Vulnerability & Patch Management Policy | 8.8 | §10.17–10.19 (Patch and EOL); §11.6 (Red Team); §11.7 (Coordinated Disclosure) |
-| [POL-14](14-compliance-policy.md) | Compliance Policy | 5.31–5.36 | §13 (Technology Audits); §11.4 (NCII / Cyber Security Act 2024) |
+| [POL-01](01-acceptable-use-policy.md) | Acceptable Use Policy | 5.10, 8.1 | Section 10.53–10.57 (Access Control); Section 15 (Awareness) |
+| [POL-02](02-access-control-policy.md) | Access Control Policy | 5.15–5.18, 8.2–8.5 | Section 10.53–10.57 |
+| [POL-03](03-asset-management-policy.md) | Asset Management Policy | 5.9–5.11 | Section 9.2 (TRMF asset identification); Section 11.3(h) (centralised asset inventory) |
+| [POL-04](04-data-classification-policy.md) | Data Classification & Handling Policy | 5.12, 5.13 | Section 9.2(d) (asset classification); Section 10.44(d) + App. 1 (sensitive media); Section 12 (Digital Services) |
+| [POL-05](05-cryptography-policy.md) | Cryptography Policy | 8.24 | Section 10.20–10.23 (Cryptography) |
+| [POL-06](06-hr-security-policy.md) | HR Security Policy | 6.1–6.6 | Section 15 (Security Awareness and Education) |
+| [POL-07](07-supplier-security-policy.md) | Supplier & Third-Party Security Policy | 5.19–5.23 | Section 10.46–10.49 (TPSP); Section 14 (External Party Assurance); Section 10.50–10.52 + App. 10 (Cloud) |
+| [POL-08](08-incident-management-policy.md) | Incident Management Policy | 5.24–5.28 | Section 11.1–11.7 (CRF); Section 11.12–11.17 (Cyber Response and Recovery); Section 11.18 (BNM Notification) |
+| [POL-09](09-business-continuity-policy.md) | Business Continuity Policy | 5.29, 5.30 | Section 10.24–10.28 (DC Resilience); Section 10.29–10.35 (Service Availability); Section 10.44–10.45 (Backup) |
+| [POL-10](10-physical-security-policy.md) | Physical & Environmental Security Policy | 7.1–7.14 | Section 10.26 (DC Physical Security) |
+| [POL-11](11-operations-security-policy.md) | Operations Security Policy | 8.6, 8.7, 8.13, 8.15, 8.16, 8.32 | Section 10 (Tech Operations); Section 11.9 (SOC); Section 11.10 (Threat Intel) |
+| [POL-12](12-secure-development-policy.md) | Secure Development Policy | 8.25–8.31 | Section 10.4–10.16 (SDLC); Section 12 (Digital Services) + App. 2/3 |
+| [POL-13](13-vulnerability-management-policy.md) | Vulnerability & Patch Management Policy | 8.8 | Section 10.17–10.19 (Patch and EOL); Section 11.6 (Red Team); Section 11.7 (Coordinated Disclosure) |
+| [POL-14](14-compliance-policy.md) | Compliance Policy | 5.31–5.36 | Section 13 (Technology Audits); Section 11.4 (NCII / Cyber Security Act 2024) |
 
 ## 10. Compliance with laws and regulations
 
@@ -177,9 +177,9 @@ General Bank shall comply with all applicable laws, regulations, and contractual
 - The Islamic Financial Services Act 2013 (Malaysia)
 - The Personal Data Protection Act 2010 (Malaysia)
 - The Computer Crimes Act 1997 (Malaysia)
-- The **Cyber Security Act 2024** (Malaysia) — including NCII designation obligations and any directives issued by the National Cyber Security Agency (NACSA), where the bank is designated as a National Critical Information Infrastructure entity (per BNM RMiT §11.4)
+- The **Cyber Security Act 2024** (Malaysia) — including NCII designation obligations and any directives issued by the National Cyber Security Agency (NACSA), where the bank is designated as a National Critical Information Infrastructure entity (per BNM RMiT Section 11.4)
 - Bank Negara Malaysia *Risk Management in Technology (RMiT)*, policy document issued 28 November 2025 (BNM/RH/PD 028-100)
-- Bank Negara Malaysia *Operational Risk Reporting* policy document (the upstream source of cyber incident notification timelines referenced by RMiT §11.18)
+- Bank Negara Malaysia *Operational Risk Reporting* policy document (the upstream source of cyber incident notification timelines referenced by RMiT Section 11.18)
 - Bank Negara Malaysia *Business Continuity Management* policy document
 - Bank Negara Malaysia *Outsourcing* policy document
 - Any applicable foreign data protection law for cross-border processing
@@ -210,7 +210,7 @@ Non-compliance with this policy or the supporting suite may result in disciplina
 ## 14. Related documents
 
 - **Parent:** None — this is the master policy.
-- **Supporting policies:** POL-01 through POL-14 (see §9).
+- **Supporting policies:** POL-01 through POL-14 (see Section 9).
 - **Statement of Applicability:** [REG-SOA](../05-registers/statement-of-applicability.md)
 - **Risk Register:** [REG-RR](../05-registers/risk-register.md)
 

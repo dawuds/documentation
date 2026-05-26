@@ -11,7 +11,7 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 |
 | **ISO/IEC 27002:2022 controls** | 6.1 (Screening), 6.2 (Terms and conditions of employment), 6.3 (Information security awareness, education and training), 6.4 (Disciplinary process), 6.5 (Responsibilities after termination or change of employment), 6.6 (Confidentiality or non-disclosure agreements) |
-| **BNM RMiT (28 Nov 2025)** | §15 (Security Awareness and Education) |
+| **BNM RMiT (28 Nov 2025)** | Section 15 (Security Awareness and Education) |
 
 > Skeleton policy.
 
@@ -38,7 +38,7 @@ All employees, contractors, secondees, interns, and third-party personnel with a
 
 ### 3.3 Awareness and training
 
-- **3.3.1** All personnel shall complete information security awareness training within 30 days of joining and annually thereafter. *(Implements ISO/IEC 27002:2022 control 6.3; BNM RMiT §15 (Security Awareness and Education).)*
+- **3.3.1** All personnel shall complete information security awareness training within 30 days of joining and annually thereafter. *(Implements ISO/IEC 27002:2022 control 6.3; BNM RMiT Section 15 (Security Awareness and Education).)*
 - **3.3.2** High-risk roles (developers, system administrators, SOC analysts, customer-facing staff handling sensitive data) shall receive role-specific training in addition to general awareness.
 - **3.3.3** Awareness shall be continuous — phishing simulations, communications, and event-based reinforcement — not annual-only.
 
@@ -74,7 +74,7 @@ Per [POL-00](00-information-security-policy.md).
 
 ## 8. References
 
-ISO/IEC 27002:2022 — controls 6.1–6.6. BNM RMiT (28 Nov 2025) §15 (Security Awareness and Education). [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
+ISO/IEC 27002:2022 — controls 6.1–6.6. BNM RMiT (28 Nov 2025) Section 15 (Security Awareness and Education). [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
 
 ## 9. Document control
 

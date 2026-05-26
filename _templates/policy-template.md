@@ -38,7 +38,7 @@ The following are mandatory. Each statement uses **shall** and is testable again
 
 ### 4.1 [Topic area]
 
-- **4.1.1** [Organization] **shall** [requirement]. *(Implements ISO/IEC 27002:2022 control X.Y; BNM RMiT §Z.)*
+- **4.1.1** [Organization] **shall** [requirement]. *(Implements ISO/IEC 27002:2022 control X.Y; BNM RMiT Section Z.)*
 - **4.1.2** [Organization] **shall** [requirement]. *(Implements …)*
 
 ### 4.2 [Next topic area]
