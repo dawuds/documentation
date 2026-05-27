@@ -24,6 +24,8 @@ Append-only log of context decisions binding the v2 deliverable.
 | DEC-009 | DGF stands alone (not folded into CIMF) | Locked |
 | DEC-010 | AIGF built in full now; re-anchor when BNM publishes AI PD | Locked |
 | DEC-011 | Output format: document suite + structured tables; picture-first | Locked |
+| DEC-012 | Role: Senior IT Governance and Technology Risk Consultant — see [role.md](role.md) | Locked |
+| DEC-013 | Outcome: Phase 1 = 00-architecture + 9 frameworks + TRMF cascade; canonical first framework is TRMF; cascade is from TRMF — see [outcome.md](outcome.md) | Locked |
 
 ---
 
@@ -155,3 +157,25 @@ Append-only log of context decisions binding the v2 deliverable.
 **Decision:** **Document suite + structured tables, picture-first.** Top-level opens with framework diagram. Tables for controls library, RACI, KPI catalogue, regulatory mapping matrix. Stay in markdown; do not optimise for any specific GRC tool.
 
 **Reason:** Continues v1 format (markdown, navigable folder structure) which works for the federated GRC audience.
+
+---
+
+## DEC-012 — Role
+
+**Decision:** Role for the v2 build is **Senior IT Governance and Technology Risk Consultant** with Malaysian Islamic NCII bank experience. Full role string in [role.md](role.md). Binds tone, expertise, audience awareness, and discipline (eight rules including mandatory-vs-advisory, clause-level citation with issuance dates, source-chain caveats, Shariah overlay acknowledgement).
+
+**Reason:** A role string is the most reliable way to bind voice and discipline across a multi-document build. Without it, drift across documents is the most common failure mode.
+
+---
+
+## DEC-013 — Outcome
+
+**Decision:** Phase 1 v2 deliverable comprises `00-architecture/`, 9 Layer 2 framework documents (TRMF, CRMF, BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF), and one full cascade **from TRMF** down to registers. Full spec in [outcome.md](outcome.md).
+
+- Canonical worked example: **TRMF** (drafted first to lock the 17-section anatomy)
+- Cascade exemplar: **TRMF** (broader scope than CRMF would be; covers tech-risk + IT governance content)
+- Build sequence: 4 sessions; tonight = Session 1 (architecture + framework template + TRMF only)
+
+**Reason:** TRMF is the foundational tech risk framework; cascading from it demonstrates the IT governance breadth. Choice of TRMF-as-cascade-root over CRMF accepted with the trade-off that TRMF cascade is heavier than CRMF cascade would be. v1 InfoSec content remains reusable for CRMF in subsequent sessions.
+
+**Alternatives considered:** CRMF cascade (would reuse v1 content directly; rejected in favour of TRMF cascade for IT-governance breadth); pause and start tomorrow (rejected — user committed to tonight start).

@@ -13,6 +13,7 @@ Working folder for context decisions. Captures the CRIO (Context / Role / Interv
 | File | Purpose |
 |---|---|
 | [decisions.md](decisions.md) | ADR log — every context decision with date, rationale, alternatives, status |
+| [role.md](role.md) | The role string embodied by the assistant — binds voice and discipline |
 | [bank-profile.md](bank-profile.md) | GIBB persona — bank type, tier, NCII status, business lines, governance |
 | [framework-stack.md](framework-stack.md) | Layer 0–2 model: regulatory anchors, reference frameworks, bank-authored frameworks |
 | [seams.md](seams.md) | The three framework seams (DGF/CIMF, TPRMF/CloudRMF, TRMF/CRMF) and how each is resolved |
