@@ -7,7 +7,7 @@ A worked example of IT governance documentation structure for a Malaysian licens
 | Version | Status | Folder | Notes |
 |---|---|---|---|
 | **v1** | Stable (tagged `v1.0`) | [`v1/`](v1/) | ISO 27001-anchored ISMS for General Bank. Two worked cascades (Access Control, Incident Management). |
-| **v2 Phase 1** | **Drafted in full (Sessions 1–11 complete)** | (root) | Full IT governance architecture for **General Islamic Bank Berhad (GIBB)** — federated GRC, NCII-designated. Nine bank-authored frameworks + 25 policies + 15 standards + 11 SOPs + 6 plans + 21 registers + document control suite + migration playbook. All 9 frameworks have cascade depth visible from framework → policy → standard → SOP → register. |
+| **v2 Phase 1 + 2** | **Drafted in full — complete** | (root) | Full IT governance architecture for **General Islamic Bank Berhad (GIBB)** — federated GRC, NCII-designated. **Nine bank-authored frameworks + 25 policies + 27 standards + 27 SOPs + 9 plans + 32 registers + document control suite + migration playbook + GRC platform format.** Every framework has full cascade depth (Framework → Policy → Standard → SOP → Plan → Register), with cross-cutting registers, per-service DRPs, and adjacent learning / migration / tooling material. |
 
 ## v2 — current state
 
@@ -15,24 +15,25 @@ A worked example of IT governance documentation structure for a Malaysian licens
 |---|---|
 | [`_context/`](_context/) | Design decisions (13 ADRs); bank profile; framework stack; seams; glossary; role; outcome |
 | [`_templates/`](_templates/) | Six templates (framework, policy, standard, procedure, plan, register) |
-| [`_learning/`](_learning/) | Migration playbook (v2 addition); v1 reading paths + extension roadmap remain at v1/_learning/ |
+| [`_learning/`](_learning/) | Migration playbook + GRC platform ingestion format (v2 additions); v1 reading paths + extension roadmap remain at v1/_learning/ |
 | [`00-architecture/`](00-architecture/) | GIBB IT Governance Architecture (ARCH-001) — picture-first opener |
 | [`01-frameworks/`](01-frameworks/) | Nine Layer 2 frameworks: TRMF, CRMF, BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF |
-| [`02-policies/`](02-policies/) | 25 Layer 3 policies — TRMF cascade (10) + CRMF cascade re-anchored from v1 (7) + framework cascades (7) + POL-HR-01 HR Security (re-anchored from v1 POL-06) |
-| [`03-standards/`](03-standards/) | 15 standards — TRMF (CM, AM), CRMF (AC, IR, CR-01/02/03), BCMF (BC-01/02), TPRMF (TP-01), CIMF (CI-01), NCIIF (NC-01), CloudRMF (CL-01), DGF (DG-01), AIGF (AI-01) |
-| [`04-procedures/`](04-procedures/) | 11 SOPs — CM-01, CM-02, AC-01, IR-01, CR-01 Cyber Drill, CI-02 Breach Notif, NC-01 NACSA Notif, BC-01 BIA, TP-01 TPSP Onboarding, CL-01 Cloud Onboarding, AI-01 AI Use Case Onboarding |
-| [`05-plans/`](05-plans/) | 6 plans — PLN-01 IRP, PLN-02 BCP, PLN-03 DRP, PLN-04 Crisis Comms, PLN-05 Cyber Drill, PLN-06 Pandemic |
-| [`06-registers/`](06-registers/) | 21 registers — framework anchors (REG-TR, INC, PAR, SOA, BIA, TPS, ROPA, NCN, CL, DA, AIU) + cross-cutting (REG-EXC Exception, REG-VUL Vuln, REG-CDB Customer Data Breach, REG-DRL Cyber Drill, REG-OUT Material Outsourcing, REG-DSR Data Subject Request, REG-AIM AI Model Inventory, REG-CAP Corrective Action, REG-BCT BC Test Outcomes, REG-DRR DR Test) |
+| [`02-policies/`](02-policies/) | **25 Layer 3 policies** |
+| [`03-standards/`](03-standards/) | **27 standards** — TRMF (2), CRMF (5), BCMF (2), TPRMF (3), CIMF (3), NCIIF (2), CloudRMF (3), DGF (3), AIGF (4) |
+| [`04-procedures/`](04-procedures/) | **27 SOPs** — across all cascades incl. forensic evidence handling, cyber drill, BIA, backup operations, TPSP lifecycle, DSAR, customer breach notification, NACSA notification & examination response, CSPM operations, cloud exit validation, data asset/quality/destruction, AI model validation, AI vendor assessment |
+| [`05-plans/`](05-plans/) | **9 plans** — PLN-01 IRP, PLN-02 BCP, PLN-03 master DRP + PLN-03-CB/-IB/-PMT per-service DRPs, PLN-04 Crisis Comms, PLN-05 Cyber Drill, PLN-06 Pandemic |
+| [`06-registers/`](06-registers/) | **32 registers** — framework anchors + cross-cutting registers + subordinate registers (NACSA Directive Tracker, NCII Audit Findings, Cloud Exit, Cloud Risk Assessment, AI Vendor, AI Bias and Fairness, Data Quality, Data Lineage, Master Data, TPSP Incident, Customer Disclosure) |
 | [`07-document-control/`](07-document-control/) | Master document register (every v2 document catalogued), change log, approval register, archive |
 
-## Phase 1 complete — what's possible next (Phase 2+)
+## Build complete
 
-- **Standards depth per framework** — each Section 9 implementation table in [`01-frameworks/`](01-frameworks/) lists additional standards that could be added with operational evidence (e.g., per-cloud-provider standards under CloudRMF; data quality + retention + metadata standards under DGF; AI validation + GenAI security + AI training-data standards under AIGF)
-- **SOP depth per framework** — additional SOPs per Section 9 implementation tables (e.g., SOC detection tuning, forensic evidence handling, periodic reassessment SOPs)
-- **Per-service DRPs** (PLN-03-x) — subordinate to PLN-03 master DRP, one per critical service
-- **Subordinate registers** — REG-NC NACSA Directive Tracker, REG-NCA NCII Audit Findings, REG-CEX Cloud Exit Plans, REG-CRA Cloud Risk Assessment, REG-AIV AI Vendor, REG-AIB AI Bias and Fairness, REG-DQ Data Quality, REG-DL Data Lineage, REG-MD Master Data, REG-TPI TPSP Incident, REG-DIS Customer Disclosure
-- **GRC platform format** — structured-data form of v2 content for ingestion into a GRC platform (Archer, ServiceNow GRC, OneTrust, MetricStream) when GIBB selects one
-- **Per-policy operational reviews** — substantive content review by GIBB function owners before approval cycle
+All deferred items from prior phases have been completed. The next steps for GIBB to make this operational are:
+
+- **Per-document approval cycle** under GIBB governance (Board for POL-00 / POL-01 / POL-03 / ARCH-001; RMC for the supporting suite; CISO / function heads for standards; process owners for SOPs)
+- **Substantive content review** by GIBB function owners against actual operating model — terminology, role titles, system references, regulatory clock numerals
+- **GRC platform selection** if going beyond markdown — see [`_learning/grc-platform-format.md`](_learning/grc-platform-format.md) for ingestion model
+- **Migration execution** if GIBB is moving from an accreted current state — see [`_learning/migration-playbook.md`](_learning/migration-playbook.md) for 12–18 month plan
+- **First operational cycles** — first annual cyber drill (RMiT 11.16); first BNM examination under v2; first Internal Audit cycle under v2; first NACSA examination
 
 ## Compliance anchors
 
