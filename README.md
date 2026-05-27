@@ -7,7 +7,7 @@ A worked example of IT governance documentation structure for a Malaysian licens
 | Version | Status | Folder | Notes |
 |---|---|---|---|
 | **v1** | Stable (tagged `v1.0`) | [`v1/`](v1/) | ISO 27001-anchored ISMS for General Bank. Two worked cascades (Access Control, Incident Management). |
-| **v2 Phase 1** | Drafted (Sessions 1–6 complete) | (root) | Full IT governance architecture for **General Islamic Bank Berhad (GIBB)** — federated GRC, NCII-designated. Nine bank-authored framework documents (TRMF, CRMF, BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF), 24 policies, 4 standards, 3 SOPs, 2 plans, 11 registers, document control suite. CRMF cascade re-anchored from v1 in Session 5. All 9 frameworks have at least one cascade policy + register (Session 6). |
+| **v2 Phase 1** | **Drafted in full (Sessions 1–11 complete)** | (root) | Full IT governance architecture for **General Islamic Bank Berhad (GIBB)** — federated GRC, NCII-designated. Nine bank-authored frameworks + 25 policies + 15 standards + 11 SOPs + 6 plans + 21 registers + document control suite + migration playbook. All 9 frameworks have cascade depth visible from framework → policy → standard → SOP → register. |
 
 ## v2 — current state
 
@@ -15,22 +15,24 @@ A worked example of IT governance documentation structure for a Malaysian licens
 |---|---|
 | [`_context/`](_context/) | Design decisions (13 ADRs); bank profile; framework stack; seams; glossary; role; outcome |
 | [`_templates/`](_templates/) | Six templates (framework, policy, standard, procedure, plan, register) |
+| [`_learning/`](_learning/) | Migration playbook (v2 addition); v1 reading paths + extension roadmap remain at v1/_learning/ |
 | [`00-architecture/`](00-architecture/) | GIBB IT Governance Architecture (ARCH-001) — picture-first opener |
 | [`01-frameworks/`](01-frameworks/) | Nine Layer 2 frameworks: TRMF, CRMF, BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF |
-| [`02-policies/`](02-policies/) | 24 Layer 3 policies — TRMF cascade (10) + CRMF cascade re-anchored from v1 (7) + minimum cascade for BCMF/TPRMF/CIMF/NCIIF/CloudRMF/DGF/AIGF (7) |
-| [`03-standards/`](03-standards/) | 4 standards — TRMF cascade (STD-CM-01, STD-AM-01) + CRMF cascade (STD-AC-01, STD-IR-01) |
-| [`04-procedures/`](04-procedures/) | 3 SOPs — TRMF cascade (SOP-CM-01) + CRMF cascade (SOP-AC-01, SOP-IR-01) |
-| [`05-plans/`](05-plans/) | 2 plans — PLN-01 IRP (CRMF, re-anchored from v1) + PLN-02 BCP (BCMF). DRP, Crisis Comms, Cyber Drill, Pandemic — to be built |
-| [`06-registers/`](06-registers/) | 11 registers — TRMF (REG-TR) + CRMF (REG-INC, REG-PAR, REG-SOA cross-framework) + 7 framework anchor registers (REG-BIA, REG-TPS, REG-ROPA, REG-NCN, REG-CL, REG-DA, REG-AIU) |
-| [`07-document-control/`](07-document-control/) | Master document register, change log, approval register, archive |
+| [`02-policies/`](02-policies/) | 25 Layer 3 policies — TRMF cascade (10) + CRMF cascade re-anchored from v1 (7) + framework cascades (7) + POL-HR-01 HR Security (re-anchored from v1 POL-06) |
+| [`03-standards/`](03-standards/) | 15 standards — TRMF (CM, AM), CRMF (AC, IR, CR-01/02/03), BCMF (BC-01/02), TPRMF (TP-01), CIMF (CI-01), NCIIF (NC-01), CloudRMF (CL-01), DGF (DG-01), AIGF (AI-01) |
+| [`04-procedures/`](04-procedures/) | 11 SOPs — CM-01, CM-02, AC-01, IR-01, CR-01 Cyber Drill, CI-02 Breach Notif, NC-01 NACSA Notif, BC-01 BIA, TP-01 TPSP Onboarding, CL-01 Cloud Onboarding, AI-01 AI Use Case Onboarding |
+| [`05-plans/`](05-plans/) | 6 plans — PLN-01 IRP, PLN-02 BCP, PLN-03 DRP, PLN-04 Crisis Comms, PLN-05 Cyber Drill, PLN-06 Pandemic |
+| [`06-registers/`](06-registers/) | 21 registers — framework anchors (REG-TR, INC, PAR, SOA, BIA, TPS, ROPA, NCN, CL, DA, AIU) + cross-cutting (REG-EXC Exception, REG-VUL Vuln, REG-CDB Customer Data Breach, REG-DRL Cyber Drill, REG-OUT Material Outsourcing, REG-DSR Data Subject Request, REG-AIM AI Model Inventory, REG-CAP Corrective Action, REG-BCT BC Test Outcomes, REG-DRR DR Test) |
+| [`07-document-control/`](07-document-control/) | Master document register (every v2 document catalogued), change log, approval register, archive |
 
-## Pending for subsequent sessions
+## Phase 1 complete — what's possible next (Phase 2+)
 
-- **BCMF / TPRMF / CIMF / NCIIF / CloudRMF / DGF / AIGF cascades**: Layer 3-6 documents per each framework
-- **Remaining standards / SOPs / plans / registers** per each framework's Section 9 implementation table
-- **HR Security Policy** (POL-06HR equivalent — was POL-06 in v1) under a future People Risk framework or absorbed into POL-06 Access Control
-- **Migration playbook**: how GIBB would migrate from its existing accreted policies to the v2 structure
-- **Operational tooling**: ingestion format for a GRC platform if and when GIBB selects one
+- **Standards depth per framework** — each Section 9 implementation table in [`01-frameworks/`](01-frameworks/) lists additional standards that could be added with operational evidence (e.g., per-cloud-provider standards under CloudRMF; data quality + retention + metadata standards under DGF; AI validation + GenAI security + AI training-data standards under AIGF)
+- **SOP depth per framework** — additional SOPs per Section 9 implementation tables (e.g., SOC detection tuning, forensic evidence handling, periodic reassessment SOPs)
+- **Per-service DRPs** (PLN-03-x) — subordinate to PLN-03 master DRP, one per critical service
+- **Subordinate registers** — REG-NC NACSA Directive Tracker, REG-NCA NCII Audit Findings, REG-CEX Cloud Exit Plans, REG-CRA Cloud Risk Assessment, REG-AIV AI Vendor, REG-AIB AI Bias and Fairness, REG-DQ Data Quality, REG-DL Data Lineage, REG-MD Master Data, REG-TPI TPSP Incident, REG-DIS Customer Disclosure
+- **GRC platform format** — structured-data form of v2 content for ingestion into a GRC platform (Archer, ServiceNow GRC, OneTrust, MetricStream) when GIBB selects one
+- **Per-policy operational reviews** — substantive content review by GIBB function owners before approval cycle
 
 ## Compliance anchors
 

@@ -77,6 +77,7 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | POL-22 | [IT Compliance Policy](../02-policies/POL-22-it-compliance-policy.md) | 1.0 | Draft | CCO | RMC | [Effective] | Annual | TRMF |
 | **POL-23** | [NCII Operational Policy](../02-policies/POL-23-ncii-operational-policy.md) | 1.0 | Draft | CISO + CCO | RMC | [Effective] | Annual | **NCIIF** |
 | **POL-CI-01** | [Customer Data Protection Policy](../02-policies/POL-CI-01-customer-data-protection-policy.md) | 1.0 | Draft | DPO + CCO | RMC | [Effective] | Annual | **CIMF** |
+| **POL-HR-01** | [HR Security Policy](../02-policies/POL-HR-01-hr-security-policy.md) | 1.0 (re-anchored from v1 POL-06) | Draft | CHRO + CISO | RMC | [Effective] | Annual | TRMF / CRMF (joint) |
 
 ---
 
@@ -88,6 +89,17 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | STD-AM-01 | [IT Asset Management Standard](../03-standards/STD-AM-01-it-asset-management-standard.md) | 1.0 | Draft | CIO + CDO | CIO | [Effective] | Annual | POL-09 |
 | **STD-AC-01** | [Password & Authentication Standard](../03-standards/STD-AC-01-password-and-authentication-standard.md) | 1.0 (re-anchored from v1) | Draft | CISO | CISO | [Effective] | Annual | **POL-06** |
 | **STD-IR-01** | [Incident Classification & Severity Standard](../03-standards/STD-IR-01-incident-classification-and-severity-standard.md) | 1.0 (re-anchored from v1) | Draft | CISO | CISO | [Effective] | Annual | **POL-13** |
+| **STD-CR-01** | [Cryptographic Standard](../03-standards/STD-CR-01-cryptographic-standard.md) | 1.0 | Draft | CISO | CISO | [Effective] | Annual | **POL-12** |
+| **STD-CR-02** | [Logging Standard](../03-standards/STD-CR-02-logging-standard.md) | 1.0 | Draft | CISO + Head of SOC | CISO | [Effective] | Annual | **POL-16 (CRMF + TRMF)** |
+| **STD-CR-03** | [Vulnerability Triage Standard](../03-standards/STD-CR-03-vulnerability-triage-standard.md) | 1.0 | Draft | CISO | CISO | [Effective] | Annual | **POL-18** |
+| **STD-BC-01** | [Recovery Objectives Standard](../03-standards/STD-BC-01-recovery-objectives-standard.md) | 1.0 | Draft | COO + CIO | COO | [Effective] | Annual | **POL-14** |
+| **STD-BC-02** | [Backup and Restoration Standard](../03-standards/STD-BC-02-backup-and-restoration-standard.md) | 1.0 | Draft | Head of IT Ops | COO | [Effective] | Annual | **POL-14** |
+| **STD-TP-01** | [TPSP Due Diligence Standard](../03-standards/STD-TP-01-tpsp-due-diligence-standard.md) | 1.0 | Draft | CRO + CISO | CRO | [Effective] | Annual | **POL-10, POL-19** |
+| **STD-CI-01** | [Customer Data Classification Standard](../03-standards/STD-CI-01-customer-data-classification-standard.md) | 1.0 | Draft | DPO | DPO | [Effective] | Annual | **POL-CI-01, POL-11** |
+| **STD-NC-01** | [NACSA Notification Standard](../03-standards/STD-NC-01-nacsa-notification-standard.md) | 1.0 | Draft | CCO + CISO | CCO | [Effective] | Annual | **POL-23** |
+| **STD-CL-01** | [Cloud Security Standard](../03-standards/STD-CL-01-cloud-security-standard.md) | 1.0 | Draft | Head of Cloud + CISO | CISO | [Effective] | Annual | **POL-20** |
+| **STD-DG-01** | [Data Quality Standard](../03-standards/STD-DG-01-data-quality-standard.md) | 1.0 | Draft | CDO | CDO | [Effective] | Annual | **POL-11** |
+| **STD-AI-01** | [AI Use Case Risk Classification Standard](../03-standards/STD-AI-01-ai-use-case-risk-classification-standard.md) | 1.0 | Draft | AI Governance Committee | AIGC | [Effective] | Annual + on AI PD | **POL-21** |
 
 ---
 
@@ -98,6 +110,14 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | SOP-CM-01 | [Change Authorisation SOP](../04-procedures/SOP-CM-01-change-authorisation-sop.md) | 1.0 | Draft | Head of IT Operations | Head of IT Operations | [Effective] | Annual | STD-CM-01 |
 | **SOP-AC-01** | [Joiner / Mover / Leaver SOP](../04-procedures/SOP-AC-01-joiner-mover-leaver-sop.md) | 1.0 (re-anchored from v1) | Draft | Head of IAM | Head of IAM | [Effective] | Annual | **STD-AC-01** |
 | **SOP-IR-01** | [Incident Triage SOP](../04-procedures/SOP-IR-01-incident-triage-sop.md) | 1.0 (re-anchored from v1) | Draft | Head of SOC | Head of SOC | [Effective] | Annual | **STD-IR-01** |
+| **SOP-CM-02** | [Emergency Change SOP](../04-procedures/SOP-CM-02-emergency-change-sop.md) | 1.0 | Draft | Head of IT Ops | Head of IT Ops | [Effective] | Annual | STD-CM-01 |
+| **SOP-CR-01** | [Cyber Drill Exercise SOP](../04-procedures/SOP-CR-01-cyber-drill-exercise-sop.md) | 1.0 | Draft | CISO + Head of SOC | CISO | [Effective] | Annual | STD-IR-01 (RMiT 11.16) |
+| **SOP-CI-02** | [Customer Data Breach Notification SOP](../04-procedures/SOP-CI-02-customer-data-breach-notification-sop.md) | 1.0 | Draft | DPO + CCO + CISO | DPO | [Effective] | Annual | POL-CI-01 + POL-13 |
+| **SOP-NC-01** | [NACSA Incident Notification SOP](../04-procedures/SOP-NC-01-nacsa-incident-notification-sop.md) | 1.0 | Draft | CCO + CISO | CCO | [Effective] | Annual + on NACSA Code update | STD-NC-01 |
+| **SOP-BC-01** | [BIA Methodology SOP](../04-procedures/SOP-BC-01-bia-methodology-sop.md) | 1.0 | Draft | Head of BC | Head of BC | [Effective] | Annual | STD-BC-01 |
+| **SOP-TP-01** | [TPSP Onboarding SOP](../04-procedures/SOP-TP-01-tpsp-onboarding-sop.md) | 1.0 | Draft | Head of Procurement | Head of Procurement + CRO | [Effective] | Annual | STD-TP-01 |
+| **SOP-CL-01** | [Cloud Service Onboarding SOP](../04-procedures/SOP-CL-01-cloud-service-onboarding-sop.md) | 1.0 | Draft | Head of Cloud + CISO | CISO | [Effective] | Annual | STD-CL-01 |
+| **SOP-AI-01** | [AI Use Case Onboarding SOP](../04-procedures/SOP-AI-01-ai-use-case-onboarding-sop.md) | 1.0 | Draft | AI Governance | AIGC | [Effective] | Annual + on AI PD | STD-AI-01 |
 
 ---
 
@@ -107,6 +127,10 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 |---|---|---|---|---|---|---|---|---|
 | **PLN-01** | [Incident Response Plan](../05-plans/PLN-01-incident-response-plan.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual + post-event | **CRMF** |
 | **PLN-02** | [Business Continuity Plan](../05-plans/PLN-02-business-continuity-plan.md) | 1.0 | Draft | COO | RMC | [Effective] | Annual + post-event | **BCMF** |
+| **PLN-03** | [Disaster Recovery Plan (master)](../05-plans/PLN-03-disaster-recovery-plan.md) | 1.0 | Draft | Head of IT Ops | COO + CIO | [Effective] | Annual + post-event | **BCMF + TRMF** |
+| **PLN-04** | [Crisis Communications Plan](../05-plans/PLN-04-crisis-communications-plan.md) | 1.0 | Draft | Head of Corp Comms | RMC | [Effective] | Annual | **CRMF + BCMF** |
+| **PLN-05** | [Cyber Drill Exercise Plan (RMiT 11.16)](../05-plans/PLN-05-cyber-drill-exercise-plan.md) | 1.0 | Draft | CISO | RMC | [Effective] | Annual | **CRMF** |
+| **PLN-06** | [Pandemic / Workforce Disruption Plan](../05-plans/PLN-06-pandemic-workforce-disruption-plan.md) | 1.0 | Draft | COO + CHRO | RMC | [Effective] | Annual | **BCMF** |
 
 ---
 
@@ -125,6 +149,16 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | **REG-CL** | [Cloud Service Register](../06-registers/REG-CL-cloud-service-register.md) | Head of Cloud + CISO | Continuous | **CloudRMF** |
 | **REG-DA** | [Data Asset Register](../06-registers/REG-DA-data-asset-register.md) | CDO | Continuous | **DGF** |
 | **REG-AIU** | [AI Use Case Register](../06-registers/REG-AIU-ai-use-case-register.md) | AI Governance Committee (CDO) | Continuous | **AIGF** |
+| **REG-EXC** | [Exception Register](../06-registers/REG-EXC-exception-register.md) | ISMS Manager (under CISO) | Continuous | Cross-framework (TRMF Section 12) |
+| **REG-VUL** | [Vulnerability Register](../06-registers/REG-VUL-vulnerability-register.md) | CISO | Continuous | **CRMF** |
+| **REG-CDB** | [Customer Data Breach Register](../06-registers/REG-CDB-customer-data-breach-register.md) | DPO + CCO | Per event | **CIMF + CRMF** |
+| **REG-DRL** | [Cyber Drill Register](../06-registers/REG-DRL-cyber-drill-register.md) | CISO | Per exercise | **CRMF** (RMiT 11.16 evidence) |
+| **REG-OUT** | [Material Outsourcing Register](../06-registers/REG-OUT-material-outsourcing-register.md) | Head of Procurement + CCO | Continuous | **TPRMF** |
+| **REG-DSR** | [Data Subject Request Register](../06-registers/REG-DSR-data-subject-request-register.md) | DPO | Continuous | **CIMF** |
+| **REG-AIM** | [AI Model Inventory](../06-registers/REG-AIM-ai-model-inventory.md) | Data Science (CDO) | Continuous | **AIGF** |
+| **REG-CAP** | [Corrective Action Register](../06-registers/REG-CAP-corrective-action-register.md) | CRO | Continuous | Cross-framework |
+| **REG-BCT** | [BC Test Outcomes Register](../06-registers/REG-BCT-bc-test-outcomes-register.md) | Head of BC (COO) | Per test | **BCMF** |
+| **REG-DRR** | [DR Test Register](../06-registers/REG-DRR-dr-test-register.md) | Head of IT Ops | Per test | **BCMF + TRMF** |
 
 ---
 
