@@ -11,8 +11,11 @@ Skeletons for v2 documents. One template per layer.
 | Template | Layer | When to use |
 |---|---|---|
 | [framework-template.md](framework-template.md) | Layer 2 | New bank-authored framework document (TRMF, CRMF, etc.) — 17-section anatomy |
-
-Layer 3–6 templates (policy, standard, procedure, plan, register) will be added when the cascade build begins.
+| [policy-template.md](policy-template.md) | Layer 3 | New policy document — 10-section anatomy |
+| [standard-template.md](standard-template.md) | Layer 4 | New standard — 7-section anatomy |
+| [procedure-template.md](procedure-template.md) | Layer 5 | New procedure / SOP — 9-section anatomy with actor/action/tool/output/SLA per step |
+| [plan-template.md](plan-template.md) | Plans | New plan (IRP, BCP, DRP) — 9-section anatomy |
+| [register-template.md](register-template.md) | Layer 6 | New register — 5-section anatomy with schema and worked example |
 
 ---
 
