@@ -23,9 +23,21 @@ These policies cascade from the [Technology Risk Management Framework (TRMF)](..
 | [POL-17](POL-17-secure-development-policy.md) | Secure Development Policy | Head of Engineering + CISO | Section 10.4–10.16 | BAI03 |
 | [POL-22](POL-22-it-compliance-policy.md) | IT Compliance Policy | CCO | Section 13 + 18 | MEA03 |
 
-## CRMF cascade and other frameworks
+## CRMF cascade (Session 5 build — re-anchored from v1)
 
-Policies cascading from CRMF, BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF are not built in Session 3 — see v1/ for the InfoSec-domain content that will be re-anchored under CRMF in a future session.
+| Policy ID | Title | Owner | RMiT clause | COBIT |
+|---|---|---|---|---|
+| [POL-04](POL-04-information-security-policy.md) | Information Security Policy (master under CRMF) | CISO | Section 5.2 (ISO 27001); Section 8, 9, 11 (RMiT) | APO13, EDM03, APO12 |
+| [POL-05](POL-05-acceptable-use-policy.md) | Acceptable Use Policy | CISO | Section 10.53–10.57; Section 15 | APO01, DSS06 |
+| [POL-06](POL-06-access-control-policy.md) | Access Control Policy | CISO | Section 10.53–10.57 | APO13, DSS05 |
+| [POL-12](POL-12-cryptography-policy.md) | Cryptography Policy | CISO | Section 10.20–10.23 | APO13 |
+| [POL-13](POL-13-incident-management-policy.md) | Incident Management Policy | CISO | Section 11.13; Section 11.1–11.20 | DSS02, DSS05 |
+| [POL-18](POL-18-vulnerability-management-policy.md) | Vulnerability and Patch Management Policy | CISO | Section 10.17–10.19; Section 11.6, 11.7 | DSS05, APO13 |
+| [POL-19](POL-19-supplier-security-policy.md) | Supplier and Third-Party Security Policy | CISO + Procurement | Section 10.46–10.49 + Section 14 | APO10, APO13 |
+
+## Other framework cascades
+
+Policies cascading from BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF — see those framework documents' Section 9 Implementation Requirements for the planned cascade. These will be built in subsequent sessions.
 
 ## Anatomy
 

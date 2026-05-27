@@ -57,12 +57,19 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | POL-01 | [IT Governance Policy](../02-policies/POL-01-it-governance-policy.md) | 1.0 | Draft | CIO + CRO | **Board of Directors** | [Effective] | Annual | TRMF |
 | POL-02 | [Technology Risk Management Policy](../02-policies/POL-02-technology-risk-management-policy.md) | 1.0 | Draft | CRO | RMC | [Effective] | Annual | TRMF |
 | POL-03 | [Technology Risk Appetite Statement](../02-policies/POL-03-technology-risk-appetite-statement.md) | 1.0 | Draft | CRO | **Board of Directors** | [Effective] | Annual | TRMF |
+| **POL-04** | [Information Security Policy](../02-policies/POL-04-information-security-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO | **Board of Directors** | [Effective] | Annual | **CRMF** |
+| **POL-05** | [Acceptable Use Policy](../02-policies/POL-05-acceptable-use-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual | **CRMF** |
+| **POL-06** | [Access Control Policy](../02-policies/POL-06-access-control-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual | **CRMF** |
 | POL-07 | [Change Management Policy](../02-policies/POL-07-change-management-policy.md) | 1.0 | Draft | CIO | RMC | [Effective] | Annual | TRMF |
 | POL-08 | [Capacity and Performance Management Policy](../02-policies/POL-08-capacity-and-performance-management-policy.md) | 1.0 | Draft | CIO | RMC | [Effective] | Annual | TRMF / BCMF |
 | POL-09 | [IT Asset Management Policy](../02-policies/POL-09-it-asset-management-policy.md) | 1.0 | Draft | CIO + CDO | RMC | [Effective] | Annual | TRMF / DGF |
+| **POL-12** | [Cryptography Policy](../02-policies/POL-12-cryptography-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual | **CRMF** |
+| **POL-13** | [Incident Management Policy](../02-policies/POL-13-incident-management-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual | **CRMF** |
 | POL-15 | [Physical and Environmental Security Policy](../02-policies/POL-15-physical-and-environmental-security-policy.md) | 1.0 | Draft | Head of Facilities + CISO | RMC | [Effective] | Annual | TRMF / BCMF |
 | POL-16 | [Operations Security Policy](../02-policies/POL-16-operations-security-policy.md) | 1.0 | Draft | CIO + CISO | RMC | [Effective] | Annual | TRMF / CRMF |
 | POL-17 | [Secure Development Policy](../02-policies/POL-17-secure-development-policy.md) | 1.0 | Draft | Head of Engineering + CISO | RMC | [Effective] | Annual | TRMF / CRMF |
+| **POL-18** | [Vulnerability and Patch Management Policy](../02-policies/POL-18-vulnerability-management-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual | **CRMF** |
+| **POL-19** | [Supplier and Third-Party Security Policy](../02-policies/POL-19-supplier-security-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO + Procurement | RMC | [Effective] | Annual | **TPRMF + CRMF** |
 | POL-22 | [IT Compliance Policy](../02-policies/POL-22-it-compliance-policy.md) | 1.0 | Draft | CCO | RMC | [Effective] | Annual | TRMF |
 
 ---
@@ -73,6 +80,8 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 |---|---|---|---|---|---|---|---|---|
 | STD-CM-01 | [Change Management Standard](../03-standards/STD-CM-01-change-management-standard.md) | 1.0 | Draft | CIO | CIO | [Effective] | Annual | POL-07 |
 | STD-AM-01 | [IT Asset Management Standard](../03-standards/STD-AM-01-it-asset-management-standard.md) | 1.0 | Draft | CIO + CDO | CIO | [Effective] | Annual | POL-09 |
+| **STD-AC-01** | [Password & Authentication Standard](../03-standards/STD-AC-01-password-and-authentication-standard.md) | 1.0 (re-anchored from v1) | Draft | CISO | CISO | [Effective] | Annual | **POL-06** |
+| **STD-IR-01** | [Incident Classification & Severity Standard](../03-standards/STD-IR-01-incident-classification-and-severity-standard.md) | 1.0 (re-anchored from v1) | Draft | CISO | CISO | [Effective] | Annual | **POL-13** |
 
 ---
 
@@ -81,6 +90,16 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | ID | Title | Version | Status | Owner | Approver | Effective | Next review | Parent standard |
 |---|---|---|---|---|---|---|---|---|
 | SOP-CM-01 | [Change Authorisation SOP](../04-procedures/SOP-CM-01-change-authorisation-sop.md) | 1.0 | Draft | Head of IT Operations | Head of IT Operations | [Effective] | Annual | STD-CM-01 |
+| **SOP-AC-01** | [Joiner / Mover / Leaver SOP](../04-procedures/SOP-AC-01-joiner-mover-leaver-sop.md) | 1.0 (re-anchored from v1) | Draft | Head of IAM | Head of IAM | [Effective] | Annual | **STD-AC-01** |
+| **SOP-IR-01** | [Incident Triage SOP](../04-procedures/SOP-IR-01-incident-triage-sop.md) | 1.0 (re-anchored from v1) | Draft | Head of SOC | Head of SOC | [Effective] | Annual | **STD-IR-01** |
+
+---
+
+## v2 Plans (05-plans)
+
+| ID | Title | Version | Status | Owner | Approver | Effective | Next review | Parent framework |
+|---|---|---|---|---|---|---|---|---|
+| **PLN-01** | [Incident Response Plan](../05-plans/PLN-01-incident-response-plan.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual + post-event | **CRMF** |
 
 ---
 
@@ -89,6 +108,9 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | ID | Title | Owner | Cadence | Parent framework |
 |---|---|---|---|---|
 | REG-TR | [Technology Risk Register](../06-registers/REG-TR-technology-risk-register.md) | CRO (Head of TRM operates) | Continuous | TRMF |
+| **REG-INC** | [Incident Register](../06-registers/REG-INC-incident-register.md) (re-anchored from v1) | CISO | Continuous | **CRMF** |
+| **REG-PAR** | [Privileged Access Review Register](../06-registers/REG-PAR-privileged-access-review-register.md) (re-anchored from v1) | Head of IAM | Quarterly | **CRMF** |
+| **REG-SOA** | [Statement of Applicability](../06-registers/REG-SOA-statement-of-applicability.md) (re-anchored from v1) | CISO | Annual + on change | **TRMF + CRMF** (cross-framework; ISO 27001 mandated) |
 
 ---
 

@@ -60,6 +60,19 @@ External auditors and BNM examiners often ask this question directly. A consolid
 | [Pending] | STD-CM-01 Change Management Standard | 1.0 | CIO | TBD | TBD | Initial approval |
 | [Pending] | STD-AM-01 IT Asset Management Standard | 1.0 | CIO | TBD | TBD | Initial approval |
 | [Pending] | SOP-CM-01 Change Authorisation SOP | 1.0 | Head of IT Operations | TBD | TBD | Initial approval |
+| [Pending] | POL-04 Information Security Policy (CRMF master, re-anchored from v1) | 1.0 | Board of Directors | TBD | TBD | Initial approval under v2 |
+| [Pending] | POL-05 Acceptable Use Policy (re-anchored from v1) | 1.0 | RMC | TBD | TBD | Initial approval under v2 |
+| [Pending] | POL-06 Access Control Policy (re-anchored from v1) | 1.0 | RMC | TBD | TBD | Initial approval under v2 |
+| [Pending] | POL-12 Cryptography Policy (re-anchored from v1) | 1.0 | RMC | TBD | TBD | Initial approval under v2 |
+| [Pending] | POL-13 Incident Management Policy (re-anchored from v1) | 1.0 | RMC | TBD | TBD | Initial approval under v2 |
+| [Pending] | POL-18 Vulnerability and Patch Management Policy (re-anchored from v1) | 1.0 | RMC | TBD | TBD | Initial approval under v2 |
+| [Pending] | POL-19 Supplier and Third-Party Security Policy (re-anchored from v1) | 1.0 | RMC | TBD | TBD | Initial approval under v2 |
+| [Pending] | STD-AC-01 Password & Authentication Standard (re-anchored from v1) | 1.0 | CISO | TBD | TBD | Initial approval under v2 |
+| [Pending] | STD-IR-01 Incident Classification & Severity Standard (re-anchored from v1) | 1.0 | CISO | TBD | TBD | Initial approval under v2 |
+| [Pending] | SOP-AC-01 Joiner / Mover / Leaver SOP (re-anchored from v1) | 1.0 | Head of IAM | TBD | TBD | Initial approval under v2 |
+| [Pending] | SOP-IR-01 Incident Triage SOP (re-anchored from v1) | 1.0 | Head of SOC | TBD | TBD | Initial approval under v2 |
+| [Pending] | PLN-01 Incident Response Plan (re-anchored from v1) | 1.0 | RMC | TBD | TBD | Initial approval under v2; satisfies RMiT Section 11.13 Cyber Incident Response Plan |
+| [Pending] | REG-SOA Statement of Applicability (re-anchored from v1) | 1.0 | RMC | TBD | TBD | Mandatory per ISO/IEC 27001:2022 Clause 6.1.3 d |
 
 ---
 

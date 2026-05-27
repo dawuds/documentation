@@ -7,7 +7,7 @@ A worked example of IT governance documentation structure for a Malaysian licens
 | Version | Status | Folder | Notes |
 |---|---|---|---|
 | **v1** | Stable (tagged `v1.0`) | [`v1/`](v1/) | ISO 27001-anchored ISMS for General Bank. Two worked cascades (Access Control, Incident Management). |
-| **v2 Phase 1** | Drafted (Sessions 1–4 complete) | (root) | Full IT governance architecture for **General Islamic Bank Berhad (GIBB)** — federated GRC, NCII-designated. Nine bank-authored framework documents (TRMF, CRMF, BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF), 10 TRMF-origin policies, 2 standards, 1 SOP, 1 register, document control suite. |
+| **v2 Phase 1** | Drafted (Sessions 1–5 complete) | (root) | Full IT governance architecture for **General Islamic Bank Berhad (GIBB)** — federated GRC, NCII-designated. Nine bank-authored framework documents (TRMF, CRMF, BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF), 17 policies, 4 standards, 3 SOPs, 1 plan, 4 registers, document control suite. CRMF cascade re-anchored from v1 in Session 5. |
 
 ## v2 — current state
 
@@ -17,18 +17,18 @@ A worked example of IT governance documentation structure for a Malaysian licens
 | [`_templates/`](_templates/) | Six templates (framework, policy, standard, procedure, plan, register) |
 | [`00-architecture/`](00-architecture/) | GIBB IT Governance Architecture (ARCH-001) — picture-first opener |
 | [`01-frameworks/`](01-frameworks/) | Nine Layer 2 frameworks: TRMF, CRMF, BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF |
-| [`02-policies/`](02-policies/) | 10 TRMF-origin Layer 3 policies (POL-01, POL-02, POL-03, POL-07, POL-08, POL-09, POL-15, POL-16, POL-17, POL-22) |
-| [`03-standards/`](03-standards/) | Two standards (STD-CM-01, STD-AM-01) demonstrating the TRMF cascade |
-| [`04-procedures/`](04-procedures/) | One SOP (SOP-CM-01) demonstrating the TRMF cascade |
-| [`05-plans/`](05-plans/) | Placeholders for plans (IRP, BCP, DRP, Crisis Comms, Cyber Drill, Pandemic) |
-| [`06-registers/`](06-registers/) | Technology Risk Register (REG-TR) |
+| [`02-policies/`](02-policies/) | 17 Layer 3 policies — TRMF cascade (POL-01, 02, 03, 07, 08, 09, 15, 16, 17, 22) + CRMF cascade re-anchored from v1 (POL-04, 05, 06, 12, 13, 18, 19) |
+| [`03-standards/`](03-standards/) | 4 standards — TRMF cascade (STD-CM-01, STD-AM-01) + CRMF cascade (STD-AC-01, STD-IR-01) |
+| [`04-procedures/`](04-procedures/) | 3 SOPs — TRMF cascade (SOP-CM-01) + CRMF cascade (SOP-AC-01, SOP-IR-01) |
+| [`05-plans/`](05-plans/) | PLN-01 Incident Response Plan (CRMF, re-anchored from v1). BCP, DRP, Crisis Comms, Cyber Drill, Pandemic — to be built |
+| [`06-registers/`](06-registers/) | 4 registers — TRMF (REG-TR) + CRMF (REG-INC, REG-PAR, REG-SOA cross-framework) |
 | [`07-document-control/`](07-document-control/) | Master document register, change log, approval register, archive |
 
-## Pending for subsequent phases
+## Pending for subsequent sessions
 
-- **CRMF cascade**: re-anchor v1 InfoSec content (14 policies, 2 standards, 2 SOPs, IRP, registers) under CRMF
 - **BCMF / TPRMF / CIMF / NCIIF / CloudRMF / DGF / AIGF cascades**: Layer 3-6 documents per each framework
-- **Remaining standards / SOPs / plans / registers** per the TRMF Section 9 implementation tables
+- **Remaining standards / SOPs / plans / registers** per each framework's Section 9 implementation table
+- **HR Security Policy** (POL-06HR equivalent — was POL-06 in v1) under a future People Risk framework or absorbed into POL-06 Access Control
 - **Migration playbook**: how GIBB would migrate from its existing accreted policies to the v2 structure
 - **Operational tooling**: ingestion format for a GRC platform if and when GIBB selects one
 
