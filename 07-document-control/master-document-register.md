@@ -63,6 +63,8 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | POL-07 | [Change Management Policy](../02-policies/POL-07-change-management-policy.md) | 1.0 | Draft | CIO | RMC | [Effective] | Annual | TRMF |
 | POL-08 | [Capacity and Performance Management Policy](../02-policies/POL-08-capacity-and-performance-management-policy.md) | 1.0 | Draft | CIO | RMC | [Effective] | Annual | TRMF / BCMF |
 | POL-09 | [IT Asset Management Policy](../02-policies/POL-09-it-asset-management-policy.md) | 1.0 | Draft | CIO + CDO | RMC | [Effective] | Annual | TRMF / DGF |
+| **POL-10** | [IT Vendor Management Policy](../02-policies/POL-10-it-vendor-management-policy.md) | 1.0 | Draft | Head of Procurement + CRO | RMC | [Effective] | Annual | **TPRMF** |
+| **POL-11** | [Data Classification and Handling Policy](../02-policies/POL-11-data-classification-policy.md) | 1.0 | Draft | CDO + DPO | RMC | [Effective] | Annual | **DGF / CIMF** |
 | **POL-12** | [Cryptography Policy](../02-policies/POL-12-cryptography-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual | **CRMF** |
 | **POL-13** | [Incident Management Policy](../02-policies/POL-13-incident-management-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual | **CRMF** |
 | POL-15 | [Physical and Environmental Security Policy](../02-policies/POL-15-physical-and-environmental-security-policy.md) | 1.0 | Draft | Head of Facilities + CISO | RMC | [Effective] | Annual | TRMF / BCMF |
@@ -70,7 +72,11 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | POL-17 | [Secure Development Policy](../02-policies/POL-17-secure-development-policy.md) | 1.0 | Draft | Head of Engineering + CISO | RMC | [Effective] | Annual | TRMF / CRMF |
 | **POL-18** | [Vulnerability and Patch Management Policy](../02-policies/POL-18-vulnerability-management-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual | **CRMF** |
 | **POL-19** | [Supplier and Third-Party Security Policy](../02-policies/POL-19-supplier-security-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO + Procurement | RMC | [Effective] | Annual | **TPRMF + CRMF** |
+| **POL-20** | [Cloud Acceptable Use Policy](../02-policies/POL-20-cloud-acceptable-use-policy.md) | 1.0 | Draft | Head of Cloud + CISO | RMC | [Effective] | Annual | **CloudRMF** |
+| **POL-21** | [AI Acceptable Use Policy](../02-policies/POL-21-ai-acceptable-use-policy.md) | 1.0 | Draft | CDO + CISO | RMC | [Effective] | Annual | **AIGF** |
 | POL-22 | [IT Compliance Policy](../02-policies/POL-22-it-compliance-policy.md) | 1.0 | Draft | CCO | RMC | [Effective] | Annual | TRMF |
+| **POL-23** | [NCII Operational Policy](../02-policies/POL-23-ncii-operational-policy.md) | 1.0 | Draft | CISO + CCO | RMC | [Effective] | Annual | **NCIIF** |
+| **POL-CI-01** | [Customer Data Protection Policy](../02-policies/POL-CI-01-customer-data-protection-policy.md) | 1.0 | Draft | DPO + CCO | RMC | [Effective] | Annual | **CIMF** |
 
 ---
 
@@ -100,6 +106,7 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | ID | Title | Version | Status | Owner | Approver | Effective | Next review | Parent framework |
 |---|---|---|---|---|---|---|---|---|
 | **PLN-01** | [Incident Response Plan](../05-plans/PLN-01-incident-response-plan.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual + post-event | **CRMF** |
+| **PLN-02** | [Business Continuity Plan](../05-plans/PLN-02-business-continuity-plan.md) | 1.0 | Draft | COO | RMC | [Effective] | Annual + post-event | **BCMF** |
 
 ---
 
@@ -111,6 +118,13 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | **REG-INC** | [Incident Register](../06-registers/REG-INC-incident-register.md) (re-anchored from v1) | CISO | Continuous | **CRMF** |
 | **REG-PAR** | [Privileged Access Review Register](../06-registers/REG-PAR-privileged-access-review-register.md) (re-anchored from v1) | Head of IAM | Quarterly | **CRMF** |
 | **REG-SOA** | [Statement of Applicability](../06-registers/REG-SOA-statement-of-applicability.md) (re-anchored from v1) | CISO | Annual + on change | **TRMF + CRMF** (cross-framework; ISO 27001 mandated) |
+| **REG-BIA** | [Business Impact Analysis Register](../06-registers/REG-BIA-business-impact-analysis-register.md) | Head of BC (under COO) | Annual per service | **BCMF** |
+| **REG-TPS** | [Third-Party Service Provider Register](../06-registers/REG-TPS-third-party-service-provider-register.md) | Head of Procurement + CRO | Continuous | **TPRMF** |
+| **REG-ROPA** | [Records of Processing Activity](../06-registers/REG-ROPA-records-of-processing-activity.md) | DPO | Continuous | **CIMF** |
+| **REG-NCN** | [NACSA Notification Register](../06-registers/REG-NCN-nacsa-notification-register.md) | CCO + CISO | Per event | **NCIIF** |
+| **REG-CL** | [Cloud Service Register](../06-registers/REG-CL-cloud-service-register.md) | Head of Cloud + CISO | Continuous | **CloudRMF** |
+| **REG-DA** | [Data Asset Register](../06-registers/REG-DA-data-asset-register.md) | CDO | Continuous | **DGF** |
+| **REG-AIU** | [AI Use Case Register](../06-registers/REG-AIU-ai-use-case-register.md) | AI Governance Committee (CDO) | Continuous | **AIGF** |
 
 ---
 

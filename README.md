@@ -7,7 +7,7 @@ A worked example of IT governance documentation structure for a Malaysian licens
 | Version | Status | Folder | Notes |
 |---|---|---|---|
 | **v1** | Stable (tagged `v1.0`) | [`v1/`](v1/) | ISO 27001-anchored ISMS for General Bank. Two worked cascades (Access Control, Incident Management). |
-| **v2 Phase 1** | Drafted (Sessions 1–5 complete) | (root) | Full IT governance architecture for **General Islamic Bank Berhad (GIBB)** — federated GRC, NCII-designated. Nine bank-authored framework documents (TRMF, CRMF, BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF), 17 policies, 4 standards, 3 SOPs, 1 plan, 4 registers, document control suite. CRMF cascade re-anchored from v1 in Session 5. |
+| **v2 Phase 1** | Drafted (Sessions 1–6 complete) | (root) | Full IT governance architecture for **General Islamic Bank Berhad (GIBB)** — federated GRC, NCII-designated. Nine bank-authored framework documents (TRMF, CRMF, BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF), 24 policies, 4 standards, 3 SOPs, 2 plans, 11 registers, document control suite. CRMF cascade re-anchored from v1 in Session 5. All 9 frameworks have at least one cascade policy + register (Session 6). |
 
 ## v2 — current state
 
@@ -17,11 +17,11 @@ A worked example of IT governance documentation structure for a Malaysian licens
 | [`_templates/`](_templates/) | Six templates (framework, policy, standard, procedure, plan, register) |
 | [`00-architecture/`](00-architecture/) | GIBB IT Governance Architecture (ARCH-001) — picture-first opener |
 | [`01-frameworks/`](01-frameworks/) | Nine Layer 2 frameworks: TRMF, CRMF, BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF |
-| [`02-policies/`](02-policies/) | 17 Layer 3 policies — TRMF cascade (POL-01, 02, 03, 07, 08, 09, 15, 16, 17, 22) + CRMF cascade re-anchored from v1 (POL-04, 05, 06, 12, 13, 18, 19) |
+| [`02-policies/`](02-policies/) | 24 Layer 3 policies — TRMF cascade (10) + CRMF cascade re-anchored from v1 (7) + minimum cascade for BCMF/TPRMF/CIMF/NCIIF/CloudRMF/DGF/AIGF (7) |
 | [`03-standards/`](03-standards/) | 4 standards — TRMF cascade (STD-CM-01, STD-AM-01) + CRMF cascade (STD-AC-01, STD-IR-01) |
 | [`04-procedures/`](04-procedures/) | 3 SOPs — TRMF cascade (SOP-CM-01) + CRMF cascade (SOP-AC-01, SOP-IR-01) |
-| [`05-plans/`](05-plans/) | PLN-01 Incident Response Plan (CRMF, re-anchored from v1). BCP, DRP, Crisis Comms, Cyber Drill, Pandemic — to be built |
-| [`06-registers/`](06-registers/) | 4 registers — TRMF (REG-TR) + CRMF (REG-INC, REG-PAR, REG-SOA cross-framework) |
+| [`05-plans/`](05-plans/) | 2 plans — PLN-01 IRP (CRMF, re-anchored from v1) + PLN-02 BCP (BCMF). DRP, Crisis Comms, Cyber Drill, Pandemic — to be built |
+| [`06-registers/`](06-registers/) | 11 registers — TRMF (REG-TR) + CRMF (REG-INC, REG-PAR, REG-SOA cross-framework) + 7 framework anchor registers (REG-BIA, REG-TPS, REG-ROPA, REG-NCN, REG-CL, REG-DA, REG-AIU) |
 | [`07-document-control/`](07-document-control/) | Master document register, change log, approval register, archive |
 
 ## Pending for subsequent sessions
