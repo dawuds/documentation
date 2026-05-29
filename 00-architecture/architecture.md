@@ -48,8 +48,7 @@ flowchart TB
 
     subgraph Cascade["CASCADING LAYERS"]
         L3["Policies"]
-        L4["Standards"]
-        L5["Procedures / SOPs"]
+        L4["Standards & Procedures"]
         Plans["Plans (IRP, BCP, DRP)"]
         L6["Registers (evidence)"]
     end
@@ -58,9 +57,8 @@ flowchart TB
     L1 --> L2
     L2 --> L3
     L3 --> L4
-    L4 --> L5
     L3 -.-> Plans
-    L5 --> L6
+    L4 --> L6
     Plans --> L6
 ```
 
@@ -142,12 +140,13 @@ Each Layer 2 framework document follows the same 17-section anatomy (see `_templ
 | Tier | Layer | Voice | Approver |
 |---|---|---|---|
 | 3 | **Policies** | "shall" — principle-level | Board (master) / RMC (suite) |
-| 4 | **Standards** | "shall" — measurable, mandatory | CISO / function head |
-| 5 | **Procedures / SOPs** | "do this, then this" | Process owner |
+| 4 | **Standards & Procedures** | "shall" — measurable requirements **and** "do this, then this" operational steps | CISO / function head (standards); process owner (procedures) |
 | — | **Plans** | scenario-driven (activation, phases, decision gates) | RMC |
 | 6 | **Registers** | data + evidence | Process owner |
 
-Every Layer 3 policy maps to one or more Layer 2 frameworks. Every Layer 4 standard maps to one or more Layer 3 policies. Every Layer 5 procedure maps to one or more Layer 4 standards. Every Layer 6 register maps to one or more Layer 5 procedures.
+> **Standards & Procedures is one layer.** It holds both the mandatory measurable requirements (standards) and the operational steps that deliver them (procedures / SOPs). For file organisation the documents are kept in two folders — [`../03-standards/`](../03-standards/) and [`../04-procedures/`](../04-procedures/) — but they form a single tier. Standards carry CISO / function-head approval; procedures carry process-owner approval; both sit at this tier.
+
+Every policy maps to one or more frameworks. Every standard / procedure maps to one or more policies. Every register maps to one or more standards / procedures.
 
 This is the **cascade**. Auditors follow it from policy to evidence; regulators follow it from regulatory clause to operational control.
 

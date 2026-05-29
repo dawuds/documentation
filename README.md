@@ -8,20 +8,21 @@ A complete, navigable IT governance documentation suite for a Malaysian licensed
 
 ## The document architecture
 
-Documents are organised in layers — **regulatory anchors** at the top (what GIBB must satisfy), **reference frameworks** GIBB draws upon, **nine bank-authored frameworks** that form the spine, and the **cascade** below them (policies → standards → procedures → plans → registers). A single principle is traceable from a regulatory clause all the way down to the register that evidences it.
+Documents are organised in layers — **regulatory anchors** at the top (what GIBB must satisfy), **reference frameworks** GIBB draws upon, **nine bank-authored frameworks** that form the spine, and the **cascade** below them (policies → standards & procedures → plans → registers). A single principle is traceable from a regulatory clause all the way down to the register that evidences it.
+
+> **Standards & Procedures** are one layer — the mandatory measurable requirements and the operational steps that deliver them. They are maintained in two folders ([`03-standards/`](03-standards/) and [`04-procedures/`](04-procedures/)) for file organisation but constitute a single tier.
 
 ```mermaid
 flowchart TB
-    L0["Layer 0 · Regulatory anchors<br/>BNM RMiT · Cyber Security Act 2024<br/>PDPA · IFSA · Shariah Governance"]
-    L1["Layer 1 · Reference frameworks<br/>COBIT 2019 · ITIL 4<br/>ISO 27001 / 22301 / 42001 · NIST"]
-    L2["Layer 2 · Bank-authored frameworks (9)<br/>TRMF · CRMF · BCMF · TPRMF · CIMF<br/>NCIIF · CloudRMF · DGF · AIGF"]
-    L3["Layer 3 · Policies"]
-    L4["Layer 4 · Standards"]
-    L5["Layer 5 · Procedures / SOPs"]
+    L0["Regulatory anchors<br/>BNM RMiT · Cyber Security Act 2024<br/>PDPA · IFSA · Shariah Governance"]
+    L1["Reference frameworks<br/>COBIT 2019 · ITIL 4<br/>ISO 27001 / 22301 / 42001 · NIST"]
+    L2["Bank-authored frameworks (9)<br/>TRMF · CRMF · BCMF · TPRMF · CIMF<br/>NCIIF · CloudRMF · DGF · AIGF"]
+    L3["Policies<br/>principle-level"]
+    L4["Standards & Procedures<br/>requirements + operational steps"]
     PL["Plans · IRP / BCP / DRP"]
-    L6["Layer 6 · Registers (evidence)"]
+    L6["Registers (evidence)"]
 
-    L0 --> L1 --> L2 --> L3 --> L4 --> L5 --> L6
+    L0 --> L1 --> L2 --> L3 --> L4 --> L6
     L3 -.-> PL -.-> L6
 ```
 
@@ -54,8 +55,7 @@ The nine bank-authored frameworks are the spine. Each governs a domain and casca
 | Architecture | [`00-architecture/`](00-architecture/) | The layered model and conventions |
 | Frameworks | [`01-frameworks/`](01-frameworks/) | The 9 bank-authored frameworks |
 | Policies | [`02-policies/`](02-policies/) | Principle-level "shall" documents |
-| Standards | [`03-standards/`](03-standards/) | Measurable, mandatory requirements |
-| Procedures | [`04-procedures/`](04-procedures/) | Step-by-step SOPs |
+| Standards & Procedures | [`03-standards/`](03-standards/) + [`04-procedures/`](04-procedures/) | One layer — measurable requirements (standards) and the operational steps that deliver them (SOPs) |
 | Plans | [`05-plans/`](05-plans/) | IRP, BCP, DRP, Crisis Comms, Cyber Drill, Pandemic |
 | Registers | [`06-registers/`](06-registers/) | Evidence — risk, incident, access review, SoA, etc. |
 | Document control | [`07-document-control/`](07-document-control/) | Master register, change log, approvals, archive |
@@ -71,8 +71,7 @@ How a single principle flows from regulation to evidence. **Access Control:**
 |---|---|---|
 | Framework | [CRMF](01-frameworks/CRMF.md) | Cyber resilience framework establishing access as a control domain |
 | ↓ Policy | [POL-06 Access Control Policy](02-policies/POL-06-access-control-policy.md) | Principle: least-privilege, RBAC, MFA, quarterly review |
-| ↓ Standard | [STD-AC-01 Password & Authentication](03-standards/STD-AC-01-password-and-authentication-standard.md) | Measurable: 14-char min, phishing-resistant MFA, PAM vaulting |
-| ↓ Procedure | [SOP-AC-01 Joiner / Mover / Leaver](04-procedures/SOP-AC-01-joiner-mover-leaver-sop.md) | Operational: who does what when HR triggers a status change |
+| ↓ Standards & Procedures | [STD-AC-01 Password & Authentication](03-standards/STD-AC-01-password-and-authentication-standard.md) (requirements) + [SOP-AC-01 Joiner / Mover / Leaver](04-procedures/SOP-AC-01-joiner-mover-leaver-sop.md) (steps) | Measurable: 14-char min, phishing-resistant MFA, PAM vaulting — and who does what when HR triggers a status change |
 | ↓ Register | [REG-PAR Privileged Access Review](06-registers/REG-PAR-privileged-access-review-register.md) | Evidence: quarterly review, who reviewed what, when |
 
 Every framework's cascade follows this same pattern.
@@ -90,7 +89,7 @@ v1 is preserved unchanged. v2 supersedes its structure; v1's InfoSec content was
 
 ## Build status
 
-v2 is drafted in full: 9 frameworks, 25 policies, 27 standards, 27 procedures, 9 plans, 32 registers, document control suite, plus a [migration playbook](_learning/migration-playbook.md) and [GRC platform ingestion format](_learning/grc-platform-format.md).
+v2 is drafted in full: 9 frameworks, 25 policies, 54 standards-and-procedures documents (the combined Standards & Procedures layer), 9 plans, 32 registers, document control suite, plus a [migration playbook](_learning/migration-playbook.md) and [GRC platform ingestion format](_learning/grc-platform-format.md).
 
 **Documents are at `Draft` status** pending GIBB-side actions to make them operational:
 - Per-document approval under GIBB governance (Board / RMC / function heads)
