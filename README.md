@@ -1,54 +1,112 @@
-# documentation
+# General Islamic Bank Berhad — IT Governance Documentation
 
-A worked example of IT governance documentation structure for a Malaysian licensed Islamic bank designated as a National Critical Information Infrastructure (NCII) entity.
+A complete, navigable IT governance documentation suite for a Malaysian licensed **Islamic bank** designated as **National Critical Information Infrastructure (NCII)**. Anchored on **BNM RMiT (28 November 2025)**, **ISO/IEC 27001 / 27002 / 22301 / 42001**, **COBIT 2019**, **ITIL 4**, and the **Cyber Security Act 2024**.
+
+> **Disclaimer.** Illustrative worked example. Not legal, regulatory, or audit advice. Any organisation adopting it must validate every control against its own risk profile and regulatory obligations. "General Islamic Bank Berhad (GIBB)" is fictional; the regulatory anchors are real.
+
+---
+
+## The document architecture
+
+Documents are organised in layers — **regulatory anchors** at the top (what GIBB must satisfy), **reference frameworks** GIBB draws upon, **nine bank-authored frameworks** that form the spine, and the **cascade** below them (policies → standards → procedures → plans → registers). A single principle is traceable from a regulatory clause all the way down to the register that evidences it.
+
+```mermaid
+flowchart TB
+    L0["<b>LAYER 0 · Regulatory anchors</b> (binding)<br/>BNM RMiT 28 Nov 2025 · Cyber Security Act 2024 / NACSA · BNM Shariah Governance<br/>BNM Outsourcing / BCM / MCIPD / ORR · PDPA · IFSA · FSA"]
+    L1["<b>LAYER 1 · Reference frameworks</b> (drawn upon)<br/>COBIT 2019 · ITIL 4 · ISO 27001 / 27002 / 22301 / 42001 · NIST CSF / AI RMF · EU AI Act"]
+    L2["<b>LAYER 2 · Bank-authored frameworks (9)</b><br/>TRMF · CRMF · BCMF · TPRMF · CIMF · NCIIF · CloudRMF · DGF · AIGF"]
+    L3["<b>LAYER 3 · Policies</b> — principle-level, board/RMC-approved"]
+    L4["<b>LAYER 4 · Standards</b> — mandatory, measurable"]
+    L5["<b>LAYER 5 · Procedures / SOPs</b> — operational steps"]
+    PL["<b>Plans</b> — scenario-driven (IRP, BCP, DRP)"]
+    L6["<b>LAYER 6 · Registers</b> — evidence the controls operate"]
+
+    L0 --> L1 --> L2 --> L3 --> L4 --> L5 --> L6
+    L3 -.-> PL -.-> L6
+```
+
+Full explanation: **[00-architecture/architecture.md](00-architecture/architecture.md)**.
+
+---
+
+## Navigate by framework
+
+The nine bank-authored frameworks are the spine. Each governs a domain and cascades into its own policies, standards, procedures, and registers.
+
+| Framework | Governs | Owner | Key cascade |
+|---|---|---|---|
+| [**TRMF**](01-frameworks/TRMF.md) | Technology risk (the umbrella) | CRO | POL-01 IT Governance, POL-02 Tech Risk, POL-07 Change, POL-09 Asset, POL-16 Operations |
+| [**CRMF**](01-frameworks/CRMF.md) | Cyber risk & resilience (the CRF) | CISO | POL-04 InfoSec, POL-06 Access Control, POL-13 Incident, POL-18 Vulnerability |
+| [**BCMF**](01-frameworks/BCMF.md) | Business continuity | COO | POL-14 BC, PLN-02 BCP, PLN-03 DRP |
+| [**TPRMF**](01-frameworks/TPRMF.md) | Third-party / outsourcing | Procurement + CRO | POL-10 Vendor Mgmt, POL-19 Supplier Security |
+| [**CIMF**](01-frameworks/CIMF.md) | Customer information (MCIPD + PDPA) | DPO + CCO | POL-CI-01 Customer Data Protection |
+| [**NCIIF**](01-frameworks/NCIIF.md) | NCII compliance (NACSA) | CISO + CCO | POL-23 NCII Operational |
+| [**CloudRMF**](01-frameworks/CloudRMF.md) | Cloud risk | Head of Cloud + CISO | POL-20 Cloud Acceptable Use |
+| [**DGF**](01-frameworks/DGF.md) | Enterprise data governance | CDO | POL-11 Data Classification |
+| [**AIGF**](01-frameworks/AIGF.md) | AI governance | CDO + CISO | POL-21 AI Acceptable Use |
+
+---
+
+## Navigate by document type
+
+| Layer | Folder | What's there |
+|---|---|---|
+| Architecture | [`00-architecture/`](00-architecture/) | The layered model and conventions |
+| Frameworks | [`01-frameworks/`](01-frameworks/) | The 9 bank-authored frameworks |
+| Policies | [`02-policies/`](02-policies/) | Principle-level "shall" documents |
+| Standards | [`03-standards/`](03-standards/) | Measurable, mandatory requirements |
+| Procedures | [`04-procedures/`](04-procedures/) | Step-by-step SOPs |
+| Plans | [`05-plans/`](05-plans/) | IRP, BCP, DRP, Crisis Comms, Cyber Drill, Pandemic |
+| Registers | [`06-registers/`](06-registers/) | Evidence — risk, incident, access review, SoA, etc. |
+| Document control | [`07-document-control/`](07-document-control/) | Master register, change log, approvals, archive |
+| Templates | [`_templates/`](_templates/) | One template per document type |
+
+---
+
+## A worked example — follow one cascade
+
+How a single principle flows from regulation to evidence. **Access Control:**
+
+| Layer | Document | What it adds |
+|---|---|---|
+| Framework | [CRMF](01-frameworks/CRMF.md) | Cyber resilience framework establishing access as a control domain |
+| ↓ Policy | [POL-06 Access Control Policy](02-policies/POL-06-access-control-policy.md) | Principle: least-privilege, RBAC, MFA, quarterly review |
+| ↓ Standard | [STD-AC-01 Password & Authentication](03-standards/STD-AC-01-password-and-authentication-standard.md) | Measurable: 14-char min, phishing-resistant MFA, PAM vaulting |
+| ↓ Procedure | [SOP-AC-01 Joiner / Mover / Leaver](04-procedures/SOP-AC-01-joiner-mover-leaver-sop.md) | Operational: who does what when HR triggers a status change |
+| ↓ Register | [REG-PAR Privileged Access Review](06-registers/REG-PAR-privileged-access-review-register.md) | Evidence: quarterly review, who reviewed what, when |
+
+Every framework's cascade follows this same pattern.
+
+---
+
+## Where to start
+
+| You are… | Start here |
+|---|---|
+| **A client / evaluator** | [Architecture](00-architecture/architecture.md) → one [framework](01-frameworks/) → the worked cascade above |
+| **A CISO adopting this** | [Architecture](00-architecture/architecture.md) → [TRMF](01-frameworks/TRMF.md) → [CRMF](01-frameworks/CRMF.md) → [Migration playbook](_learning/migration-playbook.md) |
+| **An auditor / inspector** | [Master document register](07-document-control/master-document-register.md) → [Statement of Applicability](06-registers/REG-SOA-statement-of-applicability.md) → individual frameworks |
+| **An implementer / GRC engineer** | [GRC platform format](_learning/grc-platform-format.md) → [`_templates/`](_templates/) |
+
+---
 
 ## Versions
 
-| Version | Status | Folder | Notes |
-|---|---|---|---|
-| **v1** | Stable (tagged `v1.0`) | [`v1/`](v1/) | ISO 27001-anchored ISMS for General Bank. Two worked cascades (Access Control, Incident Management). |
-| **v2 Phase 1 + 2** | **Drafted in full — complete** | (root) | Full IT governance architecture for **General Islamic Bank Berhad (GIBB)** — federated GRC, NCII-designated. **Nine bank-authored frameworks + 25 policies + 27 standards + 27 SOPs + 9 plans + 32 registers + document control suite + migration playbook + GRC platform format.** Every framework has full cascade depth (Framework → Policy → Standard → SOP → Plan → Register), with cross-cutting registers, per-service DRPs, and adjacent learning / migration / tooling material. |
+| Version | Status | Location |
+|---|---|---|
+| **v2** (current) | Drafted in full | repo root — GIBB IT governance suite (this page) |
+| **v1** | Stable snapshot (git tag `v1.0`) | [`v1/`](v1/) — original ISO 27001-anchored ISMS for "General Bank"; two worked cascades |
 
-## v2 — current state
+v1 is preserved unchanged. v2 supersedes its structure; v1's InfoSec content was re-anchored under CRMF.
 
-| Folder | Contents |
-|---|---|
-| [`_context/`](_context/) | Design decisions (13 ADRs); bank profile; framework stack; seams; glossary; role; outcome |
-| [`_templates/`](_templates/) | Six templates (framework, policy, standard, procedure, plan, register) |
-| [`_learning/`](_learning/) | Migration playbook + GRC platform ingestion format (v2 additions); v1 reading paths + extension roadmap remain at v1/_learning/ |
-| [`00-architecture/`](00-architecture/) | GIBB IT Governance Architecture (ARCH-001) — picture-first opener |
-| [`01-frameworks/`](01-frameworks/) | Nine Layer 2 frameworks: TRMF, CRMF, BCMF, TPRMF, CIMF, NCIIF, CloudRMF, DGF, AIGF |
-| [`02-policies/`](02-policies/) | **25 Layer 3 policies** |
-| [`03-standards/`](03-standards/) | **27 standards** — TRMF (2), CRMF (5), BCMF (2), TPRMF (3), CIMF (3), NCIIF (2), CloudRMF (3), DGF (3), AIGF (4) |
-| [`04-procedures/`](04-procedures/) | **27 SOPs** — across all cascades incl. forensic evidence handling, cyber drill, BIA, backup operations, TPSP lifecycle, DSAR, customer breach notification, NACSA notification & examination response, CSPM operations, cloud exit validation, data asset/quality/destruction, AI model validation, AI vendor assessment |
-| [`05-plans/`](05-plans/) | **9 plans** — PLN-01 IRP, PLN-02 BCP, PLN-03 master DRP + PLN-03-CB/-IB/-PMT per-service DRPs, PLN-04 Crisis Comms, PLN-05 Cyber Drill, PLN-06 Pandemic |
-| [`06-registers/`](06-registers/) | **32 registers** — framework anchors + cross-cutting registers + subordinate registers (NACSA Directive Tracker, NCII Audit Findings, Cloud Exit, Cloud Risk Assessment, AI Vendor, AI Bias and Fairness, Data Quality, Data Lineage, Master Data, TPSP Incident, Customer Disclosure) |
-| [`07-document-control/`](07-document-control/) | Master document register (every v2 document catalogued), change log, approval register, archive |
+## Build status
 
-## Build complete
+v2 is drafted in full: 9 frameworks, 25 policies, 27 standards, 27 procedures, 9 plans, 32 registers, document control suite, plus a [migration playbook](_learning/migration-playbook.md) and [GRC platform ingestion format](_learning/grc-platform-format.md).
 
-All deferred items from prior phases have been completed. The next steps for GIBB to make this operational are:
+**Documents are at `Draft` status** pending GIBB-side actions to make them operational:
+- Per-document approval under GIBB governance (Board / RMC / function heads)
+- Substantive review by GIBB function owners (role titles, system references, regulatory clock numerals)
+- GRC platform selection (if going beyond markdown)
+- First operational cycles — annual cyber drill (RMiT 11.16), BNM / NACSA examination, Internal Audit, ISO 27001 surveillance
 
-- **Per-document approval cycle** under GIBB governance (Board for POL-00 / POL-01 / POL-03 / ARCH-001; RMC for the supporting suite; CISO / function heads for standards; process owners for SOPs)
-- **Substantive content review** by GIBB function owners against actual operating model — terminology, role titles, system references, regulatory clock numerals
-- **GRC platform selection** if going beyond markdown — see [`_learning/grc-platform-format.md`](_learning/grc-platform-format.md) for ingestion model
-- **Migration execution** if GIBB is moving from an accreted current state — see [`_learning/migration-playbook.md`](_learning/migration-playbook.md) for 12–18 month plan
-- **First operational cycles** — first annual cyber drill (RMiT 11.16); first BNM examination under v2; first Internal Audit cycle under v2; first NACSA examination
-
-## Compliance anchors
-
-| Authority | Scope |
-|---|---|
-| ISO/IEC 27001:2022; ISO/IEC 27002:2022 | ISMS standard + 93 controls |
-| ISO/IEC 22301:2019 | BCMS standard |
-| ISO/IEC 42001:2023 | AI Management System |
-| BNM Risk Management in Technology (RMiT), 28 November 2025 issuance | Primary regulatory mandate |
-| Cyber Security Act 2024 (Malaysia) + NACSA Code of Practice | NCII designation |
-| BNM Shariah Governance Framework | Islamic-banking overlay |
-| BNM Outsourcing / BCM / MCIPD / Operational Risk Reporting PDs | Supporting BNM mandates |
-| PDPA 2010; IFSA 2013; FSA 2013; Computer Crimes Act 1997 | Applicable laws |
-| COBIT 2019 (incl. Focus Areas); ITIL 4; NIST CSF 2.0; NIST AI RMF; EU AI Act; MAS FEAT; BNM Cloud TRAG; CIS Benchmarks | Reference frameworks |
-
-## Disclaimer
-
-This documentation is illustrative. It is not legal, regulatory, or audit advice. Any organisation adopting it must validate every control against its own risk profile, regulatory obligations, and operating environment. GIBB is a fictional bank used as a worked example.
+Design decisions, bank profile, and the canonical regulatory mapping are in [`_context/`](_context/).
