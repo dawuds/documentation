@@ -12,14 +12,14 @@ Documents are organised in layers — **regulatory anchors** at the top (what GI
 
 ```mermaid
 flowchart TB
-    L0["<b>LAYER 0 · Regulatory anchors</b> (binding)<br/>BNM RMiT 28 Nov 2025 · Cyber Security Act 2024 / NACSA · BNM Shariah Governance<br/>BNM Outsourcing / BCM / MCIPD / ORR · PDPA · IFSA · FSA"]
-    L1["<b>LAYER 1 · Reference frameworks</b> (drawn upon)<br/>COBIT 2019 · ITIL 4 · ISO 27001 / 27002 / 22301 / 42001 · NIST CSF / AI RMF · EU AI Act"]
-    L2["<b>LAYER 2 · Bank-authored frameworks (9)</b><br/>TRMF · CRMF · BCMF · TPRMF · CIMF · NCIIF · CloudRMF · DGF · AIGF"]
-    L3["<b>LAYER 3 · Policies</b> — principle-level, board/RMC-approved"]
-    L4["<b>LAYER 4 · Standards</b> — mandatory, measurable"]
-    L5["<b>LAYER 5 · Procedures / SOPs</b> — operational steps"]
-    PL["<b>Plans</b> — scenario-driven (IRP, BCP, DRP)"]
-    L6["<b>LAYER 6 · Registers</b> — evidence the controls operate"]
+    L0["Layer 0 · Regulatory anchors<br/>BNM RMiT · Cyber Security Act 2024<br/>PDPA · IFSA · Shariah Governance"]
+    L1["Layer 1 · Reference frameworks<br/>COBIT 2019 · ITIL 4<br/>ISO 27001 / 22301 / 42001 · NIST"]
+    L2["Layer 2 · Bank-authored frameworks (9)<br/>TRMF · CRMF · BCMF · TPRMF · CIMF<br/>NCIIF · CloudRMF · DGF · AIGF"]
+    L3["Layer 3 · Policies"]
+    L4["Layer 4 · Standards"]
+    L5["Layer 5 · Procedures / SOPs"]
+    PL["Plans · IRP / BCP / DRP"]
+    L6["Layer 6 · Registers (evidence)"]
 
     L0 --> L1 --> L2 --> L3 --> L4 --> L5 --> L6
     L3 -.-> PL -.-> L6
@@ -76,17 +76,6 @@ How a single principle flows from regulation to evidence. **Access Control:**
 | ↓ Register | [REG-PAR Privileged Access Review](06-registers/REG-PAR-privileged-access-review-register.md) | Evidence: quarterly review, who reviewed what, when |
 
 Every framework's cascade follows this same pattern.
-
----
-
-## Where to start
-
-| You are… | Start here |
-|---|---|
-| **A client / evaluator** | [Architecture](00-architecture/architecture.md) → one [framework](01-frameworks/) → the worked cascade above |
-| **A CISO adopting this** | [Architecture](00-architecture/architecture.md) → [TRMF](01-frameworks/TRMF.md) → [CRMF](01-frameworks/CRMF.md) → [Migration playbook](_learning/migration-playbook.md) |
-| **An auditor / inspector** | [Master document register](07-document-control/master-document-register.md) → [Statement of Applicability](06-registers/REG-SOA-statement-of-applicability.md) → individual frameworks |
-| **An implementer / GRC engineer** | [GRC platform format](_learning/grc-platform-format.md) → [`_templates/`](_templates/) |
 
 ---
 

@@ -199,11 +199,11 @@ The TRMF comprises five interlocking components. The framework operates as a con
 
 ```mermaid
 flowchart TB
-    A["A. Risk governance<br/>Board · RMC · Shariah Cttee · CRO · CISO · Three-line model"]
-    B["B. Risk taxonomy and appetite<br/>Risk categories · Appetite statement · Materiality matrix"]
-    C["C. Risk lifecycle<br/>Identify → Assess → Treat → Monitor → Report"]
-    D["D. Risk infrastructure<br/>Registers · Tooling · Information systems · Reporting platform"]
-    E["E. Risk people and culture<br/>Capability · Training · Awareness · Accountability"]
+    A["A · Risk governance<br/>Three-line model<br/>Board · RMC · CRO · CISO"]
+    B["B · Risk taxonomy<br/>& appetite<br/>Materiality matrix"]
+    C["C · Risk lifecycle<br/>Identify → Assess →<br/>Treat → Monitor → Report"]
+    D["D · Risk infrastructure<br/>Registers · Tooling<br/>Reporting platform"]
+    E["E · Risk people<br/>& culture<br/>Capability · Training"]
 
     A --> B
     A --> C
@@ -213,6 +213,8 @@ flowchart TB
     C <--> D
     C <--> E
 ```
+
+> Component detail (incl. the Shariah Committee in governance and the full taxonomy) is in the table below.
 
 | Component | What it contains | Cross-reference |
 |---|---|---|

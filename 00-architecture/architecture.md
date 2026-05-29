@@ -18,23 +18,23 @@
 
 ```mermaid
 flowchart TB
-    subgraph L0["LAYER 0 — REGULATORY ANCHORS (binding)"]
-        L0A["BNM RMiT (28 Nov 2025) — primary"]
-        L0B["Cyber Security Act 2024 + NACSA Code of Practice — NCII overlay"]
-        L0C["BNM Shariah Governance Framework — Islamic overlay"]
-        L0D["BNM Outsourcing / BCM / MCIPD / Operational Risk Reporting PDs"]
-        L0E["PDPA 2010 · IFSA 2013 · FSA 2013 · Computer Crimes Act 1997"]
+    subgraph L0["LAYER 0 — Regulatory anchors (binding)"]
+        L0A["BNM RMiT (28 Nov 2025)"]
+        L0B["Cyber Security Act 2024 / NACSA"]
+        L0C["BNM Shariah Governance Framework"]
+        L0D["BNM Outsourcing / BCM / MCIPD / ORR"]
+        L0E["PDPA · IFSA · FSA · Computer Crimes Act"]
     end
 
-    subgraph L1["LAYER 1 — REFERENCE FRAMEWORKS (drawn upon, not authored)"]
-        L1A["COBIT 2019 — structural taxonomy (40 objectives, 5 domains)"]
-        L1B["ITIL 4 — service management practices"]
-        L1C["ISO/IEC 27001 / 27002 / 22301 / 42001"]
-        L1D["NIST CSF 2.0 · NIST AI RMF · NIST SP 800-series"]
-        L1E["EU AI Act · MAS FEAT · BNM Cloud TRAG · CIS Benchmarks"]
+    subgraph L1["LAYER 1 — Reference frameworks"]
+        L1A["COBIT 2019"]
+        L1B["ITIL 4"]
+        L1C["ISO 27001 / 27002 / 22301 / 42001"]
+        L1D["NIST CSF / AI RMF / SP 800-series"]
+        L1E["EU AI Act · MAS FEAT · Cloud TRAG · CIS"]
     end
 
-    subgraph L2["LAYER 2 — BANK-AUTHORED FRAMEWORK DOCUMENTS"]
+    subgraph L2["LAYER 2 — Bank-authored frameworks"]
         TRMF["TRMF<br/>Technology Risk"]
         CRMF["CRMF<br/>Cyber Risk"]
         BCMF["BCMF<br/>Business Continuity"]
@@ -47,11 +47,11 @@ flowchart TB
     end
 
     subgraph Cascade["CASCADING LAYERS"]
-        L3["Layer 3 — Policies"]
-        L4["Layer 4 — Standards"]
-        L5["Layer 5 — Procedures / SOPs"]
+        L3["Policies"]
+        L4["Standards"]
+        L5["Procedures / SOPs"]
         Plans["Plans (IRP, BCP, DRP)"]
-        L6["Layer 6 — Registers (evidence)"]
+        L6["Registers (evidence)"]
     end
 
     L0 --> L1
@@ -157,27 +157,28 @@ This is the **cascade**. Auditors follow it from policy to evidence; regulators 
 
 ```mermaid
 flowchart LR
-    TRMF["TRMF<br/>Technology Risk<br/>(umbrella for tech risk + IT governance)"]
+    TRMF["TRMF<br/>Technology Risk<br/>(umbrella)"]
     CRMF["CRMF<br/>Cyber Risk + CRF"]
     BCMF["BCMF<br/>Business Continuity"]
-    TPRMF["TPRMF<br/>Third Party Lifecycle"]
-    CIMF["CIMF<br/>Customer Information"]
+    TPRMF["TPRMF<br/>Third Party"]
+    CIMF["CIMF<br/>Customer Info"]
     NCIIF["NCIIF<br/>NCII Compliance"]
-    CloudRMF["CloudRMF<br/>Cloud Risk Content"]
+    CloudRMF["CloudRMF<br/>Cloud Risk"]
     DGF["DGF<br/>Enterprise Data"]
     AIGF["AIGF<br/>AI Governance"]
 
-    TRMF -.->|"cross-references"| CRMF
-    TRMF -.->|"cross-references"| BCMF
-    TRMF -.->|"cross-references"| TPRMF
-    TRMF -.->|"cross-references"| CloudRMF
-    CRMF -.->|"NCII obligations supplement"| NCIIF
-    CRMF -.->|"InfoSec sub-framework<br/>(v1 ISO 27001 content)"| CRMF
-    TPRMF -.->|"cloud engagements<br/>also trigger"| CloudRMF
-    DGF -.->|"customer data also subject to"| CIMF
-    DGF -.->|"AI training data governance"| AIGF
-    BCMF -.->|"IT-specific recovery"| TRMF
+    TRMF -.->|"governs"| CRMF
+    TRMF -.->|"governs"| BCMF
+    TRMF -.->|"governs"| TPRMF
+    CRMF -.->|"supplements"| NCIIF
+    TPRMF -.->|"cloud triggers"| CloudRMF
+    CRMF -.->|"cloud security"| CloudRMF
+    DGF -.->|"customer data"| CIMF
+    DGF -.->|"training data"| AIGF
+    BCMF -.->|"IT recovery"| TRMF
 ```
+
+> The InfoSec sub-framework (re-anchored v1 ISO 27001 content) sits inside CRMF rather than as a separate framework. Seam definitions are in [`../_context/seams.md`](../_context/seams.md).
 
 **Three seams** (where overlap requires explicit resolution — see `_context/seams.md`):
 
