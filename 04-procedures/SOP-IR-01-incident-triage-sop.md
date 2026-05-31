@@ -12,6 +12,8 @@
 | **Next review** | 2027-02-01 (annual; immediate on toolchain change or post-SEV-1 incident) |
 | **Implements standard** | [STD-IR-01 Incident Classification & Severity Standard](../03-standards/STD-IR-01-incident-classification-and-severity-standard.md) |
 | **Implements policy** | [POL-13 Incident Management Policy](../02-policies/POL-13-incident-management-policy.md) |
+| **Parent framework(s)** | [CRMF](../01-frameworks/CRMF.md) |
+| **COBIT objective(s)** | DSS02 Managed Service Requests and Incidents; DSS05 Managed Security Services |
 
 ---
 

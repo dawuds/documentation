@@ -61,7 +61,7 @@ Per RMiT 10.45.
 |---|---|
 | 3.5.1 | Each Tier 0/1 backup shall be tested for restorability **monthly** via automated restore-and-validate. |
 | 3.5.2 | Tier 2 backups tested **quarterly**. |
-| 3.5.3 | Full disaster-recovery restoration test per critical service **annually** (per [STD-BC-01 §3.6](STD-BC-01-recovery-objectives-standard.md)). |
+| 3.5.3 | Full disaster-recovery restoration test per critical service **annually** (per [STD-BC-01 Section 3.6](STD-BC-01-recovery-objectives-standard.md)). |
 | 3.5.4 | Test failures shall trigger investigation; root cause and remediation tracked. |
 
 ### 3.6 Backup integrity
@@ -84,7 +84,7 @@ Per [POL-14](../02-policies/POL-14-business-continuity-policy.md).
 [POL-14](../02-policies/POL-14-business-continuity-policy.md); [STD-BC-01](STD-BC-01-recovery-objectives-standard.md); [STD-CR-01](STD-CR-01-cryptographic-standard.md); [POL-15](../02-policies/POL-15-physical-and-environmental-security-policy.md); SOP-BC-02 Backup Operation SOP; SOP-BC-03 Tamper-Proof Backup Verification SOP
 
 ## 6. References
-BNM RMiT 28 Nov 2025 §10.44; 10.45; Appendix 1; ISO/IEC 27002:2022 control 8.13; ISO/IEC 22301:2019.
+BNM RMiT 28 Nov 2025 Section 10.44; 10.45; Appendix 1; ISO/IEC 27002:2022 control 8.13; ISO/IEC 22301:2019.
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

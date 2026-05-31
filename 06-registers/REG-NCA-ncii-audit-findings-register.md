@@ -31,9 +31,9 @@ Authoritative record of NCII-scope audit findings from Internal Audit, external 
 ## Worked example
 | nca_id | source | severity | applicable | target | status |
 |---|---|---|---|---|---|
-| NCA-2026-001 | Internal Audit FY2026 | Medium | NACSA CoP §X.Y — evidence enhancement | 2026-09-30 | In remediation |
-| NCA-2026-002 | NACSA examination | High | NACSA CoP §X.Z — specific control gap | 2026-08-15 | In remediation; CAP-2026-0028 |
-| NCA-2026-003 | Internal Audit FY2026 | Low | Code of Practice §X.A — documentation update | 2026-06-30 | Verified closed |
+| NCA-2026-001 | Internal Audit FY2026 | Medium | NACSA CoP Section X.Y — evidence enhancement | 2026-09-30 | In remediation |
+| NCA-2026-002 | NACSA examination | High | NACSA CoP Section X.Z — specific control gap | 2026-08-15 | In remediation; CAP-2026-0028 |
+| NCA-2026-003 | Internal Audit FY2026 | Low | Code of Practice Section X.A — documentation update | 2026-06-30 | Verified closed |
 
 ## Related documents
 [STD-NC-02](../03-standards/STD-NC-02-ncii-audit-standard.md); [POL-23](../02-policies/POL-23-ncii-operational-policy.md); [REG-CAP](REG-CAP-corrective-action-register.md); [SOP-NC-02](../04-procedures/SOP-NC-02-nacsa-examination-response-sop.md)

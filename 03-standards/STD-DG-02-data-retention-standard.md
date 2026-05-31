@@ -30,15 +30,15 @@ All data assets in [REG-DA](../06-registers/REG-DA-data-asset-register.md). Cust
 | Internal Audit working papers | 7 years post-report | Audit standard |
 | Cyber incident records | 7 years; permanent for material per Board judgement | Forensic + audit |
 | Cyber threat intelligence | 3 years (operational); permanent for material campaigns | SOC + threat intel value |
-| System logs (production) | Per [STD-CR-02 §3.6](STD-CR-02-logging-standard.md) | Audit + forensic |
-| Backup data | Per [STD-BC-02 §3.2](STD-BC-02-backup-and-restoration-standard.md) | Recovery |
+| System logs (production) | Per [STD-CR-02 Section 3.6](STD-CR-02-logging-standard.md) | Audit + forensic |
+| Backup data | Per [STD-BC-02 Section 3.2](STD-BC-02-backup-and-restoration-standard.md) | Recovery |
 | IT change records | 7 years | Audit + forensic |
 
 ## 4. Destruction
-Per [POL-15 §3.7](../02-policies/POL-15-physical-and-environmental-security-policy.md); secure destruction at end of retention; certificate of destruction recorded.
+Per [POL-15 Section 3.7](../02-policies/POL-15-physical-and-environmental-security-policy.md); secure destruction at end of retention; certificate of destruction recorded.
 
 ## 5. Legal hold
-Per [STD-CI-02 §5](STD-CI-02-customer-data-retention-standard.md).
+Per [STD-CI-02 Section 5](STD-CI-02-customer-data-retention-standard.md).
 
 ## 6. Long-tail data
 Data not explicitly listed above defaults to: business need + 3 years OR regulatory minimum, whichever longer. Data owner classifies on registration to [REG-DA](../06-registers/REG-DA-data-asset-register.md).
@@ -47,7 +47,7 @@ Data not explicitly listed above defaults to: business need + 3 years OR regulat
 Reduced retention requires CDO + Legal + CCO joint approval.
 
 ## 8. Related documents
-[STD-CI-02](STD-CI-02-customer-data-retention-standard.md); [POL-11](../02-policies/POL-11-data-classification-policy.md); [STD-DG-01](STD-DG-01-data-quality-standard.md); [STD-CR-02](STD-CR-02-logging-standard.md); [STD-BC-02](STD-BC-02-backup-and-restoration-standard.md); [REG-DA](../06-registers/REG-DA-data-asset-register.md); SOP-DG-03 Data Destruction SOP (future)
+[STD-CI-02](STD-CI-02-customer-data-retention-standard.md); [POL-11](../02-policies/POL-11-data-classification-policy.md); [STD-DG-01](STD-DG-01-data-quality-standard.md); [STD-CR-02](STD-CR-02-logging-standard.md); [STD-BC-02](STD-BC-02-backup-and-restoration-standard.md); [REG-DA](../06-registers/REG-DA-data-asset-register.md); [SOP-DG-03 Data Destruction SOP](../04-procedures/SOP-DG-03-data-destruction-sop.md)
 
 ## 9. References
 PDPA 2010 Section 10; AMLA 2001; FSA 2013; IFSA 2013; Labour Act 1955; BNM record-keeping requirements; BNM SGF.

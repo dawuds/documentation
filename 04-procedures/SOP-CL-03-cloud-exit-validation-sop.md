@@ -4,7 +4,7 @@
 |---|---|
 | **Document ID** | SOP-CL-03 | **Version** | 1.0 |
 | **Owner / Approver** | Head of Cloud + Head of Procurement |
-| **Parent policy** | [POL-20 §4.7](../02-policies/POL-20-cloud-acceptable-use-policy.md) | **Parent framework** | [CloudRMF](../01-frameworks/CloudRMF.md); [TPRMF](../01-frameworks/TPRMF.md) |
+| **Parent policy** | [POL-20 Section 4.7](../02-policies/POL-20-cloud-acceptable-use-policy.md) | **Parent framework** | [CloudRMF](../01-frameworks/CloudRMF.md); [TPRMF](../01-frameworks/TPRMF.md) |
 
 ## 1. Purpose
 Periodically validate that GIBB's cloud exit plans are executable — not just documented. Discharges BNM Outsourcing PD exit-readiness expectations.

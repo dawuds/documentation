@@ -43,4 +43,4 @@ Authoritative record of customer information disclosures by GIBB to third partie
 - BNM MCIPD examination: this register is primary evidence
 
 ## Related documents
-[POL-CI-01 §4.3](../02-policies/POL-CI-01-customer-data-protection-policy.md); [STD-CI-01](../03-standards/STD-CI-01-customer-data-classification-standard.md); BNM MCIPD; PDPA 2010
+[POL-CI-01 Section 4.3](../02-policies/POL-CI-01-customer-data-protection-policy.md); [STD-CI-01](../03-standards/STD-CI-01-customer-data-classification-standard.md); BNM MCIPD; PDPA 2010

@@ -72,5 +72,5 @@ The authoritative inventory of personal-data processing activities at GIBB — t
 ## Related documents
 
 - **Parent framework:** [CIMF](../01-frameworks/CIMF.md)
-- **Parent policy:** [POL-CI-01](../02-policies/POL-CI-01-customer-data-protection-policy.md); [POL-CI-02 Customer Consent and Disclosure Policy](../02-policies/POL-CI-02-customer-consent-and-disclosure-policy.md) (future)
-- **Related registers:** REG-DSR Data Subject Request Register (future); REG-DIS Customer Disclosure Register (future); REG-CDB Customer Data Breach Register (future)
+- **Parent policy:** [POL-CI-01](../02-policies/POL-CI-01-customer-data-protection-policy.md); [POL-CI-02 Customer Consent and Disclosure Policy](../02-policies/POL-CI-02-customer-consent-and-disclosure-policy.md) 
+- **Related registers:** [REG-DSR Data Subject Request Register](REG-DSR-data-subject-request-register.md); [REG-DIS Customer Disclosure Register](REG-DIS-customer-disclosure-register.md); [REG-CDB Customer Data Breach Register](REG-CDB-customer-data-breach-register.md)

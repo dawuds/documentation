@@ -46,7 +46,7 @@ Aggregated customer data inherits the highest class of components. E.g., a repor
 
 | Ref | Requirement |
 |---|---|
-| 3.4.1 | Customer identifiers in non-production environments shall be masked or tokenised per [POL-17 §4.7](../02-policies/POL-17-secure-development-policy.md). |
+| 3.4.1 | Customer identifiers in non-production environments shall be masked or tokenised per [POL-17 Section 4.7](../02-policies/POL-17-secure-development-policy.md). |
 | 3.4.2 | Customer financial data in analytics environments shall be de-identified where the analytical purpose does not require identification. |
 
 ### 3.5 Cross-border transfer
@@ -62,7 +62,7 @@ Per [POL-CI-01](../02-policies/POL-CI-01-customer-data-protection-policy.md).
 [POL-CI-01](../02-policies/POL-CI-01-customer-data-protection-policy.md); [POL-11](../02-policies/POL-11-data-classification-policy.md); [STD-CR-01](STD-CR-01-cryptographic-standard.md); [REG-ROPA](../06-registers/REG-ROPA-records-of-processing-activity.md); [CIMF](../01-frameworks/CIMF.md)
 
 ## 6. References
-BNM MCIPD; PDPA 2010; BNM RMiT §12.
+BNM MCIPD; PDPA 2010; BNM RMiT Section 12.
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

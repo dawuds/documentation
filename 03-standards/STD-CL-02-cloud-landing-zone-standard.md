@@ -30,7 +30,7 @@ Per-environment isolation: production, non-production (dev/test), shared service
 ### 3.3 Identity baseline
 | Ref | Requirement |
 |---|---|
-| 3.3.1 | Federated identity from GIBB IDP; no standalone cloud identities except break-glass per [STD-AC-01 §3.7](STD-AC-01-password-and-authentication-standard.md) |
+| 3.3.1 | Federated identity from GIBB IDP; no standalone cloud identities except break-glass per [STD-AC-01 Section 3.7](STD-AC-01-password-and-authentication-standard.md) |
 | 3.3.2 | Workload identity via roles/managed identities/service accounts — not long-lived API keys |
 | 3.3.3 | Just-in-time elevation for privileged operations |
 | 3.3.4 | IAM policies follow least-privilege; no `*` permissions on production |
@@ -60,7 +60,7 @@ Per-environment isolation: production, non-production (dev/test), shared service
 | Ref | Requirement |
 |---|---|
 | 3.7.1 | Landing zone provisioned through IaC; manual provisioning of production resources prohibited except break-glass |
-| 3.7.2 | IaC stored in source control with mandatory code review per [POL-17 §4.9](../02-policies/POL-17-secure-development-policy.md) |
+| 3.7.2 | IaC stored in source control with mandatory code review per [POL-17 Section 4.9](../02-policies/POL-17-secure-development-policy.md) |
 | 3.7.3 | Pre-deploy IaC scanning (Checkov / equivalent) blocking pipeline on critical findings |
 
 ### 3.8 Provider-specific addenda
@@ -73,7 +73,7 @@ Per [POL-20](../02-policies/POL-20-cloud-acceptable-use-policy.md). Departures f
 [STD-CL-01](STD-CL-01-cloud-security-standard.md); [STD-CL-03](STD-CL-03-cloud-data-residency-standard.md); [STD-CR-01](STD-CR-01-cryptographic-standard.md); [STD-CR-02](STD-CR-02-logging-standard.md); [REG-CL](../06-registers/REG-CL-cloud-service-register.md); [SOP-CL-01](../04-procedures/SOP-CL-01-cloud-service-onboarding-sop.md)
 
 ## 6. References
-BNM RMiT 28 Nov 2025 §10.50–10.52; Appendix 10; BNM Cloud TRAG; CIS Foundations Benchmarks (AWS/Azure/GCP); CSA CCM; AWS Well-Architected Framework — Security Pillar; Azure Cloud Adoption Framework; Google Cloud Architecture Framework.
+BNM RMiT 28 Nov 2025 Section 10.50–10.52; Appendix 10; BNM Cloud TRAG; CIS Foundations Benchmarks (AWS/Azure/GCP); CSA CCM; AWS Well-Architected Framework — Security Pillar; Azure Cloud Adoption Framework; Google Cloud Architecture Framework.
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

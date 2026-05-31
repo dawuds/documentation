@@ -28,7 +28,7 @@ All generative AI use cases — in-house deployed, vendor SaaS, foundation-model
 | 3.2.1 | Inputs treated as untrusted; no direct execution of user-provided text as system instruction |
 | 3.2.2 | System prompts separated from user content; clear delimiter |
 | 3.2.3 | Output validation before action — no automatic execution of model output as code or as system command without human review |
-| 3.2.4 | Prompt injection testing per [STD-AI-02 §3.4](STD-AI-02-ai-model-validation-standard.md) before deployment |
+| 3.2.4 | Prompt injection testing per [STD-AI-02 Section 3.4](STD-AI-02-ai-model-validation-standard.md) before deployment |
 
 ### 3.3 Data exfiltration controls
 | Ref | Requirement |
@@ -43,7 +43,7 @@ All generative AI use cases — in-house deployed, vendor SaaS, foundation-model
 | 3.4.1 | Retrieval-augmented generation (RAG) preferred for factual-grounding use cases |
 | 3.4.2 | Customer-facing informational generative use cases shall include disclaimer about AI-generated content |
 | 3.4.3 | Generative AI for transactional decisioning (financing approval, customer outcome) prohibited unless approved as High-risk under [STD-AI-01](STD-AI-01-ai-use-case-risk-classification-standard.md) with human review |
-| 3.4.4 | Hallucination rate monitored per [STD-AI-02 §3.4](STD-AI-02-ai-model-validation-standard.md) |
+| 3.4.4 | Hallucination rate monitored per [STD-AI-02 Section 3.4](STD-AI-02-ai-model-validation-standard.md) |
 
 ### 3.5 IP and copyright
 | Ref | Requirement |
@@ -74,7 +74,7 @@ All generative AI use cases — in-house deployed, vendor SaaS, foundation-model
 Per [POL-21](../02-policies/POL-21-ai-acceptable-use-policy.md).
 
 ## 5. Related documents
-[POL-21](../02-policies/POL-21-ai-acceptable-use-policy.md); [STD-AI-01](STD-AI-01-ai-use-case-risk-classification-standard.md); [STD-AI-02](STD-AI-02-ai-model-validation-standard.md); STD-AI-04 AI Training Data; [STD-CR-02](STD-CR-02-logging-standard.md); [REG-AIU](../06-registers/REG-AIU-ai-use-case-register.md); [REG-AIM](../06-registers/REG-AIM-ai-model-inventory.md)
+[POL-21](../02-policies/POL-21-ai-acceptable-use-policy.md); [STD-AI-01](STD-AI-01-ai-use-case-risk-classification-standard.md); [STD-AI-02](STD-AI-02-ai-model-validation-standard.md); [STD-AI-04 AI Training Data Standard](STD-AI-04-ai-training-data-standard.md); [STD-CR-02](STD-CR-02-logging-standard.md); [REG-AIU](../06-registers/REG-AIU-ai-use-case-register.md); [REG-AIM](../06-registers/REG-AIM-ai-model-inventory.md)
 
 ## 6. References
 NIST AI RMF Generative AI Profile (July 2024); OWASP Top 10 for LLMs; ISO/IEC 42001:2023; EU AI Act (2024) GenAI provisions; BNM Discussion Paper on Responsible AI; BNM Shariah Governance Framework.

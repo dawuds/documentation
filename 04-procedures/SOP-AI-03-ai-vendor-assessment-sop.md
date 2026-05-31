@@ -4,7 +4,7 @@
 |---|---|
 | **Document ID** | SOP-AI-03 | **Version** | 1.0 |
 | **Owner / Approver** | AI Governance team + TPRM team |
-| **Parent policy** | [POL-21 §4.8](../02-policies/POL-21-ai-acceptable-use-policy.md); [POL-10](../02-policies/POL-10-it-vendor-management-policy.md) | **Parent framework** | [AIGF](../01-frameworks/AIGF.md); [TPRMF](../01-frameworks/TPRMF.md) |
+| **Parent policy** | [POL-21 Section 4.8](../02-policies/POL-21-ai-acceptable-use-policy.md); [POL-10](../02-policies/POL-10-it-vendor-management-policy.md) | **Parent framework** | [AIGF](../01-frameworks/AIGF.md); [TPRMF](../01-frameworks/TPRMF.md) |
 
 ## 1. Purpose
 Assess AI vendors and embedded AI in third-party products — AI-specific addenda to baseline TPSP onboarding per [SOP-TP-01](SOP-TP-01-tpsp-onboarding-sop.md).

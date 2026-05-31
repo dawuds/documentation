@@ -27,7 +27,7 @@ All critical services identified in [REG-BIA](../06-registers/REG-BIA-business-i
 
 ### 3.2 Per-service targets
 
-Each critical service shall have specific RTO/RPO/MTPD set in [REG-BIA](../06-registers/REG-BIA-business-impact-analysis-register.md), no looser than the tier default unless documented exception per §3.5.
+Each critical service shall have specific RTO/RPO/MTPD set in [REG-BIA](../06-registers/REG-BIA-business-impact-analysis-register.md), no looser than the tier default unless documented exception per Section 3.5.
 
 ### 3.3 Approval and review
 
@@ -57,13 +57,13 @@ Each critical service shall have specific RTO/RPO/MTPD set in [REG-BIA](../06-re
 | 3.6.2 | Test outcome shall measure actual achieved RTO/RPO vs target. Variance > 20% requires remediation plan. |
 
 ## 4. Exceptions
-Per §3.5 + [POL-14](../02-policies/POL-14-business-continuity-policy.md).
+Per Section 3.5 + [POL-14](../02-policies/POL-14-business-continuity-policy.md).
 
 ## 5. Related documents
 [POL-14](../02-policies/POL-14-business-continuity-policy.md); [PLN-02](../05-plans/PLN-02-business-continuity-plan.md); [REG-BIA](../06-registers/REG-BIA-business-impact-analysis-register.md); [STD-BC-02](STD-BC-02-backup-and-restoration-standard.md); [BCMF](../01-frameworks/BCMF.md)
 
 ## 6. References
-BNM RMiT 28 Nov 2025 §10.24; 10.32; 10.44; ISO/IEC 22301:2019 Cl. 8.2.3; BNM BCM PD.
+BNM RMiT 28 Nov 2025 Section 10.24; 10.32; 10.44; ISO/IEC 22301:2019 Cl. 8.2.3; BNM BCM PD.
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

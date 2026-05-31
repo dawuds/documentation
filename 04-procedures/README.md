@@ -6,6 +6,10 @@ Step-by-step operational sequences. Process-owner approved.
 
 ---
 
+> ⚠ **Toolchain placeholder note (for any adopting bank).** SOPs in this suite reference toolchain capabilities generically — "IGA," "PAM," "SOAR," "CSPM," "EDR," "SIEM," "IDP," "secrets management platform," "ticketing system." Substitute your actual stack at adoption (e.g., Workday + SailPoint + CyberArk + Splunk SOAR + Wiz + CrowdStrike + Azure AD + HashiCorp Vault + ServiceNow). Where a named tool is referenced (e.g., "Workday" in [SOP-AC-01](SOP-AC-01-joiner-mover-leaver-sop.md)) it is illustrative; replace with your equivalent. Adoption gate: every SOP-mentioned generic capability must be mapped to a real GIBB-side tool with a named owner before the SOP goes Effective.
+
+---
+
 ## Contents (TRMF cascade — Session 3 build)
 
 | ID | Title | Parent standard | Owner |

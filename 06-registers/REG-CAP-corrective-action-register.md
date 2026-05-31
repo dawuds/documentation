@@ -42,7 +42,7 @@ Unified register of corrective actions arising from any source — Internal Audi
 | CAP-2026-0025 | Cyber Drill 2025 — annual | Out-of-band communication contact list 28% out-of-date | High | Head of Corp Comms + CISO | 2026-06-30 | Verified closed (2026-05-20) |
 | CAP-2026-0026 | INC-2026-014 PIR | Phishing simulation cadence — current quarterly insufficient | Medium | CISO | 2026-08-31 | In progress (monthly cadence rolled out from Q2) |
 | CAP-2026-0027 | ISO 27001 surveillance | Vendor risk assessment refresh on 2 Tier-1 TPSPs overdue | Medium | Head of Procurement | 2026-04-30 | Verified closed (2026-04-22) |
-| CAP-2026-0028 | NACSA examination finding | Specific control under Code of Practice §X.Y requires evidence enhancement | High | CISO + CCO | 2026-09-30 | In progress |
+| CAP-2026-0028 | NACSA examination finding | Specific control under Code of Practice Section X.Y requires evidence enhancement | High | CISO + CCO | 2026-09-30 | In progress |
 | CAP-2026-0029 | KRI breach — REG-TR | Material risks above appetite > 5 in Q1 | High | CRO | 2026-06-30 | In progress (treatment plans for 3 of 7 in execution) |
 
 ## Maintenance

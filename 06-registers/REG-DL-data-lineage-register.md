@@ -4,7 +4,7 @@
 |---|---|
 | **Document ID** | REG-DL | **Owner** | Data Governance team (under CDO) |
 | **Cadence** | Continuous (auto-discovered + manually maintained) | **Parent framework** | [DGF](../01-frameworks/DGF.md) |
-| **Parent standard** | [STD-DG-03 §3.3](../03-standards/STD-DG-03-metadata-standard.md) |
+| **Parent standard** | [STD-DG-03 Section 3.3](../03-standards/STD-DG-03-metadata-standard.md) |
 
 ## Purpose
 Authoritative record of material data flows at GIBB — origin, transformations, consumptions. Primary input to: PDPA data subject requests, regulatory reporting trace, AI training data provenance, incident impact assessment.

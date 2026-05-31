@@ -70,7 +70,7 @@ Per [POL-10](../02-policies/POL-10-it-vendor-management-policy.md). Reduced DD d
 [POL-10](../02-policies/POL-10-it-vendor-management-policy.md); [POL-19](../02-policies/POL-19-supplier-security-policy.md); [REG-TPS](../06-registers/REG-TPS-third-party-service-provider-register.md); SOP-TP-01 TPSP Onboarding SOP; [TPRMF](../01-frameworks/TPRMF.md)
 
 ## 6. References
-BNM RMiT 28 Nov 2025 §10.47; Appendix 8; BNM Outsourcing PD; BNM Shariah Governance Framework; ISO/IEC 27036-1.
+BNM RMiT 28 Nov 2025 Section 10.47; Appendix 8; BNM Outsourcing PD; BNM Shariah Governance Framework; ISO/IEC 27036-1.
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

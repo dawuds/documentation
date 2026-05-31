@@ -89,7 +89,9 @@ v1 is preserved unchanged. v2 supersedes its structure; v1's InfoSec content was
 
 ## Build status
 
-v2 is drafted in full: 9 frameworks, 25 policies, 54 standards-and-procedures documents (the combined Standards & Procedures layer), 9 plans, 32 registers, document control suite, plus a [migration playbook](_learning/migration-playbook.md) and [GRC platform ingestion format](_learning/grc-platform-format.md).
+v2 is drafted in full: 9 frameworks, 28 policies (incl. 2 ISO-mandated annexes to POL-04), 56 standards-and-procedures documents (the combined Standards & Procedures layer), 11 plans, 38 registers, document control suite (incl. Board sign-off conditions), plus a [migration playbook](_learning/migration-playbook.md), [GRC platform ingestion format](_learning/grc-platform-format.md), and [documentation maintenance cost analysis](_learning/documentation-maintenance-cost.md).
+
+The current state reflects the consolidated findings of a **multi-agent review** (QA, GRC expert, IT Governance expert, CIO, Board member) — defects fixed, gaps closed, and the operational caveats and Board sign-off conditions documented in-doc rather than hidden in slides.
 
 **Documents are at `Draft` status** pending GIBB-side actions to make them operational:
 - Per-document approval under GIBB governance (Board / RMC / function heads)

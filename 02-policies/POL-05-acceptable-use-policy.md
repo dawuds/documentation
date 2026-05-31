@@ -85,7 +85,7 @@ Non-compliance may result in disciplinary action and, where applicable, civil or
 
 ## 8. References
 
-ISO/IEC 27002:2022 — controls 5.10, 8.1. BNM RMiT (28 Nov 2025) Section 10.53–10.57; Section 15. [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
+ISO/IEC 27002:2022 — controls 5.10, 8.1. BNM RMiT (28 Nov 2025) Section 10.53–10.57; Section 15. [Regulatory Mapping Reference](../_context/framework-stack.md).
 
 ## 9. Document control
 

@@ -77,4 +77,4 @@ The authoritative inventory of GIBB's AI use cases — what AI is in development
 
 - **Parent framework:** [AIGF](../01-frameworks/AIGF.md)
 - **Parent policy:** [POL-21](../02-policies/POL-21-ai-acceptable-use-policy.md)
-- **Related registers:** REG-AIM AI Model Inventory (future); REG-AIV AI Vendor Register (future); REG-AIB AI Bias and Fairness Register (future); [REG-DA](REG-DA-data-asset-register.md) (training data); [REG-INC](REG-INC-incident-register.md) (AI-attributed incidents)
+- **Related registers:** [REG-AIM AI Model Inventory](REG-AIM-ai-model-inventory.md); [REG-AIV AI Vendor Register](REG-AIV-ai-vendor-register.md); [REG-AIB AI Bias and Fairness Register](REG-AIB-ai-bias-and-fairness-register.md); [REG-DA](REG-DA-data-asset-register.md) (training data); [REG-INC](REG-INC-incident-register.md) (AI-attributed incidents)

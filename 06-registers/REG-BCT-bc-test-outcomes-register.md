@@ -45,7 +45,7 @@ Authoritative record of all business continuity test outcomes and real-event BC 
 - Head of BC creates entry pre-test (planned status) and updates through completion.
 - Real-event entries flagged distinctly; clear separation from test entries.
 - Quarterly RMC summary.
-- Annual programme review per [POL-14 §4.5](../02-policies/POL-14-business-continuity-policy.md).
+- Annual programme review per [POL-14 Section 4.5](../02-policies/POL-14-business-continuity-policy.md).
 
 ## Related documents
 [POL-14](../02-policies/POL-14-business-continuity-policy.md); [PLN-02](../05-plans/PLN-02-business-continuity-plan.md); [PLN-03](../05-plans/PLN-03-disaster-recovery-plan.md); [REG-BIA](REG-BIA-business-impact-analysis-register.md); [REG-DRR](REG-DRR-dr-test-register.md); [REG-CAP](REG-CAP-corrective-action-register.md).

@@ -39,7 +39,7 @@ The authoritative inventory of TPSPs at GIBB, with criticality classification, a
 | `sub_contractors_disclosed` | bool | 4th parties identified |
 | `monitoring_cadence` | enum | Continuous (RMiT 10.49) / Quarterly / Annual |
 | `incidents_to_date` | int | Count of TPSP-attributed incidents (link to REG-TPI) |
-| `exit_plan_documented` | bool | Per POL-10 §4.5 |
+| `exit_plan_documented` | bool | Per POL-10 Section 4.5 |
 | `bnm_notified` | bool | Where material outsourcing per BNM Outsourcing PD |
 | `status` | enum | Onboarding / Active / Notice given / Exit in progress / Exited |
 
@@ -62,16 +62,22 @@ The authoritative inventory of TPSPs at GIBB, with criticality classification, a
 
 > Real entries carry full risk assessment, last-monitoring outcome, renewal decision context, contract reference, named contacts.
 
+## Dual-entry rule with REG-CL (TPRMF/CloudRMF seam)
+
+Cloud service providers **must** carry both a REG-TPS entry (the third-party relationship) and a [REG-CL](REG-CL-cloud-service-register.md) entry (the cloud service). Bidirectional join on `tpsp_id`. A REG-TPS entry whose service type is Cloud and which has no corresponding REG-CL row is a control defect. Operated jointly by Head of TPRM and Head of Cloud. See [REG-CL "Dual-entry rule"](REG-CL-cloud-service-register.md) for the full operating model.
+
 ## Maintenance
 
 - New TPSP onboarding triggers entry creation; cannot go-live until entry complete (gating control).
+- **Cloud TPSPs:** REG-TPS entry creation triggers parallel REG-CL creation; the two go-live together.
 - Material TPSP attestation review at attestation expiry; new attestation evidence linked.
 - Annual concentration review by CRO: % of critical services per TPSP, identification of single-point-of-failure dependencies.
 - Quarterly review by RMC of material TPSP status (active material, in onboarding, in exit).
 - Shariah-relevant TPSPs reviewed by Shariah Compliance annually.
+- Quarterly REG-TPS ↔ REG-CL join integrity reconciliation by Head of TPRM + Head of Cloud.
 
 ## Related documents
 
 - **Parent framework:** [TPRMF](../01-frameworks/TPRMF.md)
 - **Parent policy:** [POL-10](../02-policies/POL-10-it-vendor-management-policy.md); [POL-19](../02-policies/POL-19-supplier-security-policy.md)
-- **Related register:** REG-OUT Material Outsourcing Register (future); REG-TPI TPSP Incident Register (future); [REG-INC](REG-INC-incident-register.md) (for TPSP-attributed incidents)
+- **Related register:** [REG-OUT Material Outsourcing Register](REG-OUT-material-outsourcing-register.md); [REG-TPI TPSP Incident Register](REG-TPI-tpsp-incident-register.md); [REG-INC](REG-INC-incident-register.md) (for TPSP-attributed incidents)

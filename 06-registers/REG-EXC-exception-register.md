@@ -43,10 +43,10 @@ Authoritative record of all documented exceptions to GIBB policies, standards, a
 
 | exc_id | document | type | requested | description | compensator | approver | end | status |
 |---|---|---|---|---|---|---|---|---|
-| EXC-2026-001 | STD-AC-01 §3.5.3 (urgent leaver MFA disablement timing) | Standard | Head of IAM | Legacy mainframe accounts cannot be disabled within 30 min — limitation of mainframe IAM tooling | Detective monitoring with 1-hour alert; replacement project Q4 2026 | CISO | 2027-03-31 | Active |
+| EXC-2026-001 | STD-AC-01 Section 3.5.3 (urgent leaver MFA disablement timing) | Standard | Head of IAM | Legacy mainframe accounts cannot be disabled within 30 min — limitation of mainframe IAM tooling | Detective monitoring with 1-hour alert; replacement project Q4 2026 | CISO | 2027-03-31 | Active |
 | EXC-2026-002 | POL-18 (vuln remediation SLA — High on internal) | Policy | Head of IT Ops | Specific legacy SAP module cannot be patched within SLA due to vendor support cycle | Network segmentation; WAF rule; enhanced monitoring | RMC | 2027-06-30 | Active |
-| EXC-2026-003 | STD-CR-01 §3.1 (deprecation of 3DES by 2026-12-31) | Standard | Head of Treasury Ops | Legacy SWIFT integration uses 3DES; vendor upgrade scheduled Q1 2027 | TLS tunnel; access restriction | CISO | 2027-03-31 | Active |
-| EXC-2026-004 | POL-20 §4.8 (RMiT Appendix 10 departure) | Policy | Head of Cloud | Identity provider — single-region service, not available in MY-region | Documented justification; key residency in MY-region cloud KMS | RMC | 2027-12-31 (annual) | Active |
+| EXC-2026-003 | STD-CR-01 Section 3.1 (deprecation of 3DES by 2026-12-31) | Standard | Head of Treasury Ops | Legacy SWIFT integration uses 3DES; vendor upgrade scheduled Q1 2027 | TLS tunnel; access restriction | CISO | 2027-03-31 | Active |
+| EXC-2026-004 | POL-20 Section 4.8 (RMiT Appendix 10 departure) | Policy | Head of Cloud | Identity provider — single-region service, not available in MY-region | Documented justification; key residency in MY-region cloud KMS | RMC | 2027-12-31 (annual) | Active |
 
 ## Maintenance
 

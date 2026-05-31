@@ -63,7 +63,7 @@ All datasets used to train, fine-tune, or fine-prompt AI models at GIBB.
 ### 3.8 Retention
 | Ref | Requirement |
 |---|---|
-| 3.8.1 | Training data retained per [STD-DG-02 §3](STD-DG-02-data-retention-standard.md) AI training data row |
+| 3.8.1 | Training data retained per [STD-DG-02 Section 3](STD-DG-02-data-retention-standard.md) AI training data row |
 | 3.8.2 | Training data destruction at end of retention per SOP-DG-03 Data Destruction SOP |
 
 ### 3.9 Re-training data refresh
@@ -76,7 +76,7 @@ All datasets used to train, fine-tune, or fine-prompt AI models at GIBB.
 Per [POL-21](../02-policies/POL-21-ai-acceptable-use-policy.md). Personal data in training without consent requires DPO + CCO + AIGC joint approval.
 
 ## 5. Related documents
-[POL-21](../02-policies/POL-21-ai-acceptable-use-policy.md); [POL-11](../02-policies/POL-11-data-classification-policy.md); [STD-AI-01](STD-AI-01-ai-use-case-risk-classification-standard.md); [STD-AI-02](STD-AI-02-ai-model-validation-standard.md); [STD-DG-01](STD-DG-01-data-quality-standard.md); [STD-DG-02](STD-DG-02-data-retention-standard.md); [STD-DG-03](STD-DG-03-metadata-standard.md); [REG-DA](../06-registers/REG-DA-data-asset-register.md); REG-AIB (future)
+[POL-21](../02-policies/POL-21-ai-acceptable-use-policy.md); [POL-11](../02-policies/POL-11-data-classification-policy.md); [STD-AI-01](STD-AI-01-ai-use-case-risk-classification-standard.md); [STD-AI-02](STD-AI-02-ai-model-validation-standard.md); [STD-DG-01](STD-DG-01-data-quality-standard.md); [STD-DG-02](STD-DG-02-data-retention-standard.md); [STD-DG-03](STD-DG-03-metadata-standard.md); [REG-DA](../06-registers/REG-DA-data-asset-register.md); [REG-AIB](../06-registers/REG-AIB-ai-bias-and-fairness-register.md)
 
 ## 6. References
 NIST AI RMF 1.0; ISO/IEC 42001:2023; ISO/IEC 23894:2023 (AI risk management); EU AI Act Art. 10 (data and data governance); PDPA 2010; BNM Discussion Paper on Responsible AI.

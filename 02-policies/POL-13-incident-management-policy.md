@@ -87,8 +87,6 @@ Cross-over events involving both fraud and a technology component are dual-track
 - **4.4.1** Internal communication during an incident shall follow the communication plan defined in the Incident Response Plan: clear designation of who briefs the Board, the executive team, employees, and other internal audiences.
 - **4.4.2** **Customer notification** shall be made in accordance with applicable law (including the Personal Data Protection Act 2010 where personal data is affected) and on a basis approved by the CRO and the Chief Compliance Officer. Customer notifications shall be drafted in plain language and avoid unnecessary technical jargon.
 - **4.4.3** **Regulator notification** — material cyber incidents shall be notified to Bank Negara Malaysia in accordance with **BNM RMiT Section 11.18 (Cyber Incident Notification to BNM)**. RMiT Section 11.18 itself defers to upstream BNM policy: the *Operational Risk Reporting* policy document Part C, the *Business Continuity Management* policy document Part C, and (for merchant-acquiring incidents) the *Merchant Acquiring Services* policy paragraphs 19.25–19.26. **The bank's operating expectation is notification to BNM within four (4) hours of detection of a material cyber incident.** *(⚠ The 4-hour figure is derived from BNM operational reporting practice for licensed financial institutions and surfaces in the institution's GRC structured-data artefact text tagged to RMiT clause 11.4. It is not stated numerically in RMiT Section 11.18 verbatim, which defers to the upstream policies above. The Chief Compliance Officer shall maintain the authoritative clock by reference to the current Operational Risk Reporting Part C and BCM Part C policy documents, and refresh this policy on any change.)*
-| **Parent framework(s)** | [CRMF](../01-frameworks/CRMF.md) (implements RMiT Section 11.13 Cyber Incident Response Plan; nine mandatory CRF elements per RMiT 11.3) |
-| **COBIT objective(s)** | DSS02 Managed Service Requests and Incidents; DSS05 Managed Security Services |
 - **4.4.3.1** Threat-intelligence sharing with sector peers and Bank Negara Malaysia shall be conducted per **RMiT Section 11.19 (Cyber Threat Intelligence Sharing)**. Stakeholder collaboration on cyber threats shall be conducted per **RMiT Section 11.20 (Stakeholder Collaboration on Cyber Threats)**.
 - **4.4.3.2** Where the bank is designated as an NCII entity under the **Cyber Security Act 2024**, NACSA notification obligations shall be discharged in addition to BNM notification, per **RMiT Section 11.4** and the NACSA sector-lead directions for the financial services sector.
 - **4.4.4** **Public communication** (media, social channels, press) shall be coordinated by Corporate Communications under the direction of the CEO, with security input from the CISO and legal input from General Counsel. No member of the incident response team shall make public statements without authorisation.
@@ -175,7 +173,7 @@ Failure to report a security event, interference with an incident investigation,
 - Bank Negara Malaysia, *Business Continuity Management* policy document, Part C.
 - Cyber Security Act 2024 (Malaysia) — NCII designation regime; NACSA directives.
 - Personal Data Protection Act 2010 (Malaysia) — notification of personal data breaches.
-- [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md) — repo-internal canonical mapping.
+- [Regulatory Mapping Reference](../_context/framework-stack.md) — repo-internal canonical mapping.
 
 ## 10. Document control
 

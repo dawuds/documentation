@@ -8,6 +8,8 @@
 | **Cadence** | **Quarterly** — full review of all privileged accounts |
 | **Implements** | ISO/IEC 27002:2022 control 5.18 (Access rights); BNM RMiT (28 Nov 2025) Section 10.53–10.57 (Access Control), particularly Section 10.56 (User Access Matrix) and Section 10.57 (Access Monitoring and Logging) |
 | **Source procedure** | [POL-06 Section 4.4.5](../02-policies/POL-06-access-control-policy.md); [STD-AC-01 Section 3.5](../03-standards/STD-AC-01-password-and-authentication-standard.md); [SOP-AC-01](../04-procedures/SOP-AC-01-joiner-mover-leaver-sop.md) |
+| **Parent framework(s)** | [CRMF](../01-frameworks/CRMF.md) |
+| **COBIT objective(s)** | DSS05 Managed Security Services; APO13 Managed Security |
 
 ---
 
@@ -73,7 +75,7 @@ To provide the auditable evidence record that GIBB conducts the quarterly privil
 
 - The review is **executed**, not just **documented**. Each application's reviewer must positively confirm or modify each privileged entitlement; absence of response is treated as "not reviewed" and escalated.
 - Quarter-on-quarter trend lines are reviewed by the CISO; sustained increase in revocations or exceptions indicates a process failure upstream.
-- Findings feed into the [Risk Register](risk-register.md) where they relate to broader control issues.
+- Findings feed into the [Risk Register](REG-TR-technology-risk-register.md) where they relate to broader control issues.
 
 ## Related documents
 

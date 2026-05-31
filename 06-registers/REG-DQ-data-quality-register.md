@@ -16,7 +16,7 @@ Record data quality issues, root causes, and remediations per [STD-DG-01](../03-
 | `data_asset_id` | Link to [REG-DA](REG-DA-data-asset-register.md) |
 | `issue_description` | What is wrong |
 | `dimension` | Accuracy / Completeness / Consistency / Timeliness / Validity / Uniqueness |
-| `severity` | Critical / High / Medium / Low per [STD-DG-01 §3.4](../03-standards/STD-DG-01-data-quality-standard.md) |
+| `severity` | Critical / High / Medium / Low per [STD-DG-01 Section 3.4](../03-standards/STD-DG-01-data-quality-standard.md) |
 | `discovery_date` | |
 | `discovery_source` | Automated measurement / User report / Audit / Downstream failure |
 | `root_cause_category` | Source / User input / Integration / Definition / Timing |

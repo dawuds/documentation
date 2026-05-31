@@ -9,7 +9,7 @@
 | **Cadence** | Per event |
 | **Parent framework(s)** | [NCIIF](../01-frameworks/NCIIF.md) |
 | **Parent policy** | [POL-23](../02-policies/POL-23-ncii-operational-policy.md) |
-| **Source procedure** | SOP-NC-01 NACSA Incident Notification SOP (future) |
+| **Source procedure** | [SOP-NC-01 NACSA Incident Notification SOP](../04-procedures/SOP-NC-01-nacsa-incident-notification-sop.md) |
 
 ---
 
@@ -59,4 +59,4 @@ The authoritative record of every NACSA notification made by GIBB — incidents,
 
 - **Parent framework:** [NCIIF](../01-frameworks/NCIIF.md)
 - **Parent policy:** [POL-23](../02-policies/POL-23-ncii-operational-policy.md)
-- **Related registers:** REG-NC NACSA Directive Tracker (future); REG-NCA NCII Audit Findings Register (future); [REG-INC Incident Register](REG-INC-incident-register.md) (cross-reference for incident-triggered notifications)
+- **Related registers:** [REG-NC NACSA Directive Tracker](REG-NC-nacsa-directive-tracker.md); [REG-NCA NCII Audit Findings Register](REG-NCA-ncii-audit-findings-register.md); [REG-INC Incident Register](REG-INC-incident-register.md) (cross-reference for incident-triggered notifications)

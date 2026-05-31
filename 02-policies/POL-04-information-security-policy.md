@@ -50,7 +50,7 @@ The Statement of Applicability ([REG-SOA](../06-registers/REG-SOA-statement-of-a
 | **Confidentiality** | Property that information is not made available or disclosed to unauthorised individuals, entities, or processes (ISO/IEC 27000). |
 | **Integrity** | Property of accuracy and completeness (ISO/IEC 27000). |
 | **Availability** | Property of being accessible and usable upon demand by an authorised entity (ISO/IEC 27000). |
-| **Material technology incident** | An incident which, in the judgement of the CISO and the CRO, has or may have a significant adverse impact on the bank's operations, customers, reputation, or regulatory standing. Refer to [STD-IR-01](../03-standards/STD-IR-01-incident-classification-and-severity-standard.md) for the materiality criteria. |
+| **Material technology incident** | An incident meeting **any** of the criteria below — surfaced into this policy for Board visibility rather than buried in the standard. (Full operational detail at [STD-IR-01](../03-standards/STD-IR-01-incident-classification-and-severity-standard.md) Section 3.2.) Materiality determines whether the **4-hour BNM notification clock** under [POL-13 Section 4.4.3](POL-13-incident-management-policy.md) starts.<br><br>**Customer-impact criteria** (any one):<br>• ≥ 1,000 customers materially affected (service unavailability ≥ 1 hour for a customer-facing service, or data confidentiality / integrity compromise);<br>• Any breach of Highly Restricted customer data (per [POL-11](POL-11-data-classification-policy.md));<br>• Sustained loss of a Tier-1 customer-facing channel (internet banking, mobile banking, ATM, payment switch) for ≥ 30 minutes during business hours, or ≥ 2 hours overnight.<br><br>**Operational / financial criteria** (any one):<br>• Direct financial loss ≥ RM 1 million (single event) or ≥ RM 3 million aggregated within a rolling 30-day window;<br>• Inability to settle or reconcile in any payment / settlement cycle;<br>• Triggers business continuity activation per [POL-14](POL-14-business-continuity-policy.md) at Tier-1 service.<br><br>**Regulatory / reputational criteria** (any one):<br>• Reportable under PDPA 2010 (personal-data breach);<br>• Confirmed compromise of an NCII-scope asset (per [POL-23](POL-23-ncii-operational-policy.md));<br>• Cyber incident reasonably likely to receive media coverage or peer-FI inquiry;<br>• Any incident the CISO or CRO determines to be materially adverse to the bank's regulatory standing.<br><br>The **CISO + CRO jointly** confirm materiality at the point of classification; the **CCO** owns the regulatory notification clock from that point. Threshold judgement calls are documented in [REG-INC](../06-registers/REG-INC-incident-register.md). |
 | **Risk appetite** | The aggregate level and types of risk the Board is willing to accept in pursuit of its strategic objectives. |
 
 ## 4. ISMS establishment
@@ -139,14 +139,27 @@ The following principles are mandatory across the organisation. Each is operatio
 | **Chief Information Security Officer (CISO)** | Operates the ISMS; owns this policy; chairs the ISMS Working Group; reports to the Risk Management Committee and the Board. |
 | **Chief Compliance Officer (CCO)** | Maps regulatory obligations to ISMS controls; provides compliance assurance. |
 | **Chief Information Officer (CIO) / Head of IT** | Implements technical controls; operates IT services to defined security standards. |
-| **Chief Human Resources Officer (CHRO)** | Operates personnel security (screening, contracts, training) per [POL-06HR](POL-06HR-hr-security-policy.md). |
+| **Chief Human Resources Officer (CHRO)** | Operates personnel security (screening, contracts, training) per [POL-HR-01](POL-HR-01-hr-security-policy.md). |
 | **All personnel** | Comply with this policy and the supporting suite; report security events; complete required training. |
 | **Internal Audit** | Independently tests ISMS controls; reports to the Audit Committee. |
 | **ISMS Manager** | Operates document control, manages the ISMS calendar, supports the CISO with management reviews and audits. |
 
+### 7.1 Approval-authority articulation across the policy cascade
+
+The CISO-owned policies in this cascade carry **different approval authorities by design** — not arbitrarily. The principle: **strategic / governance-tier policies escalate to Board; operational policies stop at RMC**.
+
+| Tier | Approver | Examples | Reason |
+|---|---|---|---|
+| Strategic / governance / risk-appetite | **Board of Directors** | POL-01 (IT Governance), POL-03 (Technology Risk Appetite), POL-04 (Information Security — this policy) | Sets boundaries of risk the Board accepts; Board is the only authority that can adjust risk appetite |
+| Operational | **Risk Management Committee** | POL-05 to POL-23, POL-CI-01, POL-CI-02, POL-HR-01 | Implements the strategic policies; RMC has delegated authority from Board to operate within set appetite |
+| Standards | **Function head (CISO / CIO / CDO / etc.) — separated from owner** | All STD-* | First-line authority on technical specifications; second-line concurrence (CRO) where the standard touches risk-appetite boundaries |
+| Procedures | **Process owner (Head of …)** | All SOP-* | Operational authority on execution detail |
+
+This articulation closes the ambiguity flagged in the v2 multi-agent review (IT Gov: "POL-04 to Board vs POL-13 to RMC — defensible but not articulated as a rule").
+
 ## 8. Risk management
 
-The information security risk management process is documented in the **Information Security Risk Management Methodology** (separate procedural document) and operationalised in the [Risk Register](../06-registers/risk-register.md). The process aligns with ISO/IEC 27005:2022 and integrates with the enterprise risk management framework.
+The information security risk management process is documented in the **Information Security Risk Management Methodology** (separate procedural document) and operationalised in the [Risk Register](../06-registers/REG-TR-technology-risk-register.md). The process aligns with ISO/IEC 27005:2022 and integrates with the enterprise risk management framework.
 
 Risks are owned by named risk owners, treated through a treatment plan, and reviewed at least quarterly by the Risk Management Committee.
 
@@ -161,7 +174,7 @@ This master policy is implemented through the following supporting policies. Eac
 | [POL-09](POL-09-it-asset-management-policy.md) | Asset Management Policy | 5.9–5.11 | Section 9.2 (TRMF asset identification); Section 11.3(h) (centralised asset inventory) |
 | [POL-11](POL-11-data-classification-policy.md) | Data Classification & Handling Policy | 5.12, 5.13 | Section 9.2(d) (asset classification); Section 10.44(d) + App. 1 (sensitive media); Section 12 (Digital Services) |
 | [POL-12](POL-12-cryptography-policy.md) | Cryptography Policy | 8.24 | Section 10.20–10.23 (Cryptography) |
-| [POL-06HR](POL-06HR-hr-security-policy.md) | HR Security Policy | 6.1–6.6 | Section 15 (Security Awareness and Education) |
+| [POL-HR-01](POL-HR-01-hr-security-policy.md) | HR Security Policy | 6.1–6.6 | Section 15 (Security Awareness and Education) |
 | [POL-19](POL-19-supplier-security-policy.md) | Supplier & Third-Party Security Policy | 5.19–5.23 | Section 10.46–10.49 (TPSP); Section 14 (External Party Assurance); Section 10.50–10.52 + App. 10 (Cloud) |
 | [POL-13](POL-13-incident-management-policy.md) | Incident Management Policy | 5.24–5.28 | Section 11.1–11.7 (CRF); Section 11.12–11.17 (Cyber Response and Recovery); Section 11.18 (BNM Notification) |
 | [POL-14](POL-14-business-continuity-policy.md) | Business Continuity Policy | 5.29, 5.30 | Section 10.24–10.28 (DC Resilience); Section 10.29–10.35 (Service Availability); Section 10.44–10.45 (Backup) |
@@ -214,7 +227,7 @@ Non-compliance with this policy or the supporting suite may result in disciplina
 - **Parent:** None — this is the master policy.
 - **Supporting policies:** POL-05 through POL-22 (see Section 9).
 - **Statement of Applicability:** [REG-SOA](../06-registers/REG-SOA-statement-of-applicability.md)
-- **Risk Register:** [REG-RR](../06-registers/risk-register.md)
+- **Risk Register:** [REG-RR](../06-registers/REG-TR-technology-risk-register.md)
 
 ## 15. References
 
@@ -229,7 +242,7 @@ Non-compliance with this policy or the supporting suite may result in disciplina
 - Financial Services Act 2013 (Malaysia).
 - Personal Data Protection Act 2010 (Malaysia).
 - Computer Crimes Act 1997 (Malaysia).
-- [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md) — repo-internal canonical mapping (this document is bound by it).
+- [Regulatory Mapping Reference](../_context/framework-stack.md) — repo-internal canonical mapping (this document is bound by it).
 
 ## 16. Document control
 

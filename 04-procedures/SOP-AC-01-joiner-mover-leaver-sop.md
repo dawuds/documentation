@@ -12,6 +12,8 @@
 | **Next review** | 2027-02-01 (annual; immediate on toolchain change) |
 | **Implements standard** | [STD-AC-01 Password & Authentication Standard](../03-standards/STD-AC-01-password-and-authentication-standard.md) Section 3.5 |
 | **Implements policy** | [POL-06 Access Control Policy](../02-policies/POL-06-access-control-policy.md) Section 4.1, Section 4.4 |
+| **Parent framework(s)** | [CRMF](../01-frameworks/CRMF.md) |
+| **COBIT objective(s)** | DSS05 Managed Security Services; APO13 Managed Security |
 
 ---
 
@@ -77,6 +79,12 @@ The Workday and Supplier Portal events are the **only** authoritative triggers. 
 
 ### 5.3 Leaver — standard
 
+> ⚠ **Adoption note (CIO renegotiation point flagged in v2 multi-agent review).** The 2-hour SLA at L3 depends on **HRBP closing Workday on the actual end date** and **real-time Workday → IGA propagation**. In practice both fail occasionally — HRBPs may close end-date items late or on the following Monday for a Friday end-date, and weekend / public-holiday cycles can stall propagation. To avoid silent failures:
+> - **Nightly reconciliation control (L6 below)** — IGA cross-checks IDP against Workday and flags any active identity for a workforce member whose end-date has passed.
+> - **Weekly exception report** owned by Head of IAM, reviewed jointly with the responsible HRBP — repeat offenders trigger a process intervention.
+> - **Calendar-aware end-date handling** — end-dates falling on weekends / public holidays trigger disablement on the next business day cutover, with the disablement clock measured from the cutover not the calendar end-date.
+> Without these fallbacks the 2-hour SLA looks defensible on paper and fails silently in operation.
+
 | # | Actor | Action | Tool | Output | SLA |
 |---|---|---|---|---|---|
 | L1 | HR Business Partner | Records termination in Workday with end date. | Workday | Event fires to IGA. | Same day as confirmation. |
@@ -84,6 +92,7 @@ The Workday and Supplier Portal events are the **only** authoritative triggers. 
 | L3 | IGA (automation) | On end date at `17:01` (or as set per local cutover time), **disables** all identity accounts (IDP, AD, federated apps where supported); revokes all active sessions. | IGA / IDP | Identity disabled; all sessions revoked. | Within **2 hours** of HR-triggered end-of-day (per STD-AC-01 Section 3.5.3). |
 | L4 | Asset Operations | Recovers hardware; sanitises and re-provisions or disposes per [POL-15 Section 3.7](../02-policies/POL-15-physical-and-environmental-security-policy.md). | Asset Mgmt | Hardware recovered or written off. | Within 5 business days. |
 | L5 | IGA | After 30 days, **deletes** identity from active directories; retains audit record per records retention. | IGA | Identity removed from active stores. | 30 days from disablement. |
+| L6 | IGA (nightly reconciliation) | Cross-check IDP active identities against Workday end-date status; flag any active identity past end-date for immediate human review. | IGA / SOAR | Exception report to Head of IAM. | Nightly; weekly aggregate to Head of IAM. |
 
 ### 5.4 Leaver — urgent (immediate dismissal / for-cause / regulatory)
 

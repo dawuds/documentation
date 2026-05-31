@@ -54,7 +54,7 @@ Activation creates: DR bridge; assigned DR Commander per service; activation log
 
 - For Tier 0 services breaching or trending to breach RTO: failover authorised by DR Commander.
 - For Tier 1 services: failover authorised by service owner + DR Commander.
-- Cyber-induced disruption: failover to clean recovery environment per [STD-BC-02 §3.4](../03-standards/STD-BC-02-backup-and-restoration-standard.md) tamper-proof isolated recovery.
+- Cyber-induced disruption: failover to clean recovery environment per [STD-BC-02 Section 3.4](../03-standards/STD-BC-02-backup-and-restoration-standard.md) tamper-proof isolated recovery.
 
 ### 5.3 Service-by-service failover
 
@@ -91,8 +91,8 @@ Per per-service DRP. Each service has documented runbook covering:
 
 ## 6. Communication
 
-Per [PLN-02 BCP §6](PLN-02-business-continuity-plan.md). Specifically:
-- BNM notification per [POL-13 §4.4.3](../02-policies/POL-13-incident-management-policy.md) for material disruption.
+Per [PLN-02 BCP Section 6](PLN-02-business-continuity-plan.md). Specifically:
+- BNM notification per [POL-13 Section 4.4.3](../02-policies/POL-13-incident-management-policy.md) for material disruption.
 - Customer communication per [PLN-04 Crisis Communications Plan](PLN-04-crisis-communications-plan.md).
 - Shariah Liaison engagement if affecting Shariah-compliant services materially.
 

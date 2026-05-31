@@ -19,7 +19,7 @@ Record per-cloud-service risk assessments per RMiT 10.50 — including Appendix 
 | `key_risks_identified` | text |
 | `controls_in_place` | text |
 | `residual_risk_rating` | Per TRMF materiality matrix |
-| `appendix_10_departures` | If any — justified per [POL-20 §4.8](../02-policies/POL-20-cloud-acceptable-use-policy.md) |
+| `appendix_10_departures` | If any — justified per [POL-20 Section 4.8](../02-policies/POL-20-cloud-acceptable-use-policy.md) |
 | `cro_concurrence` | date |
 | `rmc_approval` | If material residual or App. 10 departure |
 | `next_review` | |

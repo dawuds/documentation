@@ -35,7 +35,7 @@ Scheduled backup cycles; on-demand backup before material changes; recovery requ
 | 7 | Backup Operator | Document restoration outcome | Same day |
 
 ## 5. Procedure — monthly restorability test
-Per [STD-BC-02 §3.5](../03-standards/STD-BC-02-backup-and-restoration-standard.md).
+Per [STD-BC-02 Section 3.5](../03-standards/STD-BC-02-backup-and-restoration-standard.md).
 
 | # | Actor | Action |
 |---|---|---|
@@ -49,7 +49,7 @@ Per [STD-BC-02 §3.5](../03-standards/STD-BC-02-backup-and-restoration-standard.
 Backup failure on Tier 0 service > 4 hours: SEV-3 incident raised. Repeated failures over 7-day window: SEV-2.
 
 ## 7. Evidence
-Backup logs; restore logs; integrity verification records; monthly test results. Retained per [STD-CR-02 §3.6](../03-standards/STD-CR-02-logging-standard.md).
+Backup logs; restore logs; integrity verification records; monthly test results. Retained per [STD-CR-02 Section 3.6](../03-standards/STD-CR-02-logging-standard.md).
 
 ## 8. Document control
 | Version | Date | Author | Approver | Change |

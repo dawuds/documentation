@@ -68,8 +68,8 @@ Per [SOP-CR-01 Phase 1](../04-procedures/SOP-CR-01-cyber-drill-exercise-sop.md).
 
 | Criterion | Pass threshold |
 |---|---|
-| MTTD per [STD-IR-01 §3.3](../03-standards/STD-IR-01-incident-classification-and-severity-standard.md) | Met for scenario severity |
-| MTTC per STD-IR-01 §3.3 | Met for scenario severity |
+| MTTD per [STD-IR-01 Section 3.3](../03-standards/STD-IR-01-incident-classification-and-severity-standard.md) | Met for scenario severity |
+| MTTC per STD-IR-01 Section 3.3 | Met for scenario severity |
 | Decision-quality at IC | Sound per observer assessment |
 | Communication accuracy and timing | Per [PLN-04](PLN-04-crisis-communications-plan.md) matrix |
 | Out-of-band channel performance | Working as designed |

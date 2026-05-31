@@ -22,7 +22,7 @@ To sustain GIBB operations during pandemic, mass workforce unavailability, or ot
 
 ### Phase 1 — Workforce continuity
 
-- All eligible roles transition to remote work; per [POL-15 §3.8](../02-policies/POL-15-physical-and-environmental-security-policy.md) physical safeguards.
+- All eligible roles transition to remote work; per [POL-15 Section 3.8](../02-policies/POL-15-physical-and-environmental-security-policy.md) physical safeguards.
 - Critical on-site roles (branch operations, data centre operations) — rotation; minimum staffing per service.
 - Critical role succession activated for absent key personnel.
 - Travel and customer-meeting restrictions per public health guidance.
@@ -35,12 +35,12 @@ To sustain GIBB operations during pandemic, mass workforce unavailability, or ot
 
 ### Phase 3 — Supplier continuity
 
-- Material TPSPs contacted for their own pandemic posture per [POL-10 §4.7](../02-policies/POL-10-it-vendor-management-policy.md).
+- Material TPSPs contacted for their own pandemic posture per [POL-10 Section 4.7](../02-policies/POL-10-it-vendor-management-policy.md).
 - Cloud and managed-service providers expected to operate per their disclosed BC posture.
 
 ### Phase 4 — Regulatory engagement
 
-- BNM notification if material operational disruption per [POL-13 §4.4.3](../02-policies/POL-13-incident-management-policy.md) (Operational Risk Reporting basis).
+- BNM notification if material operational disruption per [POL-13 Section 4.4.3](../02-policies/POL-13-incident-management-policy.md) (Operational Risk Reporting basis).
 - BNM dialogue on temporary regulatory accommodation (per BNM facilitative pandemic posture).
 
 ### Phase 5 — Return to normal

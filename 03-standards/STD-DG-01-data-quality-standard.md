@@ -70,7 +70,7 @@ Data quality issues categorised at triage: source-system bug / user input error 
 Per [POL-11](../02-policies/POL-11-data-classification-policy.md). Sustained tolerance of sub-target quality requires CDO + CRO approval.
 
 ## 5. Related documents
-[POL-11](../02-policies/POL-11-data-classification-policy.md); POL-DG-01 Data Quality Policy (future); [REG-DA](../06-registers/REG-DA-data-asset-register.md); REG-DQ Data Quality Register (future); [DGF](../01-frameworks/DGF.md)
+[POL-11](../02-policies/POL-11-data-classification-policy.md); POL-DG-01 Data Quality Policy (future); [REG-DA](../06-registers/REG-DA-data-asset-register.md); [REG-DQ Data Quality Register](REG-DQ-data-quality-register.md); [DGF](../01-frameworks/DGF.md)
 
 ## 6. References
 DAMA-DMBOK 2; ISO 8000 series; ISO/IEC 25012 (Data quality model).

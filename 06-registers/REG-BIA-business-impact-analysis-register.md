@@ -9,7 +9,7 @@
 | **Cadence** | Annual review per service; on material change immediately |
 | **Parent framework(s)** | [BCMF](../01-frameworks/BCMF.md) |
 | **Parent policy** | [POL-14](../02-policies/POL-14-business-continuity-policy.md) |
-| **Source procedure** | SOP-BC-01 BIA Methodology SOP (future) |
+| **Source procedure** | [SOP-BC-01 BIA Methodology SOP](../04-procedures/SOP-BC-01-bia-methodology-sop.md) |
 
 ---
 
@@ -87,4 +87,4 @@ The authoritative record of critical business services, their dependencies, and 
 - **Parent framework:** [BCMF](../01-frameworks/BCMF.md)
 - **Parent policy:** [POL-14](../02-policies/POL-14-business-continuity-policy.md)
 - **Related plan:** [PLN-02 Business Continuity Plan](../05-plans/PLN-02-business-continuity-plan.md)
-- **Related register:** REG-BCT BC Test Outcomes Register (future)
+- **Related register:** [REG-BCT BC Test Outcomes Register](REG-BCT-bc-test-outcomes-register.md)

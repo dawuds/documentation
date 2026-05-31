@@ -4,7 +4,7 @@
 |---|---|
 | **Document ID** | SOP-BC-03 | **Version** | 1.0 |
 | **Owner / Approver** | Head of IT Operations + CISO |
-| **Parent standard** | [STD-BC-02 §3.4](../03-standards/STD-BC-02-backup-and-restoration-standard.md) | **Parent policy** | [POL-14](../02-policies/POL-14-business-continuity-policy.md) |
+| **Parent standard** | [STD-BC-02 Section 3.4](../03-standards/STD-BC-02-backup-and-restoration-standard.md) | **Parent policy** | [POL-14](../02-policies/POL-14-business-continuity-policy.md) |
 | **RMiT clause(s)** | Section 10.45 (Tamper-Proof Backup and Isolated Recovery) |
 
 ## 1. Purpose
@@ -41,7 +41,7 @@ Following any incident potentially affecting backup storage:
 | 5 | CISO | Document outcome; if anomaly detected, treat as SEV-1 |
 
 ## 5. Annual full test
-Annual full-failover test of tamper-proof + isolated recovery for one Tier 0 service per [PLN-03 §7](../05-plans/PLN-03-disaster-recovery-plan.md).
+Annual full-failover test of tamper-proof + isolated recovery for one Tier 0 service per [PLN-03 Section 7](../05-plans/PLN-03-disaster-recovery-plan.md).
 
 ## 6. Exception handling
 Verification failure on tamper-proof backup: SEV-1 incident; CISO + COO engaged; investigation of integrity-lock or backup-process compromise.

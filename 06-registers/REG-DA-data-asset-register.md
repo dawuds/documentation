@@ -67,7 +67,7 @@ The authoritative inventory of GIBB's data assets — what data exists, where it
 
 - New data assets registered before production processing begins (gating control).
 - Quarterly data steward review per domain.
-- Annual full Quality Assessment per asset; results tracked in REG-DQ Data Quality Register (future).
+- Annual full Quality Assessment per asset; results tracked in [REG-DQ Data Quality Register](REG-DQ-data-quality-register.md).
 - Material lineage change triggers update.
 - Asset retirement: status transitions Active → Sunset → Archived; retained for retention period then destroyed.
 
@@ -75,4 +75,4 @@ The authoritative inventory of GIBB's data assets — what data exists, where it
 
 - **Parent framework:** [DGF](../01-frameworks/DGF.md)
 - **Parent policy:** [POL-11](../02-policies/POL-11-data-classification-policy.md)
-- **Related registers:** REG-DQ Data Quality Register (future); REG-DL Data Lineage Register (future); REG-MD Master Data Register (future); [REG-ROPA](REG-ROPA-records-of-processing-activity.md) (for personal-data subset)
+- **Related registers:** [REG-DQ Data Quality Register](REG-DQ-data-quality-register.md); [REG-DL Data Lineage Register](REG-DL-data-lineage-register.md); [REG-MD Master Data Register](REG-MD-master-data-register.md); [REG-ROPA](REG-ROPA-records-of-processing-activity.md) (for personal-data subset)

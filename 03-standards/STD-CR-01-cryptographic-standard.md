@@ -60,6 +60,7 @@ Prohibited: MD5, SHA-1 for any security use (signatures, certificates, MAC).
 | 3.5.2 | Customer-data encryption keys in cloud shall use customer-managed keys (CMK), not provider-managed defaults. |
 | 3.5.3 | Key rotation cadence: data-at-rest keys annually; authentication signing keys per use-case (typically 1–3 years); session keys per session. |
 | 3.5.4 | Key compromise handling — documented incident response, key revocation, data re-encryption plan. |
+| 3.5.5 | **Legacy carve-out (per [STD-CM-01 Section 3.4.4](STD-CM-01-change-management-standard.md)).** Where a legacy system cannot meet 3.5.1 (e.g., legacy core banking encryption module pre-dating FIPS 140-3), the carve-out **shall** be registered in [REG-EXC](../06-registers/REG-EXC-exception-register.md) with: (a) specific module under exception; (b) compensating controls (network isolation, additional access controls, enhanced logging, key-handling segregation); (c) named remediation owner; (d) target date for parity. Carve-outs are reviewed quarterly by CISO and reported annually to RMC. |
 
 ### 3.6 Certificate management
 
@@ -72,11 +73,13 @@ Prohibited: MD5, SHA-1 for any security use (signatures, certificates, MAC).
 
 ### 3.7 Post-quantum readiness
 
+> ⚠ **Adoption note (CIO renegotiation point flagged in v2 multi-agent review).** This Section is **forward-looking**. NIST PQC standards finalised 2024; mandatory enforcement and ecosystem maturity is still emerging. For a Tier-2 bank in 2026 the practical bar is **crypto-agility (3.7.1)**, not an annual PQC migration plan. GIBB may down-scope 3.7.2 to a biennial PQC readiness review until: (a) NIST PQC is enforced in PKI / TLS stacks GIBB depends on, OR (b) BNM issues PQC guidance, OR (c) a long-lived-secret use case is identified that warrants accelerated migration.
+
 | Ref | Requirement |
 |---|---|
-| 3.7.1 | Crypto-agility — systems shall support algorithm replacement without re-architecture. |
-| 3.7.2 | Post-quantum migration plan maintained by CISO; updated annually as NIST PQC guidance evolves. |
-| 3.7.3 | Hybrid post-quantum / classical cryptography evaluated for long-lived secrets. |
+| 3.7.1 | Crypto-agility — systems shall support algorithm replacement without re-architecture. **Mandatory.** |
+| 3.7.2 | Post-quantum migration plan maintained by CISO; **reviewed at least biennially** (forward-looking; annual review may be over-engineered for current GIBB scope — see adoption note). |
+| 3.7.3 | Hybrid post-quantum / classical cryptography evaluated for long-lived secrets (e.g., contracts encrypted for 25+ year retention; root signing keys). |
 
 ### 3.8 Prohibited uses
 
@@ -92,7 +95,7 @@ Per [POL-12](../02-policies/POL-12-cryptography-policy.md). Any non-approved alg
 [POL-12](../02-policies/POL-12-cryptography-policy.md); [CRMF](../01-frameworks/CRMF.md); [STD-AC-01](STD-AC-01-password-and-authentication-standard.md)
 
 ## 6. References
-BNM RMiT 28 Nov 2025 §10.20–10.23; ISO/IEC 27002:2022 control 8.24; NIST FIPS 140-3; NIST SP 800-57; NIST SP 800-208 (PQC); CA/Browser Forum.
+BNM RMiT 28 Nov 2025 Section 10.20–10.23; ISO/IEC 27002:2022 control 8.24; NIST FIPS 140-3; NIST SP 800-57; NIST SP 800-208 (PQC); CA/Browser Forum.
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

@@ -4,7 +4,7 @@
 |---|---|
 | **Document ID** | SOP-CL-02 | **Version** | 1.0 |
 | **Owner / Approver** | Head of Cloud + Head of SOC |
-| **Parent standard** | [STD-CL-01 §3.5](../03-standards/STD-CL-01-cloud-security-standard.md) | **Parent policy** | [POL-20](../02-policies/POL-20-cloud-acceptable-use-policy.md) |
+| **Parent standard** | [STD-CL-01 Section 3.5](../03-standards/STD-CL-01-cloud-security-standard.md) | **Parent policy** | [POL-20](../02-policies/POL-20-cloud-acceptable-use-policy.md) |
 
 ## 1. Purpose
 Operationalise Cloud Security Posture Management — continuous monitoring of cloud configuration against baseline per [STD-CL-02](../03-standards/STD-CL-02-cloud-landing-zone-standard.md).
@@ -14,13 +14,15 @@ Continuous. CSPM tooling generates findings; humans triage.
 
 ## 3. Procedure — finding triage
 
+> ⚠ **Adoption note (CIO renegotiation point flagged in v2 multi-agent review).** A continuous (24×7) **1-hour Critical-finding triage SLA is achievable only with a sufficiently staffed and tuned SOC + SOAR pipeline**. For a Tier-2 bank the practical bar at adoption is: **business-hours hard SLA at 1 hour; out-of-hours best-effort with SOAR auto-remediation for pre-classified Critical patterns + hard SLA at next business-day open**. Either path is operationally defensible; both must be explicitly approved by the CISO + Head of Cloud and noted in the CSPM platform's runbook. The cost of an unbacked 24×7 hard SLA is alert fatigue and an ignored finding queue — worse than an honest tiered SLA.
+
 | # | Actor | Action | SLA |
 |---|---|---|---|
 | 1 | CSPM tooling | Generate finding (deviation from baseline or known-bad pattern) | Continuous |
-| 2 | SOC analyst | Review finding; classify severity per [STD-CR-03](../03-standards/STD-CR-03-vulnerability-triage-standard.md) | ≤ 1 hour from generation for Critical; ≤ 4 hours for High |
+| 2 | SOC analyst | Review finding; classify severity per [STD-CR-03](../03-standards/STD-CR-03-vulnerability-triage-standard.md) | **Business hours:** ≤ 1 hour Critical, ≤ 4 hours High. **Out of hours:** SOAR auto-remediation for pre-classified Critical patterns; hard SLA at next business-day open for un-automated Critical. (See adoption note.) |
 | 3 | SOC analyst | Identify affected cloud account / workload / business owner | At classification |
 | 4 | SOC analyst | Triage: false positive / acceptable risk / actionable | Per severity |
-| 5 | Cloud Engineer (workload owner) | Remediate per [STD-CR-03 §3.3](../03-standards/STD-CR-03-vulnerability-triage-standard.md) timeline | Per timeline |
+| 5 | Cloud Engineer (workload owner) | Remediate per [STD-CR-03 Section 3.3](../03-standards/STD-CR-03-vulnerability-triage-standard.md) timeline | Per timeline |
 | 6 | SOC analyst | Verify remediation via CSPM re-scan | Within 24 hours of remediation |
 | 7 | SOC analyst | Close finding | At verification |
 
@@ -44,7 +46,7 @@ Continuous. CSPM tooling generates findings; humans triage.
 Monthly: SOC + Cloud joint report — findings volume, severity distribution, remediation SLA performance, drift patterns. To CISO + Head of Cloud; quarterly to RMC.
 
 ## 7. Evidence
-CSPM finding tickets; remediation records; re-scan verification. Retained per [STD-CR-02 §3.6](../03-standards/STD-CR-02-logging-standard.md).
+CSPM finding tickets; remediation records; re-scan verification. Retained per [STD-CR-02 Section 3.6](../03-standards/STD-CR-02-logging-standard.md).
 
 ## 8. Document control
 | Version | Date | Author | Approver | Change |

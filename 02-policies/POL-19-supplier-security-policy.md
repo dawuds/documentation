@@ -80,7 +80,7 @@ Per [POL-04](POL-04-information-security-policy.md).
 
 ## 8. References
 
-ISO/IEC 27002:2022 — controls 5.19–5.23. BNM RMiT (28 Nov 2025) Section 10.46–10.49 (TPSP); Section 14 (External Party Assurance); Section 10.50–10.52 + Appendix 10 (Cloud); Appendix 8 (TPSP risk coverage matrix). [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
+ISO/IEC 27002:2022 — controls 5.19–5.23. BNM RMiT (28 Nov 2025) Section 10.46–10.49 (TPSP); Section 14 (External Party Assurance); Section 10.50–10.52 + Appendix 10 (Cloud); Appendix 8 (TPSP risk coverage matrix). [Regulatory Mapping Reference](../_context/framework-stack.md).
 
 ## 9. Document control
 

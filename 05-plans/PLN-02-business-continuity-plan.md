@@ -35,7 +35,7 @@ All critical business services as identified in [REG-BIA Business Impact Analysi
 |---|---|---|
 | Critical-service outage exceeding 50% of MTPD or trending to MTPD | COO | Crisis call + secure messaging |
 | Data centre incident affecting primary site | COO + Head of IT Operations | Secure messaging |
-| Cyber-induced disruption per [PLN-01 §5.5](PLN-01-incident-response-plan.md) | CISO + COO (joint) | IRP bridge + BC channels |
+| Cyber-induced disruption per [PLN-01 Section 5.5](PLN-01-incident-response-plan.md) | CISO + COO (joint) | IRP bridge + BC channels |
 | Pandemic or material workforce disruption | COO + CHRO | Per Pandemic Plan PLN-06 |
 | External event (environmental, civil) with material operational impact | COO | Crisis management committee |
 
@@ -84,7 +84,7 @@ Out-of-band channels documented on physical on-call cards held by named individu
 ### 5.4 Customer and stakeholder communication
 
 - Communications Lead executes customer communication per the Crisis Communications Plan (PLN-04, future).
-- Regulator notification per [POL-13 §4.4](../02-policies/POL-13-incident-management-policy.md) (BNM via RMiT 11.18) and BNM BCM PD where applicable.
+- Regulator notification per [POL-13 Section 4.4](../02-policies/POL-13-incident-management-policy.md) (BNM via RMiT 11.18) and BNM BCM PD where applicable.
 
 ### 5.5 Recovery to normal
 

@@ -55,7 +55,7 @@ Subset of [REG-TPS](REG-TPS-third-party-service-provider-register.md) — materi
 - New material outsourcing creates entry pre-contract-signing.
 - BNM notification status tracked through to acknowledgement.
 - Quarterly Procurement + CCO joint review.
-- Annual concentration analysis per [POL-03 §4.2](../02-policies/POL-03-technology-risk-appetite-statement.md).
+- Annual concentration analysis per [POL-03 Section 4.2](../02-policies/POL-03-technology-risk-appetite-statement.md).
 - BNM examination access via this register.
 
 ## Related documents

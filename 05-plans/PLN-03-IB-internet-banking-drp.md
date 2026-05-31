@@ -48,7 +48,7 @@ DDoS protection (CL-0005) is upstream; first-line response is per [PLN-01 IRP](P
 Per [PLN-04](PLN-04-crisis-communications-plan.md). In-app banner + mobile notification + customer support scripting.
 
 ## 6. Regulatory communication
-- BNM per RMiT 11.18 (4-hour) if material service disruption
+- BNM per RMiT 11.18 (**4-hour clock with source-chain caveat** per [POL-13 Section 4.4.3](../02-policies/POL-13-incident-management-policy.md) — the 4-hour figure is the bank's operating expectation derived from BNM Operational Risk Reporting PD Part C and BCM Part C, not stated numerically in RMiT 11.18 verbatim; CCO maintains the authoritative clock) — coordinated by CCO
 - BNM Digital Services notification under RMiT Section 12 if material change to customer-facing delivery
 
 ## 7. Testing

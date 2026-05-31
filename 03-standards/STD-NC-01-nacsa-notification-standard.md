@@ -84,10 +84,10 @@ NCII incident notification shall include:
 NACSA Code of Practice notification obligations are **not** subject to exception within GIBB authority.
 
 ## 5. Related documents
-[POL-23](../02-policies/POL-23-ncii-operational-policy.md); [POL-13](../02-policies/POL-13-incident-management-policy.md); [REG-NCN](../06-registers/REG-NCN-nacsa-notification-register.md); SOP-NC-01 NACSA Incident Notification SOP (future); [NCIIF](../01-frameworks/NCIIF.md)
+[POL-23](../02-policies/POL-23-ncii-operational-policy.md); [POL-13](../02-policies/POL-13-incident-management-policy.md); [REG-NCN](../06-registers/REG-NCN-nacsa-notification-register.md); [SOP-NC-01 NACSA Incident Notification SOP](../04-procedures/SOP-NC-01-nacsa-incident-notification-sop.md); [NCIIF](../01-frameworks/NCIIF.md)
 
 ## 6. References
-Cyber Security Act 2024 (Malaysia); NACSA Code of Practice (current edition); NACSA sector-lead directives for financial services NCII; BNM RMiT 28 Nov 2025 §11.4.
+Cyber Security Act 2024 (Malaysia); NACSA Code of Practice (current edition); NACSA sector-lead directives for financial services NCII; BNM RMiT 28 Nov 2025 Section 11.4.
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

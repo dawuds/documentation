@@ -60,7 +60,7 @@ Per [POL-10](../02-policies/POL-10-it-vendor-management-policy.md). Material con
 [POL-10](../02-policies/POL-10-it-vendor-management-policy.md); [POL-19](../02-policies/POL-19-supplier-security-policy.md); [STD-TP-01](STD-TP-01-tpsp-due-diligence-standard.md); [STD-TP-03](STD-TP-03-tpsp-continuous-monitoring-standard.md); [REG-OUT](../06-registers/REG-OUT-material-outsourcing-register.md); [REG-TPS](../06-registers/REG-TPS-third-party-service-provider-register.md)
 
 ## 6. References
-BNM RMiT 28 Nov 2025 §10.46–10.49; Section 14; BNM Outsourcing PD; BNM Shariah Governance Framework; ISO/IEC 27036-2 (Supplier relationships — requirements).
+BNM RMiT 28 Nov 2025 Section 10.46–10.49; Section 14; BNM Outsourcing PD; BNM Shariah Governance Framework; ISO/IEC 27036-2 (Supplier relationships — requirements).
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

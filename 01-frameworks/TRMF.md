@@ -147,49 +147,61 @@ GIBB designates a **Chief Information Security Officer (CISO)** per **RMiT Secti
 
 ---
 
-## 6. Framework principles
+## 6. Framework mandatory elements — aligned 1:1 with RMiT Section 9.2(a)–(k)
 
-The following principles are mandatory across the scope of this framework. Each uses **shall** and binds at the principle level.
+The 11 mandatory elements at **BNM RMiT Section 9.2(a)–(k)** are addressed in this framework as follows. The numbering below mirrors RMiT 9.2 verbatim so an examiner can verify coverage in one pass. Each element uses **shall** and binds at the principle level.
 
-### 6.1 Technology risk is enterprise risk
+### 6.1 — RMiT 9.2(a) — Governance, leadership, and oversight
 
-Technology risk **shall** be managed as a category within GIBB's Enterprise Risk Management Framework (ERMF), not as a separate discipline. The TRMF integrates with the ERMF through a shared risk taxonomy, common materiality criteria, and consolidated reporting to the RMC. *(Implements RMiT Section 9.1 — TRMF Integration with Enterprise Risk Management; COBIT EDM03.)*
+The Board, Senior Management, and the Risk Management Committee **shall** provide active oversight of technology risk and shall hold ultimate accountability. The Board approves this framework annually and reviews its effectiveness at the annual Management Review. *(Cross-ref: [POL-01 IT Governance Policy](../02-policies/POL-01-it-governance-policy.md); [REG-MR](../06-registers/REG-MR-management-review-register.md); COBIT EDM01.)*
 
-### 6.2 Three-line accountability
+### 6.2 — RMiT 9.2(b) — Roles and responsibilities
 
-Technology risk **shall** be managed under a three-line model — operating functions own risks and controls; the independent Technology Risk Management function (and Compliance) provides challenge; Internal Audit provides assurance. No single line shall be substituted for another. *(Implements RMiT Section 8.6 — Senior Management Accountability; Section 9.3 — Independent Technology Risk Management Function; COBIT APO01.)*
+Roles and responsibilities for technology risk management **shall** be clearly defined across first, second, and third lines, with the Chief Risk Officer accountable for the framework, the CISO accountable for cyber risk, and the CIO accountable for IT operations. *(Cross-ref: Section 5 of this framework; [REG-MR](../06-registers/REG-MR-management-review-register.md); COBIT APO01.)*
 
-### 6.3 Risk-based prioritisation
+### 6.3 — RMiT 9.2(c) — Technology risk identification (including emerging technology)
 
-Treatment of technology risk **shall** be prioritised by **residual risk rating** (likelihood × impact after controls) and **materiality** to GIBB's business objectives, regulatory standing, and reputation. Resources are allocated to risks in order of priority; lower-priority risks are accepted, tolerated, or deferred per documented decision. *(Implements RMiT 9.2(e), (f); COBIT APO12; ISO 31000:2018 Clause 6.4.)*
+Technology risk identification **shall** include current and known risks **and** emerging risks arising from new or evolving technology — including AI, distributed ledger, quantum readiness, and new cloud service models. Emerging risks are assessed in coordination with the [AIGF](AIGF.md) and per BNM RMiT Appendix 9. *(COBIT APO04.)*
 
-### 6.4 Forward-looking risk identification
+### 6.4 — RMiT 9.2(d) — Technology risk assessment
 
-Technology risk identification **shall** include not only current and known risks but **emerging risks** arising from new or evolving technology — including but not limited to artificial intelligence, distributed ledger technology, quantum computing readiness, and new cloud service models. Emerging-technology risks are assessed in coordination with the [AI Governance Framework (AIGF)](AIGF.md) and per BNM RMiT Appendix 9 (Guidance on Emerging Technologies). *(Implements RMiT 9.2(c); COBIT APO04 Managed Innovation.)*
+Identified technology risks **shall** be assessed against a documented methodology with consistent likelihood × impact criteria, calibrated to GIBB's risk appetite ([POL-03](../02-policies/POL-03-technology-risk-appetite-statement.md)). Aligned with ISO 31000:2018 and ISO/IEC 27005:2022. *(COBIT APO12.)*
 
-### 6.5 Continuous monitoring
+### 6.5 — RMiT 9.2(e) — Technology risk treatment
 
-Technology risk **shall** be monitored continuously through automated detection, control attestation, KRIs and KCIs, and operational events. Periodic assessment alone is insufficient. Continuous monitoring is operationalised through the CRMF Security Operations Centre (per [CRMF](CRMF.md) Section 8) and the Technology Risk Management function's risk-monitoring dashboard. *(Implements RMiT 9.2(g); COBIT MEA01.)*
+Treatment of technology risk **shall** be prioritised by **residual risk rating** and **materiality**. Risks are treated, transferred, accepted, or avoided per documented decision; acceptance authority follows the matrix in Section 8.3 of this framework.
 
-### 6.6 Evidence-based assurance
+### 6.6 — RMiT 9.2(f) — Technology risk control selection and implementation
 
-Every technology risk and control **shall** carry **documented evidence** of its identification, assessment, treatment status, and operating effectiveness. Controls without evidence are theoretical and shall be flagged as control deficiencies. Evidence is maintained in the cascading registers specified in Section 9. *(Implements RMiT 9.2(h); ISO 31000 Clause 6.6.)*
+Controls **shall** be selected on a risk-proportionate basis, prioritising controls with strongest evidence of effectiveness for the threat environment. The [Statement of Applicability](../06-registers/REG-SOA-statement-of-applicability.md) records selection decisions for ISO 27001-scope controls; analogous selection records are maintained for non-ISO-anchored frameworks.
 
-### 6.7 Independent challenge
+### 6.7 — RMiT 9.2(g) — Technology risk monitoring (continuous)
 
-Every material technology risk and treatment decision **shall** be subject to independent second-line challenge by the Technology Risk Management function before acceptance. First-line self-attestation alone is not sufficient for material risks. *(Implements RMiT Section 9.3; ISO 31000 Clause 5.6.)*
+Technology risk **shall** be monitored continuously through automated detection, control attestation, KRIs and KCIs, and operational events. Periodic assessment alone is insufficient. Continuous monitoring is operationalised through the CRMF SOC (per [CRMF](CRMF.md) Section 8) and the second-line risk-monitoring dashboard. *(COBIT MEA01.)*
 
-### 6.8 Shariah considerations for Islamic banking products
+### 6.8 — RMiT 9.2(h) — Technology risk reporting
 
-Technology supporting **Islamic finance products** (Murabahah, Musharakah, Mudharabah, Wadiah, Wakalah, Sukuk, etc.) **shall** include explicit Shariah review gates in its Build-Acquire-Implement lifecycle (per COBIT BAI02, BAI06). Shariah Committee approval is required before deployment of new or materially modified product systems. The Shariah overlay is operationalised in coordination with the BNM Shariah Governance Framework. *(Implements BNM Shariah Governance Framework; COBIT BAI06.)*
+Every technology risk and control **shall** carry **documented evidence** and a reporting path to the RMC and (for material risks) the Board. Controls without evidence are flagged as deficiencies. Reporting cadence per Section 11 of this framework and the [Board Reporting and Escalation Annex](../00-architecture/board-reporting-and-escalation-annex.md). *(ISO 31000 Clause 6.6.)*
 
-### 6.9 Crisis-ready
+### 6.9 — RMiT 9.2(i) — Independent second-line and third-line assurance
 
-Technology risk management **shall** include explicit preparation for **severe but plausible** scenarios — including cyber attack, systemic failure, prolonged supplier disruption, and pandemic — through scenario analysis, scenario-driven exercises, and integration with the [Business Continuity Management Framework (BCMF)](BCMF.md) and the [Cyber Risk Management Framework (CRMF)](CRMF.md). *(Implements RMiT 9.2(j); COBIT DSS04 Managed Continuity.)*
+Material technology risks and treatment decisions **shall** be subject to independent second-line challenge by the Technology Risk Management function before acceptance. Third-line independent assurance is provided by Internal Audit per [PLN-08](../05-plans/PLN-08-internal-audit-plan.md). First-line self-attestation alone is not sufficient for material risks. *(RMiT Section 9.3 — Independent Technology Risk Management Function.)*
 
-### 6.10 Regulator-aligned
+### 6.10 — RMiT 9.2(j) — Crisis and scenario preparation
 
-Technology risk reporting and notification **shall** satisfy the obligations of BNM RMiT (28 Nov 2025), the BNM Operational Risk Reporting PD Part C, the BNM Business Continuity Management PD, and — where GIBB is acting as a designated NCII entity — the directives of the National Cyber Security Agency (NACSA) under the Cyber Security Act 2024. *(Implements RMiT Section 11.18; Cyber Security Act 2024.)*
+Technology risk management **shall** include explicit preparation for **severe but plausible** scenarios — cyber attack, systemic failure, prolonged supplier disruption, pandemic — through scenario analysis, exercises, and integration with [BCMF](BCMF.md) and [CRMF](CRMF.md). *(COBIT DSS04.)*
+
+### 6.11 — RMiT 9.2(k) — Performance monitoring against KPIs and KRIs
+
+Framework performance **shall** be measured against documented KPIs, KRIs, and KCIs recorded in [REG-OBJ](../06-registers/REG-OBJ-information-security-objectives-register.md) and reported per the cadence in Section 11. Underperformance triggers corrective action via [REG-CAP](../06-registers/REG-CAP-corrective-action-register.md).
+
+### 6.12 — Shariah considerations for Islamic banking products (GIBB-specific overlay; not in RMiT 9.2)
+
+Technology supporting **Islamic finance products** (Murabahah, Musharakah, Mudharabah, Wadiah, Wakalah, Sukuk, etc.) **shall** include explicit Shariah review gates in its Build-Acquire-Implement lifecycle (COBIT BAI02, BAI06). Shariah Committee approval is required before deployment of new or materially modified product systems. *(BNM Shariah Governance Framework; this principle is an Islamic-banking overlay GIBB applies in addition to RMiT 9.2.)*
+
+### 6.13 — Regulator notification alignment (GIBB-specific overlay; supports RMiT Section 11.18)
+
+Technology risk reporting and notification **shall** satisfy the obligations of BNM RMiT (28 Nov 2025), BNM Operational Risk Reporting PD Part C, BNM Business Continuity Management PD, and — where GIBB is a designated NCII entity — the directives of NACSA under the Cyber Security Act 2024. *(RMiT Section 11.18; Cyber Security Act 2024.)*
 
 ---
 
@@ -246,7 +258,7 @@ flowchart LR
 **Activities:**
 
 - Maintain the **technology asset inventory** (per RMiT 11.3(h); cascading to CMDB / asset register)
-- Conduct **risk assessments** at defined trigger events: new system deployment (per [Secure Development Policy](../02-policies/secure-development-policy.md)), major change (per Change Management Policy), new third-party engagement (per [TPRMF](TPRMF.md)), new cloud service (per [CloudRMF](CloudRMF.md)), new AI use case (per [AIGF](AIGF.md)), emerging-technology adoption (per RMiT Appendix 9), regulatory change, post-incident
+- Conduct **risk assessments** at defined trigger events: new system deployment (per [Secure Development Policy](../02-policies/POL-17-secure-development-policy.md)), major change (per Change Management Policy), new third-party engagement (per [TPRMF](TPRMF.md)), new cloud service (per [CloudRMF](CloudRMF.md)), new AI use case (per [AIGF](AIGF.md)), emerging-technology adoption (per RMiT Appendix 9), regulatory change, post-incident
 - Maintain a **horizon-scanning** capability for emerging technology and threat trends
 - Identify **key resources and interdependencies**, including critical third-party service providers and their sub-providers (per RMiT 9.2(i))
 - Classify **information assets and systems** by criticality (per RMiT 9.2(d); operationalised in [DGF](DGF.md) and [CIMF](CIMF.md))
@@ -559,6 +571,87 @@ The TRMF is the umbrella framework. The eight subordinate frameworks below each 
 - [`../_context/framework-stack.md`](../_context/framework-stack.md) — Layer 0/1/2 model
 - [`../_context/seams.md`](../_context/seams.md) — explicit seam resolutions with peer frameworks
 - [`../_context/glossary.md`](../_context/glossary.md) — terminology
+
+---
+
+## Annex B — COBIT 2019 and ITIL 4 coverage map (scope and deferred)
+
+The TRMF anchors on RMiT (28 Nov 2025) and uses **COBIT 2019** as its governance taxonomy and **ITIL 4** as its service-management practice anchor. This annex states explicitly which COBIT objectives and ITIL practices are **in scope** of the GIBB documentation suite, which are **out of scope** (with reason), and which are **deferred** (planned but not yet operational).
+
+### B.1 COBIT 2019 — coverage
+
+| Domain | Objective | Status | Implementing document(s) |
+|---|---|---|---|
+| EDM | EDM01 Ensured Governance Framework | In | [POL-01](../02-policies/POL-01-it-governance-policy.md); this framework Section 5 |
+| EDM | EDM02 Ensured Benefits Delivery | Deferred (FY2027) | Not yet anchored; IT investment governance currently in [POL-01](../02-policies/POL-01-it-governance-policy.md) |
+| EDM | EDM03 Ensured Risk Optimisation | In | [POL-03](../02-policies/POL-03-technology-risk-appetite-statement.md); this framework Section 6 + 8 |
+| EDM | EDM04 Ensured Resource Optimisation | In | [POL-10](../02-policies/POL-10-it-vendor-management-policy.md); [POL-08](../02-policies/POL-08-capacity-and-performance-management-policy.md) |
+| EDM | EDM05 Ensured Stakeholder Engagement | In | [POL-01](../02-policies/POL-01-it-governance-policy.md); [Board Reporting Annex](../00-architecture/board-reporting-and-escalation-annex.md) |
+| APO | APO01 Managed I&T Management Framework | In | [POL-01](../02-policies/POL-01-it-governance-policy.md) |
+| APO | APO02 Managed Strategy | In | [POL-01](../02-policies/POL-01-it-governance-policy.md) |
+| APO | APO03 Managed Enterprise Architecture | Deferred (FY2027) | Enterprise architecture documented separately under CIO function; not yet in this suite |
+| APO | APO04 Managed Innovation | In | [AIGF](AIGF.md); this framework Section 6.3 (emerging tech) |
+| APO | APO05 Managed Portfolio | Out of scope (business portfolio mgmt, not technology suite) | n/a |
+| APO | APO06 Managed Budget and Costs | Out of scope | Finance / treasury function |
+| APO | APO07 Managed Human Resources | In | [POL-HR-01](../02-policies/POL-HR-01-hr-security-policy.md); [PLN-07](../05-plans/PLN-07-awareness-and-competence-programme.md) |
+| APO | APO08 Managed Relationships | In (operational practice; not separately documented) | Business-IT relationship under CIO + CTO |
+| APO | APO09 Managed Service Agreements | In | [POL-19](../02-policies/POL-19-supplier-security-policy.md); [STD-TP-02](../03-standards/STD-TP-02-outsourcing-contractual-security-standard.md) |
+| APO | APO10 Managed Vendors | In | [POL-10](../02-policies/POL-10-it-vendor-management-policy.md); [TPRMF](TPRMF.md) |
+| APO | APO11 Managed Quality | Deferred (FY2027) | Quality practice currently embedded in change and SDLC; not separately documented |
+| APO | APO12 Managed Risk | In | this framework |
+| APO | APO13 Managed Security | In | [CRMF](CRMF.md); [POL-04](../02-policies/POL-04-information-security-policy.md) |
+| APO | APO14 Managed Data | In | [DGF](DGF.md); [POL-11](../02-policies/POL-11-data-classification-policy.md) |
+| BAI | BAI01 Managed Programmes | Deferred (FY2027) | Project / programme governance currently under PMO; not in this suite |
+| BAI | BAI02 Managed Requirements Definition | In | [POL-17](../02-policies/POL-17-secure-development-policy.md) |
+| BAI | BAI03 Managed Solutions Identification and Build | In | [POL-17](../02-policies/POL-17-secure-development-policy.md) |
+| BAI | BAI04 Managed Availability and Capacity | In | [POL-08](../02-policies/POL-08-capacity-and-performance-management-policy.md) |
+| BAI | BAI05 Managed Organisational Change Enablement | Out of scope (people / change management, separate from technology change) | n/a |
+| BAI | BAI06 Managed IT Changes | In | [POL-07](../02-policies/POL-07-change-management-policy.md); [STD-CM-01](../03-standards/STD-CM-01-change-management-standard.md); [REG-CHG](../06-registers/REG-CHG-change-register.md) |
+| BAI | BAI07 Managed IT Change Acceptance | In | [STD-CM-01](../03-standards/STD-CM-01-change-management-standard.md); [SOP-CM-01](../04-procedures/SOP-CM-01-change-authorisation-sop.md) |
+| BAI | BAI08 Managed Knowledge | Deferred (FY2027) | Documentation management currently in this suite (master register); knowledge platform not yet anchored |
+| BAI | BAI09 Managed Assets | In | [POL-09](../02-policies/POL-09-it-asset-management-policy.md); [STD-AM-01](../03-standards/STD-AM-01-it-asset-management-standard.md) |
+| BAI | BAI10 Managed Configuration | In (via ITIL Service Configuration; CMDB operational) — formal mapping deferred | CMDB; [STD-AM-01](../03-standards/STD-AM-01-it-asset-management-standard.md) |
+| BAI | BAI11 Managed Projects | Deferred (FY2027) | Project governance under PMO |
+| DSS | DSS01 Managed Operations | In | [POL-16](../02-policies/POL-16-operations-security-policy.md) |
+| DSS | DSS02 Managed Service Requests and Incidents | In | [POL-13](../02-policies/POL-13-incident-management-policy.md); [PLN-01](../05-plans/PLN-01-incident-response-plan.md) |
+| DSS | DSS03 Managed Problems | **Deferred (FY2027)** — currently subsumed within incident PIR ([POL-13 Section 4.7](../02-policies/POL-13-incident-management-policy.md)); a dedicated Problem Management policy is planned to satisfy ITIL Problem Management practice fully |
+| DSS | DSS04 Managed Continuity | In | [BCMF](BCMF.md); [POL-14](../02-policies/POL-14-business-continuity-policy.md) |
+| DSS | DSS05 Managed Security Services | In | [CRMF](CRMF.md); [POL-04](../02-policies/POL-04-information-security-policy.md) |
+| DSS | DSS06 Managed Business Process Controls | In (selective; thinly covered) — [POL-CI-01](../02-policies/POL-CI-01-customer-data-protection-policy.md) addresses customer-information business-process controls; broader operational-controls catalogue is a Finance / Operations responsibility outside this technology suite |
+| MEA | MEA01 Managed Performance and Conformance Monitoring | In | [REG-OBJ](../06-registers/REG-OBJ-information-security-objectives-register.md); this framework Section 10 |
+| MEA | MEA02 Managed System of Internal Control | In | [PLN-08](../05-plans/PLN-08-internal-audit-plan.md) |
+| MEA | MEA03 Managed Compliance with External Requirements | In | [POL-22](../02-policies/POL-22-it-compliance-policy.md); [REG-GAP](../06-registers/REG-GAP-rmit-gap-analysis-register.md) |
+| MEA | MEA04 Managed Assurance | In | [PLN-08](../05-plans/PLN-08-internal-audit-plan.md); [REG-AUD](../06-registers/REG-AUD-internal-audit-issues-register.md) |
+
+### B.2 ITIL 4 practices — coverage
+
+| Practice | Status | Implementing document(s) |
+|---|---|---|
+| Change Enablement | In | [POL-07](../02-policies/POL-07-change-management-policy.md); [STD-CM-01](../03-standards/STD-CM-01-change-management-standard.md); [REG-CHG](../06-registers/REG-CHG-change-register.md) |
+| Incident Management | In | [POL-13](../02-policies/POL-13-incident-management-policy.md); [PLN-01](../05-plans/PLN-01-incident-response-plan.md) |
+| Problem Management | **Deferred (FY2027)** — subsumed in incident PIR currently |
+| Service Configuration Management | In (operational CMDB; formal mapping deferred) | [STD-AM-01](../03-standards/STD-AM-01-it-asset-management-standard.md) |
+| Service Desk | In (operational practice; formal SOP not in this suite) | Service-desk operations under Head of IT Ops |
+| Capacity and Performance Management | In | [POL-08](../02-policies/POL-08-capacity-and-performance-management-policy.md) |
+| Service Continuity Management | In | [BCMF](BCMF.md); [POL-14](../02-policies/POL-14-business-continuity-policy.md) |
+| Service Level Management | **Deferred (FY2027)** — SLAs embedded in [POL-19](../02-policies/POL-19-supplier-security-policy.md) for outbound, and [POL-08](../02-policies/POL-08-capacity-and-performance-management-policy.md) for internal; not yet consolidated |
+| Service Request Management | Out of scope (operational practice; not separately documented) | Service-desk operations |
+| Monitoring and Event Management | In | [CRMF](CRMF.md) SOC operations; [STD-CR-02 Logging](../03-standards/STD-CR-02-logging-standard.md) |
+| Information Security Management | In | [CRMF](CRMF.md); [POL-04](../02-policies/POL-04-information-security-policy.md) |
+| Risk Management | In | TRMF (this framework) |
+| Supplier Management | In | [TPRMF](TPRMF.md); [POL-10](../02-policies/POL-10-it-vendor-management-policy.md) |
+| Deployment Management | In (via change enablement) — formal separate documentation deferred | [STD-CM-01 Section 3.8](../03-standards/STD-CM-01-change-management-standard.md) |
+| Release Management | In (via change enablement) — formal separate documentation deferred | [STD-CM-01](../03-standards/STD-CM-01-change-management-standard.md) |
+
+### B.3 Deferred — planned coverage roadmap
+
+The following are planned for FY2027 to close current coverage gaps surfaced in the v2 multi-agent review:
+
+- **POL-ITSM-01 IT Service Management Policy** — consolidates Service Level Management, Service Request Management, Service Desk operations
+- **POL-PM-01 Problem Management Policy** — closes DSS03 / ITIL Problem Management
+- **POL-PRJ-01 IT Project and Programme Governance Policy** — closes BAI01 / BAI11
+- **POL-EA-01 Enterprise Architecture Policy** — closes APO03
+- **POL-KM-01 Knowledge Management Policy** — closes BAI08
 
 ---
 

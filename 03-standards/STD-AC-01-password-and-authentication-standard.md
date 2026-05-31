@@ -117,7 +117,7 @@ Exceptions to this standard shall be approved by the CISO, logged in the Excepti
 - NIST SP 800-63B — Digital Identity Guidelines (informative reference for authentication assurance levels and password guidance).
 - FIDO Alliance — FIDO2/WebAuthn specifications.
 - Bank Negara Malaysia, *Risk Management in Technology (RMiT)*, **28 November 2025 issuance**, Section 10.53–10.57 (Access Control), particularly Section 10.55 (Multi-Factor Authentication).
-- [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
+- [Regulatory Mapping Reference](../_context/framework-stack.md).
 
 ## 7. Document control
 

@@ -218,7 +218,16 @@ flowchart LR
 
 ## 12. Exceptions
 
-Per TRMF exception matrix. **Unacceptable-risk AI use cases shall not be exception-approved.** Other AI exceptions require AI Governance Committee + CRO approval.
+**Risk acceptance authority** (repeated verbatim from [TRMF Section 8.3](TRMF.md) to ensure AI-related risk acceptance follows the same authority bar as enterprise technology risk):
+
+| Residual rating | Acceptance authority |
+|---|---|
+| Low (1–5) | Risk owner (function head) |
+| Moderate (6–10) | CRO |
+| Significant (11–15) | Risk Management Committee |
+| Severe (16–25) | Board of Directors |
+
+**AIGF-specific overlay:** **Unacceptable-risk AI use cases (per [STD-AI-01](../03-standards/STD-AI-01-ai-use-case-risk-classification-standard.md)) shall not be exception-approved at any authority** — they are prohibited. **Shariah Committee rejection of an AI use case cannot be exception-approved at GIBB management authority** — escalation to the Shariah Committee for reconsideration is the only path. Other AI exceptions require AI Governance Committee + CRO approval.
 
 ---
 
@@ -256,6 +265,55 @@ Per TRMF exception matrix. **Unacceptable-risk AI use cases shall not be excepti
 - BNM RMiT, 28 November 2025: Section 9.2(c); Appendix 9 (Guidance on Emerging Technologies)
 - BNM Shariah Governance Framework — Shariah review of AI in product systems
 - COBIT 2019 — EDM03; APO04; APO12; APO14
+
+---
+
+## Annex A — ISO/IEC 42001:2023 (AIMS) clause + Annex A control cross-walk
+
+The AIGF operates the AI Management System required by ISO/IEC 42001:2023. AIMS-specific terminology used: "AI system lifecycle," "AI impact assessment."
+
+### A.1 Clauses 4–10
+
+| Clause | Title | Implementing document(s) |
+|---|---|---|
+| 4.1 | Understanding the organisation and its context | AIGF Section 2 + 4 |
+| 4.2 | Understanding the needs and expectations of interested parties | AIGF Section 4 (incl. Shariah Committee) |
+| 4.3 | Determining the scope of the AIMS | AIGF Section 3 (in-scope AI use cases); future POL-AI-01 to consolidate |
+| 4.4 | AI management system | AIGF (this document) |
+| 5.1 | Leadership and commitment | [POL-21 Section 2](../02-policies/POL-21-ai-acceptable-use-policy.md); AIGF Section 5 |
+| 5.2 | AI policy | [POL-21 AI Acceptable Use Policy](../02-policies/POL-21-ai-acceptable-use-policy.md) (interim; pending POL-AI-01 AI Risk Management Policy) |
+| 5.3 | Roles, responsibilities and authorities | POL-21 Section 5; AIGF Section 5 (AI Governance Committee) |
+| 6.1.1 | Actions to address risks and opportunities | AIGF Section 7; [STD-AI-01 AI Use Case Risk Classification Standard](../03-standards/STD-AI-01-ai-use-case-risk-classification-standard.md) |
+| 6.1.2 | AI risk assessment | STD-AI-01; [SOP-AI-01 AI Use Case Onboarding SOP](../04-procedures/SOP-AI-01-ai-use-case-onboarding-sop.md) |
+| 6.1.3 | AI risk treatment | AIGF Section 7; STD-AI-01; STD-AI-02 to STD-AI-04 |
+| 6.1.4 | AI system impact assessment | STD-AI-01; SOP-AI-01 |
+| 6.2 | AI objectives and planning | [REG-OBJ](../06-registers/REG-OBJ-information-security-objectives-register.md) (AI-tagged objectives) |
+| 7.2 | Competence | [PLN-07 Section 3.2 (AI use-case owners)](../05-plans/PLN-07-awareness-and-competence-programme.md) |
+| 7.3 | Awareness | PLN-07 |
+| 7.5 | Documented information | [07-document-control/master-document-register.md](../07-document-control/master-document-register.md) |
+| 8.1 | Operational planning and control | STD-AI-01 to STD-AI-04; SOP-AI-01 to SOP-AI-03; [REG-AIU](../06-registers/REG-AIU-ai-use-case-register.md); [REG-AIM](../06-registers/REG-AIM-ai-model-inventory.md); [REG-AIV](../06-registers/REG-AIV-ai-vendor-register.md); [REG-AIB](../06-registers/REG-AIB-ai-bias-and-fairness-register.md) |
+| 8.2 | AI risk assessment (operational) | STD-AI-01; SOP-AI-01 |
+| 8.3 | AI risk treatment (operational) | STD-AI-01; SOP-AI-01 |
+| 8.4 | AI system impact assessment (operational) | STD-AI-01; SOP-AI-01 |
+| 9.1 | Monitoring, measurement, analysis and evaluation | AIGF Section 11; REG-AIB; [STD-AI-02 AI Model Validation Standard](../03-standards/STD-AI-02-ai-model-validation-standard.md) |
+| 9.2 | Internal audit | [PLN-08 Internal Audit Plan](../05-plans/PLN-08-internal-audit-plan.md) TAU-16 (from FY2027) |
+| 9.3 | Management review | [REG-MR](../06-registers/REG-MR-management-review-register.md) (combined ISMS/BCMS/AIMS) |
+| 10.1 | Continual improvement | AIGF Section 11; [REG-CAP](../06-registers/REG-CAP-corrective-action-register.md) |
+| 10.2 | Nonconformity and corrective action | REG-CAP; [REG-AUD](../06-registers/REG-AUD-internal-audit-issues-register.md) |
+
+### A.2 ISO/IEC 42001:2023 Annex A controls — implementation map
+
+| Annex A area | GIBB implementation |
+|---|---|
+| A.2 Policies related to AI | POL-21; POL-04-B (top-management statement applies); pending POL-AI-01 |
+| A.3 Internal organisation | AIGF Section 5 (AI Governance Committee, Shariah Committee liaison) |
+| A.4 Resources for AI systems | AIGF Section 11 (RMC resourcing commitment) |
+| A.5 Assessing impacts of AI systems | STD-AI-01; SOP-AI-01 |
+| A.6 AI system life cycle | STD-AI-01 through STD-AI-04; SOP-AI-01 through SOP-AI-03 |
+| A.7 Data for AI systems | [STD-AI-04 AI Training Data Standard](../03-standards/STD-AI-04-ai-training-data-standard.md); [POL-11 Data Classification](../02-policies/POL-11-data-classification-policy.md); [DGF](DGF.md) |
+| A.8 Information for interested parties of AI systems | POL-21 Section 4; SOP-AI-01 (customer disclosure where required by use-case classification) |
+| A.9 Use of AI systems | POL-21; AIGF Section 7 (use-case classification) |
+| A.10 Third-party and customer relationships | [STD-AI-03 GenAI Security Standard](../03-standards/STD-AI-03-genai-security-standard.md); REG-AIV; [POL-19](../02-policies/POL-19-supplier-security-policy.md); [SOP-AI-03 AI Vendor Assessment SOP](../04-procedures/SOP-AI-03-ai-vendor-assessment-sop.md) |
 
 ---
 

@@ -4,7 +4,7 @@
 |---|---|
 | **Document ID** | SOP-CR-03 | **Version** | 1.0 |
 | **Owner / Approver** | Head of SOC + CISO |
-| **Parent policy** | [POL-13 §4.5](../02-policies/POL-13-incident-management-policy.md) | **Parent framework** | [CRMF](../01-frameworks/CRMF.md) |
+| **Parent policy** | [POL-13 Section 4.5](../02-policies/POL-13-incident-management-policy.md) | **Parent framework** | [CRMF](../01-frameworks/CRMF.md) |
 | **Practice** | ISO/IEC 27037:2012 (Digital evidence) |
 
 ## 1. Purpose

@@ -11,6 +11,8 @@
 | **Effective date** | 2026-02-01 |
 | **Next review** | 2027-02-01 (annual or on material change) |
 | **Implements** | ISO/IEC 27001:2022 Clause 6.1.3 d — Statement of Applicability |
+| **Parent framework(s)** | [CRMF](../01-frameworks/CRMF.md) (the SoA is the canonical ISO 27001 Annex A control map for the ISMS) |
+| **COBIT objective(s)** | APO13 Managed Security; DSS05 Managed Security Services |
 
 ---
 
@@ -83,12 +85,12 @@ Annex A organises controls into four themes: **Organisational (37)**, **People (
 
 | Ctl | Title | App. | Justification | Implementation | Owner |
 |---|---|---|---|---|---|
-| 6.1 | Screening | Y | Required. | [POL-06HR Section 3.1](../02-policies/POL-06HR-hr-security-policy.md) | CHRO |
-| 6.2 | Terms and conditions of employment | Y | Required. | [POL-06HR Section 3.2](../02-policies/POL-06HR-hr-security-policy.md) | CHRO |
-| 6.3 | Information security awareness, education and training | Y | Required. | [POL-06HR Section 3.3](../02-policies/POL-06HR-hr-security-policy.md) | CHRO + CISO |
-| 6.4 | Disciplinary process | Y | Required. | [POL-06HR Section 3.4](../02-policies/POL-06HR-hr-security-policy.md) | CHRO |
-| 6.5 | Responsibilities after termination or change of employment | Y | Required. | [POL-06HR Section 3.5](../02-policies/POL-06HR-hr-security-policy.md); [SOP-AC-01 Section 5.3](../04-procedures/SOP-AC-01-joiner-mover-leaver-sop.md) | CHRO + Head of IAM |
-| 6.6 | Confidentiality or non-disclosure agreements | Y | Required. | [POL-06HR Section 3.2.2](../02-policies/POL-06HR-hr-security-policy.md) | CHRO + GC |
+| 6.1 | Screening | Y | Required. | [POL-HR-01 Section 3.1](../02-policies/POL-HR-01-hr-security-policy.md) | CHRO |
+| 6.2 | Terms and conditions of employment | Y | Required. | [POL-HR-01 Section 3.2](../02-policies/POL-HR-01-hr-security-policy.md) | CHRO |
+| 6.3 | Information security awareness, education and training | Y | Required. | [POL-HR-01 Section 3.3](../02-policies/POL-HR-01-hr-security-policy.md) | CHRO + CISO |
+| 6.4 | Disciplinary process | Y | Required. | [POL-HR-01 Section 3.4](../02-policies/POL-HR-01-hr-security-policy.md) | CHRO |
+| 6.5 | Responsibilities after termination or change of employment | Y | Required. | [POL-HR-01 Section 3.5](../02-policies/POL-HR-01-hr-security-policy.md); [SOP-AC-01 Section 5.3](../04-procedures/SOP-AC-01-joiner-mover-leaver-sop.md) | CHRO + Head of IAM |
+| 6.6 | Confidentiality or non-disclosure agreements | Y | Required. | [POL-HR-01 Section 3.2.2](../02-policies/POL-HR-01-hr-security-policy.md) | CHRO + GC |
 | 6.7 | Remote working | Y | Hybrid workforce. | [POL-15 Section 3.8](../02-policies/POL-15-physical-and-environmental-security-policy.md); remote work standard | CISO |
 | 6.8 | Information security event reporting | Y | Required. | [POL-13 Section 4.2.3](../02-policies/POL-13-incident-management-policy.md); [POL-05 Section 3.7](../02-policies/POL-05-acceptable-use-policy.md) | CISO |
 

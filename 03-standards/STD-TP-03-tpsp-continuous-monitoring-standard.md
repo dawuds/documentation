@@ -68,7 +68,7 @@ Per [POL-10](../02-policies/POL-10-it-vendor-management-policy.md). Reduced moni
 [STD-TP-01](STD-TP-01-tpsp-due-diligence-standard.md); [STD-TP-02](STD-TP-02-outsourcing-contractual-security-standard.md); [REG-TPS](../06-registers/REG-TPS-third-party-service-provider-register.md); [REG-OUT](../06-registers/REG-OUT-material-outsourcing-register.md); SOP-TP-02 TPSP Periodic Reassessment SOP
 
 ## 6. References
-BNM RMiT 28 Nov 2025 §10.49; BNM Outsourcing PD; ISO/IEC 27036-3.
+BNM RMiT 28 Nov 2025 Section 10.49; BNM Outsourcing PD; ISO/IEC 27036-3.
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

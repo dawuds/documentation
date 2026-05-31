@@ -7,10 +7,10 @@
 | **Parent standard** | [STD-DG-01](../03-standards/STD-DG-01-data-quality-standard.md) | **Parent policy** | [POL-11](../02-policies/POL-11-data-classification-policy.md) |
 
 ## 1. Purpose
-Triage and resolve data quality issues per severity SLAs in [STD-DG-01 §3.4](../03-standards/STD-DG-01-data-quality-standard.md).
+Triage and resolve data quality issues per severity SLAs in [STD-DG-01 Section 3.4](../03-standards/STD-DG-01-data-quality-standard.md).
 
 ## 2. Trigger
-- Quality measurement breach of threshold per [STD-DG-01 §3.2](../03-standards/STD-DG-01-data-quality-standard.md)
+- Quality measurement breach of threshold per [STD-DG-01 Section 3.2](../03-standards/STD-DG-01-data-quality-standard.md)
 - Business user report of suspected quality issue
 - Downstream consumption failure
 - Audit finding
@@ -20,8 +20,8 @@ Triage and resolve data quality issues per severity SLAs in [STD-DG-01 §3.4](..
 | # | Actor | Action | SLA |
 |---|---|---|---|
 | 1 | Data steward | Identify quality issue; record in REG-DQ Data Quality Register | At identification |
-| 2 | Data steward | Classify severity per [STD-DG-01 §3.4](../03-standards/STD-DG-01-data-quality-standard.md) | ≤ 24h Critical; ≤ 5BD Medium |
-| 3 | Data steward | Investigate root cause per [STD-DG-01 §3.5](../03-standards/STD-DG-01-data-quality-standard.md) (source / user / integration / definition / timing) | Per severity |
+| 2 | Data steward | Classify severity per [STD-DG-01 Section 3.4](../03-standards/STD-DG-01-data-quality-standard.md) | ≤ 24h Critical; ≤ 5BD Medium |
+| 3 | Data steward | Investigate root cause per [STD-DG-01 Section 3.5](../03-standards/STD-DG-01-data-quality-standard.md) (source / user / integration / definition / timing) | Per severity |
 | 4 | Data steward + source-system owner | Develop remediation — typically source-side fix preferred over downstream cleansing | Per severity |
 | 5 | Source-system owner | Implement source-side fix | Per severity remediation SLA |
 | 6 | Data steward | Backfill / correct historical data where required | Per data class |

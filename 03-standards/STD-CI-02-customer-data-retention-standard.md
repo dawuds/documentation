@@ -33,7 +33,7 @@ All customer data held by GIBB.
 | AML/CFT alerts (raised on customer) | Per AML/CFT PD (typically 7 years) | AMLA |
 
 ## 4. Destruction
-Per [POL-15 §3.7](../02-policies/POL-15-physical-and-environmental-security-policy.md); secure destruction at end of retention; certificate of destruction retained.
+Per [POL-15 Section 3.7](../02-policies/POL-15-physical-and-environmental-security-policy.md); secure destruction at end of retention; certificate of destruction retained.
 
 ## 5. Legal hold
 Where data is under legal hold (litigation, regulator demand), retention extended until release of hold per General Counsel.

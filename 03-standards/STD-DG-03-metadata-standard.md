@@ -64,7 +64,7 @@ Centralised metadata catalogue (data catalogue platform); single source of truth
 Per [POL-11](../02-policies/POL-11-data-classification-policy.md).
 
 ## 7. Related documents
-[STD-DG-01](STD-DG-01-data-quality-standard.md); [STD-DG-02](STD-DG-02-data-retention-standard.md); [REG-DA](../06-registers/REG-DA-data-asset-register.md); SOP-DG-01 Data Asset Onboarding SOP (future)
+[STD-DG-01](STD-DG-01-data-quality-standard.md); [STD-DG-02](STD-DG-02-data-retention-standard.md); [REG-DA](../06-registers/REG-DA-data-asset-register.md); [SOP-DG-01 Data Asset Onboarding SOP](../04-procedures/SOP-DG-01-data-asset-onboarding-sop.md)
 
 ## 8. References
 DAMA-DMBOK 2; ISO/IEC 11179 (Metadata registries).

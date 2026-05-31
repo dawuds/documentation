@@ -12,8 +12,9 @@
 | **Next review** | 2027-02-01 |
 | **ISO/IEC 27002:2022 controls** | 6.1 (Screening), 6.2 (Terms and conditions of employment), 6.3 (Information security awareness, education and training), 6.4 (Disciplinary process), 6.5 (Responsibilities after termination or change of employment), 6.6 (Confidentiality or non-disclosure agreements) |
 | **BNM RMiT (28 Nov 2025)** | Section 15 (Security Awareness and Education) |
-
-> Skeleton policy.
+| **Parent framework(s)** | [TRMF](../01-frameworks/TRMF.md) (personnel risk); [CRMF](../01-frameworks/CRMF.md) (awareness Section 15) |
+| **COBIT objective(s)** | APO07 Managed Human Resources; APO13 Managed Security (awareness component) |
+| **Practice standard(s)** | ISO/IEC 27002:2022 (controls 6.1–6.6) |
 
 ---
 
@@ -48,7 +49,7 @@ All employees, contractors, secondees, interns, and third-party personnel with a
 
 ### 3.5 Termination and change of role
 
-- **3.5.1** On termination or change of role, access shall be modified or revoked per [POL-02 Access Control Policy](02-access-control-policy.md), assets returned per [POL-03 Asset Management Policy](03-asset-management-policy.md), and continuing confidentiality obligations communicated. *(Implements ISO/IEC 27002:2022 control 6.5.)*
+- **3.5.1** On termination or change of role, access shall be modified or revoked per [POL-06 Access Control Policy](POL-06-access-control-policy.md), assets returned per [POL-09 IT Asset Management Policy](POL-09-it-asset-management-policy.md), and continuing confidentiality obligations communicated. *(Implements ISO/IEC 27002:2022 control 6.5.)*
 
 ## 4. Roles and responsibilities
 
@@ -62,15 +63,15 @@ All employees, contractors, secondees, interns, and third-party personnel with a
 
 ## 5. Exceptions
 
-Per [POL-00](00-information-security-policy.md). Reduced screening requires joint CHRO and CISO approval.
+Per [POL-04](POL-04-information-security-policy.md). Reduced screening requires joint CHRO and CISO approval.
 
 ## 6. Enforcement
 
-Per [POL-00](00-information-security-policy.md).
+Per [POL-04](POL-04-information-security-policy.md).
 
 ## 7. Related documents
 
-[POL-00](00-information-security-policy.md), [POL-01](01-acceptable-use-policy.md), [POL-02](02-access-control-policy.md), [POL-03](03-asset-management-policy.md).
+[POL-04](POL-04-information-security-policy.md), [POL-05](POL-05-acceptable-use-policy.md), [POL-06](POL-06-access-control-policy.md), [POL-09](POL-09-it-asset-management-policy.md).
 
 ## 8. References
 

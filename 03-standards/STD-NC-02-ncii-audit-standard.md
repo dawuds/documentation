@@ -55,7 +55,7 @@ NCII audit obligations are not subject to exception within GIBB authority.
 [POL-23](../02-policies/POL-23-ncii-operational-policy.md); [STD-NC-01](STD-NC-01-nacsa-notification-standard.md); [REG-NCA](../06-registers/REG-NCA-ncii-audit-findings-register.md); [REG-CAP](../06-registers/REG-CAP-corrective-action-register.md); SOP-NC-02
 
 ## 6. References
-Cyber Security Act 2024; NACSA Code of Practice; BNM RMiT 28 Nov 2025 §11.4; §13 (Technology Audits cross-reference).
+Cyber Security Act 2024; NACSA Code of Practice; BNM RMiT 28 Nov 2025 Section 11.4; Section 13 (Technology Audits cross-reference).
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

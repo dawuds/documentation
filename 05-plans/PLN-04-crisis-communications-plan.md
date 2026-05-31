@@ -46,7 +46,7 @@ All crisis events requiring coordinated external communication, including SEV-1 
 | **Internal — all staff** | CEO + Head of Corp Comms | Crisis affecting staff or visible | Intranet, internal email, all-staff calls |
 | **Customers — affected only** | DPO + GC + Head of Corp Comms | Per [SOP-CI-02](../04-procedures/SOP-CI-02-customer-data-breach-notification-sop.md) or service-disruption SLAs | Email, SMS, in-app secure message, letter |
 | **Customers — all** | CEO + GC | Major service disruption or breach | Website, mobile app, branches |
-| **Bank Negara Malaysia** | CCO + CRO + (CISO for cyber) | Per [POL-13 §4.4.3](../02-policies/POL-13-incident-management-policy.md) RMiT 11.18 (4-hour clock with source-chain caveat) | Per BNM-prescribed channel |
+| **Bank Negara Malaysia** | CCO + CRO + (CISO for cyber) | Per [POL-13 Section 4.4.3](../02-policies/POL-13-incident-management-policy.md) RMiT 11.18 (4-hour clock with source-chain caveat) | Per BNM-prescribed channel |
 | **NACSA** | CCO + CISO | Per [STD-NC-01](../03-standards/STD-NC-01-nacsa-notification-standard.md) | Per NACSA channel |
 | **PDPA Commissioner** | DPO + CCO | Per PDPA assessment | Per Commissioner channel |
 | **Other regulators** (SC, Inland Revenue, etc.) | CCO + GC | Per applicability | Per regulator channel |

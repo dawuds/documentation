@@ -54,7 +54,7 @@ The CRMF satisfies the IPDRR (Identify, Protect, Detect, Respond, Recover) lifec
 | **Cyber control measures** | The bank's implemented cyber controls — preventive, detective, corrective — per RMiT 11.5 and Appendix 5. |
 | **Red team** | Adversary-simulation exercise per RMiT 11.6, conducted at cadence and scope specified by the CISO and not less than RMiT-required minimum. |
 | **Coordinated vulnerability disclosure** | The bank's published channel for security researchers per RMiT 11.7. |
-| **Out-of-band communication infrastructure** | Communication channels resilient to compromise of primary systems, per RMiT 11.15 — see [Incident Response Plan](../05-plans/incident-response-plan.md). |
+| **Out-of-band communication infrastructure** | Communication channels resilient to compromise of primary systems, per RMiT 11.15 — see [Incident Response Plan](../05-plans/PLN-01-incident-response-plan.md). |
 
 Cross-reference: [`../_context/glossary.md`](../_context/glossary.md).
 
@@ -81,52 +81,58 @@ Cross-reference: [`../_context/glossary.md`](../_context/glossary.md).
 | **CRO** | Cross-line accountability for cyber risk as a category within enterprise risk; functional line manager of the CISO |
 | **CIO / Head of IT** | 1st-line accountability for cyber-relevant IT operations |
 | **CCO** | BNM and NACSA notification coordination |
-| **Incident Commander (per incident)** | Coordinates response per [IRP](../05-plans/incident-response-plan.md) |
+| **Incident Commander (per incident)** | Coordinates response per [IRP](../05-plans/PLN-01-incident-response-plan.md) |
 | **All personnel** | Report observed cyber events; comply with cyber policies; complete mandatory cyber awareness training (per RMiT Section 15) |
 
 ---
 
-## 6. Framework principles
+## 6. CRF mandatory elements — aligned 1:1 with RMiT Section 11.3(a)–(i)
 
-### 6.1 Cyber resilience is enterprise resilience
+The 9 mandatory Cyber Resilience Framework elements at **BNM RMiT Section 11.3(a)–(i)** are addressed in this framework as follows. The numbering below mirrors RMiT 11.3 verbatim so an examiner can verify coverage in one pass. Each element uses **shall** and binds at the principle level.
 
-GIBB **shall** treat cyber resilience as a core component of operational resilience, integrated with the [TRMF](TRMF.md) (technology risk umbrella) and the [BCMF](BCMF.md) (business continuity). Cyber events are tested in joint scenarios with continuity events. *(Implements RMiT 11.2; COBIT APO13.)*
+### 6.1 — RMiT 11.3(a) — Cyber risk identification and assessment
 
-### 6.2 Layered cyber defences
+GIBB **shall** identify and assess cyber risks — including threats, vulnerabilities, and exposures — across all in-scope assets, services, and channels. Cyber risk identification feeds the broader [TRMF risk register](../06-registers/REG-TR-technology-risk-register.md) and informs the Statement of Applicability for ISO 27001 Annex A control selection. *(Cross-ref: TRMF Section 7; [REG-SOA](../06-registers/REG-SOA-statement-of-applicability.md); ISO 27005:2022.)*
 
-GIBB **shall** maintain layered cyber defences — preventive, detective, corrective — referencing current international standards including **zero-trust**, **defence-in-depth**, and **security-by-design**. No single control shall be the sole protection of a critical asset. *(Implements RMiT 11.3(d); ISO/IEC 27002:2022 Clause 5.6, 8.7.)*
+### 6.2 — RMiT 11.3(b) — Cyber risk treatment
 
-### 6.3 Continuous detection and monitoring
+Cyber risks **shall** be treated, transferred, accepted, or avoided per documented decision aligned with the [Technology Risk Appetite Statement](../02-policies/POL-03-technology-risk-appetite-statement.md). Cyber insurance is maintained as a transfer mechanism per RMiT 11.17.
 
-GIBB **shall** operate continuous detection and monitoring through a **Security Operations Centre (SOC)** staffed with competent resources and equipped with the necessary tooling, covering all critical systems and supporting infrastructure. *(Implements RMiT 11.3(e), 11.9; COBIT DSS05.)*
+### 6.3 — RMiT 11.3(c) — Cyber control measures (preventive, detective, corrective)
 
-### 6.4 Detailed incident handling
+GIBB **shall** maintain layered cyber defences — preventive, detective, corrective — referencing zero-trust, defence-in-depth, and security-by-design. No single control shall be the sole protection of a critical asset. Specific controls are catalogued in [REG-SOA](../06-registers/REG-SOA-statement-of-applicability.md) and operationalised through standards under this framework. *(ISO/IEC 27002:2022 Clause 5.6, 8.7.)*
 
-GIBB **shall** maintain detailed incident handling policies and procedures plus a **crisis response playbook**, satisfying RMiT 11.3(f), 11.12 (Cyber Crisis Management), 11.13 (Cyber Incident Response Plan). The IRP is exercised through quarterly tabletops and the mandatory **annual cyber drill** per RMiT 11.16. *(Implements RMiT 11.3(f), 11.12, 11.13, 11.16.)*
+### 6.4 — RMiT 11.3(d) — Cyber incident detection
 
-### 6.5 Phishing-resistant authentication for privileged access
+GIBB **shall** operate continuous detection through a **Security Operations Centre (SOC)** staffed with competent resources and equipped with appropriate tooling, covering all critical systems and supporting infrastructure. *(RMiT 11.9; COBIT DSS05.)*
 
-GIBB **shall** require phishing-resistant multi-factor authentication (FIDO2/WebAuthn or smart card) for all privileged access. SMS one-time passwords **shall not** be used as a factor for privileged access. *(Implements RMiT 10.55; ISO/IEC 27002:2022 control 8.5; NIST SP 800-63B AAL3.)*
+### 6.5 — RMiT 11.3(e) — Cyber incident response and recovery
 
-### 6.6 Threat intelligence-led
+GIBB **shall** maintain a tested cyber incident response and recovery capability — including out-of-band communications (RMiT 11.15), CERT-member readiness (11.14), and the **mandatory annual cyber drill** (11.16). The Cyber Incident Response Plan ([PLN-01](../05-plans/PLN-01-incident-response-plan.md)) operationalises this element.
 
-GIBB **shall** operate a **cyber threat intelligence** capability per RMiT 11.10, integrating external feeds, sector sharing, and internal indicators. Threat intelligence drives proactive control adjustment and detection-use-case development. *(Implements RMiT 11.10, 11.19, 11.20.)*
+### 6.6 — RMiT 11.3(f) — Cyber crisis management
 
-### 6.7 Tested response capability
+GIBB **shall** maintain a cyber crisis management capability — the crisis-tier governance overlay activated at SEV-1 incidents per RMiT 11.12. Roles, escalation, and authority are documented in [PLN-01 Sections 3–5](../05-plans/PLN-01-incident-response-plan.md) and the [Board Reporting and Escalation Annex](../00-architecture/board-reporting-and-escalation-annex.md). *(RMiT 11.12, 11.13.)*
 
-GIBB **shall** maintain a tested cyber response capability — out-of-band communications (RMiT 11.15), CERT-member readiness (11.14), and annual cyber drill (11.16). Cyber insurance is maintained per RMiT 11.17 as part of the loss-provision framework. *(Implements RMiT 11.14, 11.15, 11.16, 11.17.)*
+### 6.7 — RMiT 11.3(g) — Cyber threat intelligence
 
-### 6.8 Coordinated vulnerability disclosure
+GIBB **shall** operate a **cyber threat intelligence** capability per RMiT 11.10, integrating external feeds, sector sharing, and internal indicators. Threat intelligence drives proactive control adjustment and detection-use-case development. *(RMiT 11.10, 11.19, 11.20.)*
 
-GIBB **shall** maintain a coordinated vulnerability disclosure channel per RMiT 11.7 for external researchers to report vulnerabilities. Reports are triaged, validated, remediated, and acknowledged in good faith. *(Implements RMiT 11.7.)*
+### 6.8 — RMiT 11.3(h) — Cyber testing and assurance
 
-### 6.9 Adversary simulation
+GIBB **shall** conduct **red team simulation attacks** per RMiT 11.6 at cadence and scope specified by the CISO. Where GIBB is acting as NCII, red team scope and frequency additionally align with NACSA directions. Coordinated vulnerability disclosure is maintained per RMiT 11.7. The annual cyber drill (11.16) and quarterly tabletops provide further assurance. *(RMiT 11.6, 11.7, 11.16.)*
 
-GIBB **shall** conduct **red team simulation attacks** per RMiT 11.6 at cadence and scope specified by the CISO. Where GIBB is acting as NCII, red team scope and frequency additionally align with NACSA directions. *(Implements RMiT 11.6, 11.4.)*
+### 6.9 — RMiT 11.3(i) — Cyber awareness and competence
 
-### 6.10 Source-chain discipline on regulator notification
+GIBB **shall** build and maintain cyber awareness and competence across the workforce per [PLN-07 Awareness and Competence Programme](../05-plans/PLN-07-awareness-and-competence-programme.md), satisfying RMiT Section 15. Role-specific competence is required for SOC, IT operations, developers, system administrators, customer-facing staff, and senior management.
 
-Material cyber incidents **shall** be notified to BNM in accordance with **RMiT Section 11.18, 28 Nov 2025**, with the operating expectation of **notification within 4 hours of detection**. ⚠ The 4-hour figure is the bank's operating practice derived from BNM Operational Risk Reporting PD Part C; it is not stated numerically in RMiT 11.18 verbatim. The Chief Compliance Officer maintains the authoritative clock by reference to the current upstream BNM policy. NACSA notification for NCII-scope incidents applies additionally per [NCIIF](NCIIF.md). *(Implements RMiT 11.18 + upstream Operational Risk Reporting PD Part C + CSA 2024.)*
+### 6.10 — Phishing-resistant authentication for privileged access (GIBB-specific control bar — supports RMiT 10.55)
+
+GIBB **shall** require phishing-resistant MFA (FIDO2/WebAuthn or smart card) for all privileged access. SMS one-time passwords **shall not** be used as a factor for privileged access. *(RMiT 10.55; ISO/IEC 27002:2022 control 8.5; NIST SP 800-63B AAL3.)*
+
+### 6.11 — Source-chain discipline on regulator notification (GIBB-specific operating discipline — supports RMiT 11.18)
+
+Material cyber incidents **shall** be notified to BNM in accordance with **RMiT Section 11.18, 28 Nov 2025**, with the operating expectation of **notification within 4 hours of detection**. ⚠ The 4-hour figure is the bank's operating practice derived from BNM Operational Risk Reporting PD Part C; it is not stated numerically in RMiT 11.18 verbatim. The Chief Compliance Officer maintains the authoritative clock by reference to the current upstream BNM policy. NACSA notification for NCII-scope incidents applies additionally per [NCIIF](NCIIF.md). Materiality criteria are surfaced at [POL-04 Section 3](../02-policies/POL-04-information-security-policy.md). *(RMiT 11.18 + upstream Operational Risk Reporting PD Part C + CSA 2024.)*
 
 ---
 
@@ -182,7 +188,7 @@ flowchart LR
 - Layered defences (6.2)
 - Phishing-resistant authentication for privileged access (6.5)
 - Encryption at rest and in transit per [Cryptography Policy](../02-policies/cryptography-policy.md)
-- Secure development per [Secure Development Policy](../02-policies/secure-development-policy.md)
+- Secure development per [Secure Development Policy](../02-policies/POL-17-secure-development-policy.md)
 - Vulnerability management per [Vulnerability and Patch Management Policy](../02-policies/vulnerability-management-policy.md)
 
 ### 8.3 Detect (RMiT 11.9–11.11)
@@ -195,7 +201,7 @@ flowchart LR
 ### 8.4 Respond (RMiT 11.12–11.17, 11.18)
 
 - **Cyber Crisis Management** per RMiT 11.12 — crisis-tier governance over response
-- **Cyber Incident Response Plan** per RMiT 11.13 — see [IRP](../05-plans/incident-response-plan.md)
+- **Cyber Incident Response Plan** per RMiT 11.13 — see [IRP](../05-plans/PLN-01-incident-response-plan.md)
 - **CERT member readiness** per RMiT 11.14
 - **Out-of-band communication infrastructure** per RMiT 11.15
 - **Annual cyber drill exercise** per RMiT 11.16
@@ -315,7 +321,16 @@ flowchart LR
 
 ## 12. Exceptions
 
-Per the TRMF exception matrix. Cyber-specific exceptions exceeding 30 days for internet-facing systems require RMC approval regardless of residual rating.
+**Risk acceptance authority** (repeated verbatim from [TRMF Section 8.3](TRMF.md) to ensure cyber risk acceptance follows the same authority bar as enterprise technology risk):
+
+| Residual rating | Acceptance authority |
+|---|---|
+| Low (1–5) | Risk owner (function head) |
+| Moderate (6–10) | CRO |
+| Significant (11–15) | Risk Management Committee |
+| Severe (16–25) | Board of Directors |
+
+**Cyber-specific overlay:** exceptions exceeding 30 days for internet-facing systems require RMC approval regardless of residual rating. Exceptions affecting PCI-DSS scope, customer-facing channel availability, or NCII-scope assets require additional concurrence from the CCO. **NACSA-directed controls cannot be exception-approved at GIBB authority** — escalation to NACSA via [POL-23](../02-policies/POL-23-ncii-operational-policy.md) is required.
 
 ---
 
@@ -372,6 +387,42 @@ Per the TRMF exception matrix. Cyber-specific exceptions exceeding 30 days for i
 
 - [TRMF](TRMF.md); [NCIIF](NCIIF.md); [BCMF](BCMF.md); [TPRMF](TPRMF.md); [CloudRMF](CloudRMF.md); [DGF](DGF.md); [CIMF](CIMF.md); [AIGF](AIGF.md)
 - [`../v1/`](../v1/) — v1 ISMS content (Information Security Policy, Access Control Policy, Incident Management Policy, etc.) being re-anchored under this CRMF in the cascade build
+
+---
+
+## Annex A — ISO/IEC 27001:2022 clause cross-walk
+
+The CRMF operates the ISMS required by ISO/IEC 27001:2022. The mapping below shows which GIBB document satisfies each Clause 4–10 requirement. ISO 27002:2022 Annex A controls are mapped separately in [REG-SOA](../06-registers/REG-SOA-statement-of-applicability.md).
+
+| Clause | Title | Implementing document(s) |
+|---|---|---|
+| 4.1 | Understanding the organisation and its context | [POL-04 Section 2](../02-policies/POL-04-information-security-policy.md); [`_context/bank-profile.md`](../_context/bank-profile.md) |
+| 4.2 | Understanding the needs and expectations of interested parties | POL-04 Section 2.1; CRMF Section 4 (stakeholders) |
+| 4.3 | Determining the scope of the ISMS | [POL-04-A ISMS Scope Statement](../02-policies/POL-04-A-isms-scope-statement.md) |
+| 4.4 | Information security management system | CRMF (this document); [POL-04](../02-policies/POL-04-information-security-policy.md) |
+| 5.1 | Leadership and commitment | POL-04 Section 7 (roles); CRMF Section 5 |
+| 5.2 | Information security policy (top-management published) | [POL-04-B Information Security Policy Statement](../02-policies/POL-04-B-information-security-policy-statement.md) |
+| 5.3 | Organisational roles, responsibilities and authorities | POL-04 Section 7; CRMF Section 5 |
+| 6.1.1 | Actions to address risks and opportunities — general | CRMF Section 6 + 7 |
+| 6.1.2 | Information security risk assessment | [TRMF](TRMF.md) Section 7; [REG-TR](../06-registers/REG-TR-technology-risk-register.md) |
+| 6.1.3 | Information security risk treatment | TRMF Section 8; [REG-SOA](../06-registers/REG-SOA-statement-of-applicability.md) (Clause 6.1.3 d — SoA) |
+| 6.2 | Information security objectives and planning to achieve them | [REG-OBJ Information Security Objectives Register](../06-registers/REG-OBJ-information-security-objectives-register.md) |
+| 6.3 | Planning of changes | [POL-07](../02-policies/POL-07-change-management-policy.md); [STD-CM-01](../03-standards/STD-CM-01-change-management-standard.md); [REG-CHG](../06-registers/REG-CHG-change-register.md) |
+| 7.1 | Resources | POL-04 Section 7; CRMF Section 11 (RMC resources commitment); [REG-MR](../06-registers/REG-MR-management-review-register.md) input 9.3.2 g |
+| 7.2 | Competence | [PLN-07 Section 3.2](../05-plans/PLN-07-awareness-and-competence-programme.md); [REG-AWR](../06-registers/REG-AWR-awareness-and-competence-register.md) |
+| 7.3 | Awareness | [PLN-07 Section 3.1](../05-plans/PLN-07-awareness-and-competence-programme.md); [POL-HR-01 Section 3.3](../02-policies/POL-HR-01-hr-security-policy.md) |
+| 7.4 | Communication | POL-04 Section 8; [PLN-04 Crisis Communications Plan](../05-plans/PLN-04-crisis-communications-plan.md) |
+| 7.5 | Documented information | [07-document-control/master-document-register.md](../07-document-control/master-document-register.md); [`_templates/`](../_templates/) |
+| 8.1 | Operational planning and control | CRMF Section 7 (controls); all standards in `03-standards/` and SOPs in `04-procedures/` |
+| 8.2 | Information security risk assessment (operational) | [TRMF Section 7](TRMF.md); REG-TR |
+| 8.3 | Information security risk treatment (operational) | TRMF Section 8; REG-TR; REG-SOA |
+| 9.1 | Monitoring, measurement, analysis and evaluation | REG-OBJ; CRMF Section 11 reporting; [REG-GAP](../06-registers/REG-GAP-rmit-gap-analysis-register.md) |
+| 9.2 | Internal audit | [PLN-08 Internal Audit Plan](../05-plans/PLN-08-internal-audit-plan.md); [REG-AUD](../06-registers/REG-AUD-internal-audit-issues-register.md) |
+| 9.3 | Management review | [REG-MR Management Review Register](../06-registers/REG-MR-management-review-register.md) |
+| 10.1 | Continual improvement | CRMF Section 11; [REG-CAP](../06-registers/REG-CAP-corrective-action-register.md); REG-MR outputs 9.3.3 |
+| 10.2 | Nonconformity and corrective action | [REG-NC](../06-registers/REG-NC-nacsa-directive-tracker.md); REG-CAP; REG-AUD |
+
+ISO 27002:2022 Annex A controls (5.1–5.37, 6.1–6.8, 7.1–7.14, 8.1–8.34) are mapped to implementing documents in [REG-SOA](../06-registers/REG-SOA-statement-of-applicability.md) — the canonical Statement of Applicability.
 
 ---
 

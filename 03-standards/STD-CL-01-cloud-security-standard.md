@@ -82,7 +82,7 @@ Per [POL-20](../02-policies/POL-20-cloud-acceptable-use-policy.md). Departures f
 [POL-20](../02-policies/POL-20-cloud-acceptable-use-policy.md); STD-CL-02 Cloud Landing Zone Standard; STD-CL-03 Cloud Data Residency Standard; [STD-CR-01](STD-CR-01-cryptographic-standard.md); [STD-CR-02](STD-CR-02-logging-standard.md); [REG-CL](../06-registers/REG-CL-cloud-service-register.md); [CloudRMF](../01-frameworks/CloudRMF.md)
 
 ## 6. References
-BNM RMiT 28 Nov 2025 §10.50–10.52; Appendix 10; BNM Cloud TRAG; CSA CCM; CIS Foundations Benchmarks (AWS / Azure / GCP); ISO/IEC 27017; ISO/IEC 27018.
+BNM RMiT 28 Nov 2025 Section 10.50–10.52; Appendix 10; BNM Cloud TRAG; CSA CCM; CIS Foundations Benchmarks (AWS / Azure / GCP); ISO/IEC 27017; ISO/IEC 27018.
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

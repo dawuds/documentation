@@ -108,7 +108,7 @@ Material suppliers **shall** be required to maintain continuity capability propo
 
 ### 6.8 Integrated activation
 
-BCMF activation **shall** follow defined triggers and authorities, integrated with the [Incident Response Plan](../05-plans/incident-response-plan.md) where the disruption originates from a security incident. *(Implements RMiT 11.12.)*
+BCMF activation **shall** follow defined triggers and authorities, integrated with the [Incident Response Plan](../05-plans/PLN-01-incident-response-plan.md) where the disruption originates from a security incident. *(Implements RMiT 11.12.)*
 
 ---
 
@@ -213,7 +213,16 @@ Escalation triggers: critical service RTO breach; failed recovery test on critic
 
 ## 12. Exceptions
 
-Per TRMF exception matrix. Service-level RTO/RPO exceptions require RMC approval.
+**Risk acceptance authority** (repeated verbatim from [TRMF Section 8.3](TRMF.md) to ensure continuity-related risk acceptance follows the same authority bar as enterprise technology risk):
+
+| Residual rating | Acceptance authority |
+|---|---|
+| Low (1–5) | Risk owner (function head) |
+| Moderate (6–10) | CRO |
+| Significant (11–15) | Risk Management Committee |
+| Severe (16–25) | Board of Directors |
+
+**BCMF-specific overlay:** service-level RTO/RPO exceptions for Tier-1 services require **RMC approval regardless of residual rating** (Tier-1 service-availability commitments are an appetite item). Exceptions affecting cross-border DR arrangements require additional CRO and Legal concurrence on PDPA Section 129 implications.
 
 ---
 
@@ -245,6 +254,37 @@ Per TRMF exception matrix. Service-level RTO/RPO exceptions require RMC approval
 - COBIT 2019 — DSS04 Managed Continuity; DSS03 Managed Problems
 - ISO/IEC 22301:2019 — Business Continuity Management Systems
 - ISO/IEC 27031:2011 — ICT readiness for business continuity
+
+---
+
+## Annex A — ISO/IEC 22301:2019 clause cross-walk
+
+The BCMF operates the BCMS required by ISO/IEC 22301:2019.
+
+| Clause | Title | Implementing document(s) |
+|---|---|---|
+| 4.1 | Understanding the organisation and its context | BCMF Section 2 + 4; [`_context/bank-profile.md`](../_context/bank-profile.md) |
+| 4.2 | Understanding the needs and expectations of interested parties | BCMF Section 4 |
+| 4.3 | Determining the scope of the BCMS | BCMF Section 3 (scope) |
+| 5.1 | Leadership and commitment | [POL-14 Section 2](../02-policies/POL-14-business-continuity-policy.md); BCMF Section 5 |
+| 5.2 | Business continuity policy | [POL-14 Business Continuity Policy](../02-policies/POL-14-business-continuity-policy.md) |
+| 5.3 | Roles, responsibilities and authorities | POL-14 Section 5; BCMF Section 5 |
+| 6.1 | Actions to address risks and opportunities | [TRMF](TRMF.md) cross-cutting; [REG-TR](../06-registers/REG-TR-technology-risk-register.md) |
+| 6.2 | Business continuity objectives | [REG-OBJ](../06-registers/REG-OBJ-information-security-objectives-register.md) (BC-tagged objectives) |
+| 7.2 | Competence | [PLN-07](../05-plans/PLN-07-awareness-and-competence-programme.md) (BC-relevant role families) |
+| 7.3 | Awareness | PLN-07 |
+| 7.5 | Documented information | [07-document-control/master-document-register.md](../07-document-control/master-document-register.md) |
+| 8.1 | Operational planning and control | [STD-BC-01 Recovery Objectives](../03-standards/STD-BC-01-recovery-objectives-standard.md); [STD-BC-02 Backup and Restoration](../03-standards/STD-BC-02-backup-and-restoration-standard.md) |
+| 8.2 | Business impact analysis and risk assessment | [REG-BIA Business Impact Analysis](../06-registers/REG-BIA-business-impact-analysis-register.md); [SOP-BC-01 BIA Methodology SOP](../04-procedures/SOP-BC-01-bia-methodology-sop.md) |
+| 8.3 | Business continuity strategies and solutions | [PLN-02 BCP](../05-plans/PLN-02-business-continuity-plan.md); [PLN-03 DRP master](../05-plans/PLN-03-disaster-recovery-plan.md) + per-service DRPs (CB, IB, PMT) |
+| 8.4 | Business continuity plans and procedures | PLN-02; PLN-03; [PLN-04 Crisis Communications](../05-plans/PLN-04-crisis-communications-plan.md); [PLN-06 Pandemic](../05-plans/PLN-06-pandemic-workforce-disruption-plan.md) |
+| 8.5 | Exercise programme | [PLN-05 Cyber Drill](../05-plans/PLN-05-cyber-drill-exercise-plan.md); [REG-DRR DR Test Register](../06-registers/REG-DRR-dr-test-register.md); [REG-BCT BC Test Outcomes](../06-registers/REG-BCT-bc-test-outcomes-register.md) |
+| 8.6 | Evaluation of business continuity documentation and capabilities | REG-DRR; REG-BCT; PLN-08 annual BCM audit |
+| 9.1 | Monitoring, measurement, analysis and evaluation | BCMF Section 11; REG-BCT |
+| 9.2 | Internal audit | [PLN-08 Internal Audit Plan](../05-plans/PLN-08-internal-audit-plan.md) TAU-10; [REG-AUD](../06-registers/REG-AUD-internal-audit-issues-register.md) |
+| 9.3 | Management review | [REG-MR Management Review Register](../06-registers/REG-MR-management-review-register.md) (combined ISMS/BCMS/AIMS) |
+| 10.1 | Continual improvement | BCMF Section 11; [REG-CAP](../06-registers/REG-CAP-corrective-action-register.md) |
+| 10.2 | Nonconformity and corrective action | REG-CAP; REG-AUD |
 
 ---
 

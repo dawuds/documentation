@@ -4,7 +4,7 @@
 |---|---|
 | **Document ID** | SOP-CI-03 | **Version** | 1.0 |
 | **Owner / Approver** | DPO |
-| **Parent policy** | [POL-CI-01 §4.1](../02-policies/POL-CI-01-customer-data-protection-policy.md) | **Parent framework** | [CIMF](../01-frameworks/CIMF.md) |
+| **Parent policy** | [POL-CI-01 Section 4.1](../02-policies/POL-CI-01-customer-data-protection-policy.md) | **Parent framework** | [CIMF](../01-frameworks/CIMF.md) |
 | **Implements** | PDPA 2010 consent requirements |
 
 ## 1. Purpose
@@ -38,7 +38,7 @@ For sensitive personal data per PDPA, additional explicit consent required with 
 Islamic finance product consent includes Shariah-product-acceptance affirmation per Shariah Committee approved language. Recorded alongside PDPA consent.
 
 ## 8. Evidence
-Consent register entries; notice version archive; cascade confirmations. Retained per [STD-CI-02 §3](../03-standards/STD-CI-02-customer-data-retention-standard.md) marketing-consent row.
+Consent register entries; notice version archive; cascade confirmations. Retained per [STD-CI-02 Section 3](../03-standards/STD-CI-02-customer-data-retention-standard.md) marketing-consent row.
 
 ## 9. Document control
 | Version | Date | Author | Approver | Change |

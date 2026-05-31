@@ -83,7 +83,7 @@ The authoritative record of all identified technology risks at GIBB. Captures th
 | RISK-2026-007 | Personal customer data breach via mis-sent email | Data / People | 3×3 = 9 | 2×3 = 6 | Treat (DLP rules, awareness training, encryption defaults; CIMF lawful-basis discipline) | CRO | Accepted |
 | RISK-2026-008 | DDoS impacting digital banking availability | Cyber / Continuity | 4×4 = 16 | 2×3 = 6 | Treat (DDoS protection in place; runbook tested per BCMF; CDN/WAF tier upstream) | CRO | Accepted |
 | RISK-2026-009 | AI model bias in retail credit decisioning | AI / Customer | 3×4 = 12 | 2×3 = 6 | Treat (model validation per AIGF, fairness monitoring continuous, human review of declines, retraining trigger) | CRO | In Treatment |
-| RISK-2026-010 | Shariah-compliance logic regression after product system change | Shariah / Operational | 3×5 = 15 | 1×4 = 4 | Treat (mandatory Shariah review gate per POL-07 §4.3.2 and POL-17 §4.12.1; automated Shariah regression tests in CI) | Risk owner | Accepted |
+| RISK-2026-010 | Shariah-compliance logic regression after product system change | Shariah / Operational | 3×5 = 15 | 1×4 = 4 | Treat (mandatory Shariah review gate per POL-07 Section 4.3.2 and POL-17 Section 4.12.1; automated Shariah regression tests in CI) | Risk owner | Accepted |
 
 > Real entries carry full description, controls inventory, action owners and dates, last-review note, and links to evidence. The worked example shows the shape of useful entries.
 

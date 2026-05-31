@@ -25,18 +25,18 @@ The authoritative inventory of GIBB's cloud service consumption — services ado
 | `provider` | string | Cloud provider entity |
 | `service_model` | enum | IaaS / PaaS / SaaS / FaaS |
 | `provider_region` | string | Provider region(s) used |
-| `tpsp_id` | reference | Link to REG-TPS entry |
+| `tpsp_id` | reference | **Mandatory** link to corresponding [REG-TPS](REG-TPS-third-party-service-provider-register.md) entry — every cloud service is also a third-party service provider relationship; dual-registration is enforced (see Section "Dual-entry rule" below) |
 | `tier` | enum | Tier 0 / 1 / 2 / 3 per service criticality |
 | `data_classification_processed` | enum | Highest data classification stored/processed |
 | `data_residency_in_malaysia` | bool | Resident in Malaysia |
 | `cross_border_basis` | text | If extra-Malaysia: PDPA Section 129 basis |
-| `shared_responsibility_documented` | bool | Per POL-20 §4.2 |
+| `shared_responsibility_documented` | bool | Per POL-20 Section 4.2 |
 | `landing_zone_compliant` | bool | CIS / bank baseline alignment |
 | `cspm_coverage` | bool | Under CSPM monitoring |
-| `cmk_used` | bool | Customer-managed keys (not provider-managed) per POL-20 §4.6 |
+| `cmk_used` | bool | Customer-managed keys (not provider-managed) per POL-20 Section 4.6 |
 | `appendix_10_compliant` | enum | Yes / Partial (with documented departures per RMiT 10.51) / No |
 | `appendix_10_departures` | text | If Partial — list and justifications |
-| `exit_plan_documented` | bool | Per POL-20 §4.7 |
+| `exit_plan_documented` | bool | Per POL-20 Section 4.7 |
 | `last_risk_assessment` | date | Per RMiT 10.50 |
 | `last_posture_review` | date | CSPM consolidated review |
 | `material_for_bnm` | bool | Material outsourcing notification to BNM |
@@ -58,16 +58,28 @@ The authoritative inventory of GIBB's cloud service consumption — services ado
 
 > Real entries carry full architecture diagram references, security control attestations, ongoing CSPM finding counts, named contacts.
 
+## Dual-entry rule with REG-TPS (TPRMF/CloudRMF seam)
+
+Every cloud service entry in REG-CL **must** have a corresponding entry in [REG-TPS](REG-TPS-third-party-service-provider-register.md) — there is no such thing as a cloud relationship that is not also a third-party relationship. The bidirectional join is:
+
+- **REG-CL.tpsp_id** ↔ **REG-TPS.tpsp_id** (canonical key)
+- Cloud-specific attributes (service model, region, residency, CSPM, landing-zone compliance, App. 10 mapping) live in REG-CL.
+- Generic TPSP-lifecycle attributes (due diligence, contractual security clauses, attestations, exit plan completeness, material outsourcing flag, BNM notification status, periodic reassessment cadence) live in REG-TPS.
+- Either register can refresh first; both reflect the latest state within 5 working days of any material change.
+- A REG-CL row with `tpsp_id = null` is a control defect raised in the next quarterly cloud reconciliation and reported to RMC.
+
+The seam is operated jointly by **Head of Cloud** (REG-CL operating) and **Head of TPRM** (REG-TPS operating). Both report through [CRMF Section 11](../01-frameworks/CRMF.md) and [TPRMF Section 11](../01-frameworks/TPRMF.md).
+
 ## Maintenance
 
-- New cloud service adoption gated by entry creation.
+- New cloud service adoption gated by entry creation in **both** REG-CL and REG-TPS.
 - CSPM critical findings trigger immediate posture review and entry update.
-- Quarterly Head of Cloud reconciles register against actual cloud-resource inventory (AWS Config, Azure Resource Graph, GCP Asset Inventory).
+- Quarterly Head of Cloud reconciles register against actual cloud-resource inventory (AWS Config, Azure Resource Graph, GCP Asset Inventory) **and** cross-validates REG-CL ↔ REG-TPS join integrity.
 - Annual Cloud TRAG-aligned full re-assessment.
-- Material change of provider region, service model, or data residency triggers immediate update and CRO notification.
+- Material change of provider region, service model, or data residency triggers immediate update and CRO notification — and a corresponding REG-TPS update where the change is contractually material.
 
 ## Related documents
 
 - **Parent framework:** [CloudRMF](../01-frameworks/CloudRMF.md)
 - **Parent policy:** [POL-20](../02-policies/POL-20-cloud-acceptable-use-policy.md)
-- **Related registers:** [REG-TPS](REG-TPS-third-party-service-provider-register.md) (for the third-party relationship lifecycle); REG-CRA Cloud Risk Assessment Register (future); REG-CEX Cloud Exit Plan Register (future)
+- **Related registers:** [REG-TPS](REG-TPS-third-party-service-provider-register.md) (for the third-party relationship lifecycle); [REG-CRA Cloud Risk Assessment Register](REG-CRA-cloud-risk-assessment-register.md); [REG-CEX Cloud Exit Plan Register](REG-CEX-cloud-exit-plan-register.md)

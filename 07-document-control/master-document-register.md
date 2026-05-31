@@ -7,7 +7,7 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | **Owner** | ISMS Manager |
 | **Cadence** | Continuous |
 | **Implements** | ISO/IEC 27001:2022 Clause 7.5; BNM RMiT 9.2(h) |
-| **Last updated** | 2026-05-27 |
+| **Last updated** | 2026-05-30 |
 
 ---
 
@@ -67,6 +67,7 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | **POL-11** | [Data Classification and Handling Policy](../02-policies/POL-11-data-classification-policy.md) | 1.0 | Draft | CDO + DPO | RMC | [Effective] | Annual | **DGF / CIMF** |
 | **POL-12** | [Cryptography Policy](../02-policies/POL-12-cryptography-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual | **CRMF** |
 | **POL-13** | [Incident Management Policy](../02-policies/POL-13-incident-management-policy.md) | 1.0 (re-anchored from v1) | Draft | CISO | RMC | [Effective] | Annual | **CRMF** |
+| **POL-14** | [Business Continuity Policy](../02-policies/POL-14-business-continuity-policy.md) | 1.0 | Draft | COO | RMC | [Effective] | Annual | **BCMF** |
 | POL-15 | [Physical and Environmental Security Policy](../02-policies/POL-15-physical-and-environmental-security-policy.md) | 1.0 | Draft | Head of Facilities + CISO | RMC | [Effective] | Annual | TRMF / BCMF |
 | POL-16 | [Operations Security Policy](../02-policies/POL-16-operations-security-policy.md) | 1.0 | Draft | CIO + CISO | RMC | [Effective] | Annual | TRMF / CRMF |
 | POL-17 | [Secure Development Policy](../02-policies/POL-17-secure-development-policy.md) | 1.0 | Draft | Head of Engineering + CISO | RMC | [Effective] | Annual | TRMF / CRMF |
@@ -77,7 +78,10 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | POL-22 | [IT Compliance Policy](../02-policies/POL-22-it-compliance-policy.md) | 1.0 | Draft | CCO | RMC | [Effective] | Annual | TRMF |
 | **POL-23** | [NCII Operational Policy](../02-policies/POL-23-ncii-operational-policy.md) | 1.0 | Draft | CISO + CCO | RMC | [Effective] | Annual | **NCIIF** |
 | **POL-CI-01** | [Customer Data Protection Policy](../02-policies/POL-CI-01-customer-data-protection-policy.md) | 1.0 | Draft | DPO + CCO | RMC | [Effective] | Annual | **CIMF** |
+| **POL-CI-02** | [Customer Consent and Disclosure Policy](../02-policies/POL-CI-02-customer-consent-and-disclosure-policy.md) | 1.0 | Draft | DPO + CCO | RMC | [Effective] | Annual | **CIMF** |
 | **POL-HR-01** | [HR Security Policy](../02-policies/POL-HR-01-hr-security-policy.md) | 1.0 (re-anchored from v1 POL-06) | Draft | CHRO + CISO | RMC | [Effective] | Annual | TRMF / CRMF (joint) |
+| **POL-04-A** | [ISMS Scope Statement (annex to POL-04)](../02-policies/POL-04-A-isms-scope-statement.md) | 1.0 | Draft | CISO | Board of Directors | [Effective] | Annual | **CRMF (ISO 27001 Cl. 4.3)** |
+| **POL-04-B** | [Information Security Policy Statement (annex to POL-04)](../02-policies/POL-04-B-information-security-policy-statement.md) | 1.0 | Draft | CISO | Board of Directors | [Effective] | Annual | **CRMF (ISO 27001 Cl. 5.2)** |
 
 ---
 
@@ -112,6 +116,7 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | **STD-AI-02** | [AI Model Validation Standard](../03-standards/STD-AI-02-ai-model-validation-standard.md) | 1.0 | Draft | Model Risk function | CRO | [Effective] | Annual + on AI PD | POL-21 |
 | **STD-AI-03** | [Generative AI Security Standard](../03-standards/STD-AI-03-genai-security-standard.md) | 1.0 | Draft | CISO + Data Science | CISO | [Effective] | Annual + on AI PD | POL-21 |
 | **STD-AI-04** | [AI Training Data Standard](../03-standards/STD-AI-04-ai-training-data-standard.md) | 1.0 | Draft | CDO + DPO | CDO | [Effective] | Annual + on AI PD | POL-21, POL-11 |
+| **STD-NW-01** | [Network Segmentation and On-Premise Network Security Standard](../03-standards/STD-NW-01-network-segmentation-standard.md) | 1.0 | Draft | Head of Network + CISO | CRO (with CIO concurrence) | [Effective] | Annual | POL-16 + POL-04 |
 
 ---
 
@@ -133,19 +138,20 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | **SOP-CR-02** | [SOC Detection Tuning SOP](../04-procedures/SOP-CR-02-soc-detection-tuning-sop.md) | 1.0 | Draft | Head of SOC | Head of SOC | [Effective] | Annual | STD-CR-02 |
 | **SOP-CR-03** | [Forensic Evidence Handling SOP](../04-procedures/SOP-CR-03-forensic-evidence-handling-sop.md) | 1.0 | Draft | Head of SOC + CISO | CISO | [Effective] | Annual | POL-13 |
 | **SOP-BC-02** | [Backup Operation SOP](../04-procedures/SOP-BC-02-backup-operation-sop.md) | 1.0 | Draft | Head of IT Ops | Head of IT Ops | [Effective] | Annual | STD-BC-02 |
-| **SOP-BC-03** | [Tamper-Proof Backup Verification SOP](../04-procedures/SOP-BC-03-tamper-proof-backup-verification-sop.md) | 1.0 | Draft | Head of IT Ops + CISO | Head of IT Ops | [Effective] | Monthly cycle | STD-BC-02 §3.4 |
-| **SOP-TP-02** | [TPSP Periodic Reassessment SOP](../04-procedures/SOP-TP-02-tpsp-periodic-reassessment-sop.md) | 1.0 | Draft | TPRM team | CRO | [Effective] | Annual | STD-TP-01 §3.4 |
+| **SOP-BC-03** | [Tamper-Proof Backup Verification SOP](../04-procedures/SOP-BC-03-tamper-proof-backup-verification-sop.md) | 1.0 | Draft | Head of IT Ops + CISO | Head of IT Ops | [Effective] | Monthly cycle | STD-BC-02 Section 3.4 |
+| **SOP-TP-02** | [TPSP Periodic Reassessment SOP](../04-procedures/SOP-TP-02-tpsp-periodic-reassessment-sop.md) | 1.0 | Draft | TPRM team | CRO | [Effective] | Annual | STD-TP-01 Section 3.4 |
 | **SOP-TP-03** | [TPSP Exit SOP](../04-procedures/SOP-TP-03-tpsp-exit-sop.md) | 1.0 | Draft | Head of Procurement + CRO | Head of Procurement | [Effective] | Annual | STD-TP-02 |
-| **SOP-CI-01** | [Data Subject Access Request SOP](../04-procedures/SOP-CI-01-dsar-sop.md) | 1.0 | Draft | DPO | DPO | [Effective] | Annual | POL-CI-01 §4.4 |
-| **SOP-CI-03** | [Customer Consent Capture SOP](../04-procedures/SOP-CI-03-customer-consent-capture-sop.md) | 1.0 | Draft | DPO | DPO | [Effective] | Annual | POL-CI-01 §4.1 |
+| **SOP-CI-01** | [Data Subject Access Request SOP](../04-procedures/SOP-CI-01-dsar-sop.md) | 1.0 | Draft | DPO | DPO | [Effective] | Annual | POL-CI-01 Section 4.4 |
+| **SOP-CI-03** | [Customer Consent Capture SOP](../04-procedures/SOP-CI-03-customer-consent-capture-sop.md) | 1.0 | Draft | DPO | DPO | [Effective] | Annual | POL-CI-01 Section 4.1 |
 | **SOP-NC-02** | [NACSA Examination Response SOP](../04-procedures/SOP-NC-02-nacsa-examination-response-sop.md) | 1.0 | Draft | CCO + CISO | CCO | [Effective] | Annual | STD-NC-02 |
-| **SOP-CL-02** | [CSPM Operations SOP](../04-procedures/SOP-CL-02-cspm-operations-sop.md) | 1.0 | Draft | Head of Cloud + Head of SOC | Head of Cloud | [Effective] | Annual | STD-CL-01 §3.5 |
-| **SOP-CL-03** | [Cloud Exit Validation SOP](../04-procedures/SOP-CL-03-cloud-exit-validation-sop.md) | 1.0 | Draft | Head of Cloud | Head of Cloud + Procurement | [Effective] | Annual | POL-20 §4.7 |
+| **SOP-CL-02** | [CSPM Operations SOP](../04-procedures/SOP-CL-02-cspm-operations-sop.md) | 1.0 | Draft | Head of Cloud + Head of SOC | Head of Cloud | [Effective] | Annual | STD-CL-01 Section 3.5 |
+| **SOP-CL-03** | [Cloud Exit Validation SOP](../04-procedures/SOP-CL-03-cloud-exit-validation-sop.md) | 1.0 | Draft | Head of Cloud | Head of Cloud + Procurement | [Effective] | Annual | POL-20 Section 4.7 |
 | **SOP-DG-01** | [Data Asset Onboarding SOP](../04-procedures/SOP-DG-01-data-asset-onboarding-sop.md) | 1.0 | Draft | Data Governance team | CDO | [Effective] | Annual | POL-11 |
 | **SOP-DG-02** | [Data Quality Triage SOP](../04-procedures/SOP-DG-02-data-quality-triage-sop.md) | 1.0 | Draft | Data Governance team | CDO | [Effective] | Annual | STD-DG-01 |
 | **SOP-DG-03** | [Data Destruction SOP](../04-procedures/SOP-DG-03-data-destruction-sop.md) | 1.0 | Draft | Data Governance + IT Ops | CDO + Head of IT Ops | [Effective] | Annual | STD-DG-02, STD-CI-02 |
 | **SOP-AI-02** | [AI Model Validation SOP](../04-procedures/SOP-AI-02-model-validation-sop.md) | 1.0 | Draft | Model Risk function | CRO | [Effective] | Annual + on AI PD | STD-AI-02 |
-| **SOP-AI-03** | [AI Vendor Assessment SOP](../04-procedures/SOP-AI-03-ai-vendor-assessment-sop.md) | 1.0 | Draft | AI Governance + TPRM | AIGC | [Effective] | Annual + on AI PD | POL-21 §4.8 |
+| **SOP-AI-03** | [AI Vendor Assessment SOP](../04-procedures/SOP-AI-03-ai-vendor-assessment-sop.md) | 1.0 | Draft | AI Governance + TPRM | AIGC | [Effective] | Annual + on AI PD | POL-21 Section 4.8 |
+| **SOP-DC-01** | [Data Centre Operations SOP](../04-procedures/SOP-DC-01-data-centre-operations-sop.md) | 1.0 | Draft | Head of DC Ops | CIO | [Effective] | Annual | STD-NW-01 + POL-15 + POL-16 |
 
 ---
 
@@ -162,6 +168,8 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | **PLN-03-CB** | [Core Banking DRP](../05-plans/PLN-03-CB-core-banking-drp.md) | 1.0 | Draft | Head of IT Ops + Head of Core Banking | COO + CIO | [Effective] | Annual | BCMF / TRMF (per-service DRP) |
 | **PLN-03-IB** | [Internet Banking DRP](../05-plans/PLN-03-IB-internet-banking-drp.md) | 1.0 | Draft | Head of IT Ops + Head of Digital Channels | COO + CIO | [Effective] | Annual | BCMF / TRMF (per-service DRP) |
 | **PLN-03-PMT** | [Payment Systems DRP](../05-plans/PLN-03-PMT-payment-systems-drp.md) | 1.0 | Draft | Head of IT Ops + Head of Treasury Ops | COO + CIO | [Effective] | Annual | BCMF / TRMF (per-service DRP) |
+| **PLN-07** | [Awareness and Competence Programme](../05-plans/PLN-07-awareness-and-competence-programme.md) | 1.0 | Draft | CHRO + CISO | RMC | [Effective] | Annual | **CRMF + TRMF + AIGF** (RMiT Section 15) |
+| **PLN-08** | [Internal Audit Plan — Technology Audit Universe](../05-plans/PLN-08-internal-audit-plan.md) | 1.0 | Draft | Chief Internal Auditor | Board Audit Committee | [Effective] | Annual (Audit Universe); rolling 3-year plan re-baselined annually | Cross-framework (3rd line) (RMiT Section 13) |
 
 ---
 
@@ -201,6 +209,29 @@ Single source of truth for every document in the v2 ISMS / IT governance suite. 
 | **REG-MD** | [Master Data Register](../06-registers/REG-MD-master-data-register.md) | CDO + CIO | Continuous | DGF |
 | **REG-TPI** | [TPSP Incident Register](../06-registers/REG-TPI-tpsp-incident-register.md) | CISO + CRO | Per incident | TPRMF / CRMF |
 | **REG-DIS** | [Customer Disclosure Register](../06-registers/REG-DIS-customer-disclosure-register.md) | DPO + CCO | Per disclosure | CIMF |
+| **REG-CHG** | [Change Register](../06-registers/REG-CHG-change-register.md) | Head of IT Ops (operates); CIO (accountable) | Continuous + 30-day PIR cycle | **TRMF** (BAI06 cascade evidence) |
+| **REG-MR** | [Management Review Register](../06-registers/REG-MR-management-review-register.md) | CISO + COO + CDO (via CRO) | At least annually (combined ISMS/BCMS/AIMS) + quarterly focused | **CRMF + BCMF + AIGF** (ISO 27001/22301/42001 Cl. 9.3) |
+| **REG-OBJ** | [Information Security Objectives Register](../06-registers/REG-OBJ-information-security-objectives-register.md) | CISO | Annual + quarterly tracking | **CRMF** (ISO 27001 Cl. 6.2) |
+| **REG-GAP** | [RMiT Gap Analysis Register](../06-registers/REG-GAP-rmit-gap-analysis-register.md) | CRO + CCO (joint) | Baseline on issuance; refresh annually + on RMiT amendment | **TRMF + CRMF** (RMiT Section 18) |
+| **REG-AUD** | [Internal Audit Issues Register](../06-registers/REG-AUD-internal-audit-issues-register.md) | Chief Internal Auditor | Continuous + quarterly ageing | Cross-framework (3rd line) (RMiT Section 13) |
+| **REG-AWR** | [Awareness and Competence Register](../06-registers/REG-AWR-awareness-and-competence-register.md) | CHRO (operates); CISO (content + measurement) | Continuous + monthly KPI roll-up | **CRMF + TRMF** (ISO 27001 Cl. 7.2 + 7.3) |
+
+---
+
+## v2 Architecture annexes
+
+| ID | Title | Version | Status | Owner | Approver | Effective | Next review |
+|---|---|---|---|---|---|---|---|
+| ARCH-002 | [Board Reporting and Escalation Annex](../00-architecture/board-reporting-and-escalation-annex.md) | 1.0 | Draft | CISO + CRO + Company Secretary | Board of Directors | [Effective] | Annual |
+
+## v2 Document control
+
+| ID | Title | Version | Status | Owner |
+|---|---|---|---|---|
+| DC-001 | [Master Document Register (this document)](master-document-register.md) | 1.0 | Effective (continuous) | ISMS Manager |
+| DC-002 | [Board sign-off conditions](board-signoff-conditions.md) | 1.0 | Draft | Company Secretary + CISO + CRO |
+| DC-003 | [Change log](change-log.md) | 1.0 | Effective (continuous) | ISMS Manager |
+| DC-004 | [Approval register](approval-register.md) | 1.0 | Effective (continuous) | ISMS Manager |
 
 ---
 

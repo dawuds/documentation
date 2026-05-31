@@ -54,7 +54,7 @@ Use cases involving:
 | Internal productivity with controlled scope | Code review augmentation, document summarisation |
 | Marketing personalisation (within consent) | Product recommendation |
 
-Limited-risk requires: AIGC notification (not approval); standard validation; some human oversight (sampling); compliance with [POL-21 §4.9](../02-policies/POL-21-ai-acceptable-use-policy.md) generative AI controls.
+Limited-risk requires: AIGC notification (not approval); standard validation; some human oversight (sampling); compliance with [POL-21 Section 4.9](../02-policies/POL-21-ai-acceptable-use-policy.md) generative AI controls.
 
 ### 3.4 Minimal-risk
 
@@ -66,7 +66,7 @@ Use cases with no customer-facing impact and limited internal scope:
 | Generic productivity (calendar scheduling assistance) |
 | Information classification on Internal-or-below data |
 
-Minimal-risk: standard tool approval; per [POL-21 §4.2](../02-policies/POL-21-ai-acceptable-use-policy.md) approved tool list.
+Minimal-risk: standard tool approval; per [POL-21 Section 4.2](../02-policies/POL-21-ai-acceptable-use-policy.md) approved tool list.
 
 ### 3.5 Classification process
 
@@ -90,7 +90,7 @@ Minimal-risk: standard tool approval; per [POL-21 §4.2](../02-policies/POL-21-a
 Unacceptable-risk use cases are **not** exception-approvable. Other reclassifications per AIGC.
 
 ## 5. Related documents
-[POL-21](../02-policies/POL-21-ai-acceptable-use-policy.md); STD-AI-02 AI Model Validation Standard (future); [REG-AIU](../06-registers/REG-AIU-ai-use-case-register.md); [AIGF](../01-frameworks/AIGF.md)
+[POL-21](../02-policies/POL-21-ai-acceptable-use-policy.md); [STD-AI-02 AI Model Validation Standard](STD-AI-02-ai-model-validation-standard.md); [REG-AIU](../06-registers/REG-AIU-ai-use-case-register.md); [AIGF](../01-frameworks/AIGF.md)
 
 ## 6. References
 NIST AI RMF 1.0; NIST AI RMF Generative AI Profile (July 2024); EU AI Act (2024); ISO/IEC 42001:2023; BNM Discussion Paper on Responsible AI; MAS FEAT.

@@ -52,8 +52,8 @@ Total target: 2 hours.
 
 ## 7. Regulatory communication
 - BNM RENTAS desk: immediate notification of any RENTAS connectivity issue
-- BNM RMiT 11.18 (4-hour) for material payment-system disruption
-- BNM Operational Risk Reporting Part C
+- BNM RMiT 11.18 (**4-hour clock with source-chain caveat** per [POL-13 Section 4.4.3](../02-policies/POL-13-incident-management-policy.md) — the 4-hour figure is the bank's operating expectation derived from BNM Operational Risk Reporting PD Part C and BCM Part C, not stated numerically in RMiT 11.18 verbatim; CCO maintains the authoritative clock) — coordinated by CCO
+- BNM Operational Risk Reporting Part C (upstream policy chain for RMiT 11.18)
 - Where merchant-acquiring affected: BNM Merchant Acquiring Services PD paragraphs 19.25–19.26 (per RMiT 11.18 reference)
 
 ## 8. Shariah considerations

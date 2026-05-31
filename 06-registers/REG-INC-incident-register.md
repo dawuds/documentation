@@ -8,6 +8,8 @@
 | **Cadence** | Continuous — entry created on every confirmed incident |
 | **Implements** | ISO/IEC 27002:2022 controls 5.25, 5.26, 5.27; BNM RMiT (28 Nov 2025) Section 11.12–11.20 (Cyber Response, Recovery, Reporting); Section 11.13 (Cyber Incident Response Plan); Section 11.18 (Cyber Incident Notification to BNM) |
 | **Source procedure** | [SOP-IR-01 Incident Triage SOP](../04-procedures/SOP-IR-01-incident-triage-sop.md); [PLN-01 Incident Response Plan](../05-plans/PLN-01-incident-response-plan.md) |
+| **Parent framework(s)** | [CRMF](../01-frameworks/CRMF.md) |
+| **COBIT objective(s)** | DSS02 Managed Service Requests and Incidents; DSS05 Managed Security Services |
 
 ---
 
@@ -86,7 +88,7 @@ The authoritative record of all confirmed security incidents at GIBB. Captures t
 - **Standard:** [STD-IR-01 Incident Classification & Severity Standard](../03-standards/STD-IR-01-incident-classification-and-severity-standard.md)
 - **Procedure:** [SOP-IR-01 Incident Triage SOP](../04-procedures/SOP-IR-01-incident-triage-sop.md)
 - **Plan:** [PLN-01 Incident Response Plan](../05-plans/PLN-01-incident-response-plan.md)
-- **Risk feedback:** [REG-RR Risk Register](risk-register.md)
+- **Risk feedback:** [REG-RR Risk Register](REG-TR-technology-risk-register.md)
 
 ---
 

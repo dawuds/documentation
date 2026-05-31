@@ -17,7 +17,7 @@ Subset of [REG-TPS](REG-TPS-third-party-service-provider-register.md) — vendor
 | `vendor` | Vendor name |
 | `ai_capability` | What AI service is provided |
 | `foundation_model_basis` | If GenAI / LLM — which foundation model |
-| `vendor_uses_gibb_input_for_training` | bool — contractually prohibited per [SOP-AI-03 §3e](../04-procedures/SOP-AI-03-ai-vendor-assessment-sop.md) |
+| `vendor_uses_gibb_input_for_training` | bool — contractually prohibited per [SOP-AI-03 Section 3e](../04-procedures/SOP-AI-03-ai-vendor-assessment-sop.md) |
 | `vendor_security_attestation` | ISO 27001 / SOC 2 / specific AI security cert |
 | `vendor_fairness_attestation` | bool + evidence |
 | `vendor_ip_indemnification` | Customer-facing GenAI output IP cover |

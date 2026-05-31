@@ -4,7 +4,7 @@
 |---|---|
 | **Document ID** | REG-AIB | **Owner** | AI Governance |
 | **Cadence** | Continuous (per measurement) | **Parent framework** | [AIGF](../01-frameworks/AIGF.md) |
-| **Parent standard** | [STD-AI-02 §3.3](../03-standards/STD-AI-02-ai-model-validation-standard.md) |
+| **Parent standard** | [STD-AI-02 Section 3.3](../03-standards/STD-AI-02-ai-model-validation-standard.md) |
 
 ## Purpose
 Authoritative record of fairness measurements across GIBB AI use cases — demographic parity, equalised odds, Islamic-conventional product fairness, with material findings and remediations.

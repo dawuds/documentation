@@ -17,7 +17,7 @@
 
 ## 1. Purpose
 
-To operationalise the change authorisation requirements in [STD-CM-01 §3.2](../03-standards/STD-CM-01-change-management-standard.md) — how a change moves from submission through CAB approval to ready-for-deployment.
+To operationalise the change authorisation requirements in [STD-CM-01 Section 3.2](../03-standards/STD-CM-01-change-management-standard.md) — how a change moves from submission through CAB approval to ready-for-deployment.
 
 ## 2. Scope
 
@@ -51,7 +51,7 @@ Change ticket submission in the change management tool (e.g., ServiceNow Change 
 ### Step 2 — Completeness triage
 
 - **Actor:** Change Coordinator
-- **Action:** Verify all mandatory fields per STD-CM-01 §3.2; categorisation appropriate; risk assessment material; test results adequate
+- **Action:** Verify all mandatory fields per STD-CM-01 Section 3.2; categorisation appropriate; risk assessment material; test results adequate
 - **Tool:** Change management tool
 - **Output:** Ticket advanced to `Ready for CAB` or returned with comments
 - **SLA:** 1 business day from Step 1
@@ -59,7 +59,7 @@ Change ticket submission in the change management tool (e.g., ServiceNow Change 
 ### Step 3 — Pre-CAB security review
 
 - **Actor:** CISO delegate
-- **Action:** For internet-facing or Confidential+ data changes, security review per STD-CM-01 §3.3.2
+- **Action:** For internet-facing or Confidential+ data changes, security review per STD-CM-01 Section 3.3.2
 - **Tool:** Change management tool
 - **Output:** Security sign-off recorded
 - **SLA:** 2 business days
@@ -67,7 +67,7 @@ Change ticket submission in the change management tool (e.g., ServiceNow Change 
 ### Step 4 — Pre-CAB Shariah review (where applicable)
 
 - **Actor:** Shariah Compliance
-- **Action:** For changes affecting Islamic product systems' Shariah logic, Shariah Committee approval per STD-CM-01 §3.3.3
+- **Action:** For changes affecting Islamic product systems' Shariah logic, Shariah Committee approval per STD-CM-01 Section 3.3.3
 - **Tool:** Change management tool + Shariah Committee submission
 - **Output:** Shariah approval recorded
 - **SLA:** Per Shariah Committee cycle (typically monthly)
@@ -99,10 +99,10 @@ Change ticket submission in the change management tool (e.g., ServiceNow Change 
 ### Step 8 — Scheduling
 
 - **Actor:** Change Coordinator
-- **Action:** Schedule per Forward Schedule of Changes; communicate per STD-CM-01 §3.6
+- **Action:** Schedule per Forward Schedule of Changes; communicate per STD-CM-01 Section 3.6
 - **Tool:** Change management tool + FSC publication
 - **Output:** Change scheduled; affected parties notified
-- **SLA:** Per STD-CM-01 §3.6.1 notice requirements
+- **SLA:** Per STD-CM-01 Section 3.6.1 notice requirements
 
 ### Step 9 — Deployment readiness
 

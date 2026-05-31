@@ -40,7 +40,7 @@ All information processed by GIBB, in any form (digital, physical, in-transit, a
 
 ### 4.1 Classification at source
 
-- **4.1.1** All information **shall** be classified by the data owner at point of creation or acquisition per the scheme in §3. *(Implements ISO/IEC 27002:2022 control 5.12; RMiT 9.2(d).)*
+- **4.1.1** All information **shall** be classified by the data owner at point of creation or acquisition per the scheme in Section 3. *(Implements ISO/IEC 27002:2022 control 5.12; RMiT 9.2(d).)*
 - **4.1.2** Aggregated information inherits the **highest** classification of its components.
 
 ### 4.2 Labelling

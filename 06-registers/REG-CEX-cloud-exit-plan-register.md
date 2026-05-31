@@ -21,7 +21,7 @@ Authoritative record of cloud exit plans per cloud service — what GIBB would d
 | `data_extraction_validated` | bool + date |
 | `transition_timeline_estimate` | Days/weeks |
 | `transition_cost_estimate` | MYR |
-| `contractual_exit_assistance` | Per [STD-TP-02 §3.9](../03-standards/STD-TP-02-outsourcing-contractual-security-standard.md) |
+| `contractual_exit_assistance` | Per [STD-TP-02 Section 3.9](../03-standards/STD-TP-02-outsourcing-contractual-security-standard.md) |
 | `last_validation_date` | |
 | `last_validation_outcome` | Pass / Pass with findings / Fail |
 | `next_validation_due` | Annual |
@@ -38,4 +38,4 @@ Authoritative record of cloud exit plans per cloud service — what GIBB would d
 | CEX-004 | CL-0008 Logs analytics PaaS | 1 | Open-source ELK stack on private cloud | 4 months | 2026-05-01 (Pass) | Validated |
 
 ## Related documents
-[POL-20 §4.7](../02-policies/POL-20-cloud-acceptable-use-policy.md); [SOP-CL-03](../04-procedures/SOP-CL-03-cloud-exit-validation-sop.md); [SOP-TP-03](../04-procedures/SOP-TP-03-tpsp-exit-sop.md); [REG-CL](REG-CL-cloud-service-register.md); [REG-OUT](REG-OUT-material-outsourcing-register.md)
+[POL-20 Section 4.7](../02-policies/POL-20-cloud-acceptable-use-policy.md); [SOP-CL-03](../04-procedures/SOP-CL-03-cloud-exit-validation-sop.md); [SOP-TP-03](../04-procedures/SOP-TP-03-tpsp-exit-sop.md); [REG-CL](REG-CL-cloud-service-register.md); [REG-OUT](REG-OUT-material-outsourcing-register.md)

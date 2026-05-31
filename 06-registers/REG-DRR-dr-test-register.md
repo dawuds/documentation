@@ -42,7 +42,7 @@ IT-specific record of DR tests — failover, failback, recovery validation per s
 | DRR-2026-006 | ATM Network (SVC-006) | Component failover | 4h | 3h 30min | Pass with findings | Branch ATM connectivity 12% degraded mode during cutover | Closed (CAP-2026-0030 raised) |
 
 ## Maintenance
-- Test schedule per [STD-BC-02 §3.5](../03-standards/STD-BC-02-backup-and-restoration-standard.md) and [PLN-03 §7](../05-plans/PLN-03-disaster-recovery-plan.md).
+- Test schedule per [STD-BC-02 Section 3.5](../03-standards/STD-BC-02-backup-and-restoration-standard.md) and [PLN-03 Section 7](../05-plans/PLN-03-disaster-recovery-plan.md).
 - Test failures trigger immediate investigation.
 - Monthly Head of IT Ops review.
 - Quarterly RMC reporting.

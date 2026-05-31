@@ -88,7 +88,7 @@ Per [POL-16](../02-policies/POL-16-operations-security-policy.md). Reduced reten
 [POL-16](../02-policies/POL-16-operations-security-policy.md); [POL-13](../02-policies/POL-13-incident-management-policy.md); [POL-06](../02-policies/POL-06-access-control-policy.md); [CRMF](../01-frameworks/CRMF.md)
 
 ## 6. References
-BNM RMiT 28 Nov 2025 §10.42; 10.57; 11.9; ISO/IEC 27002:2022 control 8.15; NIST SP 800-92; PCI DSS 4.0 Req 10 (where applicable).
+BNM RMiT 28 Nov 2025 Section 10.42; 10.57; 11.9; ISO/IEC 27002:2022 control 8.15; NIST SP 800-92; PCI DSS 4.0 Req 10 (where applicable).
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

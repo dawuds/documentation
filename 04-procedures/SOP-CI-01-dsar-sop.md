@@ -4,7 +4,7 @@
 |---|---|
 | **Document ID** | SOP-CI-01 | **Version** | 1.0 |
 | **Owner / Approver** | DPO |
-| **Parent policy** | [POL-CI-01 §4.4](../02-policies/POL-CI-01-customer-data-protection-policy.md) | **Parent framework** | [CIMF](../01-frameworks/CIMF.md) |
+| **Parent policy** | [POL-CI-01 Section 4.4](../02-policies/POL-CI-01-customer-data-protection-policy.md) | **Parent framework** | [CIMF](../01-frameworks/CIMF.md) |
 | **Implements** | PDPA 2010 Sections 30–37 |
 
 ## 1. Purpose

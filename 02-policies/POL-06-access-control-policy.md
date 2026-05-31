@@ -160,7 +160,7 @@ Violations of this policy may result in disciplinary action up to and including 
 - NIST SP 800-63B — Digital Identity Guidelines: Authentication and Lifecycle Management (informative reference for authentication assurance levels).
 - Bank Negara Malaysia, *Risk Management in Technology (RMiT)*, **issued 28 November 2025** — Section 10.53–10.57 (Access Control); Section 12 with Appendices 2 and 3 (Digital Services delivery channels and authentication minimum controls).
 - Computer Crimes Act 1997 (Malaysia).
-- [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
+- [Regulatory Mapping Reference](../_context/framework-stack.md).
 
 ## 10. Document control
 

@@ -74,7 +74,7 @@ Per [POL-04](POL-04-information-security-policy.md).
 
 ## 8. References
 
-ISO/IEC 27002:2022 — control 8.24. NIST SP 800-57 (Key Management). NIST FIPS 140-3. BNM RMiT (28 Nov 2025) Section 10.20–10.23 (Cryptography). [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
+ISO/IEC 27002:2022 — control 8.24. NIST SP 800-57 (Key Management). NIST FIPS 140-3. BNM RMiT (28 Nov 2025) Section 10.20–10.23 (Cryptography). [Regulatory Mapping Reference](../_context/framework-stack.md).
 
 ## 9. Document control
 

@@ -29,7 +29,9 @@ Business proposal for new AI use case (in-house, vendor-procured, or generative 
 | 4 | Business + Data Science | Use case design — model approach, training data sources, fairness considerations, explainability | Design document |
 | 5 | CDO + DGF | Training data review per [DGF](../01-frameworks/DGF.md) and [POL-11](../02-policies/POL-11-data-classification-policy.md); customer data → CIMF check | Training data approval |
 | 6 | CISO | AI security threat model — adversarial inputs, model poisoning, prompt injection for LLM-based, data leakage | Threat model |
-| 7 | Shariah Compliance (where product-system relevant) | Shariah review per BNM SGF | Shariah approval |
+| 7 | Shariah Committee Secretariat | Shariah triage — determines whether the use case is **Shariah-touching** (any one of: affects a Shariah-compliant product / contract; consumes or generates Shariah-confidential data; surfaces output to customer-facing Islamic-banking channels; influences a Shariah-judgement workflow). Shariah-not-touching cases proceed to Step 8 with documented basis. | Triage record |
+| 7a | Shariah Committee (formal sitting) | **For Shariah-touching use cases — formal Shariah Committee deliberation and approval is required before any production deployment.** The Committee may: approve, approve with conditions, defer for more information, or reject. The Secretariat prepares a Shariah submission pack (purpose, model approach, data sources, customer surface, risk profile, intended product). | Shariah Committee decision minute |
+| 7b | AI Governance Committee | Records Shariah Committee decision in [REG-AIU](../06-registers/REG-AIU-ai-use-case-register.md) with `shariah_decision`, `shariah_decision_date`, `shariah_conditions` fields. Rejected use cases are closed; approved-with-conditions cases proceed only after the conditions are met and re-verified by the Secretariat. | REG-AIU updated; conditions tracked in [REG-CAP](../06-registers/REG-CAP-corrective-action-register.md) |
 
 ### Phase 3 — Build and validate
 
@@ -50,7 +52,7 @@ Business proposal for new AI use case (in-house, vendor-procured, or generative 
 
 | # | Actor | Action | Output |
 |---|---|---|---|
-| 13 | Data Science | Continuous monitoring — drift, fairness, security (per [POL-21 §4.7](../02-policies/POL-21-ai-acceptable-use-policy.md)) | Monitoring dashboard |
+| 13 | Data Science | Continuous monitoring — drift, fairness, security (per [POL-21 Section 4.7](../02-policies/POL-21-ai-acceptable-use-policy.md)) | Monitoring dashboard |
 | 14 | AI Governance | Periodic review; retraining triggers; incident correlation | Review records |
 
 ## 4. Exception handling

@@ -4,7 +4,7 @@
 |---|---|
 | **Document ID** | SOP-CM-02 | **Version** | 1.0 |
 | **Owner / Approver** | Head of IT Operations |
-| **Parent standard** | [STD-CM-01 §3.9](../03-standards/STD-CM-01-change-management-standard.md) | **Parent policy** | [POL-07](../02-policies/POL-07-change-management-policy.md) |
+| **Parent standard** | [STD-CM-01 Section 3.9](../03-standards/STD-CM-01-change-management-standard.md) | **Parent policy** | [POL-07](../02-policies/POL-07-change-management-policy.md) |
 
 ## 1. Purpose
 Operationalise emergency change authorisation for genuine emergencies — incident remediation, critical vulnerability response, regulatory directive with insufficient lead time.
@@ -27,7 +27,7 @@ Active SEV-1 or SEV-2 incident requiring change; CISA KEV vulnerability on inter
 On-call authority unavailable: escalate to CIO or CISO (cross-coverage). Rollback failure: invoke [PLN-01 IRP](../05-plans/PLN-01-incident-response-plan.md) if service impacted.
 
 ## 5. Evidence
-Change ticket; deployment log; post-deploy validation; retro CAB minute. Retained 7 years per [STD-CR-02 §3.6](../03-standards/STD-CR-02-logging-standard.md).
+Change ticket; deployment log; post-deploy validation; retro CAB minute. Retained 7 years per [STD-CR-02 Section 3.6](../03-standards/STD-CR-02-logging-standard.md).
 
 ## 6. Document control
 | Version | Date | Author | Approver | Change |

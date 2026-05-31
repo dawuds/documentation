@@ -36,7 +36,7 @@ See [AIGF Section 4](../01-frameworks/AIGF.md).
 
 ### 4.1 Risk classification first
 
-- **4.1.1** Every AI use case **shall** be risk-classified per [STD-AI-01 AI Use Case Risk Classification Standard](../03-standards/STD-AI-01-ai-use-case-risk-classification-standard.md) (future) before development resources are committed. Classifications: **Unacceptable** (prohibited), **High-risk**, **Limited-risk**, **Minimal-risk**.
+- **4.1.1** Every AI use case **shall** be risk-classified per [STD-AI-01 AI Use Case Risk Classification Standard](../03-standards/STD-AI-01-ai-use-case-risk-classification-standard.md) before development resources are committed. Classifications: **Unacceptable** (prohibited), **High-risk**, **Limited-risk**, **Minimal-risk**.
 
 ### 4.2 Approved tools only
 

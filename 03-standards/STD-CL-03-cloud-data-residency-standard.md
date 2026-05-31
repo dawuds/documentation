@@ -40,7 +40,7 @@ Cross-border replication of Confidential data for DR purposes requires:
 Each cloud service entry in [REG-CL](../06-registers/REG-CL-cloud-service-register.md) records:
 - Provider region(s) used for primary
 - Provider region(s) used for DR
-- Cross-border basis (per §3.2 if applicable)
+- Cross-border basis (per Section 3.2 if applicable)
 - DPO sign-off for any cross-border element
 
 ### 3.4 Cloud-provider hyperscaler regions
@@ -49,20 +49,20 @@ For each approved provider, specific regions are catalogued as "approved primary
 
 ### 3.5 Departures from RMiT Appendix 10
 
-Where cloud service architecture departs from RMiT Appendix 10 cloud risk mapping due to residency constraints, GIBB shall demonstrate alternative practice is at least as effective per [POL-20 §4.8](../02-policies/POL-20-cloud-acceptable-use-policy.md) and RMiT 10.51. Documented in [REG-CL](../06-registers/REG-CL-cloud-service-register.md) `appendix_10_departures`.
+Where cloud service architecture departs from RMiT Appendix 10 cloud risk mapping due to residency constraints, GIBB shall demonstrate alternative practice is at least as effective per [POL-20 Section 4.8](../02-policies/POL-20-cloud-acceptable-use-policy.md) and RMiT 10.51. Documented in [REG-CL](../06-registers/REG-CL-cloud-service-register.md) `appendix_10_departures`.
 
 ### 3.6 Data sovereignty changes
 
 Material changes to data residency (new region, additional cross-border flow) trigger [SOP-CL-01 Cloud Service Onboarding](../04-procedures/SOP-CL-01-cloud-service-onboarding-sop.md) gating control.
 
 ## 4. Exceptions
-Cross-border residency departures from §3.1 require RMC approval + DPO sign-off + PDPA Section 129 basis.
+Cross-border residency departures from Section 3.1 require RMC approval + DPO sign-off + PDPA Section 129 basis.
 
 ## 5. Related documents
 [POL-20](../02-policies/POL-20-cloud-acceptable-use-policy.md); [POL-CI-01](../02-policies/POL-CI-01-customer-data-protection-policy.md); [STD-CL-01](STD-CL-01-cloud-security-standard.md); [STD-CI-01](STD-CI-01-customer-data-classification-standard.md); [REG-CL](../06-registers/REG-CL-cloud-service-register.md); [REG-ROPA](../06-registers/REG-ROPA-records-of-processing-activity.md)
 
 ## 6. References
-PDPA 2010 Section 129; BNM RMiT 28 Nov 2025 §10.50–10.52; BNM Cloud TRAG; BNM MCIPD; BNM Outsourcing PD.
+PDPA 2010 Section 129; BNM RMiT 28 Nov 2025 Section 10.50–10.52; BNM Cloud TRAG; BNM MCIPD; BNM Outsourcing PD.
 
 ## 7. Document control
 | Version | Date | Author | Approver | Change |

@@ -77,14 +77,8 @@ These are targets, not guarantees. Variance is tracked and reported quarterly to
 ### 3.5 Regulator notification
 
 - **3.5.1** Material cyber incidents shall be notified to Bank Negara Malaysia in accordance with **BNM RMiT Section 11.18 (Cyber Incident Notification to BNM)**, which itself defers to BNM's *Operational Risk Reporting* policy document Part C, the *Business Continuity Management* policy document Part C, and (for merchant-acquiring incidents) the *Merchant Acquiring Services* policy paragraphs 19.25–19.26. **Operating expectation: notification within four (4) hours of detection of a material cyber incident.** *(⚠ The 4-hour figure is derived from BNM operational reporting practice for licensed FIs and surfaces in the institution's GRC structured-data artefact text tagged to RMiT clause 11.4; it is not stated numerically in RMiT Section 11.18 verbatim, which defers to the upstream policies above. The Chief Compliance Officer maintains the authoritative clock by reference to the current Operational Risk Reporting Part C and BCM Part C policy documents, and refreshes this standard on any change.)*
-| **Parent framework(s)** | [CRMF](../01-frameworks/CRMF.md); parent policy [POL-13](../02-policies/POL-13-incident-management-policy.md) |
-| **COBIT objective(s)** | DSS02; DSS05 |
 - **3.5.2** Where the bank is designated as a **National Critical Information Infrastructure (NCII)** entity under the **Cyber Security Act 2024**, NACSA notification obligations apply additionally per **BNM RMiT Section 11.4**, with timelines and form per current NACSA directives for the financial sector.
-| **Parent framework(s)** | [CRMF](../01-frameworks/CRMF.md); parent policy [POL-13](../02-policies/POL-13-incident-management-policy.md) |
-| **COBIT objective(s)** | DSS02; DSS05 |
 - **3.5.3** Cyber threat intelligence sharing with sector peers shall be conducted per **BNM RMiT Section 11.19**. Stakeholder collaboration on cyber threats shall be conducted per **BNM RMiT Section 11.20**.
-| **Parent framework(s)** | [CRMF](../01-frameworks/CRMF.md); parent policy [POL-13](../02-policies/POL-13-incident-management-policy.md) |
-| **COBIT objective(s)** | DSS02; DSS05 |
 - **3.5.4** Personal data breaches shall be assessed against the requirements of the **Personal Data Protection Act 2010** and any applicable foreign data protection law.
 
 ### 3.6 Categorisation
@@ -135,7 +129,7 @@ Severity downgrades require the Incident Commander's documented approval; severi
 - Bank Negara Malaysia, *Business Continuity Management* policy document, Part C.
 - Cyber Security Act 2024 (Malaysia) — NCII designation regime and NACSA directives.
 - Personal Data Protection Act 2010 (Malaysia).
-- [Regulatory Mapping Reference](../00-foundations/regulatory-mapping-reference.md).
+- [Regulatory Mapping Reference](../_context/framework-stack.md).
 
 ## 7. Document control
 

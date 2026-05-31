@@ -52,9 +52,9 @@ For models affecting customers:
 | Artefact | Required |
 |---|---|
 | Model card per industry practice | All models |
-| Validation report covering dimensions per §3.2 | Per risk class |
+| Validation report covering dimensions per Section 3.2 | Per risk class |
 | Fairness assessment | High-risk + Limited-risk affecting customers |
-| Validation sign-off | Per §3.2 |
+| Validation sign-off | Per Section 3.2 |
 | Linked to [REG-AIM AI Model Inventory](../06-registers/REG-AIM-ai-model-inventory.md) | All models |
 
 ### 3.6 Re-validation triggers
@@ -76,7 +76,7 @@ Model suspended pending re-validation if:
 Per [POL-21](../02-policies/POL-21-ai-acceptable-use-policy.md). Unacceptable-risk not exception-approvable.
 
 ## 5. Related documents
-[POL-21](../02-policies/POL-21-ai-acceptable-use-policy.md); [STD-AI-01](STD-AI-01-ai-use-case-risk-classification-standard.md); STD-AI-03 GenAI Security; STD-AI-04 AI Training Data; [REG-AIU](../06-registers/REG-AIU-ai-use-case-register.md); [REG-AIM](../06-registers/REG-AIM-ai-model-inventory.md); REG-AIB AI Bias and Fairness Register (future); [AIGF](../01-frameworks/AIGF.md)
+[POL-21](../02-policies/POL-21-ai-acceptable-use-policy.md); [STD-AI-01](STD-AI-01-ai-use-case-risk-classification-standard.md); [STD-AI-03 GenAI Security Standard](STD-AI-03-genai-security-standard.md); [STD-AI-04 AI Training Data Standard](STD-AI-04-ai-training-data-standard.md); [REG-AIU](../06-registers/REG-AIU-ai-use-case-register.md); [REG-AIM](../06-registers/REG-AIM-ai-model-inventory.md); [REG-AIB AI Bias and Fairness Register](REG-AIB-ai-bias-and-fairness-register.md); [AIGF](../01-frameworks/AIGF.md)
 
 ## 6. References
 NIST AI RMF 1.0; NIST AI RMF GenAI Profile (July 2024); ISO/IEC 42001:2023; EU AI Act (2024) Art. 9–15 high-risk system requirements; BNM Discussion Paper on Responsible AI.

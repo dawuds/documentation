@@ -51,4 +51,4 @@ Authoritative record of customer data subject requests under PDPA — access, co
 - PDPA Commissioner inspection: this register is examined.
 
 ## Related documents
-[POL-CI-01](../02-policies/POL-CI-01-customer-data-protection-policy.md); [REG-ROPA](REG-ROPA-records-of-processing-activity.md); SOP-CI-01 DSAR SOP (future).
+[POL-CI-01](../02-policies/POL-CI-01-customer-data-protection-policy.md); [REG-ROPA](REG-ROPA-records-of-processing-activity.md); [SOP-CI-01 DSAR SOP](../04-procedures/SOP-CI-01-dsar-sop.md).

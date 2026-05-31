@@ -13,7 +13,7 @@ Authoritative record of incidents originating at TPSPs that materially affect GI
 |---|---|
 | `tpi_id` | `TPI-YYYY-NNN` |
 | `tpsp_id` | Link to [REG-TPS](REG-TPS-third-party-service-provider-register.md) |
-| `tpsp_notification_date` | Per [STD-TP-03 §3.2](../03-standards/STD-TP-03-tpsp-continuous-monitoring-standard.md) 24h SLA |
+| `tpsp_notification_date` | Per [STD-TP-03 Section 3.2](../03-standards/STD-TP-03-tpsp-continuous-monitoring-standard.md) 24h SLA |
 | `tpsp_notification_within_24h` | bool |
 | `tpsp_description` | TPSP-provided incident description |
 | `gibb_assessment_severity` | Per [STD-IR-01](../03-standards/STD-IR-01-incident-classification-and-severity-standard.md) |
